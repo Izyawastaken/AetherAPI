@@ -1,0 +1,14 @@
+{
+  "name": "DisplaySmall",
+  "prefab": "MonsterDisplaySmall",
+  "prefab_path": "Assets/GameObject/MonsterDisplaySmall.prefab",
+  "data": {
+    "name": "DisplaySmall",
+    "source": {
+      "prefab": "MonsterDisplaySmall",
+      "path": "Assets/GameObject/MonsterDisplaySmall.prefab"
+    }
+  },
+  "icons": {},
+  "animations": {}
+}

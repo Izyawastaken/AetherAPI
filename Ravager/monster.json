@@ -1,0 +1,2508 @@
+{
+  "name": "Ravager",
+  "prefab": "MonsterRavager",
+  "prefab_path": "Assets/GameObject/MonsterRavager.prefab",
+  "data": {
+    "name": "Ravager",
+    "ids": {
+      "ID": 428,
+      "MonID": 13
+    },
+    "stats": {
+      "BaseMaxHealth": 40,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 524288,
+      "ElementsOverride": 4398047035392
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 1,
+          "Hits": 4
+        }
+      ],
+      "boss_stagger": [
+        {
+          "Element": 8,
+          "Hits": 10
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Critical",
+      "Dodge",
+      "Terror"
+    ],
+    "types_override": [
+      "Critical",
+      "Sidekick",
+      "Terror"
+    ],
+    "traits": {
+      "signature": "Cursed Blood",
+      "traits": [
+        {
+          "name": "Nightmare",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Hunt",
+          "min_difficulty": 3,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Mist",
+        "Long Slash"
+      ],
+      "start_override": [
+        "Char",
+        "Aerial Strike"
+      ],
+      "reset_action": [
+        "ResetActionTerror"
+      ],
+      "scripted": [
+        "Speed of Sound",
+        "Ice Spears",
+        "Frightful Lightning",
+        "Bone Chill",
+        "Long Slash",
+        "Mist",
+        "Char"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 20
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 15
+        },
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        }
+      ],
+      "champion": [
+        {
+          "name": "Aether",
+          "multiplier": 2
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 20
+        },
+        {
+          "name": "Sidekick Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterRavager",
+      "path": "Assets/GameObject/MonsterRavager.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "05575ddde454c6e40b7024f6d47f6b90",
+      "file": "Database/Ravager/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Ravager",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ravager/sheets/Portrait_Ravager.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Ravager.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "abf809afeed186a42b6a48060ee3772e",
+      "file": "Database/Ravager/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_RavagerPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ravager/sheets/Trait_RavagerPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_RavagerPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "7afbc240a349ecd4ebd7fb2a49f2029a",
+      "file": "Database/Ravager/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Ravager_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 980,
+          "width": 196,
+          "height": 196
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "6b3bde6f2f578ff419017e036bb0754f",
+      "file": "Database/Ravager/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Ravager_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 980,
+          "width": 196,
+          "height": 196
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Ravager_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "05549492dbbd44e4f89c2d3714fc69d7",
+      "file": "Database/Ravager/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Ravager_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 480,
+          "width": 96,
+          "height": 96
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "b0da07fac1e3f47479ded0533b85bcf4",
+      "file": "Database/Ravager/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Ravager_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 480,
+          "width": 96,
+          "height": 96
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Ravager_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "2f36993541452684a8512624562d2506",
+      "file": "Database/Ravager/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Ravager_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ravager/sheets/Portrait_Ravager_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Ravager_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "RavagerAttackEnd": {
+      "clip": "Assets/AnimationClip/RavagerAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b0d38f602e24242448c3880973246c49",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f02d864d52c8d364899109af63cadd54",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.124999985,
+          "sprite_guid": "f02d864d52c8d364899109af63cadd54",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_32.asset"
+          }
+        }
+      ]
+    },
+    "Ravager_Overworld_RunRight": {
+      "clip": "Assets/AnimationClip/Ravager_Overworld_RunRight.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "05549492dbbd44e4f89c2d3714fc69d7",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "045a8e8f7f0e06e489a5235972716156",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "502580231c165614d8f109c4abe1fa16",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "5e8753994959bcd4884cbca6f89fc98e",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "2fcf67b135d5b79499097add030cf1f7",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "8536d8a436ffd2947bfc6f2c52f7bbcf",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "5075f24ddbf6d7b4f9cc397cd6f521b8",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "0cccba0225c4f734cac65aea65cac379",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "0cccba0225c4f734cac65aea65cac379",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_7.asset"
+          }
+        }
+      ]
+    },
+    "Ravager_Overworld_IdleDown": {
+      "clip": "Assets/AnimationClip/Ravager_Overworld_IdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "4468a7fef0bd26442bec000376e70f27",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "623516b8b8ee3054d86d7e9e4ced0148",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "b889386c7756f294a839a54645b02dfc",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "60ac8fe285c566d4d9fd73e323ef887f",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.6666667,
+          "sprite_guid": "22d3699d29419ea4b93fe29bbf26ad3f",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.8333334,
+          "sprite_guid": "7dc743fd1f3e9ea41ac519052234b9ae",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.9583333,
+          "sprite_guid": "7dc743fd1f3e9ea41ac519052234b9ae",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_41.asset"
+          }
+        }
+      ]
+    },
+    "RavagerHit": {
+      "clip": "Assets/AnimationClip/RavagerHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d0eea9b43cafddc4faf914ce586405e1",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "d0eea9b43cafddc4faf914ce586405e1",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_52.asset"
+          }
+        }
+      ]
+    },
+    "Ravager_Overworld_RunDown": {
+      "clip": "Assets/AnimationClip/Ravager_Overworld_RunDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "209b4b5a90ec00544bc07acfaadf0167",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "de97c77bb4dba324baa8163a8bc2e6fa",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1e82111bd26636b489e51aa55ce1fb0c",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ad435b414f4f3d94db9dab661f421775",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "51bf6615a912bac469fcaffadeb6fa1e",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c4882878a4afb60439540814801225a0",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "060d41fb4f068454b9a4920711be7bc3",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "ce9b36b78bbed0c429c0ea1b75f3a9d0",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "ce9b36b78bbed0c429c0ea1b75f3a9d0",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "RavagerCastEnd": {
+      "clip": "Assets/AnimationClip/RavagerCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "135388732195d654981066ad25dd7b19",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "952b0c52e693d2842a8b0760c517999c",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "952b0c52e693d2842a8b0760c517999c",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_51.asset"
+          }
+        }
+      ]
+    },
+    "RavagerAttackJump": {
+      "clip": "Assets/AnimationClip/RavagerAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6105e90d2a0884a469ddea9aa6a9bf5b",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "66aa68028c632b6448bfea6ab68e8096",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "13d899fa94dcecd4f89faf86bce668a1",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1e4fb3f006a65af4d803d6ed1244b2cc",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "546253e7d670d5641bbc44d1977063e0",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "546253e7d670d5641bbc44d1977063e0",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_24.asset"
+          }
+        }
+      ]
+    },
+    "RavagerAttack": {
+      "clip": "Assets/AnimationClip/RavagerAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2c31c5455d580f44c85ff6c2414c8815",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1678e57a1ebe98c4cbab03d8cadc0ecf",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "17ba487d21b679d4e878edeaeebf5609",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "79f1cdb2845eaf6448bf3ac22e828a12",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d0c234eada440764d979f1259638f0b0",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "5b6f32795947b4e4788ea9fe27fcacc6",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.41666672,
+          "sprite_guid": "5b6f32795947b4e4788ea9fe27fcacc6",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_30.asset"
+          }
+        }
+      ]
+    },
+    "RavagerJumpBack": {
+      "clip": "Assets/AnimationClip/RavagerJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5797cfaf8c8addb4283ac43f06ed71d8",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "66d981b2de4238f4f9b2b2e5208a8d96",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "252f5fcf2eddacd458dc6e2269232b92",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "252f5fcf2eddacd458dc6e2269232b92",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "Ravager_Overworld_IdleRight": {
+      "clip": "Assets/AnimationClip/Ravager_Overworld_IdleRight.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fd3f5172ecf59c24fa1a52bd8f74650b",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "93a2a32dede82a14dba0d86500cec625",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "92839bbcb9db7004282982b63f590bfe",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a94b4f24c563af24e9dd9fc02f102eb7",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.6666667,
+          "sprite_guid": "db8fe81d2ccb6674889d3de6a9221a74",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.8333334,
+          "sprite_guid": "62525ab73a49be44ca91004c54690de6",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.9583333,
+          "sprite_guid": "62525ab73a49be44ca91004c54690de6",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_13.asset"
+          }
+        }
+      ]
+    },
+    "RavagerCast": {
+      "clip": "Assets/AnimationClip/RavagerCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fa64e2f13d69e4d4db068a9904ec20c1",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.08333331,
+          "sprite_guid": "94cfb30bec2153449baf3b9e5d8e91d3",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.16666663,
+          "sprite_guid": "9c13ae4c62fed2944acb1b1c0b45d84f",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.24999994,
+          "sprite_guid": "08fc331eb7ba50846b4048e79c1d5360",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.3333333,
+          "sprite_guid": "d50b9b4d7e0f372448f441f8f1b18ec2",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "3fe3705dafde12c47b0b7f5e23eb50c1",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.45833346,
+          "sprite_guid": "3fe3705dafde12c47b0b7f5e23eb50c1",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "RavagerCastStart": {
+      "clip": "Assets/AnimationClip/RavagerCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "86d35e3db93cc4a4f82d8dd0b3d680b5",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "194b50ba569c34344a6445e7ceba8d94",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ec6e9979f698d404c982fae9b85b2519",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "49f51a82839504c4a988bac795f0b1a8",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "70269cdf7e27b404a974bf2224838de5",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "d91b5385d0c6b8147ac77dd50e0f4096",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "10c2cd2267f53b34f9ef94cd458e9302",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_43.asset"
+          }
+        }
+      ]
+    },
+    "Ravager_Overworld_IdleUp": {
+      "clip": "Assets/AnimationClip/Ravager_Overworld_IdleUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "59435094662d2ca4dbac4328ade55165",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9a537c473f46fc4408c81183b52566ea",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d472f4735bc67f948b42b7bb4e38f583",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "368334e247fd52f498ec3ac4c597e2bc",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6666667,
+          "sprite_guid": "90a6c344eb32c7e4790bb2945234d3a7",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.8333334,
+          "sprite_guid": "c707ab8d0d6a27846bccc9d960ef0baf",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.9583333,
+          "sprite_guid": "c707ab8d0d6a27846bccc9d960ef0baf",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_27.asset"
+          }
+        }
+      ]
+    },
+    "RavagerCombatIdle": {
+      "clip": "Assets/AnimationClip/RavagerCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "7afbc240a349ecd4ebd7fb2a49f2029a",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8e4d263b30865c440aaff7e46e89c24f",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "fa0be4b58fe1bb14d8d0e346e190d0e5",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "db507f623c2f68242b29ecf5dad30db5",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "71e7a1bcef30f5345b505ac64717bb3b",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "1122c960769836b47855694b33b8d7c6",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "bad71507606f81d4c897f55f66c874c1",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "7b15d282b3c6ebe4b8dfc793c724d3a7",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "ae2683f15a7d34a46bb234e88c0f3760",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "fb101e8d74031444684c8de8b6db1a94",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "7d7a5beecf5265c4ea9f2f7e164a36a8",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "6fb3154192623bd4983a9698edc96a81",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "d6ef9ba5f59e3ba4ead89ecb02802d31",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "94de86fab70e2aa4996d59d93187dac5",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "013a381bc14199c49ad7ca29797a8234",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "e69b862d6138b6049812bf0fdacd6d83",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "25c8ffae514387946a34bb4395df5a62",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "7d713dfa95025e74a9baff52d5c0621b",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "400e4ec0809a2b1499db46f59094ec68",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "9b338b82500b3954e979286354aea2ba",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 1.6250002,
+          "sprite_guid": "9b338b82500b3954e979286354aea2ba",
+          "sprite": {
+            "name": "Ravager_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Battle_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "Ravager_Overworld_RunUp": {
+      "clip": "Assets/AnimationClip/Ravager_Overworld_RunUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e839a4723d6731146b5ccc134d1e9590",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c7ef86f3e0993d14fbe3a5042250822f",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "7396c47c53f603b45b6ce0d7a9a9e078",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "8ee046cc3fd93774ea930caf8b9373d5",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3a96031d5cf015a4688f734789a42ed3",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "451392f58a628e34ea7787bf0560242d",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "bac69560dd72d9641a03589670c18178",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e5560c4437a0ff040b88f01f33370df0",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "e5560c4437a0ff040b88f01f33370df0",
+          "sprite": {
+            "name": "Ravager_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Ravager/sheets/Ravager_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ravager_Overworld_Spritesheet_21.asset"
+          }
+        }
+      ]
+    }
+  }
+}

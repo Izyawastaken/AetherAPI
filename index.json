@@ -1,0 +1,244 @@
+{
+  "monsters": [
+    {
+      "name": "Aethermancer",
+      "prefab": "MonsterAethermancer",
+      "folder": "Aethermancer"
+    },
+    {
+      "name": "Ammit",
+      "prefab": "MonsterAmmit",
+      "folder": "Ammit"
+    },
+    {
+      "name": "Catzerker",
+      "prefab": "MonsterCatzerker",
+      "folder": "Catzerker"
+    },
+    {
+      "name": "Chernobog",
+      "prefab": "MonsterChernobog",
+      "folder": "Chernobog"
+    },
+    {
+      "name": "Chernobog Arm",
+      "prefab": "MonsterChernobogArm_BackArm",
+      "folder": "Chernobog_Arm"
+    },
+    {
+      "name": "Chernobog Arm",
+      "prefab": "MonsterChernobogArm_Base",
+      "folder": "Chernobog_Arm"
+    },
+    {
+      "name": "Chernobog Arm",
+      "prefab": "MonsterChernobogArm_FrontArm",
+      "folder": "Chernobog_Arm"
+    },
+    {
+      "name": "Cherufe",
+      "prefab": "MonsterCherufe",
+      "folder": "Cherufe"
+    },
+    {
+      "name": "Cockatrice",
+      "prefab": "MonsterCockatrice",
+      "folder": "Cockatrice"
+    },
+    {
+      "name": "Dark Elder",
+      "prefab": "MonsterDarkElder",
+      "folder": "Dark_Elder"
+    },
+    {
+      "name": "DisplaySmall",
+      "prefab": "MonsterDisplaySmall",
+      "folder": "DisplaySmall"
+    },
+    {
+      "name": "Djinn",
+      "prefab": "MonsterDjinn",
+      "folder": "Djinn"
+    },
+    {
+      "name": "Domovoy",
+      "prefab": "MonsterDomovoy",
+      "folder": "Domovoy"
+    },
+    {
+      "name": "Gargoyle",
+      "prefab": "MonsterGargoyle",
+      "folder": "Gargoyle"
+    },
+    {
+      "name": "Grimoire",
+      "prefab": "MonsterGrimoire",
+      "folder": "Grimoire"
+    },
+    {
+      "name": "Group",
+      "prefab": "MonsterGroup",
+      "folder": "Group"
+    },
+    {
+      "name": "Hecatoncheires",
+      "prefab": "MonsterHecatoncheires",
+      "folder": "Hecatoncheires"
+    },
+    {
+      "name": "HistoryEntryDisplay",
+      "prefab": "MonsterHistoryEntryDisplay",
+      "folder": "HistoryEntryDisplay"
+    },
+    {
+      "name": "Info_ActionDescription",
+      "prefab": "MonsterInfo_ActionDescription",
+      "folder": "Info_ActionDescription"
+    },
+    {
+      "name": "Info_TraitDescription",
+      "prefab": "MonsterInfo_TraitDescription",
+      "folder": "Info_TraitDescription"
+    },
+    {
+      "name": "Info_XpBarSegment",
+      "prefab": "MonsterInfo_XpBarSegment",
+      "folder": "Info_XpBarSegment"
+    },
+    {
+      "name": "Jotunn",
+      "prefab": "MonsterJotunn",
+      "folder": "Jotunn"
+    },
+    {
+      "name": "Mandragora",
+      "prefab": "MonsterMandragora",
+      "folder": "Mandragora"
+    },
+    {
+      "name": "Medusa",
+      "prefab": "MonsterMedusa",
+      "folder": "Medusa"
+    },
+    {
+      "name": "Mephisto",
+      "prefab": "MonsterMephisto",
+      "folder": "Mephisto"
+    },
+    {
+      "name": "Minokawa",
+      "prefab": "MonsterMinokawa",
+      "folder": "Minokawa"
+    },
+    {
+      "name": "Naga",
+      "prefab": "MonsterNaga",
+      "folder": "Naga"
+    },
+    {
+      "name": "Nixe",
+      "prefab": "MonsterNixe",
+      "folder": "Nixe"
+    },
+    {
+      "name": "Nosferatu",
+      "prefab": "MonsterNosferatu",
+      "folder": "Nosferatu"
+    },
+    {
+      "name": "Ooze",
+      "prefab": "MonsterOoze",
+      "folder": "Ooze"
+    },
+    {
+      "name": "Orthrus",
+      "prefab": "MonsterOrthrus",
+      "folder": "Orthrus"
+    },
+    {
+      "name": "Overview_ActionIcon",
+      "prefab": "MonsterOverview_ActionIcon",
+      "folder": "Overview_ActionIcon"
+    },
+    {
+      "name": "RandomMonster",
+      "prefab": "MonsterRandomMonster",
+      "folder": "RandomMonster"
+    },
+    {
+      "name": "Ravager",
+      "prefab": "MonsterRavager",
+      "folder": "Ravager"
+    },
+    {
+      "name": "?????",
+      "prefab": "MonsterSecretStarter01",
+      "folder": "SecretStarter01"
+    },
+    {
+      "name": "?????",
+      "prefab": "MonsterSecretStarter02",
+      "folder": "SecretStarter02"
+    },
+    {
+      "name": "Serket",
+      "prefab": "MonsterSerket",
+      "folder": "Serket"
+    },
+    {
+      "name": "Shadow",
+      "prefab": "MonsterShadow",
+      "folder": "Shadow"
+    },
+    {
+      "name": "Shambler",
+      "prefab": "MonsterShambler",
+      "folder": "Shambler"
+    },
+    {
+      "name": "Monster Soul",
+      "prefab": "MonsterSoul",
+      "folder": "Monster_Soul"
+    },
+    {
+      "name": "Sphinx",
+      "prefab": "MonsterSphinx",
+      "folder": "Sphinx"
+    },
+    {
+      "name": "Star Spawn",
+      "prefab": "MonsterStarspawn",
+      "folder": "Star_Spawn"
+    },
+    {
+      "name": "Target Dummy",
+      "prefab": "MonsterTargetDummy",
+      "folder": "Target_Dummy"
+    },
+    {
+      "name": "Tatzelwurm",
+      "prefab": "MonsterTatzelwurm",
+      "folder": "Tatzelwurm"
+    },
+    {
+      "name": "Trigger",
+      "prefab": "MonsterTrigger",
+      "folder": "Trigger"
+    },
+    {
+      "name": "Warden",
+      "prefab": "MonsterWarden",
+      "folder": "Warden"
+    },
+    {
+      "name": "Wolpertinger",
+      "prefab": "MonsterWolpertinger",
+      "folder": "Wolpertinger"
+    },
+    {
+      "name": "Wyrmling",
+      "prefab": "MonsterWyrmling",
+      "folder": "Wyrmling"
+    }
+  ]
+}

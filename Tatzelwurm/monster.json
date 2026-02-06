@@ -1,0 +1,2601 @@
+{
+  "name": "Tatzelwurm",
+  "prefab": "MonsterTatzelwurm",
+  "prefab_path": "Assets/GameObject/MonsterTatzelwurm.prefab",
+  "data": {
+    "name": "Tatzelwurm",
+    "ids": {
+      "ID": 1007,
+      "MonID": 6
+    },
+    "stats": {
+      "BaseMaxHealth": 30,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194139795456,
+      "ElementsOverride": 13194140057600
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 0,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Critical",
+      "Regeneration",
+      "Poison"
+    ],
+    "types_override": [
+      "Critical",
+      "Dodge",
+      "Poison"
+    ],
+    "traits": {
+      "signature": "Primeval Blight",
+      "traits": [
+        {
+          "name": "Toxic Earth",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Toxic Slash",
+        "Fire Claws"
+      ],
+      "start_override": [
+        "Toxic Slash",
+        "Flurry"
+      ],
+      "reset_action": [
+        "ResetActionPoison"
+      ],
+      "scripted": [
+        "Envenom",
+        "Speed of Sound",
+        "Smog",
+        "Fire Storm",
+        "Fire Claws",
+        "Flurry",
+        "Toxic Slash"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 25
+        },
+        {
+          "name": "Poison Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Hit",
+          "multiplier": 1
+        }
+      ],
+      "void_tier3": [
+        {
+          "name": "Poison Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Hit",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Aether",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 25
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 15
+        },
+        {
+          "name": "Poison Damage",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterTatzelwurm",
+      "path": "Assets/GameObject/MonsterTatzelwurm.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "ccd233fb1977b424fa656e3c2076faf9",
+      "file": "Database/Tatzelwurm/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Tatzelwurm",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Tatzelwurm/sheets/Portrait_Tatzelwurm.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Tatzelwurm.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "c854bfbf9bc70a843a467a5682c47f1d",
+      "file": "Database/Tatzelwurm/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_TatzelwurmPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Tatzelwurm/sheets/Trait_TatzelwurmPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_TatzelwurmPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "07dab45fd39e86146b48be83ca5c03ea",
+      "file": "Database/Tatzelwurm/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "TatzSpritesheet_29",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 384,
+          "y": 128,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.23
+        },
+        "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/TatzSpritesheet_29.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "e4e3981fe7b0cf741915deac50d0d447",
+      "file": "Database/Tatzelwurm/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Tatzelwurm_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.23
+        },
+        "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Tatzelwurm_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "103700c61ceb5e34f8a694737aad6930",
+      "file": "Database/Tatzelwurm/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Tatzelwurm_Exploration_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.3046875
+        },
+        "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "d5d62f03ff0e6da4cb3df8147b5a744c",
+      "file": "Database/Tatzelwurm/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Tatzelwurm_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.3046875
+        },
+        "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Tatzelwurm_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "86b45e6b39dc38d4d8c2e5cda3a23b2e",
+      "file": "Database/Tatzelwurm/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Tatzelwurm_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Tatzelwurm/sheets/Portrait_Tatzelwurm_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Tatzelwurm_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "TatzelwurmAttack": {
+      "clip": "Assets/AnimationClip/TatzelwurmAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "56fa1e2d6a1dd9e4b8e173eb08143df2",
+          "sprite": {
+            "name": "TatzSpritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "b3a3ffc90e55e2d438285d6b2a707c4e",
+          "sprite": {
+            "name": "TatzSpritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.08333333,
+          "sprite_guid": "b3a3ffc90e55e2d438285d6b2a707c4e",
+          "sprite": {
+            "name": "TatzSpritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_17.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmIdleTop": {
+      "clip": "Assets/AnimationClip/TatzelwurmIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "103700c61ceb5e34f8a694737aad6930",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "7958e8cdb24e5c940a4500fc4a10e6a0",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "a6cc6b583cbfd874b942b4e58f2636f0",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "67e36614064dcac42ada499cfcf40f8f",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "dde6a8691e192524d9c315ac1997b866",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "7d846e4918970da468c61883d7eeb103",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "cdaff462ed023c74fb17cfceef6fad6f",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "f5f1751085a14f344bf1c5281d00722a",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "f9d3624bf4b19084e82c13daa9b2a9c6",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "fb220c1dba8ce8840b359bfea7319f0f",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "fb220c1dba8ce8840b359bfea7319f0f",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmWalkHorizontal": {
+      "clip": "Assets/AnimationClip/TatzelwurmWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5fd5b99ab35545947892ffd8227e8182",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "0deb2714fda3f2f459a910ae6a886f82",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "a6a70b43504aa224293ed9d30ec62bcf",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "5daeb0a82b3a0b24997c86061432c96e",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "bdb67b6bad721434595c81629dd6d804",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f1435e4c28dbdc24e8cb19b5331efb91",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "6b01e2fc7b2daaa4d908576c58583b6a",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "2583f18b025d33e418925e3f0c1fd100",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "53e08965b3c5f9449aa9e570b6737a04",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "854b78e3d725b39459cf79c544744e01",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "854b78e3d725b39459cf79c544744e01",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmWalkDown": {
+      "clip": "Assets/AnimationClip/TatzelwurmWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a41da34ce5b865f4b8c655bd7775e39a",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "eaf5cf312f24a8e4d83cd72b97db6b99",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "12ebea1d0fe1d8c4a8cb7635998d779e",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "e9e1e60dc020b9849ba1ed61afe9a6d2",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "168fdb01da7002a4c91d2d04d1fc6c0c",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c9859b729e1e22947b8b685ac6ecbd90",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "fad75319a8e5e77448bbb789705072f9",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "e65225f66e7a4f648b2b63e3bbf90bde",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "972a2f4ac42897d428024b447b90845c",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "10dfe34e0bf4c1e459459cb1f8510608",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "10dfe34e0bf4c1e459459cb1f8510608",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmWalkTop": {
+      "clip": "Assets/AnimationClip/TatzelwurmWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "28c242e6513fb324d9b5d798333b10e1",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "31143eeaf9576dc4aa9d83d8c0f06b0e",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "37ecc108a12dee64a94d869993dce054",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "44e5d4e5d0165cf408825aa528c13d38",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "9d63cd7dbce1e0f49b1c40586568450e",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0b4a3d37210bb794abecf3331bb227ed",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "790be9282a709e74c8628a2d60bc0ee9",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "7bc5fa654efd6e0449b704b937e8d847",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "98d291af41e166f45939cacea05ab047",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "e6b2438cd0c393c4bac8552533332b65",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "e6b2438cd0c393c4bac8552533332b65",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmHit": {
+      "clip": "Assets/AnimationClip/TatzelwurmHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b808be8de4128cd429d2ab4379619ecc",
+          "sprite": {
+            "name": "TatzSpritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "b808be8de4128cd429d2ab4379619ecc",
+          "sprite": {
+            "name": "TatzSpritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_37.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmCastStart": {
+      "clip": "Assets/AnimationClip/TatzelwurmCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bf555ca653ab9f140adef061eb3bcee9",
+          "sprite": {
+            "name": "TatzSpritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "00b66a9a18fddf14abdba108e036eff7",
+          "sprite": {
+            "name": "TatzSpritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1954f0819b216024190d215dbd73419b",
+          "sprite": {
+            "name": "TatzSpritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "07dab45fd39e86146b48be83ca5c03ea",
+          "sprite": {
+            "name": "TatzSpritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "07dab45fd39e86146b48be83ca5c03ea",
+          "sprite": {
+            "name": "TatzSpritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmAttackJump": {
+      "clip": "Assets/AnimationClip/TatzelwurmAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a678135b97a56724796356f11dab3c4f",
+          "sprite": {
+            "name": "TatzSpritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d067f2262b96dde4d8cb350967fc0e59",
+          "sprite": {
+            "name": "TatzSpritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "cd840def93cc6dd4eb738c3018f36d60",
+          "sprite": {
+            "name": "TatzSpritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "fe8edd55624f09b498299fda97770a73",
+          "sprite": {
+            "name": "TatzSpritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "fe8edd55624f09b498299fda97770a73",
+          "sprite": {
+            "name": "TatzSpritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_15.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmIdleDown": {
+      "clip": "Assets/AnimationClip/TatzelwurmIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b42f3c332d7234a468303a4c8fe0079a",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "b6b2e793aaecf0e4da2caa1b9e8a8854",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "0615bbc5f3653c34395579c8b0eaed1a",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "a493b019c41ff7947811f323d47e31e0",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "c01e303a7d8c9ae40b4fe51f421bde9d",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "900574c7c153f2e4e9ecc80b949a7938",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "4563407de63084746b442f500db27659",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "a1a655c514f20b5448322898e3f44667",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "e0ac621f8bd6cc5409a03bcfb722947b",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "f636c421525c9a94fb04acfc25051ff0",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "f636c421525c9a94fb04acfc25051ff0",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmCombatIdle": {
+      "clip": "Assets/AnimationClip/TatzelwurmCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0887ffd9a81b05341973be258150f05c",
+          "sprite": {
+            "name": "TatzSpritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c74fbe6dd85ad6d4683900bd1a714303",
+          "sprite": {
+            "name": "TatzSpritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f93f15a509e387c42ad5d1b74d639695",
+          "sprite": {
+            "name": "TatzSpritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6cb9039c9d23bab43a3d20488467fb24",
+          "sprite": {
+            "name": "TatzSpritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "344e9aad6122fb24f8230892ce3b9642",
+          "sprite": {
+            "name": "TatzSpritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "7a6066b6b6eda3e479629e57d67f1539",
+          "sprite": {
+            "name": "TatzSpritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "9a29cd7f3c4723243b85288faa069cfd",
+          "sprite": {
+            "name": "TatzSpritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "3f51470efd695e74c97ec085a723ad8e",
+          "sprite": {
+            "name": "TatzSpritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "aa435a582700b564c993dfefc9d7ee05",
+          "sprite": {
+            "name": "TatzSpritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "7e228aa4e40711042a0dcc2df75cc3f8",
+          "sprite": {
+            "name": "TatzSpritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "69adffb9e6200c241883f9aa87fe8d89",
+          "sprite": {
+            "name": "TatzSpritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "9f4390cd5809b7d4290ad84fd3eeabf4",
+          "sprite": {
+            "name": "TatzSpritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "9f4390cd5809b7d4290ad84fd3eeabf4",
+          "sprite": {
+            "name": "TatzSpritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmIdleHorizontal": {
+      "clip": "Assets/AnimationClip/TatzelwurmIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "17c55eb682c4b5748a15c2f42dbc1eeb",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "0d96751e2e62c8747b1fb6d55121c047",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "f95295135c1a68944a234db05a0fd978",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "2bd38cc7e06b89a4897e1f1ba62cecc3",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "19e69ca1177f249489cdd077948daa82",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "b1700ca7b978adb429bb2f2ffa8799b8",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "8c874619685ccfc4dbca1e58055db97e",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "e9161ba88ab84534987e32f831a5e2df",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "ea31834454a492140b235974662ea5bf",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "7241ef538f703854a860b90cfacf6a68",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "7241ef538f703854a860b90cfacf6a68",
+          "sprite": {
+            "name": "Tatzelwurm_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3046875
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Tatzelwurm_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmJumpBack": {
+      "clip": "Assets/AnimationClip/TatzelwurmJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9554bdd2b4542614a9292cf4087a87e9",
+          "sprite": {
+            "name": "TatzSpritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.08333333,
+          "sprite_guid": "14def16551e1d984aac55b60025b7f94",
+          "sprite": {
+            "name": "TatzSpritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666672,
+          "sprite_guid": "e08fdb6448156504485193befc6a64c6",
+          "sprite": {
+            "name": "TatzSpritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25000006,
+          "sprite_guid": "4be52a924de0edc4abef18dfb19cf8a7",
+          "sprite": {
+            "name": "TatzSpritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.3333334,
+          "sprite_guid": "c7c8dee600565644bac17b83d95f35be",
+          "sprite": {
+            "name": "TatzSpritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.41666675,
+          "sprite_guid": "1b5a0351d5705e4478c512e1ec518537",
+          "sprite": {
+            "name": "TatzSpritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.45833346,
+          "sprite_guid": "1b5a0351d5705e4478c512e1ec518537",
+          "sprite": {
+            "name": "TatzSpritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_25.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmAttackEnd": {
+      "clip": "Assets/AnimationClip/TatzelwurmAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ae084fa3cd8c7d042ad009fcdb14c184",
+          "sprite": {
+            "name": "TatzSpritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "932789b49d975da4ca98bd30c968856f",
+          "sprite": {
+            "name": "TatzSpritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "932789b49d975da4ca98bd30c968856f",
+          "sprite": {
+            "name": "TatzSpritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmCastEnd": {
+      "clip": "Assets/AnimationClip/TatzelwurmCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3325041bcfc65e14389a42b499ad0710",
+          "sprite": {
+            "name": "TatzSpritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "db371218729961d43a7e1569ca2f2fe7",
+          "sprite": {
+            "name": "TatzSpritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ff9f2d25c923d6947a7196a8502b5ae4",
+          "sprite": {
+            "name": "TatzSpritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "ff9f2d25c923d6947a7196a8502b5ae4",
+          "sprite": {
+            "name": "TatzSpritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_36.asset"
+          }
+        }
+      ]
+    },
+    "TatzelwurmCast": {
+      "clip": "Assets/AnimationClip/TatzelwurmCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0f4da63746edabe4b9b0cdbb25d06f64",
+          "sprite": {
+            "name": "TatzSpritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "6edd4d4e211264c42b8271194ee244ba",
+          "sprite": {
+            "name": "TatzSpritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b15831c76a0a8f946839a7e706d610f2",
+          "sprite": {
+            "name": "TatzSpritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9f5476303109d264e86fefca9ba60a57",
+          "sprite": {
+            "name": "TatzSpritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "9f5476303109d264e86fefca9ba60a57",
+          "sprite": {
+            "name": "TatzSpritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Tatzelwurm/sheets/Tatzelwurm_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TatzSpritesheet_33.asset"
+          }
+        }
+      ]
+    }
+  }
+}

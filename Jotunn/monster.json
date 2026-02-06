@@ -1,0 +1,3085 @@
+{
+  "name": "Jotunn",
+  "prefab": "MonsterJotunn",
+  "prefab_path": "Assets/GameObject/MonsterJotunn.prefab",
+  "data": {
+    "name": "Jotunn",
+    "ids": {
+      "ID": 273,
+      "MonID": 1
+    },
+    "stats": {
+      "BaseMaxHealth": 45,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 524288,
+      "ElementsOverride": 13194140057600
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 1,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Tank",
+      "Shield",
+      "Age"
+    ],
+    "types_override": [
+      "Tank",
+      "Shield",
+      "Poison"
+    ],
+    "traits": {
+      "signature": "Rime Wind",
+      "traits": [
+        {
+          "name": "Shielding Winds",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Roar",
+        "Ice Smash"
+      ],
+      "start_override": [
+        "Roar",
+        "Crystal Smash"
+      ],
+      "reset_action": [
+        "ResetActionShield"
+      ],
+      "scripted": [
+        "Glacier Shield",
+        "Reflective Strike",
+        "Roar",
+        "Ice Smash",
+        "Crystal Smash"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Shield Generator",
+          "multiplier": 2
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Shielding",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Shield Generator",
+          "multiplier": 2
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Poison Damage",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterJotunn",
+      "path": "Assets/GameObject/MonsterJotunn.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "813352afd8bb6634e92dac7f214db3ae",
+      "file": "Database/Jotunn/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Jotunn",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Jotunn/sheets/Portrait_Jotunn.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Jotunn.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "251db13b6451cbf4292378b5189d8c75",
+      "file": "Database/Jotunn/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_JotunnPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Jotunn/sheets/Trait_JotunnPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_JotunnPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "61b4af42a059e7344999bbaa07744d85",
+      "file": "Database/Jotunn/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "JotunnSpriteSheet_6",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 984,
+          "y": 1148,
+          "width": 164,
+          "height": 164
+        },
+        "pivot": {
+          "x": 0.58,
+          "y": 0.23
+        },
+        "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+        "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_6.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "54aae3f4e3676194f8e12f848a3699db",
+      "file": "Database/Jotunn/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Jotunn_Battle_SpriteSheet_Shifted_16",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 984,
+          "y": 984,
+          "width": 164,
+          "height": 164
+        },
+        "pivot": {
+          "x": 0.58,
+          "y": 0.23
+        },
+        "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Jotunn_Battle_SpriteSheet_Shifted_16.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "a020b038031c6e647959eb11173b94a2",
+      "file": "Database/Jotunn/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Jotunn_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.52,
+          "y": 0.17
+        },
+        "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "c433093c857e51841a36a0a5fc0d365d",
+      "file": "Database/Jotunn/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Jotunn_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.17
+        },
+        "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Jotunn_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "d78dc4ce30fbcc44ab5b0e44092db5a6",
+      "file": "Database/Jotunn/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Jotunn_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Jotunn/sheets/Portrait_Jotunn_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Jotunn_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "JotunnWalkDown": {
+      "clip": "Assets/AnimationClip/JotunnWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cb75e1b770ee81f41a01eae35cac9f84",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f73a668371d3bc840bebabe89a2697ac",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "7d8685d730cfe1a4180b66608effb729",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "bd8cb7649d2cb0646be3f39c7ecf9027",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c1ebe772b604345418483b7d242939d2",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "1f497c7596cf1514da6d2a7dd65f2d14",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f32c1f998504a01419d5e99a86440f48",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "c616ecd4f73d3a345a9269bd7ac9aa8c",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "ee27a37049d3c9f4895c2eda120da9b0",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "4a105de8f19ed88408c5920cf0e92afd",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "4a105de8f19ed88408c5920cf0e92afd",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "JotunnCastStart": {
+      "clip": "Assets/AnimationClip/JotunnCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "55a139fe482ed8f49bdc9c65dbb9e643",
+          "sprite": {
+            "name": "JotunnSpriteSheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_47.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d68c30380620af547874269ef99f7e77",
+          "sprite": {
+            "name": "JotunnSpriteSheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_48.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f9e7d9924cf0bab458a4dd7482c1f73c",
+          "sprite": {
+            "name": "JotunnSpriteSheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_49.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "dd24677486c438d4f8ea3b2131148489",
+          "sprite": {
+            "name": "JotunnSpriteSheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_50.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "645d2c307eefe6f47a6ca8082b1f13c5",
+          "sprite": {
+            "name": "JotunnSpriteSheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_51.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "ebd52de48fc794e49b815f29ae7dee3f",
+          "sprite": {
+            "name": "JotunnSpriteSheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_52.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "bfffe926faf588443819fc014dc135d8",
+          "sprite": {
+            "name": "JotunnSpriteSheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_53.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "bfffe926faf588443819fc014dc135d8",
+          "sprite": {
+            "name": "JotunnSpriteSheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_53.asset"
+          }
+        }
+      ]
+    },
+    "JotunnIdleTop": {
+      "clip": "Assets/AnimationClip/JotunnIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a020b038031c6e647959eb11173b94a2",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ba9aa72c845c3f54886cce3e6018ced1",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "4aa12e45676e4cf449f3870a96ee00d8",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ffa82d22a622fe4458b82e3c70cd01b3",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "0354e78c32a38c3458b1b597ff70bebc",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "fa8d86c7f24fc66498c76ec041ad16c8",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "d2045fc1b12c64944ae0a3e371338fcf",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "7ca17f5cced25cd4b997c743c8e9cd4f",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "2bf99934a95f6f8478eadfd26e3f88b0",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "996e6aaf399832041944ae96d437c3df",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "996e6aaf399832041944ae96d437c3df",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "JotunnWalkTop": {
+      "clip": "Assets/AnimationClip/JotunnWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f9dbad4fe79318f4dab822fa8aebb105",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "225716fba600dd549873056e7b884d23",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "55da9c2d6ac4620498d9d5af012f5e73",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "fa492b74929bdce429f859b077ce9865",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "469bcd35cf12ca84ea7a9e43923582e9",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c2086d0658967a04ca34373099dd5711",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f957730b64e489a459de24bea2d33ede",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "03d2c3b8d2d10db4993e4b226f0ea7e0",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "f550518b9f0f69d459d53ec287d31b73",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "a22c483256403c4419e15652a62aa488",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "a22c483256403c4419e15652a62aa488",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "JotunnAttack": {
+      "clip": "Assets/AnimationClip/JotunnAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "33b780463e0dd2a49b2fb94dac523f0f",
+          "sprite": {
+            "name": "JotunnSpriteSheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_37.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "b367ca84e073b584cb3a6da9fe054e80",
+          "sprite": {
+            "name": "JotunnSpriteSheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_38.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "d7b8e66e4c5a8cf4e89c72c90f64111e",
+          "sprite": {
+            "name": "JotunnSpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_39.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "4ad8721b174df954fb7d647a5f042ae5",
+          "sprite": {
+            "name": "JotunnSpriteSheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_40.asset"
+          }
+        },
+        {
+          "time": 0.49999997,
+          "sprite_guid": "4ad8721b174df954fb7d647a5f042ae5",
+          "sprite": {
+            "name": "JotunnSpriteSheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_40.asset"
+          }
+        }
+      ]
+    },
+    "JotunnIdleHorizontal": {
+      "clip": "Assets/AnimationClip/JotunnIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9362bff625b27df4dbe43c7636c7b6ce",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5904b3cac0d9f594c962c9c6a83f3063",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a762742ed53fc114b9836b703b257c4e",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "3ddfb1deaeafcbb4bba6ca2aa37f450e",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "796aad943d223644ba95405564484986",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "92f0bf22e07b4564199a49a8c04b3c32",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "8263026a6537572419cad6db9d3e0ef5",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "78c5df9068d99cb4ea6a5466d7dc9d20",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "c539b1494c4173d47a20e00436ad400f",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "bb328661092f8754a9fc6a77f9b8a2b3",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "bb328661092f8754a9fc6a77f9b8a2b3",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "JotunnWalkHorizontal": {
+      "clip": "Assets/AnimationClip/JotunnWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3105683e1e904fa4db6e29d14f70f1b7",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7a7219128f0d18240a905ebcb7aed8ea",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "56051058e74308f49b3bf608e0379494",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "fd0846da4f9096342b832f7c3dd847f8",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "938178ee45bc87345b76c846850f0dbe",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "908c5ea0656cc4c48ba78f21860f71e4",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f218ecff2af583e43a4a03e4003c52e0",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "1b40c4ed5cf8ba24e881a4d39f396705",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "d89a8bd0c6c75e645a0cb82cc9c83b3a",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "f165429a6eb8bfb49ac1ae8282dcae7f",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "f165429a6eb8bfb49ac1ae8282dcae7f",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "JotunnAttackJump": {
+      "clip": "Assets/AnimationClip/JotunnAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e7a4aa0b066d84146828e3c91592dbb0",
+          "sprite": {
+            "name": "JotunnSpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_32.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "9f88f1f19808be84da75223738333f87",
+          "sprite": {
+            "name": "JotunnSpriteSheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_33.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "275c21284de897248856dcab73061a43",
+          "sprite": {
+            "name": "JotunnSpriteSheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_34.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ff8dcd6a387bf4240bba661f6b8b198a",
+          "sprite": {
+            "name": "JotunnSpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_35.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "9f8c99ad716066847b27805c972f532d",
+          "sprite": {
+            "name": "JotunnSpriteSheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_36.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "9f8c99ad716066847b27805c972f532d",
+          "sprite": {
+            "name": "JotunnSpriteSheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_36.asset"
+          }
+        }
+      ]
+    },
+    "JotunnJumpBack": {
+      "clip": "Assets/AnimationClip/JotunnJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0855f877ddc42e548b9807d3e4a42250",
+          "sprite": {
+            "name": "JotunnSpriteSheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_45.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d5a11e76a7b62a6459b534a95a42af7a",
+          "sprite": {
+            "name": "JotunnSpriteSheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_46.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "d5a11e76a7b62a6459b534a95a42af7a",
+          "sprite": {
+            "name": "JotunnSpriteSheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_46.asset"
+          }
+        }
+      ]
+    },
+    "JotunnAttackEnd": {
+      "clip": "Assets/AnimationClip/JotunnAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bc3dd2dba5713dd4192f0232de3f8cdb",
+          "sprite": {
+            "name": "JotunnSpriteSheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_41.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "385fb6110af228f47931a3d83a0453df",
+          "sprite": {
+            "name": "JotunnSpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_42.asset"
+          }
+        },
+        {
+          "time": 0.124999985,
+          "sprite_guid": "385fb6110af228f47931a3d83a0453df",
+          "sprite": {
+            "name": "JotunnSpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_42.asset"
+          }
+        }
+      ]
+    },
+    "JotunnCastEnd": {
+      "clip": "Assets/AnimationClip/JotunnCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0b7cd5f9b6dda2044bf61713259ab7ed",
+          "sprite": {
+            "name": "JotunnSpriteSheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_62.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c2c2d6d0d99eb63498336e6a373f1bf5",
+          "sprite": {
+            "name": "JotunnSpriteSheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_63.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "c2c2d6d0d99eb63498336e6a373f1bf5",
+          "sprite": {
+            "name": "JotunnSpriteSheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_63.asset"
+          }
+        }
+      ]
+    },
+    "JotunnIdleDown": {
+      "clip": "Assets/AnimationClip/JotunnIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c9ad6a1544da170458063b218e08c81e",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0486df14e2fb8aa4bae968358e6868af",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ea25de987a43ed04d9fef085860c9467",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7005fb70356ea684e803613080ca3f52",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "80c3f299d6a3211449ab270e8dab8452",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "452104e1b3a02f44bb70db10ddf4202c",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "b9e2413363893ec4ca214d62022f051a",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "df66adcc880c6a845a1cddbd3b651931",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "96b3f0c275d04104c885f73416a0c77b",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "fec0c540781720943ad549dcf7b5aace",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "fec0c540781720943ad549dcf7b5aace",
+          "sprite": {
+            "name": "Jotunn_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.52,
+              "y": 0.17
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Jotunn_Overworld_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "JotunnCast": {
+      "clip": "Assets/AnimationClip/JotunnCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "26023bb49e53ecb489d07f7ea8c2bd3f",
+          "sprite": {
+            "name": "JotunnSpriteSheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_54.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "458fcf702526b3a46850c06d084383b8",
+          "sprite": {
+            "name": "JotunnSpriteSheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_55.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "0f76299d855d2d142b87b998734970e4",
+          "sprite": {
+            "name": "JotunnSpriteSheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_56.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ee6ffe9c4a7bf7740bff8a74d806f316",
+          "sprite": {
+            "name": "JotunnSpriteSheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_57.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "83faa29bb9999e746ada61b7ad607971",
+          "sprite": {
+            "name": "JotunnSpriteSheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_58.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "db239f07d8d38024d80b41b4be89db60",
+          "sprite": {
+            "name": "JotunnSpriteSheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_59.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ee92cb48949468642837db855ab70098",
+          "sprite": {
+            "name": "JotunnSpriteSheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_60.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "a093e6359a038e54f96a219e5fcd2e1c",
+          "sprite": {
+            "name": "JotunnSpriteSheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_61.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "a093e6359a038e54f96a219e5fcd2e1c",
+          "sprite": {
+            "name": "JotunnSpriteSheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_61.asset"
+          }
+        }
+      ]
+    },
+    "JotunnHit": {
+      "clip": "Assets/AnimationClip/JotunnHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "4d71d7d1cfd5f9f4f93c515d2b031c21",
+          "sprite": {
+            "name": "JotunnSpriteSheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_64.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "4d71d7d1cfd5f9f4f93c515d2b031c21",
+          "sprite": {
+            "name": "JotunnSpriteSheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_64.asset"
+          }
+        }
+      ]
+    },
+    "JotunnCombatIdle": {
+      "clip": "Assets/AnimationClip/JotunnCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2c8ea64b08cdba044a2710d76be622b6",
+          "sprite": {
+            "name": "JotunnSpriteSheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8577529fbc33d86418acb1e2b9a50ee7",
+          "sprite": {
+            "name": "JotunnSpriteSheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "3153ddab2ed2137459e0a4ac118726d7",
+          "sprite": {
+            "name": "JotunnSpriteSheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "40e10dde0ac1d3b41af9038de2f0784f",
+          "sprite": {
+            "name": "JotunnSpriteSheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c36d0cc3259e93b42821bd6d644993c9",
+          "sprite": {
+            "name": "JotunnSpriteSheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "42d1194fa66705c42b2d2c6e435e5f75",
+          "sprite": {
+            "name": "JotunnSpriteSheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "61b4af42a059e7344999bbaa07744d85",
+          "sprite": {
+            "name": "JotunnSpriteSheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e7f49f6570d347740924ba4a00f8304a",
+          "sprite": {
+            "name": "JotunnSpriteSheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "6a99f28c398c5be4996260a3263a7642",
+          "sprite": {
+            "name": "JotunnSpriteSheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "699bf19f74f41584e8a55b08ba5baf90",
+          "sprite": {
+            "name": "JotunnSpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 1148,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "01139f4e2fc2b574da64e40a6bd9d9f0",
+          "sprite": {
+            "name": "JotunnSpriteSheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "d5002ab5ad0bf1c429c54979de790a17",
+          "sprite": {
+            "name": "JotunnSpriteSheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "8477f421e4d6ba044b4d482f385584b4",
+          "sprite": {
+            "name": "JotunnSpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "9dfd4ebeb9d675b4f9f7726097cb9cae",
+          "sprite": {
+            "name": "JotunnSpriteSheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "21f2446bc098fa442b84ba9677345138",
+          "sprite": {
+            "name": "JotunnSpriteSheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "bf66e60ca93df4b4e933a64cf5361b4c",
+          "sprite": {
+            "name": "JotunnSpriteSheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_15.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "be65b0f4b9a849e44938a21894f0c971",
+          "sprite": {
+            "name": "JotunnSpriteSheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_16.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "48cd94e7c6cef8447a0979434f5d8656",
+          "sprite": {
+            "name": "JotunnSpriteSheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_17.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "eab761d6e53137e438480b42f6c2809d",
+          "sprite": {
+            "name": "JotunnSpriteSheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_18.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "535a49c194cf8914da3299a4f58adbdb",
+          "sprite": {
+            "name": "JotunnSpriteSheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_19.asset"
+          }
+        },
+        {
+          "time": 1.6666669,
+          "sprite_guid": "5857034c0cb70674aa9096adb0084846",
+          "sprite": {
+            "name": "JotunnSpriteSheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_20.asset"
+          }
+        },
+        {
+          "time": 1.7500002,
+          "sprite_guid": "2f04057d9956ff54089cd4c2e3275019",
+          "sprite": {
+            "name": "JotunnSpriteSheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_21.asset"
+          }
+        },
+        {
+          "time": 1.8333336,
+          "sprite_guid": "af01d3edda1a4d949a32a233eb90eac9",
+          "sprite": {
+            "name": "JotunnSpriteSheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_22.asset"
+          }
+        },
+        {
+          "time": 1.916667,
+          "sprite_guid": "748936daee133de46a7252de4df7e2f8",
+          "sprite": {
+            "name": "JotunnSpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_23.asset"
+          }
+        },
+        {
+          "time": 2.0000002,
+          "sprite_guid": "67c351542a487f840926315b5b43f2ad",
+          "sprite": {
+            "name": "JotunnSpriteSheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_24.asset"
+          }
+        },
+        {
+          "time": 2.0833335,
+          "sprite_guid": "cec1863b82ecab341804e9e218c0219b",
+          "sprite": {
+            "name": "JotunnSpriteSheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_25.asset"
+          }
+        },
+        {
+          "time": 2.1666667,
+          "sprite_guid": "bbed04143748d0d42aab7325a2e5903b",
+          "sprite": {
+            "name": "JotunnSpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_26.asset"
+          }
+        },
+        {
+          "time": 2.25,
+          "sprite_guid": "61d006814dd4351419899b31b7a8b29f",
+          "sprite": {
+            "name": "JotunnSpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_27.asset"
+          }
+        },
+        {
+          "time": 2.3333333,
+          "sprite_guid": "8f4c76f506fe443438301ee3c9f45a96",
+          "sprite": {
+            "name": "JotunnSpriteSheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_28.asset"
+          }
+        },
+        {
+          "time": 2.4166665,
+          "sprite_guid": "b03cc3fe8dcf0ea49880ec9c94946f83",
+          "sprite": {
+            "name": "JotunnSpriteSheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_29.asset"
+          }
+        },
+        {
+          "time": 2.4999998,
+          "sprite_guid": "0f4f1d8a6d46e7f4d8dc84ef5d9c7770",
+          "sprite": {
+            "name": "JotunnSpriteSheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_30.asset"
+          }
+        },
+        {
+          "time": 2.583333,
+          "sprite_guid": "2598ed9c7203d964fa7e853377600bb3",
+          "sprite": {
+            "name": "JotunnSpriteSheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_31.asset"
+          }
+        },
+        {
+          "time": 2.6249995,
+          "sprite_guid": "2598ed9c7203d964fa7e853377600bb3",
+          "sprite": {
+            "name": "JotunnSpriteSheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.58,
+              "y": 0.23
+            },
+            "sheet": "Database/Jotunn/sheets/Jotunn_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/JotunnSpriteSheet_31.asset"
+          }
+        }
+      ]
+    }
+  }
+}

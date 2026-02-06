@@ -1,0 +1,4627 @@
+{
+  "name": "Shambler",
+  "prefab": "MonsterShambler",
+  "prefab_path": "Assets/GameObject/MonsterShambler.prefab",
+  "data": {
+    "name": "Shambler",
+    "ids": {
+      "ID": 1317,
+      "MonID": 19
+    },
+    "stats": {
+      "BaseMaxHealth": 50,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 524288,
+      "ElementsOverride": 13194140057600
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 1,
+          "Hits": 3.5
+        }
+      ],
+      "boss_stagger": [
+        {
+          "Element": 0,
+          "Hits": 3.5
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Tank",
+      "Aether",
+      "Age"
+    ],
+    "types_override": [
+      "Tank",
+      "Aether",
+      "Power"
+    ],
+    "traits": {
+      "signature": "Breach The Void",
+      "traits": [
+        {
+          "name": "Cosmic Wisdom",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Momentum",
+          "min_difficulty": 2,
+          "shift_restriction": 1
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Brace",
+        "Drift Punch"
+      ],
+      "start_override": [
+        "Mineralize",
+        "Hurricane Punch"
+      ],
+      "reset_action": [
+        "ResetActionAether"
+      ],
+      "scripted": [
+        "Wild Ritual",
+        "Dust Strike",
+        "Whirlpool",
+        "Drift Punch",
+        "Brace",
+        "Reflective Strike",
+        "Mineralize",
+        "Hurricane Punch"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Wild Conversion",
+          "multiplier": 1
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Corruption Cleanse",
+          "multiplier": 2
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        }
+      ],
+      "champion": [
+        {
+          "name": "Aether",
+          "multiplier": 2
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterShambler",
+      "path": "Assets/GameObject/MonsterShambler.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "acc862adc905ea146888bf653e029d3f",
+      "file": "Database/Shambler/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_shambler",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Shambler/sheets/Portrait_shambler.png",
+        "sprite_asset": "Assets/Sprite/Portrait_shambler.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "0bf663a58a991b14a9429b662ba73512",
+      "file": "Database/Shambler/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_ShamblerPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Shambler/sheets/Trait_ShamblerPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_ShamblerPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "42a4917f90cbd0947b78d9e831a2fc99",
+      "file": "Database/Shambler/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Shambler_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 1980,
+          "width": 164,
+          "height": 180
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.2
+        },
+        "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "f5ae41d6a94a3e2478e522a957ed53ba",
+      "file": "Database/Shambler/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Shambler_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 1980,
+          "width": 164,
+          "height": 180
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.2
+        },
+        "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Shambler_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "5211e903a10b7e04ca3722f2ee358dee",
+      "file": "Database/Shambler/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Shambler_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 768,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.234375
+        },
+        "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "e8489c8ee2af2e54690e824f1000e33a",
+      "file": "Database/Shambler/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Shambler_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 768,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.234375
+        },
+        "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Shambler_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "ProjectileSpriteSource": {
+      "sprite_guid": "a62f1fbd03595b44e84c8b7342d31d3e",
+      "file": "Database/Shambler/icons/ProjectileSpriteSource.png",
+      "sprite": {
+        "name": "Shambler_PortalArm_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 130,
+          "width": 138,
+          "height": 130
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Shambler/sheets/Shambler_PortalArm_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Shambler_PortalArm_Spritesheet_0.asset"
+      }
+    },
+    "ProjectileSpriteReplace": {
+      "sprite_guid": "39552135d4803dd4988589e636d53394",
+      "file": "Database/Shambler/icons/ProjectileSpriteReplace.png",
+      "sprite": {
+        "name": "Shambler_PortalArm_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 130,
+          "width": 138,
+          "height": 130
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Shambler/sheets/Shambler_PortalArm_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Shambler_PortalArm_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "f173e19fd2a071a4a8fa95b09f380b82",
+      "file": "Database/Shambler/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Shambler_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Shambler/sheets/Portrait_Shambler_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Shambler_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "ShamblerCast": {
+      "clip": "Assets/AnimationClip/ShamblerCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "7d444a7263401534a8469c197ae59732",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "2f2f7492756266949ba17ecf147fc583",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "962f2f3eaaf573847b2cd05c03585c30",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1f67f07507e1aaf42b68d660f5d61dd2",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "da688eb48c78e20498a611dc0ef800ec",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "cce9be29e9a3e8146ad10c44994d9c08",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "cce9be29e9a3e8146ad10c44994d9c08",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_47.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerHit": {
+      "clip": "Assets/AnimationClip/ShamblerHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ae8df050af3c0e44a990bfa9f594c04d",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1080,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ae8df050af3c0e44a990bfa9f594c04d",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1080,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_53.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerCombatIdle": {
+      "clip": "Assets/AnimationClip/ShamblerCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "42a4917f90cbd0947b78d9e831a2fc99",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "93b2d70a4d37b824ead81b7857cec28d",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "acdafebf78a546440a224eb1340854dd",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "5223352e9c9fb934591b96d55f904884",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 1,
+          "sprite_guid": "8940eb150a913e642aa74cc83c5caea2",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 1.0833334,
+          "sprite_guid": "311dfa1252586064d8f05128a5249cdd",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 1.1250001,
+          "sprite_guid": "311dfa1252586064d8f05128a5249cdd",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_5.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerWalkHorizontal": {
+      "clip": "Assets/AnimationClip/ShamblerWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "36c024d3f9ad62d4685bc0259228c392",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "839e50df2dacd9b438d5629aa4d5b10f",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "4900fec551353dd4585837184c2251ea",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "2f7892f4f45369342b9014138bed56b8",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "7037ed98a10ee064b8b64f904ee7c79b",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "43541c65611c8c1489cbc4c1f10c5756",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e0a31d06cab3fe947b04089871d3b7c4",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "0e292012d556a65428bb9003e9eaf8e9",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "cf6c20001e6348a4086586fc34dc299e",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "14263fca27c21cc438aaf9a3a6492c09",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "14263fca27c21cc438aaf9a3a6492c09",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_38.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerTeleportTop": {
+      "clip": "Assets/AnimationClip/ShamblerTeleportTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "27f001c61bcf04b40bc87aabf5f74d70",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "4b48fa336115e3c47aedf28b9f474120",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "37d5c3f829aabaa4b9b95d8d4eead056",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "e5b8c378759b249458a430aa07959ccd",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "72fb4af4135c2104c9ee6d5ea97fb6fd",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "60ab5b883ca949c45bd883ae848d877d",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c9bad5bd1e9ea1d4da95115666c2c639",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_22.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerIdleTop": {
+      "clip": "Assets/AnimationClip/ShamblerIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5211e903a10b7e04ca3722f2ee358dee",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "4926469cdfa250041bb20690be67e58f",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3645033258062f04c8cc773b833c8d50",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "acd0ee7eb997e444590360eed6c34eb0",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 1,
+          "sprite_guid": "d5f021fb62ca8464ba678d00092e5697",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 1.0833334,
+          "sprite_guid": "73c793a3af713164b936a05b54021e37",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 1.1250001,
+          "sprite_guid": "73c793a3af713164b936a05b54021e37",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_5.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerTeleportDown": {
+      "clip": "Assets/AnimationClip/ShamblerTeleportDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d26f22c52987c72499341b2042666d95",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_62.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8646ceb8fc08be241a3e411328faac8e",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_63.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b6ac277f3786f3144af2618976f87c71",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_64.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "591dd999d01c9c14191fed0f92b7b4b3",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_65.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "4c59f8a0b625a014dacd04cb478c642c",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_66",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_66.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "09c4e3de54a66e542881e0b4123ff989",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_67",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_67.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "457a90b6807413c48a873608ce7d2958",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_68",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_68.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerPhantomAttackEnd": {
+      "clip": "Assets/AnimationClip/ShamblerPhantomAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6662b106710b6154786d81ec327f343b",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ff1d6fd99ad1dbb4eb0ad0bfb8cb62ed",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "326571d9ea3c48c41b9a55bd66798495",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "2337a9210b9785c4db2e52c28beeff77",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "5a059e9f87707524e9b37a0a669cf85b",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "18deb224e0d17e44b878493130aaf8d8",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "e261c38a9da971a4d82a6a0da0514d1c",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 1.3333333,
+          "sprite_guid": "69e995b9ee767024a98359ca1a82e273",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 1.4166665,
+          "sprite_guid": "97ab46e21d97a7a4cb624b1ac215907c",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 1.4583331,
+          "sprite_guid": "97ab46e21d97a7a4cb624b1ac215907c",
+          "sprite": {
+            "name": "Shambler_Phantom_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Phantom_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Phantom_Spritesheet_51.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerPhantomCastEnd": {
+      "clip": "Assets/AnimationClip/ShamblerPhantomCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "84c4fff220f66e544a0fa42ce75b3f51",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_71",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_71.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "399290675e6098342904924bafa799a6",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_72",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_72.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b94890d67f80b5b4faea9b81201d9994",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_73",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_73.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "bc51cd56aadd47345844cd0b99e2f9e4",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_74",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 540,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_74.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "9383bdbaab7bfac43af40e56c80a61b9",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_75",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 540,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_75.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "f067b0fa075f8374e8241d05452b773b",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_76",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 540,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_76.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3557febe582d26d49ba8f52581d5e150",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_77",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 540,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_77.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "b159d2a1f15b8ac4495e31b7d5fc0e81",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_78",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 540,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_78.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "0a0c2fb611441ec4e9953989aaf57080",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_79",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 540,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_79.asset"
+          }
+        },
+        {
+          "time": 0.70833325,
+          "sprite_guid": "0a0c2fb611441ec4e9953989aaf57080",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_79",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 540,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_79.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerWalkDown": {
+      "clip": "Assets/AnimationClip/ShamblerWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c7f9658ac623d0e4da35ad919a54fcc1",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ef4118a390c8b554489938a51b7d8c61",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "cd9d9e7d43f6042448d51390df51def9",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ca00f62ecf2328a41ba62f76157c91b0",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "bbd8216f4b418ab4bb8b5b0b298819e3",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "666c164ac0930384eb2dd9c14859f09d",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "036d4762441c84741bd32e8d0c634269",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e1f9e9aa4ea4b024fb9911da3843ed03",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "205883f52c16d6e438e22d2d17b977d1",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "ff8d063c3e486414c9fd7966934a1406",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "ff8d063c3e486414c9fd7966934a1406",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_61.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerPhantomCastStart": {
+      "clip": "Assets/AnimationClip/ShamblerPhantomCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cdbc6314155561346a51bc7dbe734e91",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e41acabe33e006746b7ea6a3c30262f0",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d6cb491260f14bc4fb8708586b7bba22",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c906f54b92a5a8f47825a836c4d71d5d",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "895e9a8a80beb5c47b8874ed3b35843d",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "12404914e34d2544f9d375e1f7d154fa",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "9704597374dceb548a2c715e9b7aa8cd",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "55e2ed319e422d341ae4e01b13cb2def",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "bd3edda16c50b694a80af65ad77ea654",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_62.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "06da843af29fe2d4ead4c7de4977b074",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 900,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_63.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "7c5854b9a5acdb046996fff31c41cc80",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_64.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "7c5854b9a5acdb046996fff31c41cc80",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_64.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerIdleDown": {
+      "clip": "Assets/AnimationClip/ShamblerIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3b9d8a6c7d012804794aa72a6587905b",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "356ce7b4e4ca3d44fa105dd7bd97bc30",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "213d4b718557a9c4cbb97611542dacfb",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "062a373b2a1d39645a69b33779b33f9f",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 1,
+          "sprite_guid": "b2a8aa1c7f0223a4db600d7d73ad9e61",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 1.0833334,
+          "sprite_guid": "d8ac41f210627014cbfe600eca566e57",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 1.1250001,
+          "sprite_guid": "d8ac41f210627014cbfe600eca566e57",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_51.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerTeleportHorizontal": {
+      "clip": "Assets/AnimationClip/ShamblerTeleportHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "da3173242bc27be4fadaf5246baba3e4",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "3ef36125f050b0344aeabf87e6870763",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "7706765aab8548840ab62c9933ef71bd",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "2660a019a31810446ad0f9086701c8f1",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "227546ea18a32c843861430314b80147",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "be9518c6dd28a5f4da08351043c569dc",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "58222aeffed37f745a19816b22e61e9a",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerPhantomAttack": {
+      "clip": "Assets/AnimationClip/ShamblerPhantomAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1cd26c1840186764792fe8c5262d1603",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_80",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_80.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "fb1014f33ef9c57418004b0ac55ca013",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_81",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_81.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "39206798d2609854dab770761020fb61",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_82",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_82.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "3c31edfe8dd50464ca8dc53d3fdabf83",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_83",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_83.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "cd4e0e77bcb675b41aabe3fa5ccbb761",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_84",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_84.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "b8b6d14fd19ec9e448e5f1b4c11c4b78",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_85",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_85.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "519c7b9a6b736bc46a94717b76526bde",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_86",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_86.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "3db78fdd33e681e42bbf09e74c83ebe8",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_87",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_87.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "a3fcdef748e1d804d9dae5b15674c6bb",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_88",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_88.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "7ddba1a219c56b04c98ad517741849b1",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_89",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 360,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_89.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "40d3117d8dfd4e540881035e10e5b613",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_90",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_90.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "5970179dca9eb2349a0807a6c14a41df",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_91",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_91.asset"
+          }
+        },
+        {
+          "time": 0.95833325,
+          "sprite_guid": "0755721f4813ef048a53145046127334",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_92",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_92.asset"
+          }
+        },
+        {
+          "time": 0.99999994,
+          "sprite_guid": "455cd86359a0abf4d85d0d3ad374a13a",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_93",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_93.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "5e730380e09dc65408b31cf9df07afc3",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_94",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_94.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "bece7cc212612624ea0bec77a14506b7",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_95",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_95.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "fd6cdcd8d37fe7d44b65eb8eb1a9ec80",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_96",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_96.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "932ba53d7347f6141b790550e3ad97c6",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_97",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_97.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "d3f22cfc89fc16649a56262e6a2d0cbd",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_98",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_98.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "12750861ce5db8f4385f9e8a70df6309",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_99",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 180,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_99.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "a3b7711d3b781614d958836b7997508a",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_100",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_100.asset"
+          }
+        },
+        {
+          "time": 1.6666669,
+          "sprite_guid": "12e34a4a9bc6d5a42b0fb4e8e48d42a3",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_101",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_101.asset"
+          }
+        },
+        {
+          "time": 1.7500002,
+          "sprite_guid": "9a9ce7fabd4c18e45b67b49b6bc45fa5",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_102",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_102.asset"
+          }
+        },
+        {
+          "time": 1.8333336,
+          "sprite_guid": "0246767e594105e48bd0e075549993fe",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_103",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_103.asset"
+          }
+        },
+        {
+          "time": 1.916667,
+          "sprite_guid": "bfa7eaa5cca3c104e986a8c58a0f14d4",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_104",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_104.asset"
+          }
+        },
+        {
+          "time": 2.0000002,
+          "sprite_guid": "5e709191b217c1d4d8a7fa1c22c33e5c",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_105",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_105.asset"
+          }
+        },
+        {
+          "time": 2.0416667,
+          "sprite_guid": "5e709191b217c1d4d8a7fa1c22c33e5c",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_105",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_105.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerAttack": {
+      "clip": "Assets/AnimationClip/ShamblerAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e83bb9c91dd95384f89e9b827d8d73ea",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0f1ee784343e9ae4284a2b5c8490c7ae",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "bdd395543a609294dba06d283b8768e1",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "f8f07efb9beb5ff41bf9432f87bb7c7e",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 1980,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d16ddafbc7475a945827bcaedf1fc6f9",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "162c2e9c61177384e8ecdd9cf68a79b4",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6cf47bf371377ce45a954cc5ef676a66",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "7d6a2b4a19a2a1449a8b6d14f0599c51",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "c4e8b6794b622fc428d50229d2fab9cd",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "c76ac5fa038e3384ea27cfea1148a70d",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "5b70a70ce24570a45867824bcb456149",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "9112fe7d4b985c543a38b535437177b5",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.95833325,
+          "sprite_guid": "bb98aac33c71cdd42b37a1be896e7955",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.99999994,
+          "sprite_guid": "9c0a0f752f36fa64f912dfbf195c645e",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 1800,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "2bec302dbd14a5945abd643f3d2926d3",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "3e4df403eedd9f747ad3000f549d3b9f",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "998cdc06e755d3a4c8f4ed8c088625b1",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "b9e2504f0205047468e404ab10c3605f",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "0fbba83aa3186d24280dee2271172683",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "e3b57c583de76a749adba5d4c69f1fa1",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "59adf1f0bdb9bb9409a528e084496fd7",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 1.6666669,
+          "sprite_guid": "ffa91aa091917004e9f85c5b27e11b2c",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 1.7500002,
+          "sprite_guid": "c7d443ca450906344a649a099ecefd74",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 1.8333335,
+          "sprite_guid": "a8d3010e7810d524089747ca1ac7c240",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 1.9166667,
+          "sprite_guid": "ca26d1ae6bfba9945b60dd401e1236f1",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 2,
+          "sprite_guid": "618732c7f32e42a4990e419ebd041efb",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 2.0416665,
+          "sprite_guid": "618732c7f32e42a4990e419ebd041efb",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_31.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerPhantomCast": {
+      "clip": "Assets/AnimationClip/ShamblerPhantomCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2954bc9d739ea6c40b9e90b73e94ce9e",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_65.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "9e4c5c9bc784f3d48b7abac36f527787",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_66",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_66.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "43926edb759f95b41834b5430c6a2600",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_67",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_67.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "74981bd20432955459ff386f7c503d22",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_68",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_68.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "57645351564f6fd458826eee522dd5c3",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_69",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_69.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "e7969ee93b681ba488dd0098fbffc0b2",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_70",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_70.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "e7969ee93b681ba488dd0098fbffc0b2",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_70",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 720,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_70.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerWalkTop": {
+      "clip": "Assets/AnimationClip/ShamblerWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e68493e1387072742b6a3acc680c70c8",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "6ea3f52e2435064409dbe186f322bced",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9a9153e6b66aa13469ad356b5a001a98",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "4558c70b58aa5c64abf0e8afff6f444d",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "ef98db04ec2237142b8b8c4b839c7fa2",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "69a8025240aa2904f8c05aae9b874202",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "d0551bc0d9bc4d14baec2a61222555fc",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "c31186a9bd436324d9ea7ed8930627c6",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "8289465063041b54092acbec152be5b5",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "a3a64465fc41f3c47a3c5152b899a0da",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "a3a64465fc41f3c47a3c5152b899a0da",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.234375
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_15.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerIdleHorizontal": {
+      "clip": "Assets/AnimationClip/ShamblerIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "83a5bce76aae34d48b44763a4ecb8b43",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 513,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "382d5f93ab05eb0449544d7e069d7890",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ba1d32c595f1c164f940ea1291e38770",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "6b1042ccc12431748885b6ae2632d012",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 1,
+          "sprite_guid": "89815468d745cf54b8a6587ba13d8acd",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 1.0833334,
+          "sprite_guid": "c5a6a92dd87e2a3448422606122afde6",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 1.1250001,
+          "sprite_guid": "c5a6a92dd87e2a3448422606122afde6",
+          "sprite": {
+            "name": "Shambler_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3125
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Overworld_Spritesheet_28.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerCastEnd": {
+      "clip": "Assets/AnimationClip/ShamblerCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c3be3d6bf37f98f42b4d93c7fad9dd7a",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "319946ab6c272dc4e9166a84e35b7069",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "747e92a11f5d20747adeae61408145ff",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1080,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "dbd72555af13dbf498a1c22bf2101c37",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1080,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e3c9aefa0f193f946a66a839e6b713ce",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 1080,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "e3c9aefa0f193f946a66a839e6b713ce",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 1080,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_52.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerCastStart": {
+      "clip": "Assets/AnimationClip/ShamblerCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0f9826f8bba640a4a86b367e5df082ec",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "34ae211e12056bf4298f347b2cba7b8c",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ece14ea951465504ca20c6e144877415",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "96943f581ecfa364dab93adf555f1899",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e4a2c5fbb50c7df44aed129d3dbb9e81",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "4c141f72595be4d4e8cd6a644297d03f",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ab745a2593b00c1408e81d970c5cf23f",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "a5c183a6a2f287e409ea0921fa5d0dea",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "41ebe50862b80c44885fec6f3601f678",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "612e236d21a2d3a4e8c7931fcc300e31",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "612e236d21a2d3a4e8c7931fcc300e31",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1260,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_41.asset"
+          }
+        }
+      ]
+    },
+    "ShamblerAttackEnd": {
+      "clip": "Assets/AnimationClip/ShamblerAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b9e2504f0205047468e404ab10c3605f",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0fbba83aa3186d24280dee2271172683",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "e3b57c583de76a749adba5d4c69f1fa1",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "59adf1f0bdb9bb9409a528e084496fd7",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "ffa91aa091917004e9f85c5b27e11b2c",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c7d443ca450906344a649a099ecefd74",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a8d3010e7810d524089747ca1ac7c240",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 1620,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "ca26d1ae6bfba9945b60dd401e1236f1",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "618732c7f32e42a4990e419ebd041efb",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.70833325,
+          "sprite_guid": "618732c7f32e42a4990e419ebd041efb",
+          "sprite": {
+            "name": "Shambler_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 1440,
+              "width": 164,
+              "height": 180
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Shambler/sheets/Shambler_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Shambler_Battle_Spritesheet_31.asset"
+          }
+        }
+      ]
+    }
+  }
+}

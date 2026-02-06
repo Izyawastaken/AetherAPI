@@ -1,0 +1,2802 @@
+{
+  "name": "Medusa",
+  "prefab": "MonsterMedusa",
+  "prefab_path": "Assets/GameObject/MonsterMedusa.prefab",
+  "data": {
+    "name": "Medusa",
+    "ids": {
+      "ID": 1525,
+      "MonID": 28
+    },
+    "stats": {
+      "BaseMaxHealth": 40,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194139533312,
+      "ElementsOverride": 13194140057600
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 1,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Poison",
+      "Affliction",
+      "Terror"
+    ],
+    "types_override": [
+      "Poison",
+      "Affliction",
+      "Weakness"
+    ],
+    "traits": {
+      "signature": "Lamentation of Woes",
+      "signature_override": "Lamentation of Woes",
+      "traits": [
+        {
+          "name": "Healthy Cleanse",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Endure",
+        "Cleansing Strike"
+      ],
+      "start_override": [
+        "Endure",
+        "Windswept Strike"
+      ],
+      "reset_action": [
+        "ResetActionPoison"
+      ],
+      "scripted": [
+        "Pollen Blast",
+        "Slime Volley",
+        "Endure",
+        "Alchemical Blast",
+        "Cleansing Strike",
+        "Windswept Strike"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Initial Affliction",
+          "multiplier": 3
+        },
+        {
+          "name": "Debuff Mitigation",
+          "multiplier": 1
+        },
+        {
+          "name": "Corruption Cleanse",
+          "multiplier": 2
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Water Generator",
+          "multiplier": 1
+        },
+        {
+          "name": "Hit",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterMedusa",
+      "path": "Assets/GameObject/MonsterMedusa.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "96fa80a976673234da8d53a72e213997",
+      "file": "Database/Medusa/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Medusa",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Medusa/sheets/Portrait_Medusa.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Medusa.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "08d905594c08cdc4fba697c0800388b5",
+      "file": "Database/Medusa/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_MedusaPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Medusa/sheets/Trait_MedusaPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_MedusaPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "dafa7d5669cd77c46a3263ed4024fec9",
+      "file": "Database/Medusa/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Medusa_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 780,
+          "width": 155,
+          "height": 130
+        },
+        "pivot": {
+          "x": 0.358,
+          "y": 0.21
+        },
+        "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "a2600b815a8715f4da1a31aa815a5cc6",
+      "file": "Database/Medusa/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Medusa_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 780,
+          "width": 155,
+          "height": 130
+        },
+        "pivot": {
+          "x": 0.358,
+          "y": 0.21
+        },
+        "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Medusa_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "eea32ca5a5885454f97b6060f5eeb790",
+      "file": "Database/Medusa/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Medusa_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 320,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "424e528f821adae40b4b96aaabbea3bf",
+      "file": "Database/Medusa/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Medusa_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 320,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Medusa_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "3f9969818516e0e489a948568cffccdf",
+      "file": "Database/Medusa/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Medusa_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Medusa/sheets/Portrait_Medusa_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Medusa_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "MedusaCastEnd": {
+      "clip": "Assets/AnimationClip/MedusaCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c60dae4f36a47c94c8a6db232f32fc9b",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 465,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "06cf9760ef6c8ee4284d2a17e22735f2",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 620,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c02e8a95d4094c24b90237d38d15264e",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 775,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ec19a19fc42254c41b31f152e53a7ddf",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 930,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "758b122a2eb4e6b49903484224a2d017",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1085,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "2d10781ac4ad0f34b91508d8b24ab4cb",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1240,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "fcb5ffada3688174b97eed173df22267",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1395,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "68472d3aed64a0147b385773d759e823",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "e57e21edc8cf9424cb34c046dabe90f0",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 155,
+              "y": 0,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.70833325,
+          "sprite_guid": "e57e21edc8cf9424cb34c046dabe90f0",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 155,
+              "y": 0,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_61.asset"
+          }
+        }
+      ]
+    },
+    "MedusaJumpBack": {
+      "clip": "Assets/AnimationClip/MedusaJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f7a6c54c14b3a4b4b96a5b6646f49ffb",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 775,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0e8bab22aa84fe9469dff909b0dd48e8",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 930,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "594e85f7fb7964e4794e5d471fde6ee8",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1085,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "77557e07406e29f419443e582e3c0051",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1240,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "3ff219cdf9de82a45909dabc85e2cf60",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1395,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.3333334,
+          "sprite_guid": "3ff219cdf9de82a45909dabc85e2cf60",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1395,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "MedusaAttackJump": {
+      "clip": "Assets/AnimationClip/MedusaAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "236fa55ca5f06dc419fbeeb63684d3b6",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "38e140d5e7ed8164a9fe7e8b8728dbda",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 155,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "26b1192f21276cc48b15df0158cca16b",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 310,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "8e2b248203c71954fbc52af272d227ea",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 465,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "898f5ab9c05c05d4ba92dbe083980e20",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 620,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.3333334,
+          "sprite_guid": "898f5ab9c05c05d4ba92dbe083980e20",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 620,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_14.asset"
+          }
+        }
+      ]
+    },
+    "MedusaCastStart": {
+      "clip": "Assets/AnimationClip/MedusaCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "76974c4fc1c8ad247afa9e3e74dfa8a7",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "4bce2c970b839cb4295cbce37557a40c",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 155,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "eae12a03e13c9bc44bbab0eee2465eec",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 310,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7fb03793c48242f42be92dea51cb5798",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 465,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3f9ab9e23e271e6499192f1cbc612094",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 620,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "ca9dfe5c243a760438238f968f31e159",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 775,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0c534e44af73846469541ff5f12b08a0",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 930,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "7e0d10b808078464487e892343db5fdf",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1085,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "8e88a2a6dd7363a40b7e8f6aa672ad4a",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1240,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "fd519e9eb210c7640acdb5c36b85c630",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1395,
+              "y": 390,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "7aa6da3a9356d6b4d81e081258c6b65f",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.87499994,
+          "sprite_guid": "22a58172f3b43f040a16a6abfee869f3",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 155,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.95833325,
+          "sprite_guid": "5a6eb774ce7ee5a43b656ec63386d49a",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 310,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 1.0416666,
+          "sprite_guid": "afa494576cb17544295e436a0a508df7",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 465,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "6ada843722c6c49429bd592ec52a52d7",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 620,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_44.asset"
+          }
+        }
+      ]
+    },
+    "MedusaIdleDown": {
+      "clip": "Assets/AnimationClip/MedusaIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "10d1cfb86c0ec074bbb2c890d745544c",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "fbb73a2468bdb3540a5e64e9dcd38d86",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5deedd2e32aa2db4d873ffc38498924d",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b98b4e933120d344c9b97dd006bc1b1d",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "93d4791345e23df4fa8bba9ed0176972",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "6aa1533e3072c094486fce76e77cab87",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "77385b8aa719c3948a57dd2d9c44a2a6",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "26d5d4409969d694c98fd023afd338f2",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "2caf0e62ae379dd4ab1ab6bc92769eb2",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "a7f8fa799f14d0d4fb7ca4e1b41c2e12",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "a7f8fa799f14d0d4fb7ca4e1b41c2e12",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_41.asset"
+          }
+        }
+      ]
+    },
+    "MedusaAttack": {
+      "clip": "Assets/AnimationClip/MedusaAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "85ef81c74aaba3145b9746f4d9fcbaf2",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 775,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "85364970822049742a0d0f4dc6aae81c",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 930,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9b9e7900d3b2eb34baf82abcdf59346d",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1085,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "09f1a004965c2ef41be38f303c81e442",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1240,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "55a492f8cb4d67247bc2f614a6a810d2",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1395,
+              "y": 650,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "2272bca5a2bdaec4b80df22d674eca30",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "a54f4eba252de584b9ba0c842253375e",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 155,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "a886e66fee916c74980acce97e9bc889",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 310,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "261a7642ced104d44800c901ef6f8596",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 465,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "2b419ed299e2df74cb376ecadcae7a75",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 620,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "2b419ed299e2df74cb376ecadcae7a75",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 620,
+              "y": 520,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_24.asset"
+          }
+        }
+      ]
+    },
+    "MedusaCast": {
+      "clip": "Assets/AnimationClip/MedusaCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "20179cc3abf01c347824eab64768e2d5",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 775,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d2b463c71a700dd418c7fc7a5d9919f9",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 930,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b403f0249bc15fb4d96c75998b32dc1a",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1085,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cad922ff788108a4ba1b4df608640d9c",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1240,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8870cdd2314a7d24aacde70aa024a6d8",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1395,
+              "y": 260,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "d9874bd3061e23d4694c1533b7138929",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3df975278f847784a964af3916e57a13",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 155,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e5848a95448476b4c87c634c4197e22c",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 310,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "e5848a95448476b4c87c634c4197e22c",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 310,
+              "y": 130,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_52.asset"
+          }
+        }
+      ]
+    },
+    "MedusaWalkTop": {
+      "clip": "Assets/AnimationClip/MedusaWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0dd9bd8fa04f56b4fb0f27fc670156ba",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "78587f8fd22814b4f90948ecefe96787",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "db862098ef317744bbad5539330c16dd",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "619a759befd26494ea723e406bb0a10e",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d40392b75bb1b974891ec47d646afafc",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "86de193ffa2094044a017ed318947957",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "86de193ffa2094044a017ed318947957",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_15.asset"
+          }
+        }
+      ]
+    },
+    "MedusaCombatIdle": {
+      "clip": "Assets/AnimationClip/MedusaCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "dafa7d5669cd77c46a3263ed4024fec9",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "32d76bb4cc4c7de43b06951b86d523ff",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 155,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "0270516cc85b8634196d1716dce10a74",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 310,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "e78347f6871276c4ebaaab79801f299c",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 465,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f763f5550bcb506479cf5590f29aa5f0",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 620,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "df059c6c6c2d0b64a8ec77c300e4f82e",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 775,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2e816194a3c52cc40a15983e01e759b1",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 930,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "101db8c11264ee24e9a45c51332c999d",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1085,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "2cee9bf06fda3334bad3402d59bd57eb",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1240,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "18811221219ddd44a829016e1e25e66f",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1395,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "18811221219ddd44a829016e1e25e66f",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1395,
+              "y": 780,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "MedusaWalkDown": {
+      "clip": "Assets/AnimationClip/MedusaWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "8a3cde04c21fad34b98fed946cd1c285",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7b41b29e417aeff42a38c4202fce753b",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5c16c94de4e61e545a78684dbf5dc3a9",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "22445a9241869434190673292f6bb843",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8e8516fe5d0c88940a6979de9c8dd5d4",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "71120fcbba22c0945a34687985ad1d8d",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "71120fcbba22c0945a34687985ad1d8d",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_47.asset"
+          }
+        }
+      ]
+    },
+    "MedusaIdleHorizontal": {
+      "clip": "Assets/AnimationClip/MedusaIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f13e8aee68acb284b955ca4ce1175645",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "46dc8a094c07fdc469816fda6773de79",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "351d0845a58f94d428433c1c4c77e552",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "baa1b329a8c4a2b449acaaae33816c89",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "735a64ffcca224046a13f1dae172d83e",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "67a985a4a7f6d124dafdbf6c41f55c62",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f9694f8cebbd76a47bcaeb64e2647b68",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "b5a9f981704ed5e45983baf46efb975f",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "8e57a86bed4c27647bfd875bde493a8a",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "ed5f951b2efa41f47aef35d718788f3e",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "ed5f951b2efa41f47aef35d718788f3e",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_25.asset"
+          }
+        }
+      ]
+    },
+    "MedusaHit": {
+      "clip": "Assets/AnimationClip/MedusaHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "68472d3aed64a0147b385773d759e823",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "68472d3aed64a0147b385773d759e823",
+          "sprite": {
+            "name": "Medusa_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 130
+            },
+            "pivot": {
+              "x": 0.358,
+              "y": 0.21
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Battle_Spritesheet_60.asset"
+          }
+        }
+      ]
+    },
+    "MedusaWalkHorizontal": {
+      "clip": "Assets/AnimationClip/MedusaWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "494af77440fcde44482ddee4fd9e58a8",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7c1a4d8b3076a0e4bbe8e5da0f45897a",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "00edb9803a27dcd499f6b2e94acc1b07",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "73f05085f9f29a64caf50b4a769a6f8a",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "6d682c7c75bcda74fa6bf0aed7907874",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "df1f86b65fff00b43ac50da3c81838b8",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "df1f86b65fff00b43ac50da3c81838b8",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_31.asset"
+          }
+        }
+      ]
+    },
+    "MedusaIdleTop": {
+      "clip": "Assets/AnimationClip/MedusaIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "eea32ca5a5885454f97b6060f5eeb790",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7167aeb8bef1d284cb8d883ac89db35c",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "dd228a49634ccf043b0042fa0790dfd4",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "a9eec3f629e5ef94b8e8551ad69d3666",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "7e5b9be62e11b3343b41d2e5d24721f8",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "6ccf51b3569164949a7204736aae56ea",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ac5309a2af29c7445b5bdf3ba1d4c1db",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "baa4bd39ae3df5343916b9a15484c04d",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "b702490a57621af4186d6adfa0ecc2e9",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "42f6e4df9a301504f82c4817979c370a",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "42f6e4df9a301504f82c4817979c370a",
+          "sprite": {
+            "name": "Medusa_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Medusa/sheets/Medusa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Medusa_Overworld_Spritesheet_9.asset"
+          }
+        }
+      ]
+    }
+  }
+}

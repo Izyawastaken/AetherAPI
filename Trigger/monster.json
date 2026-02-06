@@ -1,0 +1,14 @@
+{
+  "name": "Trigger",
+  "prefab": "MonsterTrigger",
+  "prefab_path": "Assets/GameObject/MonsterTrigger.prefab",
+  "data": {
+    "name": "Trigger",
+    "source": {
+      "prefab": "MonsterTrigger",
+      "path": "Assets/GameObject/MonsterTrigger.prefab"
+    }
+  },
+  "icons": {},
+  "animations": {}
+}

@@ -1,0 +1,2373 @@
+{
+  "name": "Orthrus",
+  "prefab": "MonsterOrthrus",
+  "prefab_path": "Assets/GameObject/MonsterOrthrus.prefab",
+  "data": {
+    "name": "Orthrus",
+    "ids": {
+      "ID": 1010,
+      "MonID": 9
+    },
+    "stats": {
+      "BaseMaxHealth": 35,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398046511104,
+      "ElementsOverride": 4398047297536
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 2,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Sidekick",
+      "Power",
+      "Heal"
+    ],
+    "types_override": [
+      "Sidekick",
+      "Power",
+      "Weakness"
+    ],
+    "traits": {
+      "signature": "Two Headed",
+      "signature_override": "Two Headed",
+      "traits": [
+        {
+          "name": "Indomitable Attacks",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Aqua Pounce",
+        "Fire Fang"
+      ],
+      "start_override": [
+        "Spore",
+        "Fire Fang"
+      ],
+      "reset_action": [
+        "ResetActionSidekick"
+      ],
+      "scripted": [
+        "Comet Rush",
+        "Snow Support",
+        "Pollen Blast",
+        "Fire Fang",
+        "Aqua Pounce",
+        "Spore"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Sidekick Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Health",
+          "multiplier": 5
+        }
+      ],
+      "void_tier2": [
+        {
+          "name": "Hit",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Sidekick Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Weakness",
+          "multiplier": 3
+        },
+        {
+          "name": "Health",
+          "multiplier": 5
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterOrthrus",
+      "path": "Assets/GameObject/MonsterOrthrus.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "353f2d475331baf40bcea798a362e58f",
+      "file": "Database/Orthrus/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Orthrus",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Orthrus/sheets/Portrait_Orthrus.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Orthrus.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "b14f2746556f1674f927831dd64d19d0",
+      "file": "Database/Orthrus/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_OrthrusPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Orthrus/sheets/Trait_OrthrusPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_OrthrusPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "2d1112f8115caa34c83975653f8b78e0",
+      "file": "Database/Orthrus/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Orthrus_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.18
+        },
+        "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "9de1b518c6a90424eb253abc141720f5",
+      "file": "Database/Orthrus/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Orthrus_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.18
+        },
+        "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Orthrus_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "0f81d43d6cbbba44389b50cbc8f7b717",
+      "file": "Database/Orthrus/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Orthrus_IdleRun_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.24
+        },
+        "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "cebeea72422e0764085cf1f877f22569",
+      "file": "Database/Orthrus/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Orthrus_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.23
+        },
+        "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Orthrus_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "2e2bb6c2f3907d9469f369228242b57d",
+      "file": "Database/Orthrus/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Orthrus_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Orthrus/sheets/Portrait_Orthrus_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Orthrus_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "OrthrusCombatIdle": {
+      "clip": "Assets/AnimationClip/OrthrusCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2d1112f8115caa34c83975653f8b78e0",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "bbd2172012c0cd44da7cb1132bc8751a",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "bdc82b2b6c2a21342badba4e6f73e64b",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "651c24b75d3c71c42bd5a582df04f46f",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c2a065fd110489049b7bafbcf1e141bd",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "25f80c431d6cfe34aadcff96e948edf3",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "89e4b3c49983f7d4f8ef4c85e2e092b5",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "87f88329d8f12e441aac6df302c4bd8d",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "1245dfadc2a40324ebf6e1462198e981",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "1348c55c3a1c866439d4b42264776e2d",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "1348c55c3a1c866439d4b42264776e2d",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusJumpBack": {
+      "clip": "Assets/AnimationClip/OrthrusJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "51a399788c3826e46af0bf169edb91fc",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "266bbecb4d1cda54690ee05d19658156",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "51a399788c3826e46af0bf169edb91fc",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "0fbddf197097db143877a8ddd5739115",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "0fbddf197097db143877a8ddd5739115",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_30.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusCastEnd": {
+      "clip": "Assets/AnimationClip/OrthrusCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a94af9b25a0bc6b45869fc764d600ada",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e4292818c72361f4d98f1653cf02cb40",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "e4292818c72361f4d98f1653cf02cb40",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusIdleDown": {
+      "clip": "Assets/AnimationClip/OrthrusIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0f81d43d6cbbba44389b50cbc8f7b717",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "b297f0be0f28bf74ca5e9998a2a520cf",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "a9d1f0b69f4837449aba4c6b1759e16f",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "7a97055a1786dca4cb37ee5ba1926b5a",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "ad4f8936764f09541b46e4d35b7e8c07",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5833334,
+          "sprite_guid": "3c11521a2b0f7ea478f35a7d28ef9777",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "cb3fc845b5ac91a468f5d924fd73db56",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "cb3fc845b5ac91a468f5d924fd73db56",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_6.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusAttackEnd": {
+      "clip": "Assets/AnimationClip/OrthrusAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6a015ea1255f46244be9b41eee64ec85",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "10639a1239728394a8e2cc5ba3297c99",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "88ce36cc43091d245bae21a55d64e7d9",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d701d48ebb3ed3c4b885e33a00d8c581",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "d701d48ebb3ed3c4b885e33a00d8c581",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_26.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusWalkDown": {
+      "clip": "Assets/AnimationClip/OrthrusWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f0596def530aaf243acd429c8752de36",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7c76fc23adc1dac4d9be7f6c664f7021",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9af37e645881b97488f1d2140ca16b99",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "feda290f11278ad49a853dfd6927212b",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "06fa42b35d989fd41a075a343ffda91e",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "0d925f8353cc0344395614b1b7362516",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "20e799789d5b63945a32f58fb02d7cfd",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.56666666,
+          "sprite_guid": "20e799789d5b63945a32f58fb02d7cfd",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_14.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusIdleHorizontal": {
+      "clip": "Assets/AnimationClip/OrthrusIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "05f728ecc9fbed843970b8e3f5e46afb",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "17269c16b1e89ff468fb8d55ec5b088e",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "d4100052686c7f34e8f745369c8a049b",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "af64474a7d12aad4f955029bae302531",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "bb977726f3ef57e448edd7922d0bf680",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.5833334,
+          "sprite_guid": "9dcb40a25607fce4f8d99c8a6aa38f53",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "fef28135fd6362147bc430a0676f0549",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "fef28135fd6362147bc430a0676f0549",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_22.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusCast": {
+      "clip": "Assets/AnimationClip/OrthrusCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "4772e3cf921163b43a7732426dc03b91",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "21f6eafa242fd4d40bd65c4092caf7b1",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "14c20b4b0f8d8334080fa90626d28bc0",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "89037888f96c7574884dbe3733abe71b",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "00a8a5aac0373a741b0db0aa323794f0",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "f479c91115edeff4389147926599c412",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "5733a1fefb77e2045bec80edfaf61b24",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "67fc9034c91d3d04eb5369d637aa1fa3",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "67fc9034c91d3d04eb5369d637aa1fa3",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_43.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusWalkTop": {
+      "clip": "Assets/AnimationClip/OrthrusWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "75085e05c1ca7204a91f62ac0dbcba7c",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e8bcd86d82ba0bd4e9321f48f9053da0",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "890a67f0cd9c58943a876ea20b404a8b",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "390db0fb16d38c34caf8ced0e3845fc1",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e650ee44b23d8be46bcc61687ecf3539",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "a3f4f4af64fa8af4b9fde30730e7a13c",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "806064f29582b4346a2867b36544e7b2",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.56666666,
+          "sprite_guid": "806064f29582b4346a2867b36544e7b2",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_46.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusAttack": {
+      "clip": "Assets/AnimationClip/OrthrusAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b9fecf99ea9224b41824224c3ea8d7fc",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "53f0955449fae2b42ad331f730537ad5",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "e73a590594385004a99afc7ca4314e1c",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "e73a590594385004a99afc7ca4314e1c",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_22.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusIdleTop": {
+      "clip": "Assets/AnimationClip/OrthrusIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a03c1065e42096842a21b6c16ef12009",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "c03bb2a4e178d534f8e0d04cb5ec3a5c",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "993bd94ab8d0f5544866f74917b87c67",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "e2dbd7241ec7e6047812e84d970f1bfb",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "cf492ef4f81165049bbd0beef5eb0abe",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.5833334,
+          "sprite_guid": "1f95183eff92c5f458382a07cd3496f2",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "4d1ff4010549abe47a90215a88cc2f81",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "4d1ff4010549abe47a90215a88cc2f81",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_38.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusWalkHorizontal": {
+      "clip": "Assets/AnimationClip/OrthrusWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "16c41ed9ceb48e9419209db8a522f90a",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "145a83022079dbe40afbfba68ea9c6c2",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "e834989290b1bc64c9464e11ae6eb22d",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "a9997edcafbdbed41aae35a602ac3f33",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c6dc2cdd49d857748ba4945f86be37f2",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "6bbe3a5bb1a0d9a4bb20021be69f0faa",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "342f40cd83d36ac4aaeb3de05435c9ae",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.56666666,
+          "sprite_guid": "342f40cd83d36ac4aaeb3de05435c9ae",
+          "sprite": {
+            "name": "Orthrus_IdleRun_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_IdleRun_Spritesheet_30.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusHit": {
+      "clip": "Assets/AnimationClip/OrthrusHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5d3ea2626edb3df47809f490e796d2e4",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5d3ea2626edb3df47809f490e796d2e4",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_46.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusCastStart": {
+      "clip": "Assets/AnimationClip/OrthrusCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "948034a8541603846983ed1fa8b41537",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b1f13ee05e6224740b65db7053eb0e2b",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "4ab85506685764d44bda39c8287da7bc",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b9b4039b653517a4a9f760e664f724e5",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.33333337,
+          "sprite_guid": "212c67fffd335014096ab742ce3c4ee0",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.37500006,
+          "sprite_guid": "212c67fffd335014096ab742ce3c4ee0",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "OrthrusAttackJump": {
+      "clip": "Assets/AnimationClip/OrthrusAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "742e26e7fcd7f3d42b47267904e43a1d",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "04cd8d793bd5c30468cc246d8d8f0c6b",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "6dacb2e11b0ca704a9dfdcdc06e14540",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "be8b76a0e869f1e4b99cb4da3f7fb702",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d19c3163a21ad5e4db43b04b1bd8aefd",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c06d928c7ed72ed478d4b82e4185bb97",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "dea37738b0d010742ba3fad3824313f5",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.49999997,
+          "sprite_guid": "3b1976f8318ccfa43a8680db77910ec0",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.54166657,
+          "sprite_guid": "3b1976f8318ccfa43a8680db77910ec0",
+          "sprite": {
+            "name": "Orthrus_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Orthrus/sheets/Orthrus_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Orthrus_Battle_Spritesheet_19.asset"
+          }
+        }
+      ]
+    }
+  }
+}

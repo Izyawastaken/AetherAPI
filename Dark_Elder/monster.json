@@ -1,0 +1,2525 @@
+{
+  "name": "Dark Elder",
+  "prefab": "MonsterDarkElder",
+  "prefab_path": "Assets/GameObject/MonsterDarkElder.prefab",
+  "data": {
+    "name": "Dark Elder",
+    "ids": {
+      "ID": 324,
+      "MonID": 23
+    },
+    "stats": {
+      "BaseMaxHealth": 40,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194139795456
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 2,
+          "Hits": 3.5
+        }
+      ],
+      "boss_stagger": [
+        {
+          "Element": 0,
+          "Hits": 3.5
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Age",
+      "Summon",
+      "Terror"
+    ],
+    "types_override": [
+      "Age",
+      "Summon",
+      "Burn"
+    ],
+    "traits": {
+      "signature": "Feed the Void",
+      "signature_override": "Feed the Void",
+      "traits": [
+        {
+          "name": "Cosmic Wisdom",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Sacrifice",
+        "Summon Earth Lance"
+      ],
+      "reset_action": [
+        "ResetActionTerror"
+      ],
+      "reset_poise_action": [
+        "ResetActionBurn"
+      ],
+      "scripted": [
+        "Sacrifice",
+        "Burn Wave",
+        "Mud Tide",
+        "Summon Earth Lance"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Debuff Mitigation",
+          "multiplier": 1
+        },
+        {
+          "name": "Minion Damage",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Minion Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Earth Generator",
+          "multiplier": 1
+        }
+      ],
+      "champion": [
+        {
+          "name": "Aether",
+          "multiplier": 2
+        }
+      ],
+      "override": [
+        {
+          "name": "Minion Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Burn Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Corruption Cleanse",
+          "multiplier": 2
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterDarkElder",
+      "path": "Assets/GameObject/MonsterDarkElder.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "e4d5c5d4d63dfea45a7f41fbb9b2571f",
+      "file": "Database/Dark_Elder/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Dark-Elder",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Dark_Elder/sheets/Portrait_Dark-Elder.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Dark-Elder.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "3ef848500f13e32498214dea212fc4dc",
+      "file": "Database/Dark_Elder/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_DarkElderPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Dark_Elder/sheets/Trait_DarkElderPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_DarkElderPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "d5d56da9ba3710a4baf59c22cf19e3ea",
+      "file": "Database/Dark_Elder/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "DarkElderSpritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 160,
+          "height": 160
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.29
+        },
+        "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "7ca016df2db1ebb46950dbe676622707",
+      "file": "Database/Dark_Elder/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "DarkElder_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 160,
+          "height": 160
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.29
+        },
+        "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/DarkElder_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "f0cff5b0e6c02824c94c83afa59602f9",
+      "file": "Database/Dark_Elder/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "DarkElder_Exploration_Spritesheet_3",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 384,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_3.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "6b2c769aafa4c74489ff4601a75794cd",
+      "file": "Database/Dark_Elder/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "DarkElder_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/DarkElder_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "ProjectileSpriteSource": {
+      "sprite_guid": "87eadd274a4a3d74eb1739c11c20e800",
+      "file": "Database/Dark_Elder/icons/ProjectileSpriteSource.png",
+      "sprite": {
+        "name": "DarkElder_Projectile_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 64
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Dark_Elder/sheets/DarkElder_Projectile.png",
+        "sprite_asset": "Assets/Sprite/DarkElder_Projectile_0.asset"
+      }
+    },
+    "ProjectileSpriteReplace": {
+      "sprite_guid": "76f7353773f21d84d8eaabcfd6b03d4d",
+      "file": "Database/Dark_Elder/icons/ProjectileSpriteReplace.png",
+      "sprite": {
+        "name": "DarkElder_Projectile_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 64
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Dark_Elder/sheets/DarkElder_Projectile_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/DarkElder_Projectile_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "d51c78ad25a344542963763cbd501a83",
+      "file": "Database/Dark_Elder/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Dark-Elder_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Dark_Elder/sheets/Portrait_Dark-Elder_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Dark-Elder_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "DarkElderWalkTop": {
+      "clip": "Assets/AnimationClip/DarkElderWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0ed08fa708885ad459850fdee1776564",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "52799fef9fafba247944cb7b294307ed",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "ea0a28b73590f1f448af31326c58581c",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "505563d66836fac47b6e8bdfcbc30712",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "9b67975bb534a3847b53ef0f2dc982c7",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f5d9a644942bec742be45d61ba010a3c",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "0a650a2dd24b076499a2b077b1093c0c",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "eb004f39eecb2a645ad26694962189fb",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "38a0ebb679ddd80418de5839569a48a3",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "7ad4d6b86a3d39a48a7e01466202a28b",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "7ad4d6b86a3d39a48a7e01466202a28b",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderWalkHorizontal": {
+      "clip": "Assets/AnimationClip/DarkElderWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "47140fde96b09034c86207f156c996c6",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "044c7ad6a911c2345b5b752a060e0bbe",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "210ef7686e873244180b4f8bed53fc1b",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "24ac5ad7e5a274145a0d4ffd9a37dd50",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "17985197109e1d241807f2d9fc2c72dd",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "b414e669ea82b5d40a8db2902404c124",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "3d43bbb08552a274989b93d891169b4b",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "2a71ee2a329c2714f838e4e9b5fac619",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "409414ff34da64549913bf6a46531819",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "2b5797b88b9753245b050f11a029ebb6",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "2b5797b88b9753245b050f11a029ebb6",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderHit": {
+      "clip": "Assets/AnimationClip/DarkElderHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ba740b78c86428d4d817efdb55e51c60",
+          "sprite": {
+            "name": "DarkElderSpritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "ba740b78c86428d4d817efdb55e51c60",
+          "sprite": {
+            "name": "DarkElderSpritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_36.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderIdleTop": {
+      "clip": "Assets/AnimationClip/DarkElderIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b6b680dcf6361644fb62e74ed6de4878",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "21c2f07fe0cd3024594462336d4bc7f1",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "75448cdd71916314ca7b09fccdce5343",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "f0cff5b0e6c02824c94c83afa59602f9",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "4cffdc9ab1dafb24a975b76ba3026d98",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "8f9ee52c4fd46eb48869acc809fcae1a",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "b84794e6e6da9564aaa74cd2a0e0af18",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "a2fc73a272ed7dc4e86c51dea23081e0",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "9beb10137443a454db6a774808a4b823",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "2923a0b635211a847b0330da4a75f228",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "2923a0b635211a847b0330da4a75f228",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderIdleDown": {
+      "clip": "Assets/AnimationClip/DarkElderIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "32be5264bba81d3408a24b5f4dca0c33",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "5c7eece8fca0f8e4bad87297ae0d7e37",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "e32e1392dbbdd40438d834b5e009df86",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "976cf209f6b65fe4ca58713082f7d731",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "e5fe8805afb9c9240b094f5bd8eae013",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "accd9601fe78fbc4bad93a4e8695d507",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "679f27c9cdc402b4aba55364e90698bd",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "3fca5dc4c786c0040990ea7410e07f2e",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "bf42858839480ac46a84cd9ee64552ff",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "98936d796faa2fb4e8ec2074b7575b4f",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "98936d796faa2fb4e8ec2074b7575b4f",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderAttack": {
+      "clip": "Assets/AnimationClip/DarkElderAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1448a02e475d8aa4489be0fee7e2c5c4",
+          "sprite": {
+            "name": "DarkElderSpritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7ee93bc94ad1804438744c445e479079",
+          "sprite": {
+            "name": "DarkElderSpritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "abe192c06be066045a8ccb74f8560315",
+          "sprite": {
+            "name": "DarkElderSpritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "751bf39f43102984099b602c31446d82",
+          "sprite": {
+            "name": "DarkElderSpritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "7f5225ddca01d6f49af78b6c35e449d7",
+          "sprite": {
+            "name": "DarkElderSpritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "5498640f32c89084390551bd9fb9dbc1",
+          "sprite": {
+            "name": "DarkElderSpritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "cc8c18b244391f3469516a8bed32e019",
+          "sprite": {
+            "name": "DarkElderSpritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 960,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "05ab75c3cde767646b9aa3084c228acb",
+          "sprite": {
+            "name": "DarkElderSpritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "6a03c27b66ada284aa3ef69c3801aa9f",
+          "sprite": {
+            "name": "DarkElderSpritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "d185da0a05649754d827c9e1e4a1b40b",
+          "sprite": {
+            "name": "DarkElderSpritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1440,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "d185da0a05649754d827c9e1e4a1b40b",
+          "sprite": {
+            "name": "DarkElderSpritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1440,
+              "y": 320,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_21.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderCastEnd": {
+      "clip": "Assets/AnimationClip/DarkElderCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "da441524a422cad4db50df752fb2b3a8",
+          "sprite": {
+            "name": "DarkElderSpritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "50e5ce4bb8fb56f4c96148b084a10809",
+          "sprite": {
+            "name": "DarkElderSpritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "50e5ce4bb8fb56f4c96148b084a10809",
+          "sprite": {
+            "name": "DarkElderSpritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderCombatIdle": {
+      "clip": "Assets/AnimationClip/DarkElderCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d5d56da9ba3710a4baf59c22cf19e3ea",
+          "sprite": {
+            "name": "DarkElderSpritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "53ed3c6b457ff6f418c39450e93dc692",
+          "sprite": {
+            "name": "DarkElderSpritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2f965f08f49ffa045ac085240fb11cea",
+          "sprite": {
+            "name": "DarkElderSpritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "16a7440b830dbff468e07ad7cf0a224e",
+          "sprite": {
+            "name": "DarkElderSpritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8e2b00148aea0414c84ac8274dfa6a17",
+          "sprite": {
+            "name": "DarkElderSpritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "7899a622ccec6754587d639f783862cf",
+          "sprite": {
+            "name": "DarkElderSpritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "fbf043ef587c2fa49b457e2e31278cd5",
+          "sprite": {
+            "name": "DarkElderSpritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 960,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "43f5fce4040a4c544939384044ae37f7",
+          "sprite": {
+            "name": "DarkElderSpritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "573e0822d66fa1641b47fc1c20fb252c",
+          "sprite": {
+            "name": "DarkElderSpritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "c93f2abe4afeea84c92cffb129dfd897",
+          "sprite": {
+            "name": "DarkElderSpritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1440,
+              "y": 640,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "de009124c8daf334198e53d96f63b4b2",
+          "sprite": {
+            "name": "DarkElderSpritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 480,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "88561fe8f9bfc464abd424efe1168a03",
+          "sprite": {
+            "name": "DarkElderSpritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 480,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "88561fe8f9bfc464abd424efe1168a03",
+          "sprite": {
+            "name": "DarkElderSpritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 480,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderIdleHorizontal": {
+      "clip": "Assets/AnimationClip/DarkElderIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1a45ee0bcfaa69d41871cdd5f4118a33",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "c4d2b3ab580c4aa458acc32f982fa451",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "c424307bbce2b034ead29bb2151316a9",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "00091dbdbfc2be84ca75ee632bb6922f",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "05dfcead419555c49b7f4806c6c20570",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c99f63e0b76a232419e10ea92c77f01a",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "6d865a8c31148124687095859d826332",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "a7635a78f9d1bb947b70b779c32a9705",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "50cc7daeee1ad664982f6e11fe45697a",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "5c5b98b543eea3c418d72a6b8f946880",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "5c5b98b543eea3c418d72a6b8f946880",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderWalkDown": {
+      "clip": "Assets/AnimationClip/DarkElderWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "33019c8a6d334c94398de9926a63e528",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "31a6f9d6158b82b48853603e71221c18",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "8af04cfe2624037438e7d132548c6749",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "258585460aee21148a79d91feafe8ada",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "3ec245b2f5937ee4d913944e592ce0e0",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "250bc4966f488204d85ee199d413776c",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "450fce29678e78c4abdbffe9d903623a",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "5905d0cc4a2820945bc2cdb04d3753b9",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "2bbc7a09969cdc74cb01a3629c8d85e9",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "787e0da8b0d69f944849799f99b51747",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "787e0da8b0d69f944849799f99b51747",
+          "sprite": {
+            "name": "DarkElder_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElder_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "DarkElderCast": {
+      "clip": "Assets/AnimationClip/DarkElderCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "83d4ab48931108f40971ae2b66061ce7",
+          "sprite": {
+            "name": "DarkElderSpritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "006d4e25f1a021e4880964a5de4fce05",
+          "sprite": {
+            "name": "DarkElderSpritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ba4ddac3e526ca54a86c552c91a80107",
+          "sprite": {
+            "name": "DarkElderSpritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "475efbc5a9f241a448406829f4e5416d",
+          "sprite": {
+            "name": "DarkElderSpritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "4b3e99b70ab29514899a9fea57d7d8df",
+          "sprite": {
+            "name": "DarkElderSpritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "cab331183fa6f05459f8082fae38f7c6",
+          "sprite": {
+            "name": "DarkElderSpritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3d9c16fd07a675c42956ec4dfa2190a5",
+          "sprite": {
+            "name": "DarkElderSpritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 960,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "26539742ed3aa1b4a93df0588749fbc0",
+          "sprite": {
+            "name": "DarkElderSpritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "60b52c7c02233054cace3559aed091d3",
+          "sprite": {
+            "name": "DarkElderSpritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "f3d46c067b1507d4692a0bdc969339ad",
+          "sprite": {
+            "name": "DarkElderSpritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1440,
+              "y": 160,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "4502264313aee394b826d9168ca67540",
+          "sprite": {
+            "name": "DarkElderSpritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "4c815034d0146864681f6756027e64c4",
+          "sprite": {
+            "name": "DarkElderSpritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "4c815034d0146864681f6756027e64c4",
+          "sprite": {
+            "name": "DarkElderSpritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 160,
+              "height": 160
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Dark_Elder/sheets/DarkElder_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DarkElderSpritesheet_33.asset"
+          }
+        }
+      ]
+    }
+  }
+}

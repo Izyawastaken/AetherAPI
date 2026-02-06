@@ -1,0 +1,2839 @@
+{
+  "name": "Nixe",
+  "prefab": "MonsterNixe",
+  "prefab_path": "Assets/GameObject/MonsterNixe.prefab",
+  "data": {
+    "name": "Nixe",
+    "ids": {
+      "ID": 950,
+      "MonID": 4
+    },
+    "stats": {
+      "BaseMaxHealth": 35,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194139533312
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 2,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Heal",
+      "Aether",
+      "Poison"
+    ],
+    "types_override": [
+      "Heal",
+      "Regeneration",
+      "Poison"
+    ],
+    "traits": {
+      "signature": "Toxic Tides",
+      "traits": [
+        {
+          "name": "Auto Heal",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Leeching Strike",
+        "Restore"
+      ],
+      "start_override": [
+        "Nourish",
+        "Slime Shot"
+      ],
+      "reset_action": [
+        "ResetActionHeal"
+      ],
+      "scripted": [
+        "Blood Drain",
+        "Restore",
+        "Blossoming Strike",
+        "Nourish",
+        "Slime Shot",
+        "Leeching Strike"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 15
+        },
+        {
+          "name": "Healing",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Heal Generator",
+          "multiplier": 3
+        },
+        {
+          "name": "Healing",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Regeneration Healing",
+          "multiplier": 2
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 15
+        },
+        {
+          "name": "Healing",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterNixe",
+      "path": "Assets/GameObject/MonsterNixe.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "df407053d3206b243becb132161a52cf",
+      "file": "Database/Nixe/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Nixe",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Nixe/sheets/Portrait_Nixe.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Nixe.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "79af6f44425255c42862813717e85a1e",
+      "file": "Database/Nixe/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_NixePortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Nixe/sheets/Trait_NixePortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_NixePortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "d643f3291dde63d4fad4192db4cc0a8a",
+      "file": "Database/Nixe/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Nixe_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 656,
+          "width": 164,
+          "height": 164
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.3
+        },
+        "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "c6c12d42221802643aa1ce97dce05126",
+      "file": "Database/Nixe/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Nixe_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 656,
+          "width": 164,
+          "height": 164
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.3
+        },
+        "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Nixe_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "f4775d69cad645c458cf407a15dc0dd3",
+      "file": "Database/Nixe/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Nixe_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "208387000160ae549a58f428482ab0a8",
+      "file": "Database/Nixe/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Nixe_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Nixe_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "5a69f0514e9d0cc46b9e6d1449707de9",
+      "file": "Database/Nixe/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Nixe_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Nixe/sheets/Portrait_Nixe_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Nixe_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "NixeIdleTop": {
+      "clip": "Assets/AnimationClip/NixeIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f4775d69cad645c458cf407a15dc0dd3",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8da8d608939bd1b448b4202e3d75b081",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5223c1225bb463f42ad9c43e76e15741",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "49932767c8511384281f09e4f1588c1d",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "7264f20b9f5db0e418518ae209909ff8",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "80382dab602d75649bb9b7a8b918087a",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "471c110529053ff42af88a3e7564c37b",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "a9f1589fd5a7f33459c625c9dd6e4cc2",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "a3f92ba568a4f0d43893c99929481cee",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "405fd9fc5caecea4096ad05a77147503",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "065b3c60a9f2e1441aa48d174f19bf81",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "982be8aafc699f94cb9d7eb7a253b94c",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "982be8aafc699f94cb9d7eb7a253b94c",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "NixeIdleDown": {
+      "clip": "Assets/AnimationClip/NixeIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a7123f23e111c2549951c3dfbb334e4d",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "52c7e11096c23c041b07b287bb9b21b7",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8ae6ddb43aae33a4e9d3f560a40be015",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "641c9ea2556ca6b4f8712a699bf1d10c",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "7aa8684b348d10747bda80bf9cef8454",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "417016e3dc3e23045ba598dbc96539d7",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "bee9cf5499456df468f3aca8bacec9a3",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "73812448343f51148b95346ea75b7d75",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "f877e42499264b84abd91170f27f84bf",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "802fb70daead7e44491e4e394910138e",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "09538fe0bd0ef0b4bb9867e68f1385fc",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "8bda7ab98e6d4204ca7afa5c854b6f8e",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "8bda7ab98e6d4204ca7afa5c854b6f8e",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_51.asset"
+          }
+        }
+      ]
+    },
+    "NixeIdleHorizontal": {
+      "clip": "Assets/AnimationClip/NixeIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fc6d36277361ac24eb407e6882a81609",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "704a96f01b753084e8972001b3145846",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "fcc7b8bfd636b9e448b4f217fed6cc4e",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "72898b1212a567b4ca3e02cdac00602d",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "eeadca283eafb90478f0363882c98b2c",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "2bc5536b364b7e243aa929267344913a",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "dc85d777c68f2d546a6a8abfbf6d5113",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "a56f0dba59c33de4181c668e4b34aede",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "79e4bfa152c552c498cded094e71b90a",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "c5035ef5e96ba894a87942b6847ee3a4",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "0150c97bc4d23f444951c380e1132a04",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "3f382e0a5cacc76419a57e0e7fd6297d",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "3f382e0a5cacc76419a57e0e7fd6297d",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_31.asset"
+          }
+        }
+      ]
+    },
+    "NixeAttackJump": {
+      "clip": "Assets/AnimationClip/NixeAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b0da8ed4a42f9134589ae037ddca3d27",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "68ea4e0604c28674ea3eb9071bdda652",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b84653f12c992b64081ee839b3fff10b",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "16d5ff49f52d34e4c9a24b9b5e944125",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "0e725849bd23061408561c7c80ce8074",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "01edc245800734444b0fdc7de6a45169",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "01edc245800734444b0fdc7de6a45169",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_17.asset"
+          }
+        }
+      ]
+    },
+    "NixeCast": {
+      "clip": "Assets/AnimationClip/NixeCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9773542e216e4dd4aab1253308d09fd8",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d8153be5a153ce44e977153f21af48cd",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "624a24e0c9c6f024ab2351d14d6b5911",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "17f893fdc50a3d848ba391bc530323cd",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "a8a5b3837b3e6e441bb6089092fd1257",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "b5dbcb7990626da47afd38f73ea81920",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6fdd93aa60c2c3a4698843c3f7ae71e6",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "11b54c6caeea95146b8cfc842d2e4868",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "5e4be443c028ec9478ca744ab2dfbf58",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "56f41e7450d155c449c0c258273087d7",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "453939d3c35cbfc4fb1bc7b08f36b4a0",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.8749999,
+          "sprite_guid": "453939d3c35cbfc4fb1bc7b08f36b4a0",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_44.asset"
+          }
+        }
+      ]
+    },
+    "NixeWalkDown": {
+      "clip": "Assets/AnimationClip/NixeWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c7e20f564626b844eba08d8a4df57437",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "34ca636bdd9bbba48b871765f51db4a1",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a664a57b92eea4649af027f04697315f",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7a3da6dfd43368c469a8111f5a63634e",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d7bdddb22d648c84f8b575a38e298c70",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c8171464c6b1eb341ab8a8820e7b321a",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ea88d790a1911d945a22609b7ca5243b",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "f139065b32bb1d0418daca83feb59195",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "f139065b32bb1d0418daca83feb59195",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "NixeCastEnd": {
+      "clip": "Assets/AnimationClip/NixeCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1651262e01b32be4dbd14981e19b2769",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "1651262e01b32be4dbd14981e19b2769",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "NixeCombatIdle": {
+      "clip": "Assets/AnimationClip/NixeCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d643f3291dde63d4fad4192db4cc0a8a",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "34bdcfa95df3dd74194e7d708503ac6f",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "132b59b3c09f95a45b760292f54e8971",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "73207ce17eb4bed43b2640c8e957aabb",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "48d18155e55d54c4eaf754162485ddf8",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "317e6e1bed2d0224696e6e257df98a8d",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "d9e54d6d7a4f6f74c8ba721a40cfa79d",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "b19d25b34374a9c45b5aec50624c83fa",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "d2f32b8b664f8594abdd6b08b5e7c53c",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "207e61556faaa224c9e83e5d2389077b",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "25571d792277ce3418445c1d3944c58a",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "a99f0081be4ff2c4a894315efdb61e23",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "a99f0081be4ff2c4a894315efdb61e23",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "NixeWalkHorizontal": {
+      "clip": "Assets/AnimationClip/NixeWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9ba92772106a9534fb7ec7b0ea1f03b4",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "543ba45e186704d45ba445b3d463cbb8",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "11cd770a46ce4b344942d473dfe0369f",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7daaa9fb78240df48b7e890d607eb42b",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "5dfa4e910e406944b99f320441397b21",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "88d953b6ed8a71143a201c39571c16f4",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0508138e8a396914699fdfba11deb985",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "4cb41e1d224f06e40a0dc38f8f3f14cb",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "4cb41e1d224f06e40a0dc38f8f3f14cb",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "NixeAttackEnd": {
+      "clip": "Assets/AnimationClip/NixeAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "17e70074b66e8ef42bc0d47c9328abf3",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "082648ca1d834ce4090f7f94fb0e44d2",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ec2d8e6e5fa6cc64582ed488b81495e4",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "0cac11dd3855f1240937622edc165ded",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "0cac11dd3855f1240937622edc165ded",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "NixeHit": {
+      "clip": "Assets/AnimationClip/NixeHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0e725849bd23061408561c7c80ce8074",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0e725849bd23061408561c7c80ce8074",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_16.asset"
+          }
+        }
+      ]
+    },
+    "NixeCastStart": {
+      "clip": "Assets/AnimationClip/NixeCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "af5a1d9a58fdfba48aaad5cc4fa304df",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "6b100c7d04317234992a8b6e311eca8b",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "cb0c3ade7deea0544ae4b7042b6fcb15",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ad648fe4294064547a084df31e0089bb",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_33.asset"
+          }
+        }
+      ]
+    },
+    "NixeJumpBack": {
+      "clip": "Assets/AnimationClip/NixeJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "17e70074b66e8ef42bc0d47c9328abf3",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "082648ca1d834ce4090f7f94fb0e44d2",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ec2d8e6e5fa6cc64582ed488b81495e4",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "0cac11dd3855f1240937622edc165ded",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "0cac11dd3855f1240937622edc165ded",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "NixeAttack": {
+      "clip": "Assets/AnimationClip/NixeAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "37e4f32f0a3cf8045a61dab50174dd35",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ed30d017ba3e53b448671fbfb0fddd25",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "da3d8b91c3de196439e6798eeefd558f",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "2a0d1025bede0224da13f853014f52fd",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d78830b16c15eac41bd7665d13fc4ec6",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "3aada7a6153616742b58c7dce8e46896",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4583333,
+          "sprite_guid": "5b2d7b8a42194954ca530bac662c615c",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "4b17f800ec93f4c4eaff49405d43917e",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.58333325,
+          "sprite_guid": "4b17f800ec93f4c4eaff49405d43917e",
+          "sprite": {
+            "name": "Nixe_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Battle_Spritesheet_25.asset"
+          }
+        }
+      ]
+    },
+    "NixeWalkTop": {
+      "clip": "Assets/AnimationClip/NixeWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "97eee8ed3a7a5cb41a7244ce00354f64",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1541337efe0b268499b529df72668492",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "12022c70566f7624b93e61b0eda55bba",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "bfd436bf89195d14b97e2120e2eb53e2",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "4af4716e66a694b43ba4f79c00848865",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "e299ed367cdbdc345925b3e6746e2bb8",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e92792ea65d28be4e9325fcf94412b50",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "c633cf999ac108147aa102ed946376df",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "c633cf999ac108147aa102ed946376df",
+          "sprite": {
+            "name": "Nixe_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Nixe/sheets/Nixe_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nixe_Overworld_Spritesheet_19.asset"
+          }
+        }
+      ]
+    }
+  }
+}

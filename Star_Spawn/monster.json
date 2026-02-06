@@ -1,0 +1,3230 @@
+{
+  "name": "Star Spawn",
+  "prefab": "MonsterStarspawn",
+  "prefab_path": "Assets/GameObject/MonsterStarspawn.prefab",
+  "data": {
+    "name": "Star Spawn",
+    "ids": {
+      "ID": 1011,
+      "MonID": 21
+    },
+    "stats": {
+      "BaseMaxHealth": 30,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398046511104,
+      "ElementsOverride": 4398047035392
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 2,
+          "Hits": 4
+        }
+      ],
+      "boss_stagger": [
+        {
+          "Element": 2,
+          "Hits": 4
+        },
+        {
+          "Element": 3,
+          "Hits": 4
+        }
+      ],
+      "boss_alternative_stagger": [
+        {
+          "Element": 0,
+          "Hits": 4
+        },
+        {
+          "Element": 1,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Aether",
+      "Power",
+      "Age"
+    ],
+    "types_override": [
+      "Aether",
+      "Heal",
+      "Age"
+    ],
+    "traits": {
+      "signature": "Tides of the Void",
+      "traits": [
+        {
+          "name": "Ancient Power",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Outlast",
+          "min_difficulty": 3,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Explosion",
+        "Star Beam"
+      ],
+      "start_override": [
+        "Breeze",
+        "Light Beam"
+      ],
+      "reset_action": [
+        "ResetActionPower"
+      ],
+      "reset_poise_action": [
+        "ResetActionAether"
+      ],
+      "scripted": [
+        "Star Beam",
+        "Light Beam",
+        "Lava Surge",
+        "Icy Assault",
+        "Ancient Blast",
+        "Breeze",
+        "Crystal Charge",
+        "Explosion"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Shield",
+          "multiplier": 5
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        }
+      ],
+      "champion": [
+        {
+          "name": "Aether",
+          "multiplier": 2
+        },
+        {
+          "name": "Health",
+          "multiplier": 10
+        },
+        {
+          "name": "Water Generator",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Healing",
+          "multiplier": 1
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterStarspawn",
+      "path": "Assets/GameObject/MonsterStarspawn.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "d7d378f4dd419054a891692c9171fdae",
+      "file": "Database/Star_Spawn/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Star-Spawn",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Star_Spawn/sheets/Portrait_Star-Spawn.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Star-Spawn.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "dee5b7c5163428a4fb89bd22dc4f5bbd",
+      "file": "Database/Star_Spawn/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_StarSpawnPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Star_Spawn/sheets/Trait_StarSpawnPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_StarSpawnPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "4d2728ce109031047b6d6b3da7fc8967",
+      "file": "Database/Star_Spawn/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "StarSpawn_SpriteSheet_15",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 980,
+          "y": 980,
+          "width": 196,
+          "height": 196
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.32
+        },
+        "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_15.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "38080605e213cd74bbff4a983a2bf38d",
+      "file": "Database/Star_Spawn/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "StarSpawn_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 1176,
+          "width": 196,
+          "height": 196
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.32
+        },
+        "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/StarSpawn_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "66f2debcd9ebe0045a1faa87823171e8",
+      "file": "Database/Star_Spawn/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "StarSpawn_Exploration_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15
+        },
+        "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "23752e930da4fc54ca0bcbb35bcab53a",
+      "file": "Database/Star_Spawn/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Starspawn_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15
+        },
+        "sheet": "Database/Star_Spawn/sheets/Starspawn_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Starspawn_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "33bedd4c476df704ca45dd577888d2d1",
+      "file": "Database/Star_Spawn/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Star-Spawn_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Star_Spawn/sheets/Portrait_Star-Spawn_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Star-Spawn_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "Starspawn_JumpBack": {
+      "clip": "Assets/AnimationClip/Starspawn_JumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bf5892572c078f849a199d2a5ca49f47",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ca4d788ca554dfe47a85bfa8c982386b",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_39.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "ca4d788ca554dfe47a85bfa8c982386b",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_39.asset"
+          }
+        }
+      ]
+    },
+    "StarSpawnWalkDown": {
+      "clip": "Assets/AnimationClip/StarSpawnWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "66f2debcd9ebe0045a1faa87823171e8",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "7f2491f47cde5ac47b5daf10088dfc8a",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "74235ed933ca20543b29842f105b1e80",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "a99959622b26f5242aa10974030646c5",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "6832630d661613b4682774d8201c4022",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "5fee679d69abbfc4cb15fc518651bbc2",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "c32e1da7674ce4641bbeb133f7e32d4c",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "baa62680311a80449943a04b4d354a5a",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "fa55c0e5f69713e47a7779ccaffdeaac",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "3d3d3858f1f7b38489970c5ff5438563",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "3a1ff2af0c5acea41b94e629ceb4cbf5",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "f9f55d1240a8b4a4ebb42ff0893f3d9f",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "f9f55d1240a8b4a4ebb42ff0893f3d9f",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "Starspawn_AttackJump": {
+      "clip": "Assets/AnimationClip/Starspawn_AttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "50fcc9efdc4838f4e8bbe94483fad8f6",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_24.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "969183cd014983f44a16431565149678",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_25.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9f4d7ff466af9b8428dbd6287180dee9",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_26.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c110e19d00843b14f99c80bb79966369",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_27.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "c110e19d00843b14f99c80bb79966369",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_27.asset"
+          }
+        }
+      ]
+    },
+    "Starspawn_Attack": {
+      "clip": "Assets/AnimationClip/Starspawn_Attack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "368b93ac2f414004194cd773b3149608",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_28.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "55977759900cb2340b92aa584a6a96af",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_29.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b204c03040cfc544ca7e404c7c51477e",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_30.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7e660dd5449905d46a2753571eda1ca4",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_31.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "20ef880f525211c448402e8b390505df",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_32.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "20ef880f525211c448402e8b390505df",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_32.asset"
+          }
+        }
+      ]
+    },
+    "Starspawn_CastStart": {
+      "clip": "Assets/AnimationClip/Starspawn_CastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "764bf7583904e394c8dad765c85efdef",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f1b3a674552d6ca4da7428063ee0713a",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_41.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "3ce0114e9aa4c3e4fadf8c9392da5889",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_42.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "8ec3dd86eca2f7245833e30ce09a765d",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_43.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f15a4b3d74ab68847a1c7d8c50898ea3",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_44.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "a3af22e54f0693146ac03da1cde8c11e",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_45.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3c9ae40da760e5d418d41683a1a9e8bd",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_46.asset"
+          }
+        }
+      ]
+    },
+    "Starspawn_CastEnd": {
+      "clip": "Assets/AnimationClip/Starspawn_CastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1c73b4b02a51a964ab825f75589e3c84",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_53.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "18fcc75d2d2911b498dc997eceec1a82",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_54.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "75463a983ddf2e442a33f001c1aca55a",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_55.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "02b3664a4b179164fb1a73253a9790eb",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_56.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "7542769f5bbc3324d820c8442478f426",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_57.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "7542769f5bbc3324d820c8442478f426",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_57.asset"
+          }
+        }
+      ]
+    },
+    "StarSpawnWalkHorizontal": {
+      "clip": "Assets/AnimationClip/StarSpawnWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c3ac975af54ad3347bfab9d0099e0925",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "c02bce510bf26dd4d981dbfbc6522a8e",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "76b33aa43cb0c204c918b64ba949489e",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "5473c0f72319d9246b1a754ca2cf7cf5",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "8dd55d12230137a42a5aa4c8a61593a1",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "cb4711d555d66e343b089eee8598228e",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "b794b7d8f7edc1940b87dbebc185bc93",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "22019fd87b2cd454e956a28207386ef7",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "cd3335c48781e4d47b221e71a2ae0c32",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "b65b9b6c4fac6314ab465f304d1864ed",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "0cc74c7e13994f94a8121366e136fe37",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "3a8e858a1a976354eaa25ad76cdcfa18",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "3a8e858a1a976354eaa25ad76cdcfa18",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_23.asset"
+          }
+        }
+      ]
+    },
+    "Starspawn_Cast": {
+      "clip": "Assets/AnimationClip/Starspawn_Cast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "160bc5eeb1778f74bbe69e1300ece09a",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 196,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_49.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "4c2a2aff696fe5845b83ad9c1fc3ba44",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_50.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c9245523d20e48c4da075f967336ddd6",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_51.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ab400d83db85cac47862b484d0e90ed7",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_52.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "ab400d83db85cac47862b484d0e90ed7",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_52.asset"
+          }
+        }
+      ]
+    },
+    "Starspawn_CombatIdle": {
+      "clip": "Assets/AnimationClip/Starspawn_CombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d43bbe2a027be9f4a85ba5e638c06b9f",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "62d04e4a2c9936f4f93a49e96a41cf91",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "36a1339d27c0e714b849d4d05b9eff8b",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "45727348ffd28f54da43cd3520151a3f",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "5aaa0640ab530be44b25d1693cec8ac7",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "e95258142220a3d44b97bf90c13c6aef",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6ca427a7570b2cb41ac7b96ff3d5f1ea",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "aa9d3c3d1baba5f4795c9cdf0af37597",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "8e5e947756f7d394e90d2fb8c34a748a",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "d99ec9e838376224595c7481b5f25a43",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 1176,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "fc3155fea73034c4a9e90f4b661dd095",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "4e8b5cee11294984da248f8a97e8aee2",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "9c36964d38c48664aa7149b6872546e8",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "af8a037a0b5da844ab061bc6f9e9585a",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "3759328ec019bcc4cba32bb353182579",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "4d2728ce109031047b6d6b3da7fc8967",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_15.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "2e5057f032f374a45bf2a4efa503a230",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1176,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_16.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "68fadf871d55f5648ac63f40dfc1ab89",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1372,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_17.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "354bc0045978e1b4d9a64ae66bd841c7",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_18.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "15adc8deabab07d479d371cc7fb0b620",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 980,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_19.asset"
+          }
+        },
+        {
+          "time": 1.6666669,
+          "sprite_guid": "400eaffc344fdf74984bb13d3512f845",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_20.asset"
+          }
+        },
+        {
+          "time": 1.7500002,
+          "sprite_guid": "7aa46bb0088630e4597a9fb01363f103",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_21.asset"
+          }
+        },
+        {
+          "time": 1.8333336,
+          "sprite_guid": "0bf4bf8cc803664438b0aad952478f9b",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_22.asset"
+          }
+        },
+        {
+          "time": 1.916667,
+          "sprite_guid": "736f1a2f9e55baa4eb7ac839361313a4",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_23.asset"
+          }
+        },
+        {
+          "time": 1.9583336,
+          "sprite_guid": "736f1a2f9e55baa4eb7ac839361313a4",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 784,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_23.asset"
+          }
+        }
+      ]
+    },
+    "StarSpawnWalkTop": {
+      "clip": "Assets/AnimationClip/StarSpawnWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "076b4c731e3eb784a96eaf7c22e25aec",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "e11668cb29f336544a06a8f7aadb048d",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "3a8678bccaedd8e4988da124abed8771",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "03f689d94d2d3554081feca0d3a76d8c",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "3707b3ec573306b44a4741fb50aecaaa",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "99943ee92cf074449b7186b5a0ab1ea2",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "d825059c8c33b5548b084a5cd0ce4d6f",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "a526a31382877f64a8715ff4566b56b3",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "36b8b0e253324f64bbcf2b930d3d850c",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "fe5d312749e8ef64abfd78fe081dbb10",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "1bbb4643684b30e49a5d86043149de2c",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "edc72ee8e4aae1a49ab11b72a3de6551",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "edc72ee8e4aae1a49ab11b72a3de6551",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "Starspawn_AttackEnd": {
+      "clip": "Assets/AnimationClip/Starspawn_AttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3d2cfd199d85c78448ea4cf8e05029fa",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1764,
+              "y": 588,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_33.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ef248804c496b98489cfb91a7c026ed8",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_34.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5ec9864965545e8459b4bd3b8fd7afb5",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_35.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6e663fe69f4dc6a428b6e2439b01b24f",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_36.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "fe86c0b9e37341c418e7494011305fad",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_37.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "fe86c0b9e37341c418e7494011305fad",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 392,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_37.asset"
+          }
+        }
+      ]
+    },
+    "StarSpawnIdleDown": {
+      "clip": "Assets/AnimationClip/StarSpawnIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "66f2debcd9ebe0045a1faa87823171e8",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "7f2491f47cde5ac47b5daf10088dfc8a",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "74235ed933ca20543b29842f105b1e80",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "a99959622b26f5242aa10974030646c5",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "6832630d661613b4682774d8201c4022",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "5fee679d69abbfc4cb15fc518651bbc2",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "c32e1da7674ce4641bbeb133f7e32d4c",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "baa62680311a80449943a04b4d354a5a",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "fa55c0e5f69713e47a7779ccaffdeaac",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "3d3d3858f1f7b38489970c5ff5438563",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "3a1ff2af0c5acea41b94e629ceb4cbf5",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "f9f55d1240a8b4a4ebb42ff0893f3d9f",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "f9f55d1240a8b4a4ebb42ff0893f3d9f",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "StarSpawnIdleHorizontal": {
+      "clip": "Assets/AnimationClip/StarSpawnIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c3ac975af54ad3347bfab9d0099e0925",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "c02bce510bf26dd4d981dbfbc6522a8e",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "76b33aa43cb0c204c918b64ba949489e",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "5473c0f72319d9246b1a754ca2cf7cf5",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "8dd55d12230137a42a5aa4c8a61593a1",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "cb4711d555d66e343b089eee8598228e",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "b794b7d8f7edc1940b87dbebc185bc93",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "22019fd87b2cd454e956a28207386ef7",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "cd3335c48781e4d47b221e71a2ae0c32",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "b65b9b6c4fac6314ab465f304d1864ed",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "0cc74c7e13994f94a8121366e136fe37",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "3a8e858a1a976354eaa25ad76cdcfa18",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "3a8e858a1a976354eaa25ad76cdcfa18",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_23.asset"
+          }
+        }
+      ]
+    },
+    "StarSpawnIdleTop": {
+      "clip": "Assets/AnimationClip/StarSpawnIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "076b4c731e3eb784a96eaf7c22e25aec",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "e11668cb29f336544a06a8f7aadb048d",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "3a8678bccaedd8e4988da124abed8771",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "03f689d94d2d3554081feca0d3a76d8c",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "3707b3ec573306b44a4741fb50aecaaa",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "99943ee92cf074449b7186b5a0ab1ea2",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "d825059c8c33b5548b084a5cd0ce4d6f",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "a526a31382877f64a8715ff4566b56b3",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "36b8b0e253324f64bbcf2b930d3d850c",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "fe5d312749e8ef64abfd78fe081dbb10",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "1bbb4643684b30e49a5d86043149de2c",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "edc72ee8e4aae1a49ab11b72a3de6551",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "edc72ee8e4aae1a49ab11b72a3de6551",
+          "sprite": {
+            "name": "StarSpawn_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_Exploration_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "Starspawn_Hit": {
+      "clip": "Assets/AnimationClip/Starspawn_Hit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f8ccf2dbf1622414a9e390a1b39e7afe",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_58.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "f8ccf2dbf1622414a9e390a1b39e7afe",
+          "sprite": {
+            "name": "StarSpawn_SpriteSheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 0,
+              "width": 196,
+              "height": 196
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.32
+            },
+            "sheet": "Database/Star_Spawn/sheets/StarSpawn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/StarSpawn_SpriteSheet_58.asset"
+          }
+        }
+      ]
+    }
+  }
+}

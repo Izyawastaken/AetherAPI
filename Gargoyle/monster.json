@@ -1,0 +1,3121 @@
+{
+  "name": "Gargoyle",
+  "prefab": "MonsterGargoyle",
+  "prefab_path": "Assets/GameObject/MonsterGargoyle.prefab",
+  "data": {
+    "name": "Gargoyle",
+    "ids": {
+      "ID": 1248,
+      "MonID": 15
+    },
+    "stats": {
+      "BaseMaxHealth": 35,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194140057600
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 0,
+          "Hits": 3.25
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Sidekick",
+      "Shield",
+      "Power"
+    ],
+    "types_override": [
+      "Sidekick",
+      "Shield",
+      "Tank"
+    ],
+    "traits": {
+      "signature": "Earthen Striker",
+      "traits": [
+        {
+          "name": "Shielding Winds",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Mineralize",
+        "Hurricane Punch"
+      ],
+      "start_override": [
+        "Roar",
+        "Stone Punch"
+      ],
+      "reset_action": [
+        "ResetActionShield"
+      ],
+      "scripted": [
+        "Stone Fist",
+        "Lightning Shield",
+        "Hurricane Punch",
+        "Mineralize",
+        "Roar",
+        "Stone Punch"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Shielding",
+          "multiplier": 1
+        },
+        {
+          "name": "Sidekick Damage",
+          "multiplier": 1
+        }
+      ],
+      "void_tier2": [
+        {
+          "name": "Shielding",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Shielding",
+          "multiplier": 1
+        },
+        {
+          "name": "Shield Generator",
+          "multiplier": 2
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterGargoyle",
+      "path": "Assets/GameObject/MonsterGargoyle.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "5b102889aa36adb4386f7b6883a2f6f4",
+      "file": "Database/Gargoyle/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Gargoyle",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Gargoyle/sheets/Portrait_Gargoyle.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Gargoyle.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "19df60f17bf035a49b5cb727593e592b",
+      "file": "Database/Gargoyle/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_GargoylePortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Gargoyle/sheets/Trait_GargoylePortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_GargoylePortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "fc580d228684bac438039189fff1209c",
+      "file": "Database/Gargoyle/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Gargoyle_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.28
+        },
+        "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "e127877fe9a41b94fa7c62f44e76c861",
+      "file": "Database/Gargoyle/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Gargoyle_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.28
+        },
+        "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Gargoyle_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "029b2308cbd73dc43a141e5bea4380c7",
+      "file": "Database/Gargoyle/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Gargoyle_Exploration_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "c1244e4d30056854c97e39024b53da45",
+      "file": "Database/Gargoyle/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Gargoyle_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Gargoyle_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "7217ed2f0231c944aa2bc7f7fa716202",
+      "file": "Database/Gargoyle/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Gargoyle_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Gargoyle/sheets/Portrait_Gargoyle_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Gargoyle_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "GargoyleWalkTop": {
+      "clip": "Assets/AnimationClip/GargoyleWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c05088c50bdb797499e9b64f8e713759",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "aaecb84aef7cb274f8b1ccf254eb5615",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "cc88ee2f9f08e7049b301fe89ba6d0de",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "40ce3689e8871554489fd824ef3ce34b",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "23145020df8316a458eea4b65f00cf94",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "43dc99632f34cb64080e88cd39f64b0e",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "333f10f91ea0bff4ebd504760d8b0436",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "89b665f0a1c4b584a92bb65ab6b52a98",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "f26e8851c2f7b8848a8e1d4f405bf92e",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "4303ddb45de2a0c409c5452fbfb2c697",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "4303ddb45de2a0c409c5452fbfb2c697",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleCastEnd": {
+      "clip": "Assets/AnimationClip/GargoyleCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "662bcea9b87894b4c92bc88ae818d175",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "55444046abbbace44b9c7b43e8e98f98",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "7ae3302d38fbfc44e87714e8b5c894ad",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "41a5c1f717023a149aa01cbc3ae2834a",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "84a4676d9bde67a4290b89f0cc325a8a",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "4da7b02a1fa5c3c4c97935d163261868",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f8595b6879fbcc840b97df4f8b96af51",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "f8595b6879fbcc840b97df4f8b96af51",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_42.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleIdleTop": {
+      "clip": "Assets/AnimationClip/GargoyleIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "029b2308cbd73dc43a141e5bea4380c7",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "c63208c1994f4c341aacdb648d468b01",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 499,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "574a886b29243014fbf12a60ca6de3b9",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "7904e2d2672b10849864014c1220ccc0",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "e54cb55230eb2fd4e92ab343bd229566",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "efc6459a2f92fc54faf8423adcfe4fcb",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "91ea21bb33f3e224c97cf06727154eec",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "c0c9c14b517cef34e93d56026751f397",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "1971b2c0166f4114e99b59cbe8d1a138",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "6f9ec67009cdea24ca5987dbaa263742",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "6f9ec67009cdea24ca5987dbaa263742",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleIdleHorizontal": {
+      "clip": "Assets/AnimationClip/GargoyleIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f0e06257607e047408ff822b73f363ff",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "dff9fcb7b83d75843842ad2f67ff3610",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "c6ea314be2db6d344a09f981d5a04183",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "c614681280ca27145acd7d4679280438",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "41a9ddf3825ba084fb05baecc7c9eb85",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "b7ed41be647c0104b888fb891353640d",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "f1208ee5d4bdb5c4aaa78c8ad92e94ac",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "cad6f27f44a2f0c4c9e7307d3f44274d",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "81e5c8e8457ef0e429820d8cc0bd7bf1",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "a15e5a08a988f1841b976f70b481bd79",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "a15e5a08a988f1841b976f70b481bd79",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleAttackJump": {
+      "clip": "Assets/AnimationClip/GargoyleAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c7d593a544263fe4a9bc526f6f4f5e6b",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5f06e58c6a9e8bc4b84585d906c7bd0c",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f776705d110ff6f48a9133ff14b54c83",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c3d0b011e17a7d84ba417517b6a1fe34",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "c3d0b011e17a7d84ba417517b6a1fe34",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_13.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleCastStart": {
+      "clip": "Assets/AnimationClip/GargoyleCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "03e9dd184f6bd834c9699e42030a5008",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "121bbbcd37cebc44ba937b9b3a464235",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9d4c71f6fd44f7a47b1db95aee34b262",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cebf8786177227746b2c3256870b6c15",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "4dd4e66e057d6f843880d9e280987930",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "1b1bf2a53e0c7c142898b2c1fead170e",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "3d56737b13785fa4e897d772955ece51",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "2e26070a0fbcd184b8396900ae5ac512",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "d45b7a8a26296b14c9245a928128bfb9",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "e7b8d5c8ea5d0b34f986f5a2c223a1ef",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "e7b8d5c8ea5d0b34f986f5a2c223a1ef",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_31.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleWalkHorizontal": {
+      "clip": "Assets/AnimationClip/GargoyleWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cc8ccfaa86745304ab499504355f2b9f",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "fc0f7cc4fb13a2a4086fb4ed8669f277",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "fc34937414f4d3541a461e16db9bc212",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "383f710e47286724ba3f41004d4dd902",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "291565108db05e9499def0f729c1351a",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "06c9e6e981d9e654ea2fe9655a1685c9",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "0f5fff0eddbdfbb49833e9e899658550",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "caa4c851dd19e0742802e16ada4e9f0e",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "dc073acd1c821b947bdd5d4c1f9f3f8d",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "4284304fedcfdc443b3b748ca4caeba5",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "4284304fedcfdc443b3b748ca4caeba5",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleIdleHidden": {
+      "clip": "Assets/AnimationClip/GargoyleIdleHidden.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bb99940cd0130fd4396d119ee53e07d2",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_0.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "bb99940cd0130fd4396d119ee53e07d2",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_0.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleHit": {
+      "clip": "Assets/AnimationClip/GargoyleHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "16afdb4aa86a05049987955247283c33",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "16afdb4aa86a05049987955247283c33",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_43.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleAmbush": {
+      "clip": "Assets/AnimationClip/GargoyleAmbush.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bb99940cd0130fd4396d119ee53e07d2",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_0.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "0326e30da74a5ac4da4ef7c278a0ebff",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 98,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_1.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3cd5a5a77312131478cefa1b7ca8acc2",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_2.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "c4c6fd730a07d964ca96c627fbed15da",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 294,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_3.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "4c221c3ef26341647aa9adcc20057cd6",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_4.asset"
+          }
+        },
+        {
+          "time": 0.75,
+          "sprite_guid": "0c4e813507589a140be627944f352e39",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 490,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_5.asset"
+          }
+        },
+        {
+          "time": 0.8333333,
+          "sprite_guid": "299e80481c8d1d9478d76312274cb41d",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_6.asset"
+          }
+        },
+        {
+          "time": 0.99999994,
+          "sprite_guid": "21462e35894653040b05da46c6c7b5a8",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 784,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_7.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "7773a20449bcae8449d8152b276182c9",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 882,
+              "y": 111,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_8.asset"
+          }
+        },
+        {
+          "time": 1.1666665,
+          "sprite_guid": "f96fcfa7e620db641859a4b00ab93f1e",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_9.asset"
+          }
+        },
+        {
+          "time": 1.2499998,
+          "sprite_guid": "2eb1388cf6a2952498e6194886867532",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 98,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_10.asset"
+          }
+        },
+        {
+          "time": 1.333333,
+          "sprite_guid": "b04cd219300ad524f90f05b3f588e540",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 196,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_11.asset"
+          }
+        },
+        {
+          "time": 1.4166664,
+          "sprite_guid": "b35676eb3395cb1469488bf43b41c96c",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 294,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_12.asset"
+          }
+        },
+        {
+          "time": 1.4999998,
+          "sprite_guid": "d9594541a324fda428b09f9621dc5fa3",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 392,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_13.asset"
+          }
+        },
+        {
+          "time": 1.5833331,
+          "sprite_guid": "68cf0859a331c6e4e81cf471ed4dfef6",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 490,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_14.asset"
+          }
+        },
+        {
+          "time": 1.6666665,
+          "sprite_guid": "43cb769985a935c4ea8d2de2fcaa2ad3",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 588,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_15.asset"
+          }
+        },
+        {
+          "time": 1.7499999,
+          "sprite_guid": "37615a1334e9af74b810fbb3e03da60f",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 686,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_16.asset"
+          }
+        },
+        {
+          "time": 1.7916666,
+          "sprite_guid": "37615a1334e9af74b810fbb3e03da60f",
+          "sprite": {
+            "name": "Gargoyle_Overworld_Ambush_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 686,
+              "y": 0,
+              "width": 98,
+              "height": 111
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.0990991
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Overworld_Ambush.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Overworld_Ambush_16.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleAttackEnd": {
+      "clip": "Assets/AnimationClip/GargoyleAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9baaa92b3f8b6e84d9c72cac4c2d282c",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b26fd629a442d0943aa1a3b6fbc4e827",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "226f589990759794b86cd75de48297be",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "226f589990759794b86cd75de48297be",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleJumpBack": {
+      "clip": "Assets/AnimationClip/GargoyleJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b937eefccf217d440be63cfb75819a46",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "bcad918020c41304eaef01105361e459",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "bcad918020c41304eaef01105361e459",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_21.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleWalkDown": {
+      "clip": "Assets/AnimationClip/GargoyleWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5c00425dbddb62d4e8a52a12b9f8f5c2",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "2d7edd8071c9ec64c83b31099379f54c",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "bba5aac1ddf74a04199055dfc80d616d",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "60ffb610e7e270b4e9f37f66368000d1",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "01641da43ef32fd48aae665dd41cdf88",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c009c8ffabc18ee44a3307693b91efff",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "40c86f720af23154ead02f1469b0f608",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "e9b9537eb1bcab0499dadce219a40339",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "d8112fe9b97a6284dbb1af01f19b7a18",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "3aa6cd2a692d9aa478012e3bdabdd896",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "3aa6cd2a692d9aa478012e3bdabdd896",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleCast": {
+      "clip": "Assets/AnimationClip/GargoyleCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5aa0915dd536c3844b75c98b57565dac",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f220aba5cccfd3847bad086d4cf0cacf",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c26fc076b1b487d4aa9f692c7cfa9cdd",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "614485b346ed67c4687703314dbf49d0",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "614485b346ed67c4687703314dbf49d0",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleCombatIdle": {
+      "clip": "Assets/AnimationClip/GargoyleCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fc580d228684bac438039189fff1209c",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "cf0f1c6e3ab11dc4190c8b4de0c47bb5",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "835f4703d6c487e418885b8cdb77a7bc",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d095bffffe974384f993c841e25b1cae",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "4f7faf4c8ce11a74992576753c6e4775",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "22ad897fae1a04f49bb3e1ead10fcac2",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e0ec49adf329cb2439f3e54e9ba287d5",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "3373a18c6ff41164ca07f511d90c7ccd",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "1ff5b371ec8e1b74690aa6098f0aa50f",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "6568253ef775a984ea1d628b46eef941",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "6568253ef775a984ea1d628b46eef941",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleAttack": {
+      "clip": "Assets/AnimationClip/GargoyleAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ec8301457daf6db449206350d0dec09a",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "2a6812e930ae6e04cab66a6eac6b0a53",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "1eaa4b83b638f4a4e89192e7cd206548",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1eaa4b83b638f4a4e89192e7cd206548",
+          "sprite": {
+            "name": "Gargoyle_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.28
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Battle_Spritesheet_16.asset"
+          }
+        }
+      ]
+    },
+    "GargoyleIdleDown": {
+      "clip": "Assets/AnimationClip/GargoyleIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c366174e38da57540b2793a420fd0bc6",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "8ed7ff031c30c3c4dbb846e665b95205",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "e6d6fcb1aaa7d8b48bfdf8d86459d91e",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "fde694fc2aaf1c549ababd07bd008ab0",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "63cbb33a5405ebe43b0dbf63e5717ee0",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "64a3963e2e21e2d49a0c96fd0b1a53d0",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "d1e4d5bd1ae9b314bb9d066565c620c4",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "7dc0d531f4075174cbd671b8b43c485f",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "b396853e6f7446c498f32d7dd0e333f9",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "68db48da67cd3854e80445b97577b9c3",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "68db48da67cd3854e80445b97577b9c3",
+          "sprite": {
+            "name": "Gargoyle_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Gargoyle/sheets/Gargoyle_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Gargoyle_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    }
+  }
+}

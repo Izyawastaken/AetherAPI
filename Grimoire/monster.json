@@ -1,0 +1,2838 @@
+{
+  "name": "Grimoire",
+  "prefab": "MonsterGrimoire",
+  "prefab_path": "Assets/GameObject/MonsterGrimoire.prefab",
+  "data": {
+    "name": "Grimoire",
+    "ids": {
+      "ID": 1276,
+      "MonID": 20
+    },
+    "stats": {
+      "BaseMaxHealth": 30,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 1048576
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 0,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Purge",
+      "Burn",
+      "Aether"
+    ],
+    "types_override": [
+      "Purge",
+      "Summon",
+      "Aether"
+    ],
+    "traits": {
+      "signature": "Living Tome",
+      "traits": [
+        {
+          "name": "Aether Shield",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Scald",
+        "Swipe"
+      ],
+      "start_override": [
+        "Swipe",
+        "Summon Fire Lance"
+      ],
+      "reset_action": [
+        "ResetActionPurge"
+      ],
+      "scripted": [
+        "UnleashTome",
+        "Wild Ritual",
+        "Summon Fire Lance",
+        "Lava Tide",
+        "Icy Purge",
+        "Scald",
+        "Swipe"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Wild Conversion",
+          "multiplier": 1
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 15
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterGrimoire",
+      "path": "Assets/GameObject/MonsterGrimoire.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "7a461171b46065347a06f41b49e57869",
+      "file": "Database/Grimoire/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Grimoire",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Grimoire/sheets/Portrait_Grimoire.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Grimoire.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "7cc582ada43361141ad296e80b24f136",
+      "file": "Database/Grimoire/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_GrimoirePortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Grimoire/sheets/Trait_GrimoirePortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_GrimoirePortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "9cf86b031d93c094b86f503ebc71d6a6",
+      "file": "Database/Grimoire/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Grimoire_Spritesheet_6",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 1536,
+          "y": 560,
+          "width": 256,
+          "height": 112
+        },
+        "pivot": {
+          "x": 0.25,
+          "y": 0.3
+        },
+        "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_6.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "4dd6d678b0418fb43916365fdbce275d",
+      "file": "Database/Grimoire/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Grimoire_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 560,
+          "width": 256,
+          "height": 112
+        },
+        "pivot": {
+          "x": 0.25,
+          "y": 0.3
+        },
+        "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Grimoire_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "5f5d5be1fddd2e84d8071d248cc81f98",
+      "file": "Database/Grimoire/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Grimoire_Exploration_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.31
+        },
+        "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "b07e1fe35ca2fb842b5926c7c02e04d7",
+      "file": "Database/Grimoire/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Grimoire_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.31
+        },
+        "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Grimoire_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "34b0e00663c4de745871d59d93802bea",
+      "file": "Database/Grimoire/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Grimoire_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Grimoire/sheets/Portrait_Grimoire_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Grimoire_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "GrimoireAttack": {
+      "clip": "Assets/AnimationClip/GrimoireAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2a9cdf6825d17a141a671bb643cdf40a",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "64c599525d8171d48929e26bd18f3e31",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "baa834cf20b12f9459038fcf2d90544a",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b9aa7178439b4f74f8c9fa146bb77f19",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "535b57167141b3b489588a0dd8d090e6",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "1883ec0d1b62bff45ab3b3b2f625eca3",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.4583333,
+          "sprite_guid": "ae642865a9fa39348b6582f85bc2990d",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.49999997,
+          "sprite_guid": "ae642865a9fa39348b6582f85bc2990d",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_26.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireCastStart": {
+      "clip": "Assets/AnimationClip/GrimoireCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b0e7d936c149d4e40a8fcfa9414ddfc4",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1a18aa384082da34aa0f118a43da9666",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "3e67cac3b116a7d48b2f2d5b34fbb599",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "61a1f811117f0134e8fe88bbf82124c7",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "f7f94f9a04b9ff141acc73c0ce9f6d80",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "a57c750f765aeec4f9691a924c29747d",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "fb5851c2c4d6a7644b7159fe0e023608",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "fb5851c2c4d6a7644b7159fe0e023608",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_40.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireAttackEnd": {
+      "clip": "Assets/AnimationClip/GrimoireAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "640941beb253ae14fa23caf6e511b715",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "5acd6ceff4debc24bb2483a69aab7b36",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.08333333,
+          "sprite_guid": "5acd6ceff4debc24bb2483a69aab7b36",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireIdleHorizontal": {
+      "clip": "Assets/AnimationClip/GrimoireIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "dc186fa6087fe3d4e86313093d218332",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "9e5abc62d90ac2941a203a3931ff8b04",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "eb69c6afdfe859e4e83ecc1796c739fd",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "d6a77fdb7fcf17a43b59926196e1fb49",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "55ab9621fbbb63d4c95f4792a1cd6b77",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "aa167c925add69a4e9a80f7103678472",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "5a58ddb490f21154d819a08088770f70",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "f7bcd31d89f9cf44394861762643ecd6",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "016fa522272c8c148b93c7f6c6553e94",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "7c1d0ef7ce32f2d438611b14efa2ec5c",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "7c1d0ef7ce32f2d438611b14efa2ec5c",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireCombatIdle": {
+      "clip": "Assets/AnimationClip/GrimoireCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5b04fa3242d5eb544bcdb12d4bbcd911",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "217527248dda1644db28c3d34693b845",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d0cf4cba79d9bae48852ec4df2a694a4",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "32ba1e41d1951bd45b64ff6b8590797d",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "061cea785a29c0a45a7463f6619e1a74",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "1296f0dc55c96c24c8f1a2d2256758ff",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "9cf86b031d93c094b86f503ebc71d6a6",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e2262fda68d20284fb955e4a74a82365",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "9c306dc8809feb942afbabbbeb4689fb",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "22885e31b2b00ff46ad135434fbd345f",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 560,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "46c5703f4816d40448a4dc7589d0e408",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 448,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "f86982bb309d76941aa5bcf2c7fa7697",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 448,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "d7301612d0a9f014ca4cf843d8711c75",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 448,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "e3d137df6dee3f04e946b4e399d6f7dd",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 448,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "c2d02101333069047a3d120935d9b43c",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 448,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "78837e227117dfc4cbee36f78651008d",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 448,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 1.2916667,
+          "sprite_guid": "78837e227117dfc4cbee36f78651008d",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 448,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_15.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireWalkHorizontal": {
+      "clip": "Assets/AnimationClip/GrimoireWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "53dbfee67a038b04caeff03eac334211",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "5c406c43cfb5660469f0d0d3aacb6995",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "dead40e6dc18d85499f05217e96cfa35",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "7816ff284aa572f47923b4ee5ac1013f",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "9e7aaefae944add4c9756c4ddd56703b",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ba1dfa4cbb4afdf4380d0ddf7e783401",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "646be929ce69264438daffb80fc8b64c",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "4ce955d0d860fe34da2057057600ca01",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "ab794e734029e764da139c7488b9a9ba",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "50ce6fdb15a405744a7ccd94efa46b29",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "50ce6fdb15a405744a7ccd94efa46b29",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireAttackJump": {
+      "clip": "Assets/AnimationClip/GrimoireAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "651c9c54bc8115b4ca0a8aa17658db54",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "191057475f5039a40a42d5ee97e58b94",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5c211e116051e0e42b5befbb483b2725",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d0c85bd158acdbf438858f4a536fc6ea",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "d0c85bd158acdbf438858f4a536fc6ea",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 336,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireWalkTop": {
+      "clip": "Assets/AnimationClip/GrimoireWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "909db68f5ff91a54da2494d0fa687cb0",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "a66a398235ef34848ac8c9bae038f500",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "bbe5c41ce53bb3742910b815fa06cccd",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "e3742dc7b42ccd746872e312613d0740",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "3bcc24f59ab3c8b41894b4723371479f",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "67dd20d1e13e10c48bfb7e8d760e5386",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "c991f44c9cc22544aaeadd5106846e13",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "332a83bd7980917428d9df18db94d1d0",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "9b2d0808ef987e347b47ad71c602e5e6",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "ff57fbb1ac414084e90f6fa5f34fd0c9",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "ff57fbb1ac414084e90f6fa5f34fd0c9",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireIdleTop": {
+      "clip": "Assets/AnimationClip/GrimoireIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5f5d5be1fddd2e84d8071d248cc81f98",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "d4d6f230e67e0f2448da2f42d90cf4df",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "8fbc2d90236ff6b498555d4d5e0fc705",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "3c168271ef4958d4f90290b247ebb694",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "ea37f4f443f9fc6408ecac0aff1fee1a",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c44309d6872f87c40a2dfc5bc28dabc1",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "763dd4a5e0132f84a9adf344893df6c8",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "28cde6c06e3674a4bbd46bef72616816",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "06fd3e56507a4ac4086c58968c6fb09c",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "4afdb7befa3a3ef41b11a319f429a18b",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "4afdb7befa3a3ef41b11a319f429a18b",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireWalkDown": {
+      "clip": "Assets/AnimationClip/GrimoireWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "efdcd57b10a22b640b1984c8f259d013",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "8049aed19f08b91438952f1f90feed42",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "b68e3dc75df42e440ba062ef45a977e7",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "4b7c6df9369658c4e968fb76659dfe7a",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "1e7f43e9f6f70a645a680f8f637cfd23",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "9e30b76227f306542af38a83fa3c530d",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "ec3c07050f7735446afc6344323d45ca",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "2d607f81f7aa8044fac6f86700b202b9",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "1d7006cc25b98f641a0826aa699d2b1c",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "4c3e4cfc9a7e2c642a7ac609a377809c",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "4c3e4cfc9a7e2c642a7ac609a377809c",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireCastEnd": {
+      "clip": "Assets/AnimationClip/GrimoireCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ad33dfde1b521c547a5f8411e2bd7e82",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "a28c9d5f5dc65fe41b62e1f0ab6a9bfe",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "a28c9d5f5dc65fe41b62e1f0ab6a9bfe",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_50.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireIdleDown": {
+      "clip": "Assets/AnimationClip/GrimoireIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f3371580f5daf1f43b674d6da59c4920",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "c20e1f3ab638cc442a9f1516d2044a0c",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "320a0f71c99070d4c8c7056e1ecc5275",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "e590cdad2e79171478613e0d4499bc06",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "88bda6fdf386fad44b5a3c7a474a61be",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f34d6a16aec949e488c19bd4271a7093",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "c5cf5ee711a0b2d4d9c2b82fb879376d",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "178156a22676cb34da8aa78d19a02341",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "c2c99a3367e15334084045c9c3241264",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "5ca9148756422b84c943cbc2fc812c50",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "5ca9148756422b84c943cbc2fc812c50",
+          "sprite": {
+            "name": "Grimoire_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.31
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireCast": {
+      "clip": "Assets/AnimationClip/GrimoireCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "54cf9d972d9882a41b3cea4c86422e6d",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "030ecd3e7813db1488fc95d108c5a467",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "236bd76cafd23e14ab1fba9427044158",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 112,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "484c3fe28e7481444a7e6a6e05ca7c7c",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "675d0f2acc6fdf54f93f6e7f8aa07a89",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "a82f7c83d96f9d645b33051ff6d7edb1",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "82df343624d42e244afaded9ce6a9413",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "7e78aedfd9f312141a936cb2a8a2a718",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "7e78aedfd9f312141a936cb2a8a2a718",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_48.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireJumpBack": {
+      "clip": "Assets/AnimationClip/GrimoireJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e65bed89de4bbe647bd6c54cce517cfb",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.08333334,
+          "sprite_guid": "be22f1ebf7e03a04e9a3ff79b23aeba4",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "ca062519632b4354eb5f1b8433302178",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "37b61ed016e39b646be2acfcdc2f031f",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4583334,
+          "sprite_guid": "37b61ed016e39b646be2acfcdc2f031f",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 224,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_33.asset"
+          }
+        }
+      ]
+    },
+    "GrimoireHit": {
+      "clip": "Assets/AnimationClip/GrimoireHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "23c3a38c0d9e3b746975982f59dba456",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "23c3a38c0d9e3b746975982f59dba456",
+          "sprite": {
+            "name": "Grimoire_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 0,
+              "width": 256,
+              "height": 112
+            },
+            "pivot": {
+              "x": 0.25,
+              "y": 0.3
+            },
+            "sheet": "Database/Grimoire/sheets/Grimoire_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Grimoire_Spritesheet_51.asset"
+          }
+        }
+      ]
+    }
+  }
+}

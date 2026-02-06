@@ -1,0 +1,3478 @@
+{
+  "name": "Djinn",
+  "prefab": "MonsterDjinn",
+  "prefab_path": "Assets/GameObject/MonsterDjinn.prefab",
+  "data": {
+    "name": "Djinn",
+    "ids": {
+      "ID": 325,
+      "MonID": 26
+    },
+    "stats": {
+      "BaseMaxHealth": 30,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398047035392,
+      "ElementsOverride": 13194140057600
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 3,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Dodge",
+      "Force",
+      "Aether"
+    ],
+    "types_override": [
+      "Dodge",
+      "Purge",
+      "Aether"
+    ],
+    "traits": {
+      "signature": "Levitation",
+      "signature_override": "Levitation",
+      "traits": [
+        {
+          "name": "Into the Fray",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Concealed",
+          "min_difficulty": 2,
+          "shift_restriction": 1
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Three Wishes",
+        "Flare Strike"
+      ],
+      "start_override": [
+        "Three Wishes",
+        "Swipe"
+      ],
+      "reset_action": [
+        "ResetActionDodge"
+      ],
+      "scripted": [
+        "Ball Lightning",
+        "Speed of Sound",
+        "Polar Wind",
+        "Air Shield",
+        "Three Wishes",
+        "Three Wishes",
+        "Flare Strike",
+        "Swipe"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 20
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Wind Generator",
+          "multiplier": 1
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Dodge",
+          "multiplier": 1
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 20
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterDjinn",
+      "path": "Assets/GameObject/MonsterDjinn.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "eb98b82a3efd45b489bd635538f16be2",
+      "file": "Database/Djinn/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Djinn",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Djinn/sheets/Portrait_Djinn.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Djinn.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "0e8fbf383d5c15c46a7723933d79b2a4",
+      "file": "Database/Djinn/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_DjinnPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Djinn/sheets/Trait_DjinnPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_DjinnPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "04a278e3cb0fb1d45bd3461dfd061f1e",
+      "file": "Database/Djinn/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Djinn_Spritesheet_7",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 896,
+          "y": 512,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.33
+        },
+        "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_7.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "23d254ceff8093e4a96618ca63e97778",
+      "file": "Database/Djinn/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Djinn_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 512,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.33
+        },
+        "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Djinn_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "5b4054fdcaf9c704b8e045e7efcbc6a0",
+      "file": "Database/Djinn/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Djinn_Exploration_Spritesheet_6",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 600,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.17
+        },
+        "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_6.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "5a3378a829467144c9103afe2b6242cc",
+      "file": "Database/Djinn/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Djinn_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.17
+        },
+        "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Djinn_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "f79b1141f5806b4459d17a7aaec2c8f9",
+      "file": "Database/Djinn/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Djinn_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Djinn/sheets/Portrait_Djinn_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Djinn_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "DjinnIdleHorizontal": {
+      "clip": "Assets/AnimationClip/DjinnIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d42b15bff3c085341a013e3bff5d53ff",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "81906e07809483b49b76ec7056f1cb45",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "e4971ea0e98c04544a476890cbc9a9af",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "761b6c19a7628d4458a243a292f0d651",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "87ef426ba38f25942bae0364187df191",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6eb71dcd3141ecd4c87aecdeb7bc4063",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "5b4054fdcaf9c704b8e045e7efcbc6a0",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "8150c590a9a99e34f9fe4769de103fbf",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "2c3a2b30eb3db0440a771610753d3d3e",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "ad53642cebb171e4dab4b795f6969da3",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "715733481c1c58a4683a068834f5fe3c",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "0b1eea42bf3069044b4022f1bd6894c5",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "0b1eea42bf3069044b4022f1bd6894c5",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "DjinnJumpBack": {
+      "clip": "Assets/AnimationClip/DjinnJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e4f8d553f08402047990e7a49f289ef5",
+          "sprite": {
+            "name": "Djinn_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.08333331,
+          "sprite_guid": "21b0fbc40050f564d9ac242f2e00bc18",
+          "sprite": {
+            "name": "Djinn_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.3333333,
+          "sprite_guid": "062e7b62531e45d44adc1c1a1bad9ba8",
+          "sprite": {
+            "name": "Djinn_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "2e29b8b7d82a0fe43ac341ab10eaeea9",
+          "sprite": {
+            "name": "Djinn_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "2e29b8b7d82a0fe43ac341ab10eaeea9",
+          "sprite": {
+            "name": "Djinn_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_25.asset"
+          }
+        }
+      ]
+    },
+    "DjinnAtackJump": {
+      "clip": "Assets/AnimationClip/DjinnAtackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d130dc27fb9132849892cc923341b40c",
+          "sprite": {
+            "name": "Djinn_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1f03c8d11673d22468d33e90510ec4e1",
+          "sprite": {
+            "name": "Djinn_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2644ce9ed69fb0f469c6593444085ae9",
+          "sprite": {
+            "name": "Djinn_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "283042918d1ab954c9d847dd5416162f",
+          "sprite": {
+            "name": "Djinn_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "5dd1211f6e7e0634eb1bdde7ab0868b5",
+          "sprite": {
+            "name": "Djinn_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "5dd1211f6e7e0634eb1bdde7ab0868b5",
+          "sprite": {
+            "name": "Djinn_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_14.asset"
+          }
+        }
+      ]
+    },
+    "DjinnHit": {
+      "clip": "Assets/AnimationClip/DjinnHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "28cd458452085be419d6dbf3157cd577",
+          "sprite": {
+            "name": "Djinn_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "28cd458452085be419d6dbf3157cd577",
+          "sprite": {
+            "name": "Djinn_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_38.asset"
+          }
+        }
+      ]
+    },
+    "DjinnCastEnd": {
+      "clip": "Assets/AnimationClip/DjinnCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c22cca55ad8024d46b6a9e56260f60a0",
+          "sprite": {
+            "name": "Djinn_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1dc6bd15aa4191d4bbaa84f647adb4b9",
+          "sprite": {
+            "name": "Djinn_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "1dc6bd15aa4191d4bbaa84f647adb4b9",
+          "sprite": {
+            "name": "Djinn_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_36.asset"
+          }
+        }
+      ]
+    },
+    "DjinnIdleDown": {
+      "clip": "Assets/AnimationClip/DjinnIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a902b84f3bb4e72419d641bfd1f76418",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "c1fc2f1c5152a9b4a9333636ce90bcf3",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "9813b50c88548274699e0b2fa5ef0210",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "f57b198f494a92d43aab8a02d9355822",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "2a3a6866f153b0a40b7a34a996759ea9",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "fe1766ca3d95320458c99ddd68b3f488",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "eb17c137786520c4dbebd4db615b5ae0",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "5e6e5fd0218660a47ba04dd567173681",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "de8e61bd730db5749a256562d3c4db52",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "81854ac4d16dfe44fb3ab255f9e1b5b0",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "5ce9cf642b60c4a42bb31796ea6b1f5f",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "fa63ca363fcb29e4b8d3e8d972b80800",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "fa63ca363fcb29e4b8d3e8d972b80800",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_23.asset"
+          }
+        }
+      ]
+    },
+    "DjinnAttackEnd": {
+      "clip": "Assets/AnimationClip/DjinnAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d94ef6fd119f973479623469d205c685",
+          "sprite": {
+            "name": "Djinn_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.08333333,
+          "sprite_guid": "2472433e781be814c8cb57adf17a6418",
+          "sprite": {
+            "name": "Djinn_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.16666664,
+          "sprite_guid": "d85c022d48188d1489e6bb3d7e5217a2",
+          "sprite": {
+            "name": "Djinn_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.20833328,
+          "sprite_guid": "d85c022d48188d1489e6bb3d7e5217a2",
+          "sprite": {
+            "name": "Djinn_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_21.asset"
+          }
+        }
+      ]
+    },
+    "DjinnCastStart": {
+      "clip": "Assets/AnimationClip/DjinnCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "216a9812e3077f640af7362793b3419e",
+          "sprite": {
+            "name": "Djinn_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "dfb4cb0db62e40c40ae6bbdc55a6db4f",
+          "sprite": {
+            "name": "Djinn_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "e29a7ae0122ccf24b9a6036266814d9b",
+          "sprite": {
+            "name": "Djinn_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "a980d99a21cb5d645896dba8513ad4c9",
+          "sprite": {
+            "name": "Djinn_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "89991711f71baba4db0e57f39c6ca693",
+          "sprite": {
+            "name": "Djinn_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_30.asset"
+          }
+        }
+      ]
+    },
+    "DjinnIdleTop": {
+      "clip": "Assets/AnimationClip/DjinnIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c0c409174664ecf4593b02aa06418fd9",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "ef1140d61fbe73d409e4c0dd18d6c91b",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "914b4f300c7f57140a621a7078848549",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "6ec0daabac016f040a1918a43d70d345",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "6c2ca13d4520cfa4c9f461abcc13cbda",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0cb9b3e60b63c994b9d0f6e12a3899f0",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "8c215b056c2bfd84c90e5dbba69d5cbc",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "110c33599447e38479b999b6101bf391",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "75366513fea946343b433644cd26e209",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "c301a14c3a5870d48891842070b1fb15",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "ea803e2cb8a9efc4998b330f98d94530",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "ea9fd338e96ae034eb185d26d6a00a1a",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "ea9fd338e96ae034eb185d26d6a00a1a",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "DjinnWalkHorizontal": {
+      "clip": "Assets/AnimationClip/DjinnWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d42b15bff3c085341a013e3bff5d53ff",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "81906e07809483b49b76ec7056f1cb45",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "e4971ea0e98c04544a476890cbc9a9af",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "761b6c19a7628d4458a243a292f0d651",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "87ef426ba38f25942bae0364187df191",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6eb71dcd3141ecd4c87aecdeb7bc4063",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "5b4054fdcaf9c704b8e045e7efcbc6a0",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "8150c590a9a99e34f9fe4769de103fbf",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "2c3a2b30eb3db0440a771610753d3d3e",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "ad53642cebb171e4dab4b795f6969da3",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "715733481c1c58a4683a068834f5fe3c",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "0b1eea42bf3069044b4022f1bd6894c5",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "0b1eea42bf3069044b4022f1bd6894c5",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "DjinnAttack": {
+      "clip": "Assets/AnimationClip/DjinnAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c936e21e849ae414ab445fd0ba571388",
+          "sprite": {
+            "name": "Djinn_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "95eaca31d4251754e9a9eca0930d2572",
+          "sprite": {
+            "name": "Djinn_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "bc8586d724632b049bf849dcd260d48c",
+          "sprite": {
+            "name": "Djinn_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "f3bcf675f31b2a648b2e5164ccddba13",
+          "sprite": {
+            "name": "Djinn_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.24999996,
+          "sprite_guid": "f3bcf675f31b2a648b2e5164ccddba13",
+          "sprite": {
+            "name": "Djinn_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_18.asset"
+          }
+        }
+      ]
+    },
+    "Djinn_Revealed": {
+      "clip": "Assets/AnimationClip/Djinn_Revealed.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "7943ef0fa3c0ce247b2b3c879e22fdda",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "84249829940647649ab6edd440fded03",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "312794ef8ecf6f44fbd99eb5a0ae2ba6",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "95be6bf7d41f8654a88f4dada7a2c3b4",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "06865ae8e3c737c4ba8a19f479f77cf3",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "cafeb6846f576c6429fcf5f44c954aef",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "90f9e7a4c6cf8744baf69d51f3169de5",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "b1100a81773fe724d92567afe59cb1ed",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "359aeb79abb40a64fa9c53cc12fb736e",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "a9c6b74f24fa6a14b90899b87c3097fe",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "01f8363aa41df204697e3f6b150db936",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.87499994,
+          "sprite_guid": "17ede94535fd1cb45b0a30294d304dc9",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.95833325,
+          "sprite_guid": "359aeb79abb40a64fa9c53cc12fb736e",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 1.0416665,
+          "sprite_guid": "a9c6b74f24fa6a14b90899b87c3097fe",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 1.1249998,
+          "sprite_guid": "01f8363aa41df204697e3f6b150db936",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.208333,
+          "sprite_guid": "17ede94535fd1cb45b0a30294d304dc9",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 1.2916663,
+          "sprite_guid": "5635a04e8d4589844af67dbe9833587b",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 1.3749996,
+          "sprite_guid": "1228192dafedb6c4982b259c832d4f4e",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 1.4166664,
+          "sprite_guid": "1228192dafedb6c4982b259c832d4f4e",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_26.asset"
+          }
+        }
+      ]
+    },
+    "DjinnCast": {
+      "clip": "Assets/AnimationClip/DjinnCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b1ba22a4c7fee744a825559ce5ace895",
+          "sprite": {
+            "name": "Djinn_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "cf0efcae802aa854aba633bc42744fa3",
+          "sprite": {
+            "name": "Djinn_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "031f2cba3f64d234bb895981c3005491",
+          "sprite": {
+            "name": "Djinn_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "aac071a591411d04baa631f4f2c7c292",
+          "sprite": {
+            "name": "Djinn_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "aac071a591411d04baa631f4f2c7c292",
+          "sprite": {
+            "name": "Djinn_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_34.asset"
+          }
+        }
+      ]
+    },
+    "Djinn_Hidden": {
+      "clip": "Assets/AnimationClip/Djinn_Hidden.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2c3f2fadeff53c04fb372f5287f0798d",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "754b66fe5946c484088b0534c5313504",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "865db2bc023d80f4198edf48c5fe7098",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "8b1210817b9da1c4c9654f932a4e05c1",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "08f98bf90f16369478a61158133d5540",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "57028db9a65e17246ae9cbd4bf69fb0a",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "aca07debb3abb7747831b3c36b4096de",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "2cac8bb0097d5684f94c6d98a38de9d2",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "0933afe543f6ac84b9f826c3dcb070a0",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "9323cbd786dbddb448298721efde7723",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "a31b746be6850fa47abe5fd2f4ccc0aa",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "7daf0410b0d554c41acd46a6421f7485",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "7daf0410b0d554c41acd46a6421f7485",
+          "sprite": {
+            "name": "Djinn_Ambush_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Ambush_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Ambush_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "DjinnWalkDown": {
+      "clip": "Assets/AnimationClip/DjinnWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a902b84f3bb4e72419d641bfd1f76418",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "c1fc2f1c5152a9b4a9333636ce90bcf3",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "9813b50c88548274699e0b2fa5ef0210",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "f57b198f494a92d43aab8a02d9355822",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "2a3a6866f153b0a40b7a34a996759ea9",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "fe1766ca3d95320458c99ddd68b3f488",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "eb17c137786520c4dbebd4db615b5ae0",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "5e6e5fd0218660a47ba04dd567173681",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "de8e61bd730db5749a256562d3c4db52",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "81854ac4d16dfe44fb3ab255f9e1b5b0",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "5ce9cf642b60c4a42bb31796ea6b1f5f",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "fa63ca363fcb29e4b8d3e8d972b80800",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "fa63ca363fcb29e4b8d3e8d972b80800",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_23.asset"
+          }
+        }
+      ]
+    },
+    "DjinnWalkTop": {
+      "clip": "Assets/AnimationClip/DjinnWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c0c409174664ecf4593b02aa06418fd9",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "ef1140d61fbe73d409e4c0dd18d6c91b",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "914b4f300c7f57140a621a7078848549",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "6ec0daabac016f040a1918a43d70d345",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "6c2ca13d4520cfa4c9f461abcc13cbda",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0cb9b3e60b63c994b9d0f6e12a3899f0",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "8c215b056c2bfd84c90e5dbba69d5cbc",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "110c33599447e38479b999b6101bf391",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "75366513fea946343b433644cd26e209",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "c301a14c3a5870d48891842070b1fb15",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "ea803e2cb8a9efc4998b330f98d94530",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "ea9fd338e96ae034eb185d26d6a00a1a",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "ea9fd338e96ae034eb185d26d6a00a1a",
+          "sprite": {
+            "name": "Djinn_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Exploration_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "DjinnCombatIdle": {
+      "clip": "Assets/AnimationClip/DjinnCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "05629a9f56186c945b41f916136fa2fd",
+          "sprite": {
+            "name": "Djinn_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "36381a59e644fca44986fb98f45b0423",
+          "sprite": {
+            "name": "Djinn_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5a812c89d52088040b18a512a2a2e7da",
+          "sprite": {
+            "name": "Djinn_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "0ae37433dcaf5e043832eb3964c2c240",
+          "sprite": {
+            "name": "Djinn_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8e9d540de8703534999242e71d6dca7d",
+          "sprite": {
+            "name": "Djinn_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "dd357ebc67876004aa28a6b01f2971a1",
+          "sprite": {
+            "name": "Djinn_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "534a7883030487c48858927620031284",
+          "sprite": {
+            "name": "Djinn_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "04a278e3cb0fb1d45bd3461dfd061f1e",
+          "sprite": {
+            "name": "Djinn_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "e16cfe46f87214f4b9cf8af2b6b08feb",
+          "sprite": {
+            "name": "Djinn_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "8e498c3ff1637c54fbeb95a4068201fd",
+          "sprite": {
+            "name": "Djinn_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "8e498c3ff1637c54fbeb95a4068201fd",
+          "sprite": {
+            "name": "Djinn_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Djinn/sheets/Djinn_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Djinn_Spritesheet_9.asset"
+          }
+        }
+      ]
+    }
+  }
+}

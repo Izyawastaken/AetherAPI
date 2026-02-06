@@ -1,0 +1,3135 @@
+{
+  "name": "Warden",
+  "prefab": "MonsterWarden",
+  "prefab_path": "Assets/GameObject/MonsterWarden.prefab",
+  "data": {
+    "name": "Warden",
+    "ids": {
+      "ID": 951,
+      "MonID": 12
+    },
+    "stats": {
+      "BaseMaxHealth": 45,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194140057600,
+      "ElementsOverride": 13194139795456
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 1,
+          "Hits": 3.5
+        }
+      ],
+      "boss_stagger": [
+        {
+          "Element": 8,
+          "Hits": 10
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Tank",
+      "Weakness",
+      "Purge"
+    ],
+    "types_override": [
+      "Power",
+      "Weakness",
+      "Purge"
+    ],
+    "traits": {
+      "signature": "Power Nexus",
+      "traits": [
+        {
+          "name": "Aggressive Purging",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Disruptive Prime",
+          "min_difficulty": 3,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Echo",
+        "Stone Punch"
+      ],
+      "start_override": [
+        "Grapple",
+        "Fire Claws"
+      ],
+      "reset_action": [
+        "ResetActionPurge"
+      ],
+      "scripted": [
+        "Overheated Smash",
+        "Gemstone Crash",
+        "Volcanic Guard",
+        "Pollen Blast",
+        "Stone Punch",
+        "Echo",
+        "Fire Claws",
+        "Grapple"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Initial Shield",
+          "multiplier": 5
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        }
+      ],
+      "void_tier3": [
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Earth Generator",
+          "multiplier": 1
+        }
+      ],
+      "champion": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Earth Generator",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterWarden",
+      "path": "Assets/GameObject/MonsterWarden.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "02d4f2f57425d4347b2b751b369320aa",
+      "file": "Database/Warden/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Warden",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Warden/sheets/Portrait_Warden.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Warden.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "b14bd4d7c891f4242ba3001b3b835478",
+      "file": "Database/Warden/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_WardenPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Warden/sheets/Trait_WardenPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_WardenPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "6ad702e87d47ce14f8561f994c50987e",
+      "file": "Database/Warden/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Warden_Battle_SpriteSheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 984,
+          "width": 164,
+          "height": 164
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+        "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "c57b9b8b7855705448057d3bb38f9320",
+      "file": "Database/Warden/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Warden_Battle_SpriteSheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 984,
+          "width": 164,
+          "height": 164
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Warden_Battle_SpriteSheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "8ffba1f1324994a47bc9c89d9a6f10a3",
+      "file": "Database/Warden/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Warden_Exploration_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.1125
+        },
+        "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "60c4bb2595ea93b46937874eee8494e1",
+      "file": "Database/Warden/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Warden_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.1125
+        },
+        "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Warden_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "e39394b6c51159449a16babf152e1de1",
+      "file": "Database/Warden/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Warden_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Warden/sheets/Portrait_Warden_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Warden_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "WardenJumpBack": {
+      "clip": "Assets/AnimationClip/WardenJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3a8611bbd9e944b4a9812fddaf4c6bb0",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_41.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "77ab2695115719644be74996534ca697",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_42.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "86044a150d8e78542b2e0a0aecda19a7",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "722cd93acf7ff644ab551a31c2d33ccd",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_44.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "722cd93acf7ff644ab551a31c2d33ccd",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_44.asset"
+          }
+        }
+      ]
+    },
+    "WardenWalkTop": {
+      "clip": "Assets/AnimationClip/WardenWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "dabb830bb55a86040ac5504df2add0ab",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b4927dea11ddf6d4eaad94c081651b86",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8954100188113424a9b4c0b27a7a1547",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "37a77a06faa6cbe45b2a54623acbf235",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "6f51ab3bf7493cb49b48eea18e04b755",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "db9d7d9312a7e584a97e08c3c2270d5b",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "404fda0744a8e8c4a8a5a620052919ae",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "3a519f5a3abac7a43805cb168510fad8",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "566b7e6007e8c934b8fe8927c3043af9",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "ffd42a592a4a62844809b33370aa140e",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "ffd42a592a4a62844809b33370aa140e",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "WardenCombatIdle": {
+      "clip": "Assets/AnimationClip/WardenCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6ad702e87d47ce14f8561f994c50987e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8e12acbd51cf45e45affcc0f57062e21",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "915822c5247446245aaa765a92de77bb",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "615cb79a8947b8b4cbf15d3bea137281",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8aedd755224559243aafbd554317ac71",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "155a91e5b73d73945970c83704ab6aeb",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "d50e6a1683aefa1498ed43b3e487c76d",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e980b711220ce844e91a98b4434adb8e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "3ac59658f1d39634ba1d6d24d246ca74",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "717011c0a53c9c74eaad64fc0b4790c6",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 984,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "5eff169a7c421c24584cfb7076eb2fbd",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "4ef5b56965b984248817bd04448c2388",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "7f5b9fe419264ab4d931f8ff258693fb",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "c38eb2839d79c384eb4d7e5e03b5e77e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "873a772acf764f64c86da76d9cf743e6",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "d23f4b8f1a4265945a279f3474eec3ea",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_15.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "43dff72d7a20cb741ae1739443ce6a43",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_16.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "e866d03ed165bc14597e0a73d53db227",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_17.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "8e6a5e9dd316bad4594556ed2cd36b25",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_18.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "2749c7b5a7a74984f9e1b5335e6b07ca",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 820,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_19.asset"
+          }
+        },
+        {
+          "time": 1.6666669,
+          "sprite_guid": "c73fedb8f03531643b73928a3903cdb1",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_20.asset"
+          }
+        },
+        {
+          "time": 1.7500002,
+          "sprite_guid": "4e36aa57a0e1b3446ab8e26528ea1a1f",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_21.asset"
+          }
+        },
+        {
+          "time": 1.8333336,
+          "sprite_guid": "26b212f71d10d1243ab63f145aa5e56e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_22.asset"
+          }
+        },
+        {
+          "time": 1.916667,
+          "sprite_guid": "d72ac304f1f4dff419444b693fc0019e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_23.asset"
+          }
+        },
+        {
+          "time": 1.9583336,
+          "sprite_guid": "d72ac304f1f4dff419444b693fc0019e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_23.asset"
+          }
+        }
+      ]
+    },
+    "WardenIdleHorizontal": {
+      "clip": "Assets/AnimationClip/WardenIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1d65c718cc070be479aac0aac70203e0",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d71075893dd50c640acfa9c242fd5cb4",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8dd98d8c6e788784f92b4596732c78d5",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d2e6fb3f399e2f94f80bf2ee2e7e58d0",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "62990bf2c6180be40b7d67cf3448de05",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "74aee631d4ba6bc4cb5bbf327d15c6fb",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6c581097e3554494eb5fb9d88831c4bf",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e47957c3b7c49a343b0601b471766e2a",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "3741bad54158cd64d84f078f807b4728",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "99419db3e9fd379498a665610d98ccbe",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "99419db3e9fd379498a665610d98ccbe",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "WardenCast": {
+      "clip": "Assets/AnimationClip/WardenCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5998114de567ab8409486ee1e1cfb069",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_53.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1796bc5add8829e42a6636e9df70d997",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_54.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b31251df0d4b68248ad6f88641d57898",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_55.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "3e225a035b7d15c4989ffc76a8fc3d69",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_56.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d01634850c560a64996c09c5915dc9fa",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_57.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "bf8a1f43af9814d48bbca7a9aeef19e0",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_58.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "bf8a1f43af9814d48bbca7a9aeef19e0",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_58.asset"
+          }
+        }
+      ]
+    },
+    "WardenHit": {
+      "clip": "Assets/AnimationClip/WardenHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e815bfe9d7eeece46bca72765d7b239d",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_64.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e815bfe9d7eeece46bca72765d7b239d",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_64.asset"
+          }
+        }
+      ]
+    },
+    "WardenWalkDown": {
+      "clip": "Assets/AnimationClip/WardenWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e84c55054a5c6ed4c8bb56fe440d3fbf",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "92729ce04276e3a41994ab3039e88a56",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2c08f48846294e245acc08e8bc20abdd",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "27b17cc095c335943a994548cc604c3c",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3c94af215d733e348b77111df33afba4",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "77075e79364706446b7955fd82ecb784",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "75fb6ca0ab397e048ac0b252e38ebd70",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "ce36d3b1b066eeb4abe8a6606abfbe97",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "d99e6d29d8e78ee44b072466b8873cb1",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "9590b84ea9a0a5d4d9968b182a250f42",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "9590b84ea9a0a5d4d9968b182a250f42",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "WardenCastEnd": {
+      "clip": "Assets/AnimationClip/WardenCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ea8ec6a72be677b4d97e62f4146bc7d6",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_59.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7a57d7322e6462b47a97c078cbdf9613",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_60.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2053c2b713e017e45b9941952b39ea97",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_61.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b7b0dcb93e8ba1f4f8972408e7f691a4",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_62.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "b7b0dcb93e8ba1f4f8972408e7f691a4",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_62.asset"
+          }
+        }
+      ]
+    },
+    "WardenAttackJump": {
+      "clip": "Assets/AnimationClip/WardenAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "eb279a825eb3c5c4d9d6a07523118e1f",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_24.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "6e265137e5076f548a714c53b542dcda",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_25.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c213188a55719594aabb873785949f0c",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_26.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "cee91e87f39f8814c8826749b20f7f11",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_27.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "38ec693fe1efdd64f866e4b14327a288",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_28.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e2a15c2f45bf4f64abfa7968bb1c6ecf",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_29.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "5090405445041374f8f0747e559aa5fc",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_30.asset"
+          }
+        },
+        {
+          "time": 0.49999997,
+          "sprite_guid": "561dbfd39233f294796dbf5e5701e1a6",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_31.asset"
+          }
+        },
+        {
+          "time": 0.58333325,
+          "sprite_guid": "b5c205d18979b9e4683c6926a7938ff8",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_32.asset"
+          }
+        },
+        {
+          "time": 0.6249999,
+          "sprite_guid": "b5c205d18979b9e4683c6926a7938ff8",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_32.asset"
+          }
+        }
+      ]
+    },
+    "WardenIdleDown": {
+      "clip": "Assets/AnimationClip/WardenIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "05f08033a51c33a43af4f06a33b47ced",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ac45c1b7086c87648b9f7b27da819712",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2550b7fe2b30e74438571798e67672e6",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d19030ed7cf19ce4db9496bf45d9331a",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c463af6f4ca0b224bbfe3d4448890a37",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "f56803d0e7fd1884eacb8209b1c2e6f4",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2f4bb94f68c5ed54baff764de901cc8a",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "f955c85c13354d54e8c46685482de4c6",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "6588b28cb49ae514bb3af02175967e01",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "444ccce3cdd1f014d9522a00f3baa40c",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "444ccce3cdd1f014d9522a00f3baa40c",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "WardenCastStart": {
+      "clip": "Assets/AnimationClip/WardenCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5fa46630c92f2824fa4925387a17500e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_45.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "a6f7f428d8e5ddc4798503cdc9519e11",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_46.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "903da133e522cb8429beb4ed1261f5b9",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_47.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "0881a204acd943848bb1126b469b8d94",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_48.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "79a287323d5cf144983eac4fd897bd81",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_49.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "9d4a1c5f333e09d48b8a5803637139a0",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_50.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0403cd9fc29e2a14ca90a49724e41d9e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_51.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "acdd585d67786d6478d4a4b231f181e5",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_52.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "acdd585d67786d6478d4a4b231f181e5",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_52.asset"
+          }
+        }
+      ]
+    },
+    "WardenAttackEnd": {
+      "clip": "Assets/AnimationClip/WardenAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6eb668a92864ba945b0620555d66aca1",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_39.asset"
+          }
+        },
+        {
+          "time": 0.04166663,
+          "sprite_guid": "6eb668a92864ba945b0620555d66aca1",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_39.asset"
+          }
+        }
+      ]
+    },
+    "WardenIdleTop": {
+      "clip": "Assets/AnimationClip/WardenIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "8ffba1f1324994a47bc9c89d9a6f10a3",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "fff41e90fa41de24d9ca4289ba1babff",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "694dda433d4b43a4c97bea9406b564c2",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "88ea9f4b07735f9449a647556eaf2d48",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "0bf0ef20b130ecb4daa2e8526f74fe70",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "837af3015eb026749aec7a18f80b949b",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0a4931f893396e743bbd059f0d6805e3",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "350d201d83c956748923c5f77f40fcad",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "3354fd39b0afd0c49b292cee4c3322bb",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "6f8adca57d455a4489feb9cf1c670000",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "6f8adca57d455a4489feb9cf1c670000",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "WardenWalkHorizontal": {
+      "clip": "Assets/AnimationClip/WardenWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "7512e5bec48239349b72342532e32ae3",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "113daf76ebb68f34199420be08748ace",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f68337ef199c5c04cb929e7dc6c8d57a",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c3f78849528db73488aad0d931fd6962",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "0c07808da45c94f48b556b3ac729156d",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "dc596073f2d42d948a92ee9c6eda3711",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3a4d8552fd98fdd4a98a1ef95bae2ec4",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "072999ce7e346234b946095342e2afb7",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "d33b714a79ffedb41b670d9e76f6b11e",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "0c048bcad412a0542a9ca43aafe6e9e6",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "0c048bcad412a0542a9ca43aafe6e9e6",
+          "sprite": {
+            "name": "Warden_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1125
+            },
+            "sheet": "Database/Warden/sheets/Warden_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "WardenAttack": {
+      "clip": "Assets/AnimationClip/WardenAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b54f5396d6a5b4e47a912cd784edee6c",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_33.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "7804e35d90e82ec4cbb08044e7ec83c6",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_34.asset"
+          }
+        },
+        {
+          "time": 0.08333333,
+          "sprite_guid": "3b24eff7e5b9ff7419ffe59cd652e453",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_35.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d53699bb66f1ce048952b9063a4da19b",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_36.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ae9e663115ce5be448e5dc50be7eb43c",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_37.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "45ccc60a235388b4eac8dd2e78acab8e",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_38.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "6eb668a92864ba945b0620555d66aca1",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_39.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "6eb668a92864ba945b0620555d66aca1",
+          "sprite": {
+            "name": "Warden_Battle_SpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Warden/sheets/Warden_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Warden_Battle_SpriteSheet_39.asset"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,620 @@
+{
+  "name": "Target Dummy",
+  "prefab": "MonsterTargetDummy",
+  "prefab_path": "Assets/GameObject/MonsterTargetDummy.prefab",
+  "data": {
+    "name": "Target Dummy",
+    "ids": {
+      "ID": 619,
+      "MonID": -1
+    },
+    "stats": {
+      "BaseMaxHealth": 9999,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 1048576
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 0,
+          "Hits": 5
+        }
+      ],
+      "impossible_to_stagger": 1,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Heal"
+    ],
+    "traits": {
+      "signature": "Wholesome"
+    },
+    "actions": {
+      "start": [
+        "NoAttack"
+      ]
+    },
+    "source": {
+      "prefab": "MonsterTargetDummy",
+      "path": "Assets/GameObject/MonsterTargetDummy.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "183049d33a49b004591d897055c1115f",
+      "file": "Database/Target_Dummy/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Naga",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Target_Dummy/sheets/Portrait_Naga.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Naga.asset"
+      }
+    }
+  },
+  "animations": {
+    "TargetDummyCombatHit": {
+      "clip": "Assets/AnimationClip/TargetDummyCombatHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "45e21f13bf556f046bd6b6fbfc6108dd",
+          "sprite": {
+            "name": "TargetDummy_Battle_HitEffect",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_HitEffect.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_Battle_HitEffect.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8696e0fe4fe900544919b43c5e82b9ce",
+          "sprite": {
+            "name": "TargetDummy_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_10.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "3c8f05e824457d540910a2d4e1e2adc8",
+          "sprite": {
+            "name": "TargetDummy_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_11.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8696e0fe4fe900544919b43c5e82b9ce",
+          "sprite": {
+            "name": "TargetDummy_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_10.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "3c8f05e824457d540910a2d4e1e2adc8",
+          "sprite": {
+            "name": "TargetDummy_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_11.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "8696e0fe4fe900544919b43c5e82b9ce",
+          "sprite": {
+            "name": "TargetDummy_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_10.asset"
+          }
+        },
+        {
+          "time": 0.5833334,
+          "sprite_guid": "3c8f05e824457d540910a2d4e1e2adc8",
+          "sprite": {
+            "name": "TargetDummy_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_11.asset"
+          }
+        },
+        {
+          "time": 0.6666667,
+          "sprite_guid": "8696e0fe4fe900544919b43c5e82b9ce",
+          "sprite": {
+            "name": "TargetDummy_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_10.asset"
+          }
+        },
+        {
+          "time": 0.75,
+          "sprite_guid": "3c8f05e824457d540910a2d4e1e2adc8",
+          "sprite": {
+            "name": "TargetDummy_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_11.asset"
+          }
+        },
+        {
+          "time": 0.8333333,
+          "sprite_guid": "8696e0fe4fe900544919b43c5e82b9ce",
+          "sprite": {
+            "name": "TargetDummy_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_10.asset"
+          }
+        },
+        {
+          "time": 0.9166666,
+          "sprite_guid": "3c8f05e824457d540910a2d4e1e2adc8",
+          "sprite": {
+            "name": "TargetDummy_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_11.asset"
+          }
+        },
+        {
+          "time": 0.99999994,
+          "sprite_guid": "8696e0fe4fe900544919b43c5e82b9ce",
+          "sprite": {
+            "name": "TargetDummy_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_10.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "3c8f05e824457d540910a2d4e1e2adc8",
+          "sprite": {
+            "name": "TargetDummy_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_11.asset"
+          }
+        },
+        {
+          "time": 1.1666665,
+          "sprite_guid": "8696e0fe4fe900544919b43c5e82b9ce",
+          "sprite": {
+            "name": "TargetDummy_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_10.asset"
+          }
+        },
+        {
+          "time": 1.2499999,
+          "sprite_guid": "3c8f05e824457d540910a2d4e1e2adc8",
+          "sprite": {
+            "name": "TargetDummy_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_11.asset"
+          }
+        },
+        {
+          "time": 1.3333333,
+          "sprite_guid": "8696e0fe4fe900544919b43c5e82b9ce",
+          "sprite": {
+            "name": "TargetDummy_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_10.asset"
+          }
+        },
+        {
+          "time": 1.4166666,
+          "sprite_guid": "3c8f05e824457d540910a2d4e1e2adc8",
+          "sprite": {
+            "name": "TargetDummy_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_11.asset"
+          }
+        }
+      ]
+    },
+    "TargetDummyCombatIdle": {
+      "clip": "Assets/AnimationClip/TargetDummyCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e422edecdd2f67a4782168fb4fb265af",
+          "sprite": {
+            "name": "TargetDummy_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "6c1cc132a875e0f43948c0303bddbc3e",
+          "sprite": {
+            "name": "TargetDummy_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ecf97ad24c14ca44486bc282d8b95005",
+          "sprite": {
+            "name": "TargetDummy_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "05f3776e8e81ee84a9408dea25af56af",
+          "sprite": {
+            "name": "TargetDummy_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "385788e0d97d1d0449f7b4ff1384bec3",
+          "sprite": {
+            "name": "TargetDummy_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_4.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "3584295960ce38649bb51402da22ef8a",
+          "sprite": {
+            "name": "TargetDummy_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "525d989c81050f348bd9e4831135e64a",
+          "sprite": {
+            "name": "TargetDummy_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "470cc4927678d9a47b65ef6465b174ef",
+          "sprite": {
+            "name": "TargetDummy_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_7.asset"
+          }
+        },
+        {
+          "time": 0.6666667,
+          "sprite_guid": "075da9719c11afc418b62777bed8cb20",
+          "sprite": {
+            "name": "TargetDummy_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_8.asset"
+          }
+        },
+        {
+          "time": 0.75,
+          "sprite_guid": "c55a0b328f992a048bce2fcecea720ae",
+          "sprite": {
+            "name": "TargetDummy_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Target_Dummy/sheets/TargetDummy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/TargetDummy_9.asset"
+          }
+        }
+      ]
+    }
+  }
+}

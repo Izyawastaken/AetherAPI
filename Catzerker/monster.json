@@ -1,0 +1,3188 @@
+{
+  "name": "Catzerker",
+  "prefab": "MonsterCatzerker",
+  "prefab_path": "Assets/GameObject/MonsterCatzerker.prefab",
+  "data": {
+    "name": "Catzerker",
+    "ids": {
+      "ID": 1633,
+      "MonID": 14
+    },
+    "stats": {
+      "BaseMaxHealth": 35,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398047035392,
+      "ElementsOverride": 4398047035392
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 3,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Critical",
+      "Regeneration",
+      "Sidekick"
+    ],
+    "types_override": [
+      "Critical",
+      "Force",
+      "Sidekick"
+    ],
+    "traits": {
+      "signature": "Critical Mass",
+      "traits": [
+        {
+          "name": "Critical Hybridization",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Support",
+        "Long Slash"
+      ],
+      "start_override": [
+        "Tempering",
+        "Long Slash"
+      ],
+      "reset_action": [
+        "ResetActionSidekick"
+      ],
+      "reset_poise_action": [
+        "ResetActionForce"
+      ],
+      "scripted": [
+        "Fire Blast",
+        "Electrical Jolt",
+        "Tempering",
+        "Support",
+        "Long Slash"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 25
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Healing",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 25
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterCatzerker",
+      "path": "Assets/GameObject/MonsterCatzerker.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "fea47e1fa9c561547ad680b449f7c1d6",
+      "file": "Database/Catzerker/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Catzerker",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Catzerker/sheets/Portrait_Catzerker.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Catzerker.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "5b998c603dbda8141b0bfe56f071ec92",
+      "file": "Database/Catzerker/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_CatzerkerPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Catzerker/sheets/Trait_CatzerkerPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_CatzerkerPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "c3b8c18d8de27be4187f71a748599640",
+      "file": "Database/Catzerker/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Catzerker_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 840,
+          "width": 140,
+          "height": 140
+        },
+        "pivot": {
+          "x": 0.48,
+          "y": 0.24
+        },
+        "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "6123a1cae0afeb44f824385899c6afde",
+      "file": "Database/Catzerker/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Catzerker_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 840,
+          "width": 140,
+          "height": 140
+        },
+        "pivot": {
+          "x": 0.48,
+          "y": 0.24
+        },
+        "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Catzerker_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "9ea64b4d71f3d454da8d2ff333a01c72",
+      "file": "Database/Catzerker/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Catzerker_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.22
+        },
+        "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "7b1a340670950994ba5bd3338c6472c3",
+      "file": "Database/Catzerker/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Catzerker_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.22
+        },
+        "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Catzerker_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "050b32493a069c246968aaaec4b63ac6",
+      "file": "Database/Catzerker/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Catzerker_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Catzerker/sheets/Portrait_Catzerker_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Catzerker_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "Catzerker_Overworld_IdleDown": {
+      "clip": "Assets/AnimationClip/Catzerker_Overworld_IdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9ea64b4d71f3d454da8d2ff333a01c72",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "71aa90ef1963f5348a51f23fa3cee7c4",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "496bada060bc377428bb7711d07e8a78",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6118e0f46be6f2d49854a52020f55a24",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f960326c7650ca244a07af1b8d5b2e59",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "238e7b2bdc9901949b051f1510012d7e",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3163cca5e4104844abe868aad33aa4a2",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "9a0625dc7f14c2744b62ec6a9a3d6c17",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "aa8b7b9925bf8764fbf02456ccfaa8a8",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "e7bcb4a1378b1e44cb9cba3d7dc862a0",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "c8d352a69f9c4954e96af22626d095c7",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "c92ebc2041fc4bc41bd80a1afab041dd",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "c92ebc2041fc4bc41bd80a1afab041dd",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "Catzerker_Overworld_IdleUp": {
+      "clip": "Assets/AnimationClip/Catzerker_Overworld_IdleUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1bab121fc7bce324ca80550bb6162339",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "880502be8e386b14688cfc68bc123287",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ae277e84cfbdcaf4698cb80e1714b01a",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1deb69b54639873448311383889bb9b0",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e12163bb1a29c4c45859cb7aca213290",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "47d60637107211249a0190c502e76c5f",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2d8b28da8189c234cae7fca830139367",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "3e52ee1c11accce4c80296a486b02d8a",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "b752aa4fc67aa594084533ce56e2d065",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "5991a765a2b74cd48aefb37349f4cb5e",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "aa5969c04b80d1e46ade72c76fbff436",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "8e3224ec9ada77c40be1f75d9aad6796",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "8e3224ec9ada77c40be1f75d9aad6796",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_51.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerAttackEnd": {
+      "clip": "Assets/AnimationClip/WolpertingerAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fc8bcbb42392adc478d488bd3ba30e50",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Catzerker/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "3241d693f15ec7e4da750a4f348cb6c4",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Catzerker/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a724739e864f0a14ea38a58df8fb2429",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Catzerker/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "a724739e864f0a14ea38a58df8fb2429",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Catzerker/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_22.asset"
+          }
+        }
+      ]
+    },
+    "CatzerkerAttackJumpBack": {
+      "clip": "Assets/AnimationClip/CatzerkerAttackJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "264d4bb091bf489409f7cfe2b3cfdb05",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 420,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "573a7c1141b91aa49b49c62e99811c6b",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_62.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "5f6e08bf7ec5d47418fe98812703db75",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_63.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "31dc28878f48759488036b051c4ae7b0",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 840,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_64.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "31dc28878f48759488036b051c4ae7b0",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 840,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_64.asset"
+          }
+        }
+      ]
+    },
+    "CatzerkerHit": {
+      "clip": "Assets/AnimationClip/CatzerkerHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "32c4778b2a2792440bfd8add7d07e98c",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "32c4778b2a2792440bfd8add7d07e98c",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "CatzerkerCast": {
+      "clip": "Assets/AnimationClip/CatzerkerCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "60584dcc0b393e942a2e8788130f3132",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "67bd465df39fbc34e87437831c91090f",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 280,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "29fbe529b0feeff4abb8710ab8d06a98",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 420,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "5abf70be6ab455e419d304a249501e5e",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "5abf70be6ab455e419d304a249501e5e",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_34.asset"
+          }
+        }
+      ]
+    },
+    "CatzerkerAttack": {
+      "clip": "Assets/AnimationClip/CatzerkerAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "40fce933edb615d42be20a5b30b47e13",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 840,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c403d0b741deadd4781f78b0660586bf",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "427ecc601955b634e9e8358040f5eb92",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b29c2db845c03e842880b9aab9024f37",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1260,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e5381a11290b3f34bbf4ff35cffd7179",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "2e9c174d2914a2e48882a53782ddea59",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "78bf4b91f927f3e4684c9f11c260e47a",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 280,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "1ba241d7ab0ebb24a88abff0e76afb68",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 420,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "914ccb49dbc1d534aaf06e72a3593062",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "6d9947697f63d4640a332a4e3c6b64b9",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "4931404ea15961841ba2df4c0b190cee",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 840,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.87499994,
+          "sprite_guid": "56efe9093fe0a5e45b424e64f119357b",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.95833325,
+          "sprite_guid": "2d48d195f288b08469dc723cc98f62dc",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.99999994,
+          "sprite_guid": "d8af0e42975f1614e82244aae466af37",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1260,
+              "y": 140,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "552569f926c0a8748b1d47f4bc51459b",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "3e02b52811b880b41aafb62a585d5f65",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "4c9bb7cec88ae904096988ee7896f578",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 280,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 1.2916667,
+          "sprite_guid": "4c9bb7cec88ae904096988ee7896f578",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 280,
+              "y": 0,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_60.asset"
+          }
+        }
+      ]
+    },
+    "CatzerkerCastEnd": {
+      "clip": "Assets/AnimationClip/CatzerkerCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "87999afe09219ee4aa28c47966b89d81",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "72d92e89d94312647aa04a72cd32b99d",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 840,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "c5f48b01d5ba7d1439fc5cb930571498",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c5f48b01d5ba7d1439fc5cb930571498",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_37.asset"
+          }
+        }
+      ]
+    },
+    "CatzerkerAttackJump": {
+      "clip": "Assets/AnimationClip/CatzerkerAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "7a61e267f288582458882f22f8d3f0ca",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "32c4778b2a2792440bfd8add7d07e98c",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "7fd7bbdbc985b014393f1d4e22e41237",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 280,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c979cb67d2ea9ac44ac50001fecbaa9a",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 420,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "769021e784c968240af3e907016900fa",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "2f6066b11360ef84e95223dcd7c731e0",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "2f6066b11360ef84e95223dcd7c731e0",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 280,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_43.asset"
+          }
+        }
+      ]
+    },
+    "Catzerker_Overworld_RunDown": {
+      "clip": "Assets/AnimationClip/Catzerker_Overworld_RunDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3fa803e75af397f439ea9b160f781527",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b9345311b2980b34fb19de4c21e12e65",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "79c07cd5f9c33e5418be101ad51c9698",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b534f6c59cf02324fae9966ad9b221c4",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "eed445d48432f9c409405b7bd59a0285",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "dfd2479501f2bdc41a85ed21230af834",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c87e9c578a6c3b842bf3326f6bc924f5",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "35c23c63ae01d744dbb1103ae28d6fe2",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "35c23c63ae01d744dbb1103ae28d6fe2",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "CatzerkerCombatIdle": {
+      "clip": "Assets/AnimationClip/CatzerkerCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c3b8c18d8de27be4187f71a748599640",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "182d97ddf4d35e9469b179978e7346eb",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "69ca4a4fb2a38514bb7e1df40e04eee0",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 280,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "4fb6496cdda5df940919ce5ea2001fa0",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 420,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f9d9413024a7f184fb184f435c06ecb6",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "1db389a33ff3aca498b0aedf4aafd599",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "de736184d9464e2418c67925fb2295ef",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 840,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "c9cce79daeec8874b9d4b1e8f507754a",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "669e6bccbcd75304394899217e0ad1ed",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "2dbb18d8b7e258d4c85bc432e10f8cc7",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1260,
+              "y": 840,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "00d382136cc17714e838896568c20e6a",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "19e2a2811c07cdd4a808c21eedb2b561",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "ea8fceed2d515bd43bb601a6fea2c2f6",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 280,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "69fca64003120e540aba52d11458a0d1",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 420,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "69fca64003120e540aba52d11458a0d1",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 420,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_13.asset"
+          }
+        }
+      ]
+    },
+    "Catzerker_Overworld_IdleRight": {
+      "clip": "Assets/AnimationClip/Catzerker_Overworld_IdleRight.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "559fdf394f863c84e9e44b3c02043e96",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "71ef9e159f5dfbb4b825a360904b0414",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8dc3c6ef65bac534781fb28d2cc094bd",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "19b3cf6da3393dc419a115228d5451c5",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d4a3ac4a8684d6f40a08ad896bf9a76d",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "41b9fdb13aa35dd498900d3199829233",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "8ed0e0093e8e9974b871bb492247e21c",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "8ccbebf224f616e449c16283a27e9089",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "ee0cea05d7cbcc042a7afc6b6d9e3a69",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "ea90f806e28f8064f86e7fa270edb5bc",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "f68dd1b9a0ca1d644b59d24cde3ffb37",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "94f888297e16c6b41a572b86c6342180",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "94f888297e16c6b41a572b86c6342180",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_31.asset"
+          }
+        }
+      ]
+    },
+    "CatzerkerCastStart": {
+      "clip": "Assets/AnimationClip/CatzerkerCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5f73ba9d820f0f547a6c3557827e396b",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ac2faaef7d4bcca4abcdb0e8a3c13ec8",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "82132400a43ab8448abe4ddd939a02d0",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 840,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2980eb9337275b94d9797f8ca7c1237d",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1ec17e04d11568844bb2db70ae19b64f",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "7b6b2544bdb2af947ab9a3047f8fc130",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1260,
+              "y": 700,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.3333333,
+          "sprite_guid": "009fc9d060cd17245b4da51dd6e359a5",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.37499997,
+          "sprite_guid": "958729ad3cab25545b1b642b30935bab",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 140,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.41666663,
+          "sprite_guid": "1287c214bb3d5c04a8128c70cf2dbf46",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 280,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.45833328,
+          "sprite_guid": "0280ddcdf02bf09468ff591679c10f1a",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 420,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.49999994,
+          "sprite_guid": "2f5120dbe4e2a304c8040e19f7a5597e",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "27f857982067c7b49bd7b1bfdb28887c",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "6537058419aceba45ac48a92e9a8c534",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 840,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "c00cfd14154586343adb1e1b93df7fd3",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 980,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.6666667,
+          "sprite_guid": "1bdcf047e8d2b4f4fb6e4e9230177244",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.7083334,
+          "sprite_guid": "e8dcd335ebb67214dabacf28ea893fb3",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1260,
+              "y": 560,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.75000006,
+          "sprite_guid": "c64f65480090501439774cd08948613c",
+          "sprite": {
+            "name": "Catzerker_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 420,
+              "width": 140,
+              "height": 140
+            },
+            "pivot": {
+              "x": 0.48,
+              "y": 0.24
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Battle_Spritesheet_30.asset"
+          }
+        }
+      ]
+    },
+    "Catzerker_Overworld_RunUp": {
+      "clip": "Assets/AnimationClip/Catzerker_Overworld_RunUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b9cd890762ab119459c87edb0a2f07fd",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b472b026f7342cd4591b626e6d5ebb48",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "13259e1eb9548444d8c4943bd18fa983",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "70a63434e5f60764fb72755d4a64db18",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "fd183a09c89fabd4d91ba4ae173c7b0a",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c19ab01ec910a48469fc017529aae93d",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "102129456807cdb429f0be90cbdebe8c",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "f646d879c3ea26f49a8999a96cb79c5e",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "f646d879c3ea26f49a8999a96cb79c5e",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "Catzerker_Overworld_RunRight": {
+      "clip": "Assets/AnimationClip/Catzerker_Overworld_RunRight.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cd26c4f2813f40a46b19e89fa4459c96",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "263518921e23a71489090e6a180a8c35",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d0cfb833a8fb594468ea9a6c3c371ec7",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "69c69393dc3e6a643b883e66f0b88dd4",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "522b7207c1374db43a33e25b0c1b83f3",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "088b6424df32b8e46ac03f869e61a72c",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "675c97ec7bb0aad4996d2cc7f249888b",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "c42a4e759ef8de141bfe2072e3fa4cb0",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "c42a4e759ef8de141bfe2072e3fa4cb0",
+          "sprite": {
+            "name": "Catzerker_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22
+            },
+            "sheet": "Database/Catzerker/sheets/Catzerker_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Catzerker_Overworld_Spritesheet_39.asset"
+          }
+        }
+      ]
+    }
+  }
+}

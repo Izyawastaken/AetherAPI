@@ -1,0 +1,3456 @@
+{
+  "name": "Mandragora",
+  "prefab": "MonsterMandragora",
+  "prefab_path": "Assets/GameObject/MonsterMandragora.prefab",
+  "data": {
+    "name": "Mandragora",
+    "ids": {
+      "ID": 1017,
+      "MonID": 8
+    },
+    "stats": {
+      "BaseMaxHealth": 40,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194139533312,
+      "ElementsOverride": 13194140057600
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 1,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Heal",
+      "Regeneration",
+      "Weakness"
+    ],
+    "types_override": [
+      "Heal",
+      "Regeneration",
+      "Terror"
+    ],
+    "traits": {
+      "signature": "Wholesome",
+      "traits": [
+        {
+          "name": "Auto Heal",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Spore",
+        "Refreshment"
+      ],
+      "start_override": [
+        "Nourish",
+        "Shriek"
+      ],
+      "reset_action": [
+        "ResetActionWeakness"
+      ],
+      "reset_poise_action": [
+        "ResetActionTerror"
+      ],
+      "scripted": [
+        "Refreshment",
+        "Pollen Blast",
+        "Blossoming Strike",
+        "Spore",
+        "Nourish",
+        "Shriek"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Healing",
+          "multiplier": 1
+        },
+        {
+          "name": "Regeneration Healing",
+          "multiplier": 2
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 20
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        }
+      ],
+      "void_tier3": [
+        {
+          "name": "Regeneration Healing",
+          "multiplier": 1
+        },
+        {
+          "name": "Earth Generator",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterMandragora",
+      "path": "Assets/GameObject/MonsterMandragora.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "777c6090befda5a45a256433eae35a68",
+      "file": "Database/Mandragora/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Mandragora",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Mandragora/sheets/Portrait_Mandragora.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Mandragora.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "ba24b624cf4a84c4e900412ee2363fb1",
+      "file": "Database/Mandragora/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_MandragoraPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Mandragora/sheets/Trait_MandragoraPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_MandragoraPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "e7a5c0167e120ce4f8db3efaf1d6f146",
+      "file": "Database/Mandragora/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Mandragora_Spritesheet_4",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 512,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.27
+        },
+        "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_4.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "a28bf1e8151a4094a9e4a23233dfd8b8",
+      "file": "Database/Mandragora/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Mandragora_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.27
+        },
+        "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Mandragora_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "c53c765f4c27b2f4d9ee2d8e7e293014",
+      "file": "Database/Mandragora/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Mandragora_Exploration_Spritesheet_33",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 560,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.1875
+        },
+        "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_33.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "482c4b0a066e8b440bc68ad8b9ef11d9",
+      "file": "Database/Mandragora/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Mandragora_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.1875
+        },
+        "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Mandragora_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "d27cb214f608fef4dbb0b7f6a20094d4",
+      "file": "Database/Mandragora/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Mandragora_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Mandragora/sheets/Portrait_Mandragora_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Mandragora_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "MandragoraCombatIdle": {
+      "clip": "Assets/AnimationClip/MandragoraCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9718beec699d977468f24e016fa86733",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "4efd10b9b8c1e4047b93e223f6c04f03",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c888ce67c9625b842b207a1061dcdc70",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ac410b820f959ee4688c622a91f238e0",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e7a5c0167e120ce4f8db3efaf1d6f146",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "777de4d195492ca4aba8a316fdf61e10",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "d45ce20d15801364db71a56fefb2235a",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "8e018e29951d9454f933ae2a561c752e",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "48cd78a11393e29408f1db737a838fef",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "79cba99b6f7682c4e84719a59321073d",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "79cba99b6f7682c4e84719a59321073d",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "MandragoraCastEnd": {
+      "clip": "Assets/AnimationClip/MandragoraCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e55a66c37a089a74abe020a1c4b0f652",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "63b5779218534a14581158fb280e96a3",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "790ace35bcf22b7418fd611d21be590f",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "24dc0dddfdd74c04288f59488613f27a",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "5d0c28e08f6138f4c802c9fea5c6645b",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "5d0c28e08f6138f4c802c9fea5c6645b",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_50.asset"
+          }
+        }
+      ]
+    },
+    "MandragoraCast": {
+      "clip": "Assets/AnimationClip/MandragoraCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "adb9be800147fed4ba3aaae506d79a26",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ae2baea025a93654daa4f351e542ffc4",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "e4f432166260a4a4f992166c7664ffdb",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "46dd720820fae9340bcbece5a11e92d1",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "46dd720820fae9340bcbece5a11e92d1",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "Mandragora_IdleUp": {
+      "clip": "Assets/AnimationClip/Mandragora_IdleUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f138890fecb736947846c97141b5d1a2",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1b3dfd2868da33a4d8b0b7af3f8ac935",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8781faae56e377047b41fe07ef76c578",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "35f08e370319ce84d8b167d1b3a7d64b",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "82c5bb0f704472441922b5de40ef4420",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "85b3f5b8426b86543b2ddb01ef42f674",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "87d3ad0730380474b9ee86030a7362ee",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "3c3d86b274fa600499cf64fb32f07cf6",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "70e6257aa7b59d443a119b692c5d8287",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "140a172e7ff30e0428d2e6599ef347fc",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "140a172e7ff30e0428d2e6599ef347fc",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_55.asset"
+          }
+        }
+      ]
+    },
+    "MandragoraHit": {
+      "clip": "Assets/AnimationClip/MandragoraHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "518ccd5c994a9af4a840a40c6f1ffbd8",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "518ccd5c994a9af4a840a40c6f1ffbd8",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_51.asset"
+          }
+        }
+      ]
+    },
+    "Mandragora_IdleDown": {
+      "clip": "Assets/AnimationClip/Mandragora_IdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d6cba71ae76172b4492ab8a85a306e5b",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "a9f59161790c26144b9930d1a2e0f26a",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "b32ff525177f74444af39c5681c57b7f",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "14d4ee09946fb8d45ba12afc193e8bae",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.8,
+          "sprite_guid": "b7671066c71f95a4bb0b441471880256",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 1,
+          "sprite_guid": "4ce9b405d0057774fb5317a47659c8e7",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 1.2,
+          "sprite_guid": "cf43c6112bf16834481f2cba29e035ac",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 1.4000001,
+          "sprite_guid": "c53c765f4c27b2f4d9ee2d8e7e293014",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 1.6000001,
+          "sprite_guid": "3cbb0d35c3a273746a07e9fc1c00eee0",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.8000002,
+          "sprite_guid": "7401ab98520d4d94bb568f36ebc06983",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 1.9833336,
+          "sprite_guid": "7401ab98520d4d94bb568f36ebc06983",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "Mandragora_WalkUp": {
+      "clip": "Assets/AnimationClip/Mandragora_WalkUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6b9960cbd27214942b5303c1cc7b9473",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_66",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_66.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e75ab0fbfff1bed43bc7765d3d2237a3",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_67",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_67.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "51bfdffaeda643242b24085ff41c2b2e",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_68",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_68.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "57b3b1e0458e70a44900e7a5842d830f",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_69",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_69.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8aa7f34f9ab36ea4eb24d927c21a9ac2",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_70",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_70.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c88804b159084574da9d188eb4100a2d",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_71",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_71.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "42ce5f6190534b74397aa53882039c2a",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_72",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_72.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "649fbc846e66dee4492e1e66245c30ee",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_73",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_73.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "3877600af9035494f8f1cea84f7e8677",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_74",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_74.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "e3a0dd93e04485f4e86c92cef47babdf",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_75",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_75.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "e3a0dd93e04485f4e86c92cef47babdf",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_75",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_75.asset"
+          }
+        }
+      ]
+    },
+    "MandragoraJumpBack": {
+      "clip": "Assets/AnimationClip/MandragoraJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5c8da1a9e3ae27246a98c39041303f07",
+          "sprite": {
+            "name": "TransparentTile",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 32,
+              "height": 32
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Mandragora/sheets/TransparentTile.png",
+            "sprite_asset": "Assets/Sprite/TransparentTile.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "a872638df69cb2d4ab31b3f217fd9228",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "9a8be197b5034ee4489998aa2796c721",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "7ea5bee5625de614cbb34e69653546fc",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "7ea5bee5625de614cbb34e69653546fc",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_31.asset"
+          }
+        }
+      ]
+    },
+    "MandragoraAttackJump": {
+      "clip": "Assets/AnimationClip/MandragoraAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bead17a03b075ff44bf4822745c347f6",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "3ffb33efb0d32724e9dcd6b6ec3771fd",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f79e4655b9858e34287f9e1ecb484a27",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cefe21996207e694098cc7ee9190cc17",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "9da153b62b553524ab17854234b9737e",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "5c8da1a9e3ae27246a98c39041303f07",
+          "sprite": {
+            "name": "TransparentTile",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 32,
+              "height": 32
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Mandragora/sheets/TransparentTile.png",
+            "sprite_asset": "Assets/Sprite/TransparentTile.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "5c8da1a9e3ae27246a98c39041303f07",
+          "sprite": {
+            "name": "TransparentTile",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 32,
+              "height": 32
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Mandragora/sheets/TransparentTile.png",
+            "sprite_asset": "Assets/Sprite/TransparentTile.asset"
+          }
+        }
+      ]
+    },
+    "Mandragora_WalkDown": {
+      "clip": "Assets/AnimationClip/Mandragora_WalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "18f450cec038e6b4baa9915658a4ff25",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5d837b78d1ae49d48bcaa545ca00bb04",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a6d176262ea47b34ba1c4a6b531d4774",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cfb9241c5258753458d567de75746bb4",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "aefaaee0a10a6b641bb97ac64dfad05d",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c26b262de41c3fb41bc7a087f2bccab7",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2e8d41c25e89a9945ba469beb7d114e5",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_62.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "b8791f815c38f4f489b35a9145149048",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_63.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "b192f4e5816116946848dda332319700",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_64.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "006b92aab3c500b4db5535aedf8db6b0",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_65.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "006b92aab3c500b4db5535aedf8db6b0",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_65.asset"
+          }
+        }
+      ]
+    },
+    "MandragoraAttack": {
+      "clip": "Assets/AnimationClip/MandragoraAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "735c3173c91e3ae41a80cb755d023281",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c71559458b9bcc54abbf2484d4d3a18b",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "338277241d745104d8966e34fc5fae60",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b8d9e9114e784dc4cb2b28c219aa8dd2",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "968622b447cac5b419f662a5098ef088",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "a119bd72194fa1843830cb653ec2e34d",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "4427ad1a6d38d1e4299040d138720143",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "ec0c392dc9f6b194e996af7a8d83d3c5",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "fb33a4c9d6bdf55448e1438fd35492d2",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "eeee73f7cfbab4e43a264b03974d199c",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "93d77f8e6a60994499a19f7842bea73f",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.875,
+          "sprite_guid": "9beead5d0447feb4daf619dd0da441b8",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.9583334,
+          "sprite_guid": "8162006a2da37814d9e8a1b099c7af85",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 1.0416667,
+          "sprite_guid": "5c8da1a9e3ae27246a98c39041303f07",
+          "sprite": {
+            "name": "TransparentTile",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 32,
+              "height": 32
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Mandragora/sheets/TransparentTile.png",
+            "sprite_asset": "Assets/Sprite/TransparentTile.asset"
+          }
+        },
+        {
+          "time": 1.0833335,
+          "sprite_guid": "5c8da1a9e3ae27246a98c39041303f07",
+          "sprite": {
+            "name": "TransparentTile",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 32,
+              "height": 32
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Mandragora/sheets/TransparentTile.png",
+            "sprite_asset": "Assets/Sprite/TransparentTile.asset"
+          }
+        }
+      ]
+    },
+    "MandragoraCastStart": {
+      "clip": "Assets/AnimationClip/MandragoraCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2ffb887048c88fb4180e58a80146aa31",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f99902b521e12344d976af1084f1c75d",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "16a54f9dc2f22004f9cda43c5ab98efc",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "ec0b169ab22e947479fe39b270dcb479",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "94d6c00928084654490958d3b51c5c18",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "9cf26f55972ea7d44b7efafa62effb13",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.45833337,
+          "sprite_guid": "808655b2b3255ca4890332d785c1868c",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "e1dc23a293184e14cb5535ae057d8599",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "e6e5276dd4e603d4abeb55df6a82ef19",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "646db2b6a376b10458bdf550d8e2555e",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "646db2b6a376b10458bdf550d8e2555e",
+          "sprite": {
+            "name": "Mandragora_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.27
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Spritesheet_41.asset"
+          }
+        }
+      ]
+    },
+    "Mandragora_Hidden": {
+      "clip": "Assets/AnimationClip/Mandragora_Hidden.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "7f1b238fcdb1f43459540f6a5c56e69c",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "266e1c0edd64f5e4a9e58a1d4aca9717",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "8c572cbc026577c4ca759c588102ff22",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "8afc2e179046d324d952a3f7864c2337",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.8,
+          "sprite_guid": "59d9848427e2a114b8e333322feb1a3d",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 1,
+          "sprite_guid": "f827ab61039f9a54eab94cf9c87393cc",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 1.2,
+          "sprite_guid": "2b58bfb60887fef4b9cd031c807d0f18",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 1.4000001,
+          "sprite_guid": "e2d249f6412167a40a458bfb1ad3023b",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 1.6000001,
+          "sprite_guid": "dea7f7f8da3ea02438644a96c48bba5e",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 1.8000002,
+          "sprite_guid": "0c901e8add15b9a448b240295943681d",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 1.9833336,
+          "sprite_guid": "0c901e8add15b9a448b240295943681d",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 640,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "Mandragora_WalkHorizontal": {
+      "clip": "Assets/AnimationClip/Mandragora_WalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a94010fcabe8316469e7b10013edf045",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f4acab07351e1684a9ccc6dc0c6f36e4",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "125a0e1a9949fd6448991bcec43933c4",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "8d5e3c1798e8fe04781f1a92c7c32fd4",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "1cc465e87792bff4184cb1e4c8d1aa51",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "54bf9b9fde04b544091d72465e33a595",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2befa19c2c28bb645ab31df508a8cd00",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "bd3f3f4ba396c8242be81439dd802669",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "2e198094652dbf442bc166cf9fc223f8",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "9b3f84b9bc9458142b114eaf70fb8eaa",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "9b3f84b9bc9458142b114eaf70fb8eaa",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "Mandragora_Ambush": {
+      "clip": "Assets/AnimationClip/Mandragora_Ambush.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "83d4b69be0b01e442967d52877892379",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "36739d6598c6ed74b95a43dafd2196b5",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "20825a95692a78e49a4150224d108eaa",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "db4f750aba753f0468bd12c6ec0ada40",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "4c9ceb1d9eee5804abb6073149c49e38",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6eba5f62d1028e748ad9ad4f884ed7f1",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "d70fb106295ae8647a3b0526c24d0c27",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "5348ca263194ec54d8e71f543dce2b0c",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "9dae93fa2581a354b81a1b14a4480a5f",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "ee2f46607fa65404b94caf3da9d20b25",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 560,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "1bf4df4938687e5468a366af4b5f7e25",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 480,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "2a698bcac108b694ca31ef710b36b3f6",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 480,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 1.2000002,
+          "sprite_guid": "bbbc0b023662aaa4fa0004c07409d766",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 480,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 1.4000002,
+          "sprite_guid": "d67b934e6cb669f4caa695014eddeafc",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 480,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.5000002,
+          "sprite_guid": "7e1e5e670904dd64eb501b536c04e458",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 480,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 1.6000003,
+          "sprite_guid": "f91df0eb1d958fe48bdc815ca4d29eec",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 480,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 1.6833336,
+          "sprite_guid": "f91df0eb1d958fe48bdc815ca4d29eec",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 480,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_25.asset"
+          }
+        }
+      ]
+    },
+    "Mandragora_IdleHorizontal": {
+      "clip": "Assets/AnimationClip/Mandragora_IdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "29d5a378fb9ad8f4ebfe5555c279f1b8",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_76",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_76.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0ec08602433efc54b98e4d0358088b4c",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_77",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_77.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f7e0940da16e0e1448a8452d84054c9e",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_78",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_78.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9627d9ce4eae80942ba534d538d6c160",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_79",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_79.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "5cdda3874ec66a147affcd674c54ae55",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_80",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_80.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "9e612a0548bf70345a7a14e97f9b50d4",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_81",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_81.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "5247b60789518e64fb6ef4e54b4f1500",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_82",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_82.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "23839c5f85d26014ea42de7bf2cf64f8",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_83",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_83.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "6afe78e60253b2c4f802b5b7a4f91cb8",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_84",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_84.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "a2b41227c6e08a04aac595b8070499e6",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_85",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_85.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "a2b41227c6e08a04aac595b8070499e6",
+          "sprite": {
+            "name": "Mandragora_Exploration_Spritesheet_85",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/Mandragora/sheets/Mandragora_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mandragora_Exploration_Spritesheet_85.asset"
+          }
+        }
+      ]
+    }
+  }
+}

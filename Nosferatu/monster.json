@@ -1,0 +1,2671 @@
+{
+  "name": "Nosferatu",
+  "prefab": "MonsterNosferatu",
+  "prefab_path": "Assets/GameObject/MonsterNosferatu.prefab",
+  "data": {
+    "name": "Nosferatu",
+    "ids": {
+      "ID": 7187,
+      "MonID": 16
+    },
+    "stats": {
+      "BaseMaxHealth": 40,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 524288,
+      "ElementsOverride": 4398047035392
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 1,
+          "Hits": 3.75
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Dodge",
+      "Heal",
+      "Terror"
+    ],
+    "types_override": [
+      "Critical",
+      "Heal",
+      "Terror"
+    ],
+    "traits": {
+      "signature": "Vampirism",
+      "traits": [
+        {
+          "name": "Auto Heal",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Aqua Pounce",
+        "Shriek"
+      ],
+      "start_override": [
+        "Fire Dash",
+        "Shriek"
+      ],
+      "reset_action": [
+        "ResetActionTerror"
+      ],
+      "scripted": [
+        "Hail Storm",
+        "Frightful Lightning",
+        "Shriek",
+        "Aqua Pounce",
+        "Fire Dash"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 15
+        },
+        {
+          "name": "Terror Application",
+          "multiplier": 1
+        }
+      ],
+      "void_tier2": [
+        {
+          "name": "Damage",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 25
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 15
+        },
+        {
+          "name": "Terror Application",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterNosferatu",
+      "path": "Assets/GameObject/MonsterNosferatu.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "85e56145198e4844a9ce5e4d9657375b",
+      "file": "Database/Nosferatu/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Nosferatu",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Nosferatu/sheets/Portrait_Nosferatu.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Nosferatu.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "7eae1b883c8073c48985b9a63dbabeb5",
+      "file": "Database/Nosferatu/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_NosferatuPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Nosferatu/sheets/Trait_NosferatuPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_NosferatuPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "d0e11babdb14b0d4db639643409c40bf",
+      "file": "Database/Nosferatu/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Nosferatu_Battle_SpriteSheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 656,
+          "width": 164,
+          "height": 164
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.3
+        },
+        "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+        "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "f09ae0bdecfd60e44894ef132364a593",
+      "file": "Database/Nosferatu/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Nosferatu_Battle_SpriteSheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 656,
+          "width": 164,
+          "height": 164
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.3
+        },
+        "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Nosferatu_Battle_SpriteSheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "3337a131a36301a48a6ed8b1669d8d24",
+      "file": "Database/Nosferatu/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Nosferatu_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 450,
+          "width": 90,
+          "height": 90
+        },
+        "pivot": {
+          "x": 0.37777779,
+          "y": 0.42222223
+        },
+        "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "3a7f6cd98ec682c4aadb27ad9950b9dd",
+      "file": "Database/Nosferatu/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Nosferatu_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 450,
+          "width": 90,
+          "height": 90
+        },
+        "pivot": {
+          "x": 0.3777778,
+          "y": 0.42222217
+        },
+        "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Nosferatu_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "e6355183b27a0ce4ea3d97513badab13",
+      "file": "Database/Nosferatu/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Nosferatu_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Nosferatu/sheets/Portrait_Nosferatu_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Nosferatu_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "NosferatuWalkHorizontal": {
+      "clip": "Assets/AnimationClip/NosferatuWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "dfb68f464af5a2a4fadaaf9e3bf6e8c5",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "ee9516fd32fb1f641a6da97c70b2113f",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "7271e534499b447418a8638996e69629",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "546bf61e6879b2445853eff609995cc9",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "2a1725ed5a63f4748afda63a0b5554cf",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3677892c256218748a2830d2b7804968",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "cab661b1cbd4a014b8e8be461aa3d9a7",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "3b88e562488658449af47ad46684883f",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "270a5b4bc14e7e641831fefe743174cf",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "7bd299995ee9204449366579f6ab83b7",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "7bd299995ee9204449366579f6ab83b7",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuAttack": {
+      "clip": "Assets/AnimationClip/NosferatuAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2e59ec3b86f1dc24fb919db936d9f4d8",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_19.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "b25e33489b7ef5a4e9bccff139abed6e",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_20.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "42ccd6cdf4890864b963eb6d34b06032",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_21.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "ae1f4d7d4ecd61a458a81fdc990a55c8",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1a6a4c014df5b764b8a90b9a03f9dca2",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "be7b0b699059a054ca2351aa19ddcfa0",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_24.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "be7b0b699059a054ca2351aa19ddcfa0",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_24.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuAttackEnd": {
+      "clip": "Assets/AnimationClip/NosferatuAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "77a584f10ea759c4cb409c717be22b15",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_25.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0f72d283310eb094380d78dc88c38508",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_26.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "0f72d283310eb094380d78dc88c38508",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_26.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuWalkTop": {
+      "clip": "Assets/AnimationClip/NosferatuWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fce4198aba454c24a87452d90e7aeb04",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "82f0c313954073c499059dd03b7999ac",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "b630b1024d898e047a7265957a5e36f2",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "4e824862ed7f26641ade3d8a73324552",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "3fb192537efe63646ad4e8adf0279e81",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "969f30f3b82a54f43b6f396acc991e0d",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "b34796d60f40c65419a7c22d9a7d2bfc",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "5439dea741bf1e343b495ef1e1390a58",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "66ba685626bcb884fbbcf90638bdcb11",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "fcbe79bff1147104cb1633077ee81429",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "fcbe79bff1147104cb1633077ee81429",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuIdleHorizontal": {
+      "clip": "Assets/AnimationClip/NosferatuIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "59c239dd83d40d043a06e5c8cdb88f03",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "63f7b963a37b6ab4299d414d8f1517a1",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "14c2586599819f04683e8a289e547289",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cea36b6a96a4714498af4f7629e5a513",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c4f3c0d04d2716b458daf8cf143fcb6e",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "cb2f9ab845f58894bb8b9ddd927a87e9",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "5efbbbc045b4bbf458c968689ba7f4b6",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "f30b8c4672304934cb2dcb3237d0745c",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "5d29bc6753208d447b2c268616d839a9",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "8da5ff7acfa30dc498273fc05bfba44f",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "8da5ff7acfa30dc498273fc05bfba44f",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuCombatIdle": {
+      "clip": "Assets/AnimationClip/NosferatuCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d0e11babdb14b0d4db639643409c40bf",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e3a74d43807f3dc4283565318fe012dc",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b1541d816b5c01b46aa98007686539a8",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "68d6a64e8e1d81048b57d445990cb363",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f952bee258046554991b179b145c8ade",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "f41c2e1af1f89204db22259ef7c46c3e",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "db01a9f13012e2143b0222e1665ae289",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "866e947b75e6c87459affe202576fc4d",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "6f0c1228c86c6ce4983c67ff5ed00f2c",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "8750ca38a6c123540bfa774358465eed",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "8750ca38a6c123540bfa774358465eed",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 656,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_9.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuCastEnd": {
+      "clip": "Assets/AnimationClip/NosferatuCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b08871628addd2546862e8ea06335cb5",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_43.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "b08871628addd2546862e8ea06335cb5",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_43.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuWalkDown": {
+      "clip": "Assets/AnimationClip/NosferatuWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6c62906422faa7f42a4e8dfd07b62251",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "986a6ee34411d2f4193cce25e01de7e9",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "1ef62825cefb7af48afe71bb74acc3de",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "e57705fa7b51b5d49a43a3b4e58b66cb",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "c33879f30dcf8f04f812127659c3e7b2",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "deb47e7598ea9844aa1c30fc9a8ad105",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "6b5e0f5143f204c40987348ef755cec3",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "21708144f1d3b544eb77463e6b297a77",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 629,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "d814868b0227162489f5a8bd34241006",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "268700653dcfb2b46a768b5a0b6420ea",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "268700653dcfb2b46a768b5a0b6420ea",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuCast": {
+      "clip": "Assets/AnimationClip/NosferatuCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f29d50b5ef695d449b1ce5ddf84c380c",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_41.asset"
+          }
+        },
+        {
+          "time": 0.08333336,
+          "sprite_guid": "f0d512006eca25746b603f045cade19a",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_42.asset"
+          }
+        },
+        {
+          "time": 0.12500004,
+          "sprite_guid": "f0d512006eca25746b603f045cade19a",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_42.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuIdleDown": {
+      "clip": "Assets/AnimationClip/NosferatuIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cb9408134a756fc44aa8939d00626ec0",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1bb8d49bcb2642a4387ca6850b58c74f",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "306b283ac52254b4b911ea094bdcd8d8",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d2e1ed14c6860734399cb53673974fe6",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "a6dd8399cdbe39448880862ff47646fe",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "1aec4ecd34107884994541c29d96d161",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a9eda7a32baf4714883fc4164baa8a0b",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "69c90d70724730a4bbb6c928b1f791f5",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "6c8a432f70ed0214bbc8baa74a7018d1",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "44242c29d6b3230418d61a9d26604657",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "44242c29d6b3230418d61a9d26604657",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.42222223,
+              "y": 0.4
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuJumpBack": {
+      "clip": "Assets/AnimationClip/NosferatuJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bff7a14f9bf323543b9c494d41ff911c",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_27.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "59433c682a5d68f408555a5574c9eb47",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_28.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "59433c682a5d68f408555a5574c9eb47",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 328,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_28.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuHit": {
+      "clip": "Assets/AnimationClip/NosferatuHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "4e38388f0348e3a4aa1ea932cd78a1bd",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "4e38388f0348e3a4aa1ea932cd78a1bd",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_12.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuCastStart": {
+      "clip": "Assets/AnimationClip/NosferatuCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "164b87908e977d94a88a2cb172453fbe",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_29.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b143708868c6fcd4fb57b1f834a92527",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_30.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c4926dfc48861b94582b16c47f01faf4",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_31.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "07584cd2563a70e489c6eed5138ef1b1",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_32.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "73401187fd446f44388f497919d0ca82",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "7ff0b61bc9f902a418386fb96652c0f3",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c26ecf652e3f62e46b97cfeac8612548",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "91fda07cf9975004e8a8759e11209e40",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_36.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "c07b9805155d9b441ac55ed09214079a",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_37.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "6f2eadc2ab0914944b24f7b7b8a1e71e",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 164,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_38.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "aa5ac066d714da548af36d495315ed4e",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_39.asset"
+          }
+        },
+        {
+          "time": 0.87499994,
+          "sprite_guid": "2f0dcff80f8f22b4484f54338267d686",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_40.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "2f0dcff80f8f22b4484f54338267d686",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_40.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuAttackJump": {
+      "clip": "Assets/AnimationClip/NosferatuAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "333f9c48e6ba7a6409d5452530e4d3c8",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b1e75849f2227b04385af88b401e6352",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "4e38388f0348e3a4aa1ea932cd78a1bd",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6200ef21bf97a804a9b241827f0ed4fa",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "b6bbebd2641e21f46801450dfe71ec64",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "bacba7c2a03a9724d83757bf3d62b8ed",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_15.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "bacba7c2a03a9724d83757bf3d62b8ed",
+          "sprite": {
+            "name": "Nosferatu_Battle_SpriteSheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 492,
+              "width": 164,
+              "height": 164
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.3
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Battle_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Battle_SpriteSheet_15.asset"
+          }
+        }
+      ]
+    },
+    "NosferatuIdleTop": {
+      "clip": "Assets/AnimationClip/NosferatuIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3337a131a36301a48a6ed8b1669d8d24",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8c05532758dc91e4d93f77c2f271af4f",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "bd7ae75e80c72cf4bb0df32a21fa0e5f",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "541f011ac8fe06a4797a0a5367ed51ba",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "b50a0e93d77325f47838ef44c1f17594",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "bb8b9d208879ce641b279884d1aafe9d",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2faf838d67a003641948bf7328499d7d",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "f5d9aa1d967e8d343ab0f05fd04602c5",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "915e3fd45d2d08d49bb21306549e0630",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "43592449856f746439c40e3f659bef9b",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "43592449856f746439c40e3f659bef9b",
+          "sprite": {
+            "name": "Nosferatu_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.37777779,
+              "y": 0.42222223
+            },
+            "sheet": "Database/Nosferatu/sheets/Nosferatu_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Nosferatu_Overworld_Spritesheet_9.asset"
+          }
+        }
+      ]
+    }
+  }
+}

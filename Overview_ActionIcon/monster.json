@@ -1,0 +1,14 @@
+{
+  "name": "Overview_ActionIcon",
+  "prefab": "MonsterOverview_ActionIcon",
+  "prefab_path": "Assets/GameObject/MonsterOverview_ActionIcon.prefab",
+  "data": {
+    "name": "Overview_ActionIcon",
+    "source": {
+      "prefab": "MonsterOverview_ActionIcon",
+      "path": "Assets/GameObject/MonsterOverview_ActionIcon.prefab"
+    }
+  },
+  "icons": {},
+  "animations": {}
+}

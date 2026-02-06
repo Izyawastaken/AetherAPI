@@ -1,0 +1,2337 @@
+{
+  "name": "Ooze",
+  "prefab": "MonsterOoze",
+  "prefab_path": "Assets/GameObject/MonsterOoze.prefab",
+  "data": {
+    "name": "Ooze",
+    "ids": {
+      "ID": 994,
+      "MonID": 5
+    },
+    "stats": {
+      "BaseMaxHealth": 45,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194139533312,
+      "ElementsOverride": 4398046511104
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 3,
+          "Hits": 3.5
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Poison",
+      "Tank",
+      "Affliction"
+    ],
+    "types_override": [
+      "Burn",
+      "Tank",
+      "Affliction"
+    ],
+    "traits": {
+      "signature": "Putrid Odor",
+      "signature_override": "Putrid Odor",
+      "traits": [
+        {
+          "name": "Poison Glands",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Burning Fire",
+          "min_difficulty": 2,
+          "shift_restriction": 1
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Toxic Slash",
+        "Healing Slime"
+      ],
+      "start_override": [
+        "Heat",
+        "Scald"
+      ],
+      "reset_action": [
+        "ResetActionPoison"
+      ],
+      "reset_poise_action": [
+        "ResetActionBurn"
+      ],
+      "scripted": [
+        "Slime Volley",
+        "Healing Slime",
+        "Poison Wave",
+        "Toxic Slash",
+        "Alchemical Blast",
+        "Heat",
+        "Bonfire",
+        "Scald"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Corruption Cleanse",
+          "multiplier": 2
+        },
+        {
+          "name": "Poison Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Health",
+          "multiplier": 15
+        }
+      ],
+      "override": [
+        {
+          "name": "Corruption Cleanse",
+          "multiplier": 2
+        },
+        {
+          "name": "Burn Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Health",
+          "multiplier": 15
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterOoze",
+      "path": "Assets/GameObject/MonsterOoze.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "8b116d2833d835e46b7f5e05b5291573",
+      "file": "Database/Ooze/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Ooze",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ooze/sheets/Portrait_Ooze.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Ooze.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "f02d65f077aff69499f3261358f3504c",
+      "file": "Database/Ooze/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_OozePortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ooze/sheets/Trait_OozePortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_OozePortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "553e82697fee19247a6785dc504abc30",
+      "file": "Database/Ooze/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "OozeSpriteSheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 700,
+          "width": 175,
+          "height": 175
+        },
+        "pivot": {
+          "x": 0.45,
+          "y": 0.2
+        },
+        "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/OozeSpriteSheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "32685f6fb0b6e034797144774fdffdb4",
+      "file": "Database/Ooze/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Ooze_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 700,
+          "width": 175,
+          "height": 175
+        },
+        "pivot": {
+          "x": 0.45,
+          "y": 0.2
+        },
+        "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Ooze_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "1bc19cd2e0e5da3439a9acb1142f1cfc",
+      "file": "Database/Ooze/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "OozeOverworldSpritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.23
+        },
+        "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "cab87a9ebb169ac42bf0039b70eb511b",
+      "file": "Database/Ooze/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Ooze_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.23
+        },
+        "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Ooze_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "91ab2bc68ee917842947990880efb00d",
+      "file": "Database/Ooze/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Ooze_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ooze/sheets/Portrait_Ooze_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Ooze_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "OozeAttack": {
+      "clip": "Assets/AnimationClip/OozeAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "181c3b2c6cd8fbe4d970e7497f17553c",
+          "sprite": {
+            "name": "OozeSpriteSheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_14.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "90ea098c13bf8f6408de78450a8dc855",
+          "sprite": {
+            "name": "OozeSpriteSheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 875,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_15.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "09aff717d42d8424c9ff6636708b9905",
+          "sprite": {
+            "name": "OozeSpriteSheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1050,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_16.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "2f9dcdcc3f8f90c4faa5bb87a1515ab4",
+          "sprite": {
+            "name": "OozeSpriteSheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1225,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_17.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "558a0c7b56b513d4599992678ffceab6",
+          "sprite": {
+            "name": "OozeSpriteSheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_18.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "d589180c931e936458356bce6d9b3215",
+          "sprite": {
+            "name": "OozeSpriteSheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1575,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_19.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "e0fea5818b8e1a941b3cdbac0252d93a",
+          "sprite": {
+            "name": "OozeSpriteSheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_20.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "593470d375296d34eb95a31ba407c2de",
+          "sprite": {
+            "name": "OozeSpriteSheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 175,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_21.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "d8cd28b415b1aac4e8d70c579c3bce82",
+          "sprite": {
+            "name": "OozeSpriteSheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 350,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_22.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "a865f849faf854748997d4726bbf6b24",
+          "sprite": {
+            "name": "OozeSpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_23.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "a865f849faf854748997d4726bbf6b24",
+          "sprite": {
+            "name": "OozeSpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_23.asset"
+          }
+        }
+      ]
+    },
+    "OozeHit": {
+      "clip": "Assets/AnimationClip/OozeHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "be25ef83745d3834a9e6f3ab56eb3d3f",
+          "sprite": {
+            "name": "OozeSpriteSheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1575,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_46.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "be25ef83745d3834a9e6f3ab56eb3d3f",
+          "sprite": {
+            "name": "OozeSpriteSheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1575,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_46.asset"
+          }
+        }
+      ]
+    },
+    "OozeAttackEnd": {
+      "clip": "Assets/AnimationClip/OozeAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d8cd28b415b1aac4e8d70c579c3bce82",
+          "sprite": {
+            "name": "OozeSpriteSheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 350,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_22.asset"
+          }
+        },
+        {
+          "time": 0.08333336,
+          "sprite_guid": "a865f849faf854748997d4726bbf6b24",
+          "sprite": {
+            "name": "OozeSpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_23.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "a865f849faf854748997d4726bbf6b24",
+          "sprite": {
+            "name": "OozeSpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_23.asset"
+          }
+        }
+      ]
+    },
+    "OozeCastEnd": {
+      "clip": "Assets/AnimationClip/OozeCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b686d4ab1d008544b8d489916435f405",
+          "sprite": {
+            "name": "OozeSpriteSheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1225,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_44.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d7c13f5ba65ca094bafe4d0c985a4fc1",
+          "sprite": {
+            "name": "OozeSpriteSheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_45.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "d7c13f5ba65ca094bafe4d0c985a4fc1",
+          "sprite": {
+            "name": "OozeSpriteSheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_45.asset"
+          }
+        }
+      ]
+    },
+    "OozeWalkDown": {
+      "clip": "Assets/AnimationClip/OozeWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0e1c27cede64ad34595ddd339d49c647",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "a6c4dfd90baef694c83a88460b0595e8",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "8a3339f2813becd43a98b70e5474c9e8",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "672a9e34a995cc746a30d9dddc2413ba",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.46666664,
+          "sprite_guid": "d0e9f9876b943e342b91d12c213073f4",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.5666667,
+          "sprite_guid": "d0e9f9876b943e342b91d12c213073f4",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_12.asset"
+          }
+        }
+      ]
+    },
+    "OozeCastStart": {
+      "clip": "Assets/AnimationClip/OozeCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "33fa477e5003a3047887e2db5860b6fc",
+          "sprite": {
+            "name": "OozeSpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_27.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "689c4427f7f76ed448fdb35e96ebf00e",
+          "sprite": {
+            "name": "OozeSpriteSheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 175,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_28.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d30cf63bf9c800f429ea3a042d72295f",
+          "sprite": {
+            "name": "OozeSpriteSheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 350,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_29.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "d30cf63bf9c800f429ea3a042d72295f",
+          "sprite": {
+            "name": "OozeSpriteSheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 350,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_29.asset"
+          }
+        }
+      ]
+    },
+    "OozeCombatIdle": {
+      "clip": "Assets/AnimationClip/OozeCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "553e82697fee19247a6785dc504abc30",
+          "sprite": {
+            "name": "OozeSpriteSheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "3755baa6eaf0720498defde535b64ad2",
+          "sprite": {
+            "name": "OozeSpriteSheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 175,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "16302217298ba024bba7e3325af884e4",
+          "sprite": {
+            "name": "OozeSpriteSheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 350,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "485519819d110474ea8c8eeb71ad142d",
+          "sprite": {
+            "name": "OozeSpriteSheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "a75376db7730a84488fffda767759ba9",
+          "sprite": {
+            "name": "OozeSpriteSheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "3c558e34c1b3a234ba81ea47ee99f6c4",
+          "sprite": {
+            "name": "OozeSpriteSheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 875,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "b248c93fd9512504385a3c62d79d4233",
+          "sprite": {
+            "name": "OozeSpriteSheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1050,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "9b53c63d9e6e8cc49812f23f26780065",
+          "sprite": {
+            "name": "OozeSpriteSheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1225,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "c1221c5bd4bdc464eb615ddefcb337c3",
+          "sprite": {
+            "name": "OozeSpriteSheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "cf69508d45977c9408a9d642423dcdd1",
+          "sprite": {
+            "name": "OozeSpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1575,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "cf69508d45977c9408a9d642423dcdd1",
+          "sprite": {
+            "name": "OozeSpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1575,
+              "y": 700,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_9.asset"
+          }
+        }
+      ]
+    },
+    "OozeCast": {
+      "clip": "Assets/AnimationClip/OozeCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2e4ba5097f59d9d42bbbba25d3ccf37d",
+          "sprite": {
+            "name": "OozeSpriteSheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_30.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "44812fb875395594487ab2a13b0f5a37",
+          "sprite": {
+            "name": "OozeSpriteSheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_31.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "738b6be185223d74f898ac8ed8520bd3",
+          "sprite": {
+            "name": "OozeSpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 875,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "fda9b63439ebfa54a94c76ce3623c954",
+          "sprite": {
+            "name": "OozeSpriteSheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1050,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_33.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3452cafe941fcac4993ae5ab5ec585af",
+          "sprite": {
+            "name": "OozeSpriteSheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1225,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_34.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "7ddbebd8a518c8949b187848c3cfd24c",
+          "sprite": {
+            "name": "OozeSpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "24bd19ca04a74ea48b01baf35ada56f6",
+          "sprite": {
+            "name": "OozeSpriteSheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1575,
+              "y": 175,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_36.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e339c193116bcf643bf1c2a4d23abdc0",
+          "sprite": {
+            "name": "OozeSpriteSheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_37.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "76cd8064ee2219b4f87de3112a1aa91c",
+          "sprite": {
+            "name": "OozeSpriteSheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 175,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_38.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "b1b819bda3bd1e94c848038d083621a2",
+          "sprite": {
+            "name": "OozeSpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 350,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_39.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "934b952687f34b9478e8d0e41cc45d66",
+          "sprite": {
+            "name": "OozeSpriteSheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_40.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "5f460506c3d0f1e4ead58db9b547c419",
+          "sprite": {
+            "name": "OozeSpriteSheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_41.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "27e1f99e240433b4a9b46665169281cf",
+          "sprite": {
+            "name": "OozeSpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 875,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_42.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "6c8dbcca24e2f5042af93eb0757894c2",
+          "sprite": {
+            "name": "OozeSpriteSheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1050,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_43.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "6c8dbcca24e2f5042af93eb0757894c2",
+          "sprite": {
+            "name": "OozeSpriteSheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1050,
+              "y": 0,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_43.asset"
+          }
+        }
+      ]
+    },
+    "OozeWalkTop": {
+      "clip": "Assets/AnimationClip/OozeWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9528549fef53e9e4892cde1ab48b6db8",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "a710e8cdc83e3a84188ce52632848653",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "2ecddc31708626449a71083a158606fc",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "a3a46e44f386f2946ab2529c7567d3ea",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.46666664,
+          "sprite_guid": "72f002ef25a71c045ade5193f60fee84",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.5666667,
+          "sprite_guid": "72f002ef25a71c045ade5193f60fee84",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_40.asset"
+          }
+        }
+      ]
+    },
+    "OozeWalkHorizontal": {
+      "clip": "Assets/AnimationClip/OozeWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bfd625750c2aa0c47b002de9ce189427",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "643a4235ac6cb7b4aadbf8b375ea119b",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "32dfcf1029be6224bac40c941ff8d8cc",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "839dc4a010201914480c3addb5026c64",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.46666664,
+          "sprite_guid": "1e81a2859a8021f47b105522c5c7ea1d",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.5666667,
+          "sprite_guid": "1e81a2859a8021f47b105522c5c7ea1d",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_26.asset"
+          }
+        }
+      ]
+    },
+    "OozeJumpBack": {
+      "clip": "Assets/AnimationClip/OozeJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6a91ff8be8f458147b4a2968dddc2f95",
+          "sprite": {
+            "name": "OozeSpriteSheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_24.asset"
+          }
+        },
+        {
+          "time": 0.0833333,
+          "sprite_guid": "f657805d776f54843ac99edd117115c7",
+          "sprite": {
+            "name": "OozeSpriteSheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 875,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_25.asset"
+          }
+        },
+        {
+          "time": 0.24999997,
+          "sprite_guid": "5bcb9ddb74498544bb3e521e7cc9d10e",
+          "sprite": {
+            "name": "OozeSpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1050,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_26.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "5bcb9ddb74498544bb3e521e7cc9d10e",
+          "sprite": {
+            "name": "OozeSpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1050,
+              "y": 350,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_26.asset"
+          }
+        }
+      ]
+    },
+    "OozeAttackJump": {
+      "clip": "Assets/AnimationClip/OozeAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "206b6b5c5df582447ba8498ad7d857bd",
+          "sprite": {
+            "name": "OozeSpriteSheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "147fc0e517a89784c88245b7de160235",
+          "sprite": {
+            "name": "OozeSpriteSheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 175,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1d3807a1f46dd354f853a85647011f4c",
+          "sprite": {
+            "name": "OozeSpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 350,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7aa46814ddc5a7b4ea53ad67e7de6f5a",
+          "sprite": {
+            "name": "OozeSpriteSheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_13.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "7aa46814ddc5a7b4ea53ad67e7de6f5a",
+          "sprite": {
+            "name": "OozeSpriteSheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 525,
+              "y": 525,
+              "width": 175,
+              "height": 175
+            },
+            "pivot": {
+              "x": 0.45,
+              "y": 0.2
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeSpriteSheet_13.asset"
+          }
+        }
+      ]
+    },
+    "OozeIdleHorizontal": {
+      "clip": "Assets/AnimationClip/OozeIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3845844f8bf96024da4dd66a4f4c409f",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "be5edb3a8b8e0ac49bb6fd4f596bbff7",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "b42dabe65b93a6a44bd11213e705bec3",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "ac3f687f356177045b228ac9510a1585",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "1d78f47f99b1ed643b8add7dda2c8e59",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.5833334,
+          "sprite_guid": "3ceeeafb9668a194ca70a669adae748c",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "afabd180a276aa54b81c6d7ff4dc2c27",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "afabd180a276aa54b81c6d7ff4dc2c27",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_20.asset"
+          }
+        }
+      ]
+    },
+    "OozeIdleTop": {
+      "clip": "Assets/AnimationClip/OozeIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "13a2ca9afa18e194e9d18d6620c5c05f",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "df98eeba31a50ec4a9d90a9e4e948df1",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "4e574b133d0893240b9bbb6a8af39dd7",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "253e3c5b15e670a43964523cbd01ff8b",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "618b96ca96c968647994022b1b3b4872",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.5833334,
+          "sprite_guid": "1defafc2dc0f96e439b22f2c79565c51",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "9fc5f96d0ee77be48ba779b2690e7508",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "9fc5f96d0ee77be48ba779b2690e7508",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_34.asset"
+          }
+        }
+      ]
+    },
+    "OozeIdleDown": {
+      "clip": "Assets/AnimationClip/OozeIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1bc19cd2e0e5da3439a9acb1142f1cfc",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.11666667,
+          "sprite_guid": "0b3dea612e25cf449bd7145b6c187261",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.23333333,
+          "sprite_guid": "c46188a41d827c04aa10056c3325976b",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.35,
+          "sprite_guid": "749c84c5d3a8b0145930d5ae026638da",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "432f672c78a24344da7d956819cfb5ab",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5833334,
+          "sprite_guid": "697d97255226b2a498c990b5e8b8e3d4",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "b8b260d0cd0154b4ab1f9b19314184a5",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "b8b260d0cd0154b4ab1f9b19314184a5",
+          "sprite": {
+            "name": "OozeOverworldSpritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Ooze/sheets/Ooze_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/OozeOverworldSpritesheet_6.asset"
+          }
+        }
+      ]
+    }
+  }
+}

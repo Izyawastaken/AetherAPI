@@ -1,0 +1,141 @@
+{
+  "name": "Chernobog Arm",
+  "prefab": "MonsterChernobogArm_FrontArm",
+  "prefab_path": "Assets/GameObject/MonsterChernobogArm_FrontArm.prefab",
+  "data": {
+    "name": "Chernobog Arm",
+    "ids": {
+      "ID": 1707,
+      "MonID": -1
+    },
+    "stats": {
+      "BaseMaxHealth": 0,
+      "StartPerkCount": 5
+    },
+    "elements": {
+      "Elements": 1048576
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 1,
+      "stagger_defines": [
+        {
+          "Element": 8,
+          "Hits": 2.2
+        }
+      ],
+      "boss_stagger": [
+        {
+          "Element": 0,
+          "Hits": 3
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 0
+    },
+    "types": [
+      "Terror",
+      "Aether",
+      "Age"
+    ],
+    "traits": {
+      "signature": "Corrupted Aether",
+      "traits": [
+        {
+          "name": "TraitChernobogArmUtility",
+          "min_difficulty": 0,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Unending",
+          "min_difficulty": 0,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterChernobogArm_FrontArm",
+      "path": "Assets/GameObject/MonsterChernobogArm_FrontArm.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "6ed66a7f7d1b2244db7782170d894197",
+      "file": "Database/Chernobog_Arm/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Chernobog_FireHand",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Chernobog_Arm/sheets/Portrait_Chernobog_FireHand.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Chernobog_FireHand.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "14df2f5e1e8de4a4b962e544c7bb8cab",
+      "file": "Database/Chernobog_Arm/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_CherufePortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Chernobog_Arm/sheets/Trait_CherufePortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_CherufePortrait.asset"
+      }
+    }
+  },
+  "animations": {
+    "EmptyCast": {
+      "clip": "Assets/AnimationClip/EmptyCast.anim",
+      "frames": []
+    },
+    "EmptyAttackEnd": {
+      "clip": "Assets/AnimationClip/EmptyAttackEnd.anim",
+      "frames": []
+    },
+    "EmptyAttack": {
+      "clip": "Assets/AnimationClip/EmptyAttack.anim",
+      "frames": []
+    },
+    "EmptyCastStart": {
+      "clip": "Assets/AnimationClip/EmptyCastStart.anim",
+      "frames": []
+    },
+    "EmptyHit": {
+      "clip": "Assets/AnimationClip/EmptyHit.anim",
+      "frames": []
+    },
+    "EmptyAttackJump": {
+      "clip": "Assets/AnimationClip/EmptyAttackJump.anim",
+      "frames": []
+    },
+    "EmptyCombatIdle": {
+      "clip": "Assets/AnimationClip/EmptyCombatIdle.anim",
+      "frames": []
+    },
+    "EmptyJumpBack": {
+      "clip": "Assets/AnimationClip/EmptyJumpBack.anim",
+      "frames": []
+    },
+    "EmptyCastEnd": {
+      "clip": "Assets/AnimationClip/EmptyCastEnd.anim",
+      "frames": []
+    }
+  }
+}

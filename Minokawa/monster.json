@@ -1,0 +1,2999 @@
+{
+  "name": "Minokawa",
+  "prefab": "MonsterMinokawa",
+  "prefab_path": "Assets/GameObject/MonsterMinokawa.prefab",
+  "data": {
+    "name": "Minokawa",
+    "ids": {
+      "ID": 1042,
+      "MonID": 3
+    },
+    "stats": {
+      "BaseMaxHealth": 35,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398047035392,
+      "ElementsOverride": 13194140057600
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 3,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Sidekick",
+      "Dodge",
+      "Force"
+    ],
+    "types_override": [
+      "Sidekick",
+      "Age",
+      "Force"
+    ],
+    "traits": {
+      "signature": "Shining Spark",
+      "signature_override": "Shining Spark",
+      "traits": [
+        {
+          "name": "Helping Winds",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Tempering",
+        "Supersonic Strike"
+      ],
+      "start_override": [
+        "Hardening",
+        "Supersonic Strike"
+      ],
+      "reset_action": [
+        "ResetActionForce"
+      ],
+      "scripted": [
+        "Tempering",
+        "Hardening",
+        "Polar Wind",
+        "Supersonic Strike"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        },
+        {
+          "name": "Initial Dodge",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Force",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Initial Force",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Force Chance",
+          "multiplier": 33
+        }
+      ],
+      "override": [
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 15
+        },
+        {
+          "name": "Initial Force",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterMinokawa",
+      "path": "Assets/GameObject/MonsterMinokawa.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "a8d0324c14e7b634894c5760db4a48d1",
+      "file": "Database/Minokawa/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Minokawa",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Minokawa/sheets/Portrait_Minokawa.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Minokawa.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "596e07602e7ae1d44ba241e7915fd84b",
+      "file": "Database/Minokawa/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_MinokawaPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Minokawa/sheets/Trait_MinokawaPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_MinokawaPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "5130e1631fb198549b88c2c16027aa35",
+      "file": "Database/Minokawa/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Minokawa_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 616,
+          "width": 190,
+          "height": 154
+        },
+        "pivot": {
+          "x": 0.56,
+          "y": 0.24
+        },
+        "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "05234d102d6e8a342bc4ffc5a7489447",
+      "file": "Database/Minokawa/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Minokawa_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 616,
+          "width": 190,
+          "height": 154
+        },
+        "pivot": {
+          "x": 0.56,
+          "y": 0.24
+        },
+        "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Minokawa_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "788cbcc0a8a456d41b75d0ccdaa879a0",
+      "file": "Database/Minokawa/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Minokawa_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.18
+        },
+        "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "2943514dabe7ce3479650d005e8d86d9",
+      "file": "Database/Minokawa/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Minokawa_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.18
+        },
+        "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Minokawa_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "86acf52f71a7e8545837ea306f891a65",
+      "file": "Database/Minokawa/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Minokawa_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Minokawa/sheets/Portrait_Minokawa_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Minokawa_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "MinokawaWalkDown": {
+      "clip": "Assets/AnimationClip/MinokawaWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "dcd6e0618f49e3444be9e8f48f9bc809",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "81bbf466080b6f74fb55c72a83ca7233",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f5514dafc6b3d0d47bbaf02771ee1728",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "80f39b65081349b46a5f9d1f844c046c",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "4e65df2f4df1d3c42967f9dbc19d3576",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "0d095b48373ca17439bbb30ae8fb7625",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2200f6232a737ed43b255468c5e23d95",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "cefa2a9ea67f2024ab3f49c16a1a3c83",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "cefa2a9ea67f2024ab3f49c16a1a3c83",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_17.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaCastStart": {
+      "clip": "Assets/AnimationClip/MinokawaCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3e46736b3bd9e614998bd1530e95ec46",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ab1facac48a22f44eb3991ad4b7a5230",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 190,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "baa4482052df5694ca39b162b37024a8",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 380,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "8bae7a3df6bb703418a414330d4cc95f",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 570,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "23ccfd1fb207b8e46b125fac59d9e0bd",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 760,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "02c33e1afa0709340948d1526a6c2aa7",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 950,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "02c33e1afa0709340948d1526a6c2aa7",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 950,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_15.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaCastEnd": {
+      "clip": "Assets/AnimationClip/MinokawaCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "091061f9f4a7ba045aa7319a72c4ed1f",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 950,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d323fb98e7799894e909aef96313b862",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1140,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1e7030e1ad52eaf4698a18b8dd957590",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1330,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b1a7a2e0095c40146b64a0cff552bed2",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "b1a7a2e0095c40146b64a0cff552bed2",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_28.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaJumpBack": {
+      "clip": "Assets/AnimationClip/MinokawaJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3ec5f94224ce252428f6624cd22b867a",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1330,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "68edae61f95847046b4cc136478c2d7f",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "55d4eedabd1906348b4f5783623ab018",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "55d4eedabd1906348b4f5783623ab018",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_48.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaAttack": {
+      "clip": "Assets/AnimationClip/MinokawaAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e63d271cf6520964a8531d0d1e43df52",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 380,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "b02bd8b1507c87f468ad8ffe38d925f4",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 570,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "9af837c03ef52524f9c5c689a7c9d185",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 760,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "2d58192384346564d8b3127645f88659",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 950,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.25000003,
+          "sprite_guid": "2d58192384346564d8b3127645f88659",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 950,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_44.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaCast": {
+      "clip": "Assets/AnimationClip/MinokawaCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bf4eb0aee5bb8474f8a28871eb626951",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1140,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c6a2cef2e04a7494faf5d79236761ebc",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1330,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ea146406cf1378640b72cfdb62b6c4bd",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9e0b7f25aac9a3d4ab0ca0ba7c2f3294",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 462,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "b44ca8e016e7fa8428a108badcda8f88",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.3333333,
+          "sprite_guid": "83fb742f4e120fb43b1f7c11a82cb6bf",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 190,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "8588688bb752962449e952ea61577bce",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 380,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a7a60c57af06c4d439d19bebbb326e9d",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 570,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "dce09c929f63b4649b4062bfbb5c35c3",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 760,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "dce09c929f63b4649b4062bfbb5c35c3",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 760,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_24.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaCombatIdle": {
+      "clip": "Assets/AnimationClip/MinokawaCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5130e1631fb198549b88c2c16027aa35",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "fc2c54eae247dd446bdee566fadc247f",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 190,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "de72e610ff3a1d74682a33212a4d29b5",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 380,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6270085931311d844a6af6ac81c7c2e3",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 570,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d84f1d197c2ba924dbd24c8883d38ffb",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 760,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "4e5ee948d1080ce45bb1e4124c6debcf",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 950,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "9dd3fbd5f049d134abc5cdcb848f8c52",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1140,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e5f24483a5b082c46a7be3c96b7b7174",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1330,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "c3247e3424529f64ca086c546bebc229",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "eaddf075a4505274c9fff2f608669388",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "eaddf075a4505274c9fff2f608669388",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 616,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaHit": {
+      "clip": "Assets/AnimationClip/MinokawaHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1e7030e1ad52eaf4698a18b8dd957590",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1330,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1e7030e1ad52eaf4698a18b8dd957590",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1330,
+              "y": 308,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_27.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaWalkTop": {
+      "clip": "Assets/AnimationClip/MinokawaWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6e49cc59f00d17e4a87e52a1887b5da6",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e2a08fad8a7c6ef41b8292e53b7ac14c",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "39ad203f1def8474490bcf453f440b34",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ef01b0d126542874a81c065b99c1a249",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "081adc45df494c74d945a0c43dfa04b9",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "2b91cfe9dd66b244e8cabea0875245c1",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "d0d972ba6a9aa4c47a0ab83926a955eb",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "93be52dabb1981848a87b3904d2b22fb",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "93be52dabb1981848a87b3904d2b22fb",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaIdleTop": {
+      "clip": "Assets/AnimationClip/MinokawaIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3982cbabf0fe0f14ba5096e6ba87b8ba",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "07e4ce0baa9592c47b97531b908d6460",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "aecba34a5b1e15d4caef5f4644041b3b",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "0f7462adce01599499f43be7a1699d50",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "bd3e49ca3e40dd54493ead9437ced259",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "2904a8b03c8745a41a84f2f2514de8e6",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "54be21728730e6c4d92f9f8d34c9dff7",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "2c52bc2171ee2124095f3facc8193df5",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "fa84606d530f8dd409242eaa8e0bbaf4",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "98c9e0a890e250f4cb94edab03d52f08",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "98c9e0a890e250f4cb94edab03d52f08",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_27.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaAttackEnd": {
+      "clip": "Assets/AnimationClip/MinokawaAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e63d271cf6520964a8531d0d1e43df52",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 380,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b02bd8b1507c87f468ad8ffe38d925f4",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 570,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9af837c03ef52524f9c5c689a7c9d185",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 760,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "33d8ab98a016f784cb467379538ed691",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1140,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "33d8ab98a016f784cb467379538ed691",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1140,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaWalkHorizontal": {
+      "clip": "Assets/AnimationClip/MinokawaWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5a34e5318620d4340af6e8504bd1ba6f",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "29eb6b7d8a5a9e64e8e972c22485711b",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8d0f49add19a26f428314b1c63920e75",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "05c8a578143f59a44aaaa497508c043c",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "679f5b30080513646acb353f60d2faa0",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "3d52d803c1bbce145a94233566a305eb",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c84426ea23d748d43a19e596eff4561c",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "4d28f40dab616d5429b15c7550095f9f",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "4d28f40dab616d5429b15c7550095f9f",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_53.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaIdleDown": {
+      "clip": "Assets/AnimationClip/MinokawaIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "788cbcc0a8a456d41b75d0ccdaa879a0",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "4f048ab538e096144bc242a9b11a72cb",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "e8446106747c32944bbb194ef64c2295",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "1c33ff93194a1194aa92f395482295b3",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "7432dfe6ba996f54ca948e2d3ceb5728",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "b4bf0fd9ec784c74aa2143405491af58",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "541885f2e33d7e0458f3a3d551961f18",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "e93e4368f58978948bcef3185da255f0",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "0dfdc874684363e44a877c41ead20420",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "bf2de71a54a066345a09a1f55e5deebd",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "bf2de71a54a066345a09a1f55e5deebd",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaIdleHorizontal": {
+      "clip": "Assets/AnimationClip/MinokawaIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "06d7c65bf1d713945adcabc1d75010bf",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "2ffa298afea82cf4a92944ecd5586f89",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "40a923d17a0ce9c49931f73f9cc60845",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6829377d8b5b2e14bbf40e7d4e0e1de3",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f725a15aad90fb942abd9f10839ba4ea",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "d0c3127fc57fbd94195a0602e4fa35c9",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "770e7cf572bbc26499875df4d824a75d",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "43724915ab39a4b48963107c0a99be92",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "0b87113a159d2c043a2949cba2abc35f",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "60671bef7fa35a44088f5db9c1b625a9",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "60671bef7fa35a44088f5db9c1b625a9",
+          "sprite": {
+            "name": "Minokawa_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.18
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Overworld_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "MinokawaAttackJump": {
+      "clip": "Assets/AnimationClip/MinokawaAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f2ee0b7428b4a04469c511876d41ae02",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "4421023a3e9502c4786c56945424af27",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 190,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5d3c3bf4ef8106d4b92fc56124af0de0",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 380,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "349273845a6c0894db3b1fc86aae9182",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 570,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "044ca20c692ee244f848c1ffc15fa196",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 760,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "2a0bc2ebf9b20e640903556bd133e1af",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 950,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "d45a6b3dc095eed48a628af39cf5f407",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1140,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3b1aeef492271914d82f31351bca6649",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1330,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "a04b8845693015043b4e2e4545fb822d",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.5833334,
+          "sprite_guid": "199b6d5a6937b134d9c4f67d0f6d01d3",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.62500006,
+          "sprite_guid": "ff7be5b7b2aa84241a50253f93b2a0b6",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.66666675,
+          "sprite_guid": "e277c66957dc54d49bd550224fb55a6b",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 190,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.70833343,
+          "sprite_guid": "a04b8845693015043b4e2e4545fb822d",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.7500001,
+          "sprite_guid": "199b6d5a6937b134d9c4f67d0f6d01d3",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.7916668,
+          "sprite_guid": "ff7be5b7b2aa84241a50253f93b2a0b6",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.8333335,
+          "sprite_guid": "e277c66957dc54d49bd550224fb55a6b",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 190,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.8750002,
+          "sprite_guid": "a04b8845693015043b4e2e4545fb822d",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.91666687,
+          "sprite_guid": "199b6d5a6937b134d9c4f67d0f6d01d3",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.95833355,
+          "sprite_guid": "ff7be5b7b2aa84241a50253f93b2a0b6",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 1.0000002,
+          "sprite_guid": "e277c66957dc54d49bd550224fb55a6b",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 190,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 1.0416669,
+          "sprite_guid": "a04b8845693015043b4e2e4545fb822d",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1520,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 1.0833335,
+          "sprite_guid": "199b6d5a6937b134d9c4f67d0f6d01d3",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1710,
+              "y": 154,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 1.1250001,
+          "sprite_guid": "ff7be5b7b2aa84241a50253f93b2a0b6",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 1.1666667,
+          "sprite_guid": "e277c66957dc54d49bd550224fb55a6b",
+          "sprite": {
+            "name": "Minokawa_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 190,
+              "y": 0,
+              "width": 190,
+              "height": 154
+            },
+            "pivot": {
+              "x": 0.56,
+              "y": 0.24
+            },
+            "sheet": "Database/Minokawa/sheets/Minokawa_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Minokawa_Battle_Spritesheet_40.asset"
+          }
+        }
+      ]
+    }
+  }
+}

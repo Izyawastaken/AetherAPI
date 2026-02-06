@@ -1,0 +1,2882 @@
+{
+  "name": "Domovoy",
+  "prefab": "MonsterDomovoy",
+  "prefab_path": "Assets/GameObject/MonsterDomovoy.prefab",
+  "data": {
+    "name": "Domovoy",
+    "ids": {
+      "ID": 687,
+      "MonID": 17
+    },
+    "stats": {
+      "BaseMaxHealth": 45,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398046511104
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 2,
+          "Hits": 3.5
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Heal",
+      "Regeneration",
+      "Burn"
+    ],
+    "types_override": [
+      "Summon",
+      "Regeneration",
+      "Burn"
+    ],
+    "traits": {
+      "signature": "Monster Chef",
+      "traits": [
+        {
+          "name": "Rejuvenation",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Invigorate",
+        "Boiling Soup"
+      ],
+      "start_override": [
+        "Summon Fire Totem",
+        "Boiling Soup"
+      ],
+      "reset_action": [
+        "ResetActionBurn"
+      ],
+      "scripted": [
+        "Snow Mark",
+        "Lava Soup",
+        "Bonfire",
+        "Invigorate",
+        "Summon Fire Totem",
+        "Boiling Soup"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Healing",
+          "multiplier": 1
+        },
+        {
+          "name": "Burn Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Debuff Mitigation",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        }
+      ],
+      "void_tier2": [
+        {
+          "name": "Hit",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Burn Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Debuff Mitigation",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterDomovoy",
+      "path": "Assets/GameObject/MonsterDomovoy.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "34be76bda7a5a244e889de31c4475960",
+      "file": "Database/Domovoy/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Domovoy",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Domovoy/sheets/Portrait_Domovoy.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Domovoy.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "655ab0792062d004eae6fb7e0fde66fe",
+      "file": "Database/Domovoy/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_DomovoyPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Domovoy/sheets/Trait_DomovoyPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_DomovoyPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "da0ab6722c7f63d40853da31718990c8",
+      "file": "Database/Domovoy/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "DomovoySpriteSheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 1000,
+          "width": 200,
+          "height": 200
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "8978570d97f0b9940a1ddafbbbb94710",
+      "file": "Database/Domovoy/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Domovoy_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 1000,
+          "width": 200,
+          "height": 200
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Domovoy_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "c52cad0620be8234da8153398cd5e492",
+      "file": "Database/Domovoy/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Domovoy_Exploration_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 896,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15625
+        },
+        "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "e749eec9a85d3064f8e19bb5f8fbc226",
+      "file": "Database/Domovoy/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Domovoy_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 896,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15625
+        },
+        "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Domovoy_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "ProjectileSpriteSource": {
+      "sprite_guid": "7aa159056bf84d5408e9460b9217c8a0",
+      "file": "Database/Domovoy/icons/ProjectileSpriteSource.png",
+      "sprite": {
+        "name": "DomovoyProjectile2_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 64
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Projectile2.png",
+        "sprite_asset": "Assets/Sprite/DomovoyProjectile2_0.asset"
+      }
+    },
+    "ProjectileSpriteReplace": {
+      "sprite_guid": "eeacba30ef0d6734ea522f3b8e3358e6",
+      "file": "Database/Domovoy/icons/ProjectileSpriteReplace.png",
+      "sprite": {
+        "name": "Domovoy_Battle_Projectile_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 64
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Projectile_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Domovoy_Battle_Projectile_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "da6ba17f7b933a54c8c5989e195c9bc2",
+      "file": "Database/Domovoy/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Domovoy_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Domovoy/sheets/Portrait_Domovoy_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Domovoy_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "DomovoyIdleHorizontal": {
+      "clip": "Assets/AnimationClip/DomovoyIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b61f1469e038edb4086148e5d7c0fe05",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e7947b22f1245334eae97e4cc5c0b1e3",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "edcec11cbd64ca749a1624efa636600d",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b1f70bad1f56e6a42be714292dc59976",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "18fcca78eed81554dbb0d42281bae0d2",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "cc941cf0ff1129f40b6449e8f20fd5db",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f6cba065f84eb564ba22458e76b11c89",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "23b82bd6041674e4f9984cd6f0422f31",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "1a5779278192ec843a0f1e520aaf5f26",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "24a3c69dd24209f49934721aef1358ad",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "24a3c69dd24209f49934721aef1358ad",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 768,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyIdleTop": {
+      "clip": "Assets/AnimationClip/DomovoyIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c52cad0620be8234da8153398cd5e492",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "2227d6741701f104f8e9347bf11cec28",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2a4a0d36c4e596a44930af948df0d780",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "aabe6114fda01a84082c61d0ab6c61cf",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "ee112b2a6f0f2af4db62be13134772f5",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "3e114c7010a0bb64db32e2d6e6826f79",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "1805d9f8f09181245aa0caeb7a7c078a",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "bfbd956971bca464f8d67664853832ac",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "bb80e410889c50d48bc705ef5ec2cb1e",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "8b57b4b75b8955e4c826bfb383abbad2",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "8b57b4b75b8955e4c826bfb383abbad2",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 896,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyWalkHorizontal": {
+      "clip": "Assets/AnimationClip/DomovoyWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "bd8eb25317ba6314c82afdf6c44512ff",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "1a4e18337ee8256468a3b647097999c5",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "165b38f00c83f3449ba91afd4182ca08",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "737ea4e8e4f6aa544b1d8a612100c0be",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "dd04741a8a6cd104a8b4b6e0ead2288a",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "61f5194f874f5e240953fee0d10afcc8",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "d71cfe1c15bd0ba40b5d329181361268",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "1f6eb46ba582dec46bd15b4e1c05f13e",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "13f8ffe8cf7794048b20632af9e03c00",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "5d6e7652bff2d5f44a21abd00a9571d2",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "5d6e7652bff2d5f44a21abd00a9571d2",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyCastStart": {
+      "clip": "Assets/AnimationClip/DomovoyCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e689979464560fd4fa77acfc0437c8b9",
+          "sprite": {
+            "name": "DomovoySpriteSheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_28.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "daa89017dffdb0f41a7f95d19f0f83dc",
+          "sprite": {
+            "name": "DomovoySpriteSheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_29.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "88f6fc63c8ed899458b2e7281ec1c90b",
+          "sprite": {
+            "name": "DomovoySpriteSheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_30.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "82ef55e4e86ad7b48bdb8e91f32cdc29",
+          "sprite": {
+            "name": "DomovoySpriteSheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_31.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "cf14bb8627bdb5a429b63a703c642fae",
+          "sprite": {
+            "name": "DomovoySpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_32.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "77e0fcaeb2794be44bba3c7141919cb8",
+          "sprite": {
+            "name": "DomovoySpriteSheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1000,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_33.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "7a98cff6415898949a2351c88735948d",
+          "sprite": {
+            "name": "DomovoySpriteSheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1200,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "e046fe755f4a86d4aaf566ddfb78e70b",
+          "sprite": {
+            "name": "DomovoySpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e046fe755f4a86d4aaf566ddfb78e70b",
+          "sprite": {
+            "name": "DomovoySpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_35.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyAttack": {
+      "clip": "Assets/AnimationClip/DomovoyAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e78cd2d08be5b6e46b1dd8d671836a8a",
+          "sprite": {
+            "name": "DomovoySpriteSheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8005c11b268ef194d90e12a1296caf2d",
+          "sprite": {
+            "name": "DomovoySpriteSheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f2c5583f0bc075b4daf147acf42d5aca",
+          "sprite": {
+            "name": "DomovoySpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b0e668507d7096a4786df54a6c951009",
+          "sprite": {
+            "name": "DomovoySpriteSheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c91cf7beab8b52f4e86ce6a6d11c6300",
+          "sprite": {
+            "name": "DomovoySpriteSheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "27228eb5090759643bf9d611030b1d22",
+          "sprite": {
+            "name": "DomovoySpriteSheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1000,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e3e9c71574a39d64280e98963eb85f9a",
+          "sprite": {
+            "name": "DomovoySpriteSheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1200,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "2ba31fc406857b34db83ed2539a5ccfa",
+          "sprite": {
+            "name": "DomovoySpriteSheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "a8b87a81a376f524f8635720eb9ca309",
+          "sprite": {
+            "name": "DomovoySpriteSheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1600,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_18.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "258e436da3289684885eeed6fadacdf6",
+          "sprite": {
+            "name": "DomovoySpriteSheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1800,
+              "y": 800,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_19.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "33b3d2d678734ea439f576a5db2b8b1c",
+          "sprite": {
+            "name": "DomovoySpriteSheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_20.asset"
+          }
+        },
+        {
+          "time": 0.87499994,
+          "sprite_guid": "f53895ff1e2b90444a6f2975e4a20532",
+          "sprite": {
+            "name": "DomovoySpriteSheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_21.asset"
+          }
+        },
+        {
+          "time": 0.95833325,
+          "sprite_guid": "02f20979cae26a44ca63cce05b8c75de",
+          "sprite": {
+            "name": "DomovoySpriteSheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_22.asset"
+          }
+        },
+        {
+          "time": 1.0416666,
+          "sprite_guid": "737f80310b054d24fa88a3566c05d8e7",
+          "sprite": {
+            "name": "DomovoySpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_23.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "141f5b30c5590dc45a067d411a06842d",
+          "sprite": {
+            "name": "DomovoySpriteSheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_24.asset"
+          }
+        },
+        {
+          "time": 1.2083334,
+          "sprite_guid": "a8468dd2cc8465b4096541c07de22bcb",
+          "sprite": {
+            "name": "DomovoySpriteSheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1000,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_25.asset"
+          }
+        },
+        {
+          "time": 1.2916667,
+          "sprite_guid": "e8bd4faf1f10e144b81117875328a92f",
+          "sprite": {
+            "name": "DomovoySpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1200,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_26.asset"
+          }
+        },
+        {
+          "time": 1.3750001,
+          "sprite_guid": "3c47aea8f75b64f4fa0393acb9a3bf86",
+          "sprite": {
+            "name": "DomovoySpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_27.asset"
+          }
+        },
+        {
+          "time": 1.4166669,
+          "sprite_guid": "3c47aea8f75b64f4fa0393acb9a3bf86",
+          "sprite": {
+            "name": "DomovoySpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 600,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_27.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyHit": {
+      "clip": "Assets/AnimationClip/DomovoyHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a6826aa4b1c60e249bc008566d1e5d18",
+          "sprite": {
+            "name": "DomovoySpriteSheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1200,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_54.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "a6826aa4b1c60e249bc008566d1e5d18",
+          "sprite": {
+            "name": "DomovoySpriteSheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1200,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_54.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyCombatIdle": {
+      "clip": "Assets/AnimationClip/DomovoyCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "da0ab6722c7f63d40853da31718990c8",
+          "sprite": {
+            "name": "DomovoySpriteSheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "89cfdb6fc3bffb14a985e87ad16a6d84",
+          "sprite": {
+            "name": "DomovoySpriteSheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a6e2884fec4a7ee43b68e0c898a20528",
+          "sprite": {
+            "name": "DomovoySpriteSheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "4470176a99bbdc84bbb7f65456bed1fb",
+          "sprite": {
+            "name": "DomovoySpriteSheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "2032f0cfc49429947afba1f338286565",
+          "sprite": {
+            "name": "DomovoySpriteSheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "6caf7fcb719170244856adb7b4d83d93",
+          "sprite": {
+            "name": "DomovoySpriteSheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1000,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f5e778f12d85afe4cbd4225e3e75aa65",
+          "sprite": {
+            "name": "DomovoySpriteSheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1200,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "8bc9d926d9aaf9545a803faa41484fdc",
+          "sprite": {
+            "name": "DomovoySpriteSheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "68908ae645a1e1b469ea687baf38b0b0",
+          "sprite": {
+            "name": "DomovoySpriteSheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1600,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "491e62a6b9de1f846a0c01c32213e997",
+          "sprite": {
+            "name": "DomovoySpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1800,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "491e62a6b9de1f846a0c01c32213e997",
+          "sprite": {
+            "name": "DomovoySpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1800,
+              "y": 1000,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_9.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyCast": {
+      "clip": "Assets/AnimationClip/DomovoyCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "652100bd39e5ac647b8d15e02a089bfc",
+          "sprite": {
+            "name": "DomovoySpriteSheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1600,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "125544203c2988a42bdb2272e6b09df8",
+          "sprite": {
+            "name": "DomovoySpriteSheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1800,
+              "y": 400,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "0c1100186da86e34398facc4d124e97c",
+          "sprite": {
+            "name": "DomovoySpriteSheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "2bd37ff4353c3b94ebf02a4bc4c181c3",
+          "sprite": {
+            "name": "DomovoySpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c7d6d06197efa164fa9d13640fd03388",
+          "sprite": {
+            "name": "DomovoySpriteSheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_40.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "c8ce4b6b97a816d47b2e747b318623b6",
+          "sprite": {
+            "name": "DomovoySpriteSheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_41.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "0c362fdbf6d652f40817dcd29aba478e",
+          "sprite": {
+            "name": "DomovoySpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "2a4e29e4828b4cb4f9337fd78bdf41b1",
+          "sprite": {
+            "name": "DomovoySpriteSheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1000,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_43.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "199710656f60d0f468712d0607a3e8c6",
+          "sprite": {
+            "name": "DomovoySpriteSheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1200,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_44.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "58b5d257891a228478314d1ac5bb523c",
+          "sprite": {
+            "name": "DomovoySpriteSheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1400,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_45.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyCastEnd": {
+      "clip": "Assets/AnimationClip/DomovoyCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "91d347418273c0546bb2e82a38c952d6",
+          "sprite": {
+            "name": "DomovoySpriteSheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1600,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "a69f1c9e2a2b8774b90e133e6879018f",
+          "sprite": {
+            "name": "DomovoySpriteSheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1800,
+              "y": 200,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_47.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "afbb056bfde32cc49a57cb415c0bf353",
+          "sprite": {
+            "name": "DomovoySpriteSheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_48.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9571e7580f38e9b4b8372ba5b6a526eb",
+          "sprite": {
+            "name": "DomovoySpriteSheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_49.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "f051fb59f8874d44c986cdcbaf4472ac",
+          "sprite": {
+            "name": "DomovoySpriteSheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_50.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "9ffaa030214668f448a85d2f024742df",
+          "sprite": {
+            "name": "DomovoySpriteSheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_51.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "a2b73ae68778aa1408cc8f9adfd97a3b",
+          "sprite": {
+            "name": "DomovoySpriteSheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_52.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "2b071add884c2044bacc7d4d1230c59e",
+          "sprite": {
+            "name": "DomovoySpriteSheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1000,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_53.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "2b071add884c2044bacc7d4d1230c59e",
+          "sprite": {
+            "name": "DomovoySpriteSheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1000,
+              "y": 0,
+              "width": 200,
+              "height": 200
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/DomovoySpriteSheet_53.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyWalkTop": {
+      "clip": "Assets/AnimationClip/DomovoyWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f91ccb7f96e08454b8be475c8d2facb1",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "7e7a0aeda89fde642a4b36353989acc7",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "db47c87dfa1758f4bbceac54f0027181",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "50f0f1e798bcb7f4a81394da80742349",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "a8c13bc44d98d1e4b963f1055df7ca09",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "53e0ab5fb1e63034cb018f1b66df1f92",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "de5452577b46ae64dbcc566a4201f7bc",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "dface346b198e9940b49090609dbcc5e",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "ed8432130204d124789c09f9227505d8",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "dd3a0336ad7b18e4f8c346eebf4fe9ce",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "dd3a0336ad7b18e4f8c346eebf4fe9ce",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyIdleDown": {
+      "clip": "Assets/AnimationClip/DomovoyIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "32aec24c62d6c49478b6cf58ff26c5a1",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0dbcd261b2c7f454d91a2f6b2d5e3fda",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "6b6119a59a3df8f4582621e62fc41c91",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ede49b5234da7ef4583a508498d626c5",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "35359fbed6853184db6ee43c22587344",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "5d21a1919771c64498efbec2e49b896b",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "597e1a7120837bb4891b40a5d4f548b7",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "da23b797a9443c04f979c912311e4386",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "2c0026d84fdf596459d15bfd714901b0",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "09c4198ca53b86a4fbc44f301bc6f326",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "09c4198ca53b86a4fbc44f301bc6f326",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "DomovoyWalkDown": {
+      "clip": "Assets/AnimationClip/DomovoyWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cad9561a67b548e4b828951f81ef866c",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "3249fc2c09dad9b41a6a0c0f41984d01",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "904b512f4cc066b4e84f51dfd154801f",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "00ebd944ced45544b932607cd026611d",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "896d74c0b99f3224784d21854765499d",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e09c3a395b055e542984698c75d1a971",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "1aa2c306480896d4ca40ecc7c68c840d",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "ed94e84d52cda7344b8df51edbd49f41",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "e2e2aca58a84ae54ea659df9c2b8ea88",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "2683d6357a1c2f84cb75bece9e180ab3",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "2683d6357a1c2f84cb75bece9e180ab3",
+          "sprite": {
+            "name": "Domovoy_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15625
+            },
+            "sheet": "Database/Domovoy/sheets/Domovoy_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Domovoy_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    }
+  }
+}

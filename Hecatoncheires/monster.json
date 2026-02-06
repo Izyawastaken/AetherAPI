@@ -1,0 +1,2350 @@
+{
+  "name": "Hecatoncheires",
+  "prefab": "MonsterHecatoncheires",
+  "prefab_path": "Assets/GameObject/MonsterHecatoncheires.prefab",
+  "data": {
+    "name": "Hecatoncheires",
+    "ids": {
+      "ID": 1446,
+      "MonID": 30
+    },
+    "stats": {
+      "BaseMaxHealth": 45,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398047035392,
+      "ElementsOverride": 4398046511104
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 3,
+          "Hits": 4
+        }
+      ],
+      "boss_stagger": [
+        {
+          "Element": 3,
+          "Hits": 4
+        },
+        {
+          "Element": 1,
+          "Hits": 4
+        }
+      ],
+      "boss_alternative_stagger": [
+        {
+          "Element": 0,
+          "Hits": 4
+        },
+        {
+          "Element": 2,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Age",
+      "Weakness",
+      "Summon"
+    ],
+    "types_override": [
+      "Age",
+      "Burn",
+      "Summon"
+    ],
+    "traits": {
+      "signature": "Hundred Handed",
+      "signature_override": "Hundred Handed",
+      "traits": [
+        {
+          "name": "Cosmic Wisdom",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Golden Age",
+          "min_difficulty": 3,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Zephyr Punch",
+        "Summon Fire Lance"
+      ],
+      "start_override": [
+        "Scald",
+        "Summon Fire Lance"
+      ],
+      "reset_action": [
+        "ResetActionSummon"
+      ],
+      "scripted": [
+        "Crystal Charge",
+        "Alchemical Charge",
+        "Burn Wave",
+        "Sound Wave",
+        "Eon Shield",
+        "Summon Water Lance",
+        "Summon Fire Lance",
+        "Summon Wind Lance",
+        "Zephyr Punch",
+        "Scald"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Initial Weakness",
+          "multiplier": 3
+        },
+        {
+          "name": "Debuff Cleanse",
+          "multiplier": 1
+        },
+        {
+          "name": "Weakness Reduction",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Weakness Reduction",
+          "multiplier": 2
+        },
+        {
+          "name": "Debuff Cleanse",
+          "multiplier": 3
+        }
+      ],
+      "champion": [
+        {
+          "name": "Aether",
+          "multiplier": 3
+        },
+        {
+          "name": "Health",
+          "multiplier": 10
+        }
+      ],
+      "override": [
+        {
+          "name": "Burn Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Debuff Cleanse",
+          "multiplier": 1
+        },
+        {
+          "name": "Corruption Cleanse",
+          "multiplier": 2
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterHecatoncheires",
+      "path": "Assets/GameObject/MonsterHecatoncheires.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "9bef321f41690834991824b3e8c931c0",
+      "file": "Database/Hecatoncheires/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Hecatoncheires",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Portrait_Hecatoncheires.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Hecatoncheires.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "0481022bbcd42ef4893bbd4924d4f333",
+      "file": "Database/Hecatoncheires/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_HecatonchieresPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Trait_HecatonchieresPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_HecatonchieresPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "a5dec663bd66f1e4986c966bafe7c4c3",
+      "file": "Database/Hecatoncheires/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Hecatonchieres_Battle_Spritesheet_15",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 865,
+          "y": 710,
+          "width": 173,
+          "height": 142
+        },
+        "pivot": {
+          "x": 0.38699996,
+          "y": 0.281
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_15.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "28cf66803b9ab5042b301343a1e6fcae",
+      "file": "Database/Hecatoncheires/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Hecatonchieres_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 852,
+          "width": 173,
+          "height": 142
+        },
+        "pivot": {
+          "x": 0.38699996,
+          "y": 0.281
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Hecatonchieres_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "6deabe91529cb7041a14ba5243ad33bb",
+      "file": "Database/Hecatoncheires/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Hecatoncheires_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 240,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.17
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "6a33862b5132dcd488f7bf7adcb86126",
+      "file": "Database/Hecatoncheires/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Hecatoncheires_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 240,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.17
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Hecatoncheires_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "ProjectileSpriteSource": {
+      "sprite_guid": "771b3546eeeb58442a68e03c2b51f7f1",
+      "file": "Database/Hecatoncheires/icons/ProjectileSpriteSource.png",
+      "sprite": {
+        "name": "Hecatonchieres_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 852,
+          "width": 173,
+          "height": 142
+        },
+        "pivot": {
+          "x": 0.38699996,
+          "y": 0.281
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_0.asset"
+      }
+    },
+    "ProjectileSpriteReplace": {
+      "sprite_guid": "28cf66803b9ab5042b301343a1e6fcae",
+      "file": "Database/Hecatoncheires/icons/ProjectileSpriteReplace.png",
+      "sprite": {
+        "name": "Hecatonchieres_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 852,
+          "width": 173,
+          "height": 142
+        },
+        "pivot": {
+          "x": 0.38699996,
+          "y": 0.281
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Hecatonchieres_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "84a9d26725b402d45a0a8bafca6bcc68",
+      "file": "Database/Hecatoncheires/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Hecatoncheires_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Hecatoncheires/sheets/Portrait_Hecatoncheires_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Hecatoncheires_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "HecatonchieresHit": {
+      "clip": "Assets/AnimationClip/HecatonchieresHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "93a0d86d0dc6a2145b0a2771d8fd72ef",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 173,
+              "y": 426,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "93a0d86d0dc6a2145b0a2771d8fd72ef",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 173,
+              "y": 426,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_31.asset"
+          }
+        }
+      ]
+    },
+    "HecatoncheiresIdleHorizontal": {
+      "clip": "Assets/AnimationClip/HecatoncheiresIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6deabe91529cb7041a14ba5243ad33bb",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "636dbe2ea1945e84ab778c4fe6625b4b",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c0b2895708039e94faedc6458a9096b5",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "3ccbeeb8658d90a4eb69877afa200322",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "65f34090736c3eb448834db7c7108d4f",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "282ce8683e08d204ab66cda31a30f8e7",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "dda27fedf433f3b48afa92118f00106b",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "de0e5979f1183a542bde73779d512e56",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "7db289392ea7a0849a51c0d88eeb7cae",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "bad19a87663a9fb4ca1f12314fa92be7",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "e6b72ceda6ec8224e842be345f525e4b",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "bf76cb46024fcd04082f09f642a1497f",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "bf76cb46024fcd04082f09f642a1497f",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "HecatonchieresAttack": {
+      "clip": "Assets/AnimationClip/HecatonchieresAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c5584ddacb31c574280a63ac0d8bb2bc",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 692,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "a5dec663bd66f1e4986c966bafe7c4c3",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 865,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "76f785b8dbc71f842878b113fefbee91",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1038,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "af1ee832bf588284ba7f842a1d9d7bab",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1211,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "96cdc98f1b0541542b20eaf35080d2ae",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1384,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "fa5ab3c371c75ce47b857bd80cb40847",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1557,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "ce97f81bfea87e24dbf4d0c011754729",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 568,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "5c8da1a9e3ae27246a98c39041303f07",
+          "sprite": {
+            "name": "TransparentTile",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 32,
+              "height": 32
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "sheet": "Database/Hecatoncheires/sheets/TransparentTile.png",
+            "sprite_asset": "Assets/Sprite/TransparentTile.asset"
+          }
+        },
+        {
+          "time": 0.7333334,
+          "sprite_guid": "d20fb63792f7e8a489a116326f742070",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 865,
+              "y": 426,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.83333343,
+          "sprite_guid": "7ca7cf78a4a10644781b49e41928d66c",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1038,
+              "y": 426,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.93333346,
+          "sprite_guid": "f95cdf807c85fe740bd678fc4fb86f7b",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1211,
+              "y": 426,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 1.0333334,
+          "sprite_guid": "430d8e30a005ffd4db47a8364bd6bb32",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1384,
+              "y": 426,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 1.1333334,
+          "sprite_guid": "1b88d9d1ae9569d4db2fb6c2fe0f8cf5",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1557,
+              "y": 426,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 1.2166668,
+          "sprite_guid": "1b88d9d1ae9569d4db2fb6c2fe0f8cf5",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1557,
+              "y": 426,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "HecatonchieresCombatIdle": {
+      "clip": "Assets/AnimationClip/HecatonchieresCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "771b3546eeeb58442a68e03c2b51f7f1",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "27184f43a3e4f07428d3a2675f543e94",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 173,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "52534c118bd284a46aa9893b0215e838",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 346,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "3cdebb710b916e840b638bd125dfac23",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 519,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e08d49a555cd75b45bdc1a55f8795e8d",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 692,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "a561faea745567146b5f325ac8219027",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 865,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6c48791c5cf568c4b9714804cf2fe03e",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1038,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "aaa3a17458b411e488576806898ef450",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1211,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "d3a8f5f410f0cc247a8fcfd441b32418",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1384,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "4215eade89bc7ed46a8e8259c248589b",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1557,
+              "y": 852,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "dbe2c624841fbb143b482261612a0f82",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "0b43ef4031c912a41bae292fdf0e480c",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 173,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "b0ad5e6b48e0ed64fac3035968cd53fe",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 346,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "2fe2330fc5c31cd46addbdd7e4bd77ad",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 519,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "2fe2330fc5c31cd46addbdd7e4bd77ad",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 519,
+              "y": 710,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_13.asset"
+          }
+        }
+      ]
+    },
+    "HecatonchieresCast": {
+      "clip": "Assets/AnimationClip/HecatonchieresCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "8477682c16a76b344b58fbaaf5249360",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 865,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "19664fa845c226f4aa0067d8135e99cc",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1038,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d54fe0536924b8543b31eed4494bba5a",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1211,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "1e4b0c374b47a8b45b0821632f04a7e3",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1384,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "841a778be91ca004eb84a234cf5b9c66",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1557,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "6691f6da085f67f48a17383448c50546",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "2f81400855d9b89419efe0a96cc6bf06",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 173,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "9a7c796bfe1a6544db853a02fccebf7c",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 346,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.3333333,
+          "sprite_guid": "7480788fb5615cd49b32e594f2d2799a",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 519,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.37499997,
+          "sprite_guid": "660f08fced886e34bb31d4e9146e43ab",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 692,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.41666663,
+          "sprite_guid": "a77758ff96e304f4dab1701fa5b22ad8",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 865,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.45833328,
+          "sprite_guid": "8d674a19871d8da459d18ebe37b4a2dc",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1038,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.49999994,
+          "sprite_guid": "d15a8efe231b41f4489d58731290bc20",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1211,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "0cf79d227a000ab4d99ec33dbc45efee",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1384,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "28e3ce5cae8ea8243b13a0f6a3cfabff",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1557,
+              "y": 142,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "a42810ac21b3279498bd3df17b54e1a2",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.6666667,
+          "sprite_guid": "b4b5ec7a1c69fca4491b287654bd9306",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 173,
+              "y": 0,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_61.asset"
+          }
+        }
+      ]
+    },
+    "HecatoncheiresIdleTop": {
+      "clip": "Assets/AnimationClip/HecatoncheiresIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e22718ded3cc01041898922cf529a35a",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "468eeb1757ac69b4ab6b882ba83b8902",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "3627c284b79f286438b10579a86a4a45",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "e53f232a4217871439b8199cfeaa74aa",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "47f23cb7c1486ae4d9bcb4bab70755cf",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "84148e7141f5d604899ae9116134f905",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "530a2030d50485540a87b46815ed3c20",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "92e8a0c93a8c9b74a996bbbf160c6168",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "f9b52b4ae88fffd4cb8b72bb13af16fc",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "a278929d586748c4989d23ee3e68602a",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "edaa262aa081c2241ab13be05cc02f25",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "4017fb47fd397674a9eb34307f342727",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "4017fb47fd397674a9eb34307f342727",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "HecatonchieresCastEnd": {
+      "clip": "Assets/AnimationClip/HecatonchieresCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6fbe8f16303ff25459689b2472fc82b8",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 346,
+              "y": 0,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_62.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0582ce99e27406b4ca9ee8952d72ecdc",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 519,
+              "y": 0,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_63.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "89e84437a5e771e4997064ad57dd35dc",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 692,
+              "y": 0,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_64.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "4e4f2319c085a304cad352cb5e7f6cd0",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 865,
+              "y": 0,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_65.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "f21fbc55b6d5f084780f236eecd2b31b",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_66",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1038,
+              "y": 0,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_66.asset"
+          }
+        }
+      ]
+    },
+    "HecatonchieresCastStart": {
+      "clip": "Assets/AnimationClip/HecatonchieresCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d9be9591bfb7b384ca0d16985c2de193",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "460c15dac5affce43a45436ead363169",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 173,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "ceff66ff538409840b7ad642841494e7",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 346,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "a74a0c50eeb59bf43b71d654bffb4a13",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 519,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "f594285adc5665d4cb23bd2d4081e72f",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 692,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.3333334,
+          "sprite_guid": "f594285adc5665d4cb23bd2d4081e72f",
+          "sprite": {
+            "name": "Hecatonchieres_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 692,
+              "y": 284,
+              "width": 173,
+              "height": 142
+            },
+            "pivot": {
+              "x": 0.38699996,
+              "y": 0.281
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatonchieres_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatonchieres_Battle_Spritesheet_44.asset"
+          }
+        }
+      ]
+    },
+    "HecatoncheiresIdleDown": {
+      "clip": "Assets/AnimationClip/HecatoncheiresIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2d88576cf7d7fd943a76b7eca9f7fa85",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "15147b08dd8868a4493982765d3606d6",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "266fd37b244965549847f00880aa56c5",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "31047efa05ead6b46824be7b77a9cce0",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c2450c540143dbb4e8abbab03d504a2d",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "dd8963e7bdcde814ab18c452334d377b",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "41979617fcbd4b84ca49a6ce85e9b1f5",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "ab7fb48b8f423a2498b28f49a5befe24",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "2ba8d994a0d6e9345a44e1a53675da06",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "36a6c8173aab03441a4010dcee792e4e",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "840443352b86da54d9efd55596a32880",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "980bc3e2de78f0a4db84196d1e8ff0b2",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "980bc3e2de78f0a4db84196d1e8ff0b2",
+          "sprite": {
+            "name": "Hecatoncheires_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.17
+            },
+            "sheet": "Database/Hecatoncheires/sheets/Hecatoncheires_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Hecatoncheires_Overworld_Spritesheet_23.asset"
+          }
+        }
+      ]
+    }
+  }
+}

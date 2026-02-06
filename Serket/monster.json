@@ -1,0 +1,2812 @@
+{
+  "name": "Serket",
+  "prefab": "MonsterSerket",
+  "prefab_path": "Assets/GameObject/MonsterSerket.prefab",
+  "data": {
+    "name": "Serket",
+    "ids": {
+      "ID": 1647,
+      "MonID": 29
+    },
+    "stats": {
+      "BaseMaxHealth": 35,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194140057600,
+      "ElementsOverride": 13194139533312
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 0,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Poison",
+      "Shield",
+      "Force"
+    ],
+    "types_override": [
+      "Poison",
+      "Weakness",
+      "Force"
+    ],
+    "traits": {
+      "signature": "Judgment",
+      "signature_override": "Judgment",
+      "traits": [
+        {
+          "name": "Toxic Earth",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Foul Shield",
+        "Crystal Smash"
+      ],
+      "start_override": [
+        "Toxic Slash",
+        "Deluge Strike"
+      ],
+      "reset_action": [
+        "ResetActionPoison"
+      ],
+      "scripted": [
+        "Poison Wave",
+        "Diamond Shield",
+        "Deluge Strike",
+        "Envenom",
+        "Foul Shield",
+        "Crystal Smash",
+        "Toxic Slash"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Shield Generator",
+          "multiplier": 2
+        },
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Hit",
+          "multiplier": 1
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Aether",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Initial Poison",
+          "multiplier": 3
+        },
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterSerket",
+      "path": "Assets/GameObject/MonsterSerket.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "a45c9e867af57a845bcbd32f993e9f6e",
+      "file": "Database/Serket/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Serket",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Serket/sheets/Portrait_Serket.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Serket.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "5eead5a462f28554785cc071ed3cf3b6",
+      "file": "Database/Serket/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_SerketPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Serket/sheets/Trait_SerketPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_SerketPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "fd74efc4c5804cf4f9e1a11c1092e737",
+      "file": "Database/Serket/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Serket_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 396,
+          "width": 164,
+          "height": 132
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.2
+        },
+        "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "693ca6ee53c6aa74daca6e9e769c1362",
+      "file": "Database/Serket/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Serket_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 396,
+          "width": 164,
+          "height": 132
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.2
+        },
+        "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Serket_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "79d4520ac0cd3684b9564957c8177932",
+      "file": "Database/Serket/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Serket_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 576,
+          "width": 96,
+          "height": 96
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.21999998
+        },
+        "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "c444289fa6fd2d14b96813804b1ad5e0",
+      "file": "Database/Serket/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Serket_Overworld_SpriteSheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 576,
+          "width": 96,
+          "height": 96
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.21999998
+        },
+        "sheet": "Database/Serket/sheets/Serket_Overworld_SpriteSheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Serket_Overworld_SpriteSheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "179983b818848aa42a99e72c3e0ae971",
+      "file": "Database/Serket/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Serket_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Serket/sheets/Portrait_Serket_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Serket_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "SerketCast": {
+      "clip": "Assets/AnimationClip/SerketCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a37f4c5031db4ea48b8084d118446416",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "a064828ab6372094181be561c9120448",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "64d497eaabc82244e8e07a1e9b52db51",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "f0cc29dc63dea7d40aca78638dafaef0",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "a0ea6b86cf4d44f4c964b41a85064f64",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "cfa84086a7095864ab1d390343c4540a",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.4583333,
+          "sprite_guid": "1ba565ca454aef84593fb650930e2deb",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "1ff9d002bfe6daf4da99f005dbec3de3",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.58333325,
+          "sprite_guid": "1ff9d002bfe6daf4da99f005dbec3de3",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_21.asset"
+          }
+        }
+      ]
+    },
+    "SerketAttackJumpBack": {
+      "clip": "Assets/AnimationClip/SerketAttackJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fe07aa45d19215f4ba171ebecdab477e",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "4e845434cc0134a40a99ce2135dbb73d",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "bc8a1a3d14562f4498ea026e19f0e995",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "662f607017bd387419b9242ab7e7fd3b",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "662f607017bd387419b9242ab7e7fd3b",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "Serket_Overworld_RunRight": {
+      "clip": "Assets/AnimationClip/Serket_Overworld_RunRight.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "8a714d8473b60114088af2fad06eab2e",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c5ae54a0173e97341870bd227ca1d42a",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "18af449a116354c49b6a714748829fa1",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7f0718a46b698424d9138f06c5fdb943",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 864,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3c59da302f30cb74588cf7c1328c875a",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "5c4cc9fe2f90d054ca925424274f35e5",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "438c56a49af97004a9177a69c3d448f6",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "55a69bcc454c33b4eaf7fb6024590b39",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "55a69bcc454c33b4eaf7fb6024590b39",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_43.asset"
+          }
+        }
+      ]
+    },
+    "Serket_CombatIdle": {
+      "clip": "Assets/AnimationClip/Serket_CombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fd74efc4c5804cf4f9e1a11c1092e737",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "3665f9b8a0ce07c42850ebafc8687c31",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2d7e8b86db748674285bb7c3c117b1f5",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "3745f60f9f70db94593216058139b1eb",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "763ad0f4fa28fdd419ca898cc12f11d3",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c4b747e4ed1795c40acbfbc5b6afd5e1",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3f6450fdbd8345f4a9a3437173484cea",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "43da215b74f983449b866084b0ca1128",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "036374e83708a714489b66ced2831652",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "115bff3c7703b5d4c806c8407d7a6254",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 396,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "4c091da14cdfaa841972fc7eb609b6b8",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "86fa71ee38b3b0a48b20779cd2f90c86",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "d2c84f61e8f16214ab1a08eb9495e755",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "d260e8d6b93afa142a678d5c888effe1",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "d260e8d6b93afa142a678d5c888effe1",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_13.asset"
+          }
+        }
+      ]
+    },
+    "Serket_Overworld_IdleDown": {
+      "clip": "Assets/AnimationClip/Serket_Overworld_IdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "973ac012af43abb45a0c53665f785fe2",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "abf3289a1554dd4498b1225f46ebc86b",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2b06fe398f768134aab1154267ab480d",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "bc055d38377ee464b8d29ecab0249119",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c4cd6fcbab3c1e246b48ffd48f7577ca",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "6309984c75ab2094bac24409e5b2707d",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 864,
+              "y": 192,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "7cd43d6180118724f8daada22d82a6d6",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "b465706746ffe544fa8166c097d8030a",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "a18461d1ccf311842b16254af931de41",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "c8361d6ebb6569847916986b3e12f376",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "168a3b340fbe704499d807f529ea7c51",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "851ca43daeabdbd4d84ca9eda8dc0154",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "208ab415fd107194cb5505a93b343d61",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "3ae35d441e2d0754f995935bd03ded50",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "3ae35d441e2d0754f995935bd03ded50",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_57.asset"
+          }
+        }
+      ]
+    },
+    "SerketAttackJump": {
+      "clip": "Assets/AnimationClip/SerketAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "7a6861a7ff165c44f9b2cca431483812",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 328,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "a275b000767f3eb42946b1aec731b75e",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "dfeaa9fc863f8cd479af9ade92f8ebf3",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "1aeb724c18b9d3d4a9ad74033e7f3240",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "1aeb724c18b9d3d4a9ad74033e7f3240",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_25.asset"
+          }
+        }
+      ]
+    },
+    "SerketHit": {
+      "clip": "Assets/AnimationClip/SerketHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "4e845434cc0134a40a99ce2135dbb73d",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "4e845434cc0134a40a99ce2135dbb73d",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 492,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_33.asset"
+          }
+        }
+      ]
+    },
+    "Serket_Overworld_IdleRight": {
+      "clip": "Assets/AnimationClip/Serket_Overworld_IdleRight.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f951dd7522837394ead27883838c7a78",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d3ac083316804c7409b631c1774e6bd3",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "cbae4e878dd3c304fa76e3c175600167",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6d9406a8c98fbcf46927f5086e1abfa0",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "9227a8d9842f0714bb3ac8398a8eef90",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "8b56a3746cb2f7944b6a7e19ac7c4373",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "dac2fefcf704774429b30b6fd255dd17",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "24b533bf09b739541ba774162ea5b310",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 864,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "2c3f16326d34120438ac9025e236811e",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "edee9705467496f4580fd002993f2f05",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "0e03cae6228a37e4aad5484785845487",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "8151d8bd240e0574ca96d7aa2f28afb6",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "6212432c3b9f3d0448b75157c55f0e5b",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "80ef673ced97d414598049e47eddb65c",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "80ef673ced97d414598049e47eddb65c",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 288,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "Serket_Overworld_RunUp": {
+      "clip": "Assets/AnimationClip/Serket_Overworld_RunUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "795e0d78e6d2b81468d6902f8eab32e9",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e240feb5b2300734b9671465256b6476",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "e616ad3bd59e19c45b68fef26502da54",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d5071049d77bbd54d89b1589e7bdf1f7",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f351a957e0f122b4b83caec9801518ba",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "0c42b41ff32450f42a965b2ad37cd9d2",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 864,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "5633aaa6783146845bfb5ed3d7237582",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "6814489562a8a3a46984d1b578de150d",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "6814489562a8a3a46984d1b578de150d",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 384,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_21.asset"
+          }
+        }
+      ]
+    },
+    "Serket_Overworld_RunDown": {
+      "clip": "Assets/AnimationClip/Serket_Overworld_RunDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "7e5918ebfc684824b94c018ec4ba75f2",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "746a4bd5099eb874ab894db79ada6bc6",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 864,
+              "y": 96,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "e16685657bb6f9141bffff1826d106e6",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "17675453a8914e942a5a0786ce126de8",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "be65bb70a9824fa4b9a9a37ac035f3e1",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_62.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "5a9c739b66ef1ee40999be0b03c88850",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_63.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "870ae8fd08ee73d4eb9bbbff56c21aa3",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_64.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "adf6aca224092144691c83ec4f404acd",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_65.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "adf6aca224092144691c83ec4f404acd",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_65.asset"
+          }
+        }
+      ]
+    },
+    "SerketAttack": {
+      "clip": "Assets/AnimationClip/SerketAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cce9c302e1ab4704bb94b48676b198d9",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "4c903a0671d24e046bf9f209de7c86a5",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "3f3a1b68366486540b7350b77aa31110",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "927cb95800281a3429e4392c0022d627",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "85eb0c925fbd5894bbd34f19850bd083",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "30f507f50581f304eb2496e804ae82aa",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "30f507f50581f304eb2496e804ae82aa",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 0,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_31.asset"
+          }
+        }
+      ]
+    },
+    "Serket_Overworld_IdleUp": {
+      "clip": "Assets/AnimationClip/Serket_Overworld_IdleUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "79d4520ac0cd3684b9564957c8177932",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e4d134bc486f6ee408debfd2d8162eca",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "0a3975898fb362c4dab8b06e158f4558",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "dc0622c3a96ed7243ab6cdcb8080a1c0",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "750515a0f52e93246953e59611c192c8",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "256531a6cda1c6649a9c22c8841f33af",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6b9ce4f331f8228459d5aa0f6da7f34c",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "0b43b3f62a98d104c9f2a59048bb7c65",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "6b85fda5cf6599643b7488be29c08c26",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "0bba465636a3a4647a3119de653029e4",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 864,
+              "y": 576,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "4d7ba03d0b7085c44bed11e57baa8e3d",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "ff4f4eea03a1ea94ab7218c84e51bd99",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 96,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "2970e8a14e4e3d34592265b1aad18f75",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "245fdc33587933745b0754e097c1d428",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "245fdc33587933745b0754e097c1d428",
+          "sprite": {
+            "name": "Serket_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 288,
+              "y": 480,
+              "width": 96,
+              "height": 96
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.21999998
+            },
+            "sheet": "Database/Serket/sheets/Serket_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Overworld_Spritesheet_13.asset"
+          }
+        }
+      ]
+    },
+    "SerketCastEnd": {
+      "clip": "Assets/AnimationClip/SerketCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a37f4c5031db4ea48b8084d118446416",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 656,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "a064828ab6372094181be561c9120448",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 820,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "64d497eaabc82244e8e07a1e9b52db51",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 984,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "f0cc29dc63dea7d40aca78638dafaef0",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1148,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "a0ea6b86cf4d44f4c964b41a85064f64",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1312,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "cfa84086a7095864ab1d390343c4540a",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1476,
+              "y": 264,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.4583333,
+          "sprite_guid": "1ba565ca454aef84593fb650930e2deb",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "1ff9d002bfe6daf4da99f005dbec3de3",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.58333325,
+          "sprite_guid": "1ff9d002bfe6daf4da99f005dbec3de3",
+          "sprite": {
+            "name": "Serket_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 164,
+              "y": 132,
+              "width": 164,
+              "height": 132
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Serket/sheets/Serket_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Serket_Battle_Spritesheet_21.asset"
+          }
+        }
+      ]
+    }
+  }
+}

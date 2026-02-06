@@ -1,0 +1,544 @@
+{
+  "name": "?????",
+  "prefab": "MonsterSecretStarter01",
+  "prefab_path": "Assets/GameObject/MonsterSecretStarter01.prefab",
+  "data": {
+    "name": "?????",
+    "ids": {
+      "ID": 1157,
+      "MonID": 4444
+    },
+    "stats": {
+      "BaseMaxHealth": -1,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": "0900000009000000"
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 0,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Unknown",
+      "Unknown",
+      "Unknown"
+    ],
+    "traits": {
+      "signature": "?????"
+    },
+    "actions": {
+      "start": [
+        "?????",
+        "?????"
+      ],
+      "scripted": [
+        "Void Lightning",
+        "Volcanic Essence",
+        "Fire Ritual",
+        "Breeze",
+        "Fire Dash"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "?????",
+          "multiplier": 1
+        }
+      ],
+      "void_tier2": [
+        {
+          "name": "Hit",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterSecretStarter01",
+      "path": "Assets/GameObject/MonsterSecretStarter01.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "9113482172e443e409b884bd33eecd25",
+      "file": "Database/SecretStarter01/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Wyrmling",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/SecretStarter01/sheets/Portrait_Wyrmling.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Wyrmling.asset"
+      }
+    }
+  },
+  "animations": {
+    "WyrmlingIdleHorizontal": {
+      "clip": "Assets/AnimationClip/WyrmlingIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "50a977e49df5f54428ee200e881bdf28",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5d54a32907944224cbf3973272b30791",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a5fb52670cc3a3e47a79ae44c8cf0d30",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "e14bf21a19dfecc4089cfd118d1ddfc4",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "770ed15053003c04f99f032602823472",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "3fd03fce49975d34eadef113e4f9ee00",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c3187b8bd660c3a46a10afcabe33727d",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "8a6296e13b4686e4a946741d969b11ab",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "0d7b2f87812dcf44a910fd25c7f32428",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "416095ac23d00de4dacb1b3ae8363921",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "416095ac23d00de4dacb1b3ae8363921",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "WyrmlingIdleTop": {
+      "clip": "Assets/AnimationClip/WyrmlingIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e8355e2fbacd192438efa84a1fa16cf5",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5d7d400fcefa8b2448c0c797fb89538c",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8fcf820ec72ee764781205c3b9363689",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ae33be085a4d28d4184e1fc3aab49fdf",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c0b69f73a8dd4634f87c37a5ddd21cc9",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "e255f3b02f921384d9267bf16dcaac8d",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e63364d4bbaae5946b2c24f73bfbdf88",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "def39d9d43655e347aa8a5089ddd75b3",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "ca355d9223690a4459cd54936def0caa",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "a091fd6dd1438d546a630ee942b6cb34",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "a091fd6dd1438d546a630ee942b6cb34",
+          "sprite": {
+            "name": "Wyrmling_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1875
+            },
+            "sheet": "Database/SecretStarter01/sheets/Wyrmling_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wyrmling_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    }
+  }
+}

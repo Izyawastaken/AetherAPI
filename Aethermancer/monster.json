@@ -1,0 +1,3599 @@
+{
+  "name": "Aethermancer",
+  "prefab": "MonsterAethermancer",
+  "prefab_path": "Assets/GameObject/MonsterAethermancer.prefab",
+  "data": {
+    "name": "Aethermancer",
+    "ids": {
+      "ID": 776,
+      "MonID": 10
+    },
+    "stats": {
+      "BaseMaxHealth": 0,
+      "StartPerkCount": 0
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "impossible_to_stagger": 1
+    },
+    "source": {
+      "prefab": "MonsterAethermancer",
+      "path": "Assets/GameObject/MonsterAethermancer.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "d1d89e99188ffcd468526842dcbf5c1d",
+      "file": "Database/Aethermancer/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Aethermancer",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Aethermancer/sheets/Portrait_Aethermancer.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Aethermancer.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "49a2121f3985c2940bd987c7472ed068",
+      "file": "Database/Aethermancer/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_AethermancerPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Aethermancer/sheets/Trait_AethermancerPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_AethermancerPortrait.asset"
+      }
+    }
+  },
+  "animations": {
+    "NagaWalkDown": {
+      "clip": "Assets/AnimationClip/NagaWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ab671dee059d97046976d3e7601a6edb",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "79b8a875c1936fa40b1282efb1dbc287",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "31a307415efce8c449403217167f0b24",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "9e162cae0c7f1d045915086ea9635d95",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 513,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "de404f6e49b88a341875ddbdbd9b5faa",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "7d9e019127499f940b7974ca7cc0632f",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "ec21c77a0def7894dbb4a97c22b0c230",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "b28413e500cb23441892758846667f56",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "0cba54bc568a8cd43978ee552af910a1",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "9b388dc95aa26a849b47eaf68762b2b0",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "9b388dc95aa26a849b47eaf68762b2b0",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "Battle_Siriux_Selecting_Loop": {
+      "clip": "Assets/AnimationClip/Battle_Siriux_Selecting_Loop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3ed8756dc244047469d85b67a7ca0eda",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_2.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "da221ca1909cac44181e5b5c12714e54",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_3.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9f7983b61cca6d444bb6faafa463e5c4",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_4.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d82ff8b19497def4eabdce396689b612",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_5.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "7312cde9a7f996b4d866201c01256989",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_6.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "856e7b4d2e6ab7e4db2d1ad8e565a311",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_7.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "52aba7472a8f32c4eb0f8daaca93aae1",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_8.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "6cfe626651503ce47aaeaddd164d05ff",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_9.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "444a112152e114f44aa3c2ec0c2322a2",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_10.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "f84db9b484609e44e99dd43ca9f65ec1",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_11.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "9093f317291652f448fa9e9907c89634",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_12.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "be6a7f44887a80349b8bbfaa3ddece21",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_13.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "cb2c81c3d2104e9449fb9ad3382ee660",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_14.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "7295c0ed77870b24da9a0963ceca314e",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_15.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "727f80d050887cc43b96f0234a29aced",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_16.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "7b4b76924c776bd4cb0458ac0850f049",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_17.asset"
+          }
+        },
+        {
+          "time": 1.2916667,
+          "sprite_guid": "7b4b76924c776bd4cb0458ac0850f049",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_17.asset"
+          }
+        }
+      ]
+    },
+    "NagaIdleTop": {
+      "clip": "Assets/AnimationClip/NagaIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c4faf59b4c6aa3d448a8801fe89e08f2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "82ee0e991c2194645b932466954e8c6f",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "26e15663a67977e46a697b9fc9be7985",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "3d5586192f11b5c4689a19c83c747795",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "3b3c4623b672d9b479451f4635ba2eed",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a57b1ba1ed697ef42afbd6016ea61535",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "4d537fa807208c547b542263259ae66e",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "a259ff4a625f84b4d875cb2aa6c97872",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "bf858ef3d03dbe242b2489b83443e6ef",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "55760a1609063584088c69ae0c2c40e2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "55760a1609063584088c69ae0c2c40e2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "NagaAttackJump": {
+      "clip": "Assets/AnimationClip/NagaAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a68ba9944c8e46049b806eb5e6b44a26",
+          "sprite": {
+            "name": "Naga_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5fc26fea9d858774883080f5e9dbe854",
+          "sprite": {
+            "name": "Naga_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c2a92bebaa4a8464ca3cf036cbeb0f43",
+          "sprite": {
+            "name": "Naga_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d16f675b0bbea794394dec0ed22bc252",
+          "sprite": {
+            "name": "Naga_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "52ca17eb4cb7ce14d80c8c8f6abcd580",
+          "sprite": {
+            "name": "Naga_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "7edb17ef0193d2941a4307c1e0897695",
+          "sprite": {
+            "name": "Naga_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_15.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "7edb17ef0193d2941a4307c1e0897695",
+          "sprite": {
+            "name": "Naga_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_15.asset"
+          }
+        }
+      ]
+    },
+    "Battle_Siriux_Intro": {
+      "clip": "Assets/AnimationClip/Battle_Siriux_Intro.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "aa47b6d5f7eedae48af5589192ca5ae1",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "2356c3efc20f22547aa966b94717d031",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "62864746cc86b654984f0331d766e37d",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c6b6198d5886a7e43ada327f7fb1bc58",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3bf6a2aa74d83834b9ff464067f6ece2",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "03ed261bc181b614993ff45d5834e2d2",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "afd64fcdb4ee2154999b7dab11e8cfae",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "41de52defe0eec0469f7dfbdf73369b0",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "f28f13daf7e82424383fa4c542b9b197",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "f40a15d1d7b04b046b5d7c1f62795ef0",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "5cf6ddbc47d9de340b50bd1466829440",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "50b2cd5e4862d424da09a7266f429c8f",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "14a9be39fc36d214e90f7aa5926b612b",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "cd196bb8a4d043d4ab430240256926e5",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "e461ea0aed8a8c14a94c9bbb20bc18ff",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "c29f0255beb0c554083a224af5edb4a9",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_15.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "0753afce473376b41815d7b47673646a",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_16.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "91310157f5b0a0f40b64636071891587",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_17.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "286f3a4fea30a6a439f7d16902d26633",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_18.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "3ec5c214ddc2d7544a3a4a1d5c32cc12",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_19.asset"
+          }
+        },
+        {
+          "time": 1.6666669,
+          "sprite_guid": "1fafbc758ae599b4f89ac4cda56abde1",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_20.asset"
+          }
+        },
+        {
+          "time": 1.7083335,
+          "sprite_guid": "c6b3775eef214994b972e2df06e44487",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_21.asset"
+          }
+        },
+        {
+          "time": 1.7916669,
+          "sprite_guid": "3adb9dd6c6f42d5479e554423671b581",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_22.asset"
+          }
+        },
+        {
+          "time": 1.8750002,
+          "sprite_guid": "6a014fbf13e2e134abac5241fae0184f",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_23.asset"
+          }
+        },
+        {
+          "time": 1.9583336,
+          "sprite_guid": "c83c26e956dde4743956584d865ca31e",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_24.asset"
+          }
+        },
+        {
+          "time": 2.0000002,
+          "sprite_guid": "c83c26e956dde4743956584d865ca31e",
+          "sprite": {
+            "name": "Battle_Siriux_IntroAnimation_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_IntroAnimation.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_IntroAnimation_24.asset"
+          }
+        }
+      ]
+    },
+    "NagaIdleHorizontal": {
+      "clip": "Assets/AnimationClip/NagaIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "4a12dccc4f876d74ea1bc078f450beba",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "8909323f7cfa5df4a9f1050e7ccc8862",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "1ffb1b5e173b1a4478a9faa90fd1a580",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "920977785fec4ff48a22af2b20f9d6e0",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "213f0a96823c0794bad837a166deb061",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "015d1888d4cdd8c4ab3b632b3585f2db",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "d1379c23689697548a3fd3c17246304b",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "4b1a9335e6f76d04a854e157bed5746b",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "e3ce5754bcd46ee4090a782e158bf57c",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "a9339d67a3277b242aa72f2d7ddddca8",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "a9339d67a3277b242aa72f2d7ddddca8",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "Battle_Siriux_SelectCancel": {
+      "clip": "Assets/AnimationClip/Battle_Siriux_SelectCancel.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ab61b8c1b0ee3494ca25382e1bbcaefd",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_1.asset"
+          }
+        },
+        {
+          "time": 0.08333333,
+          "sprite_guid": "16113f83714c2da4ab5f5cac5559fe9b",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_0.asset"
+          }
+        },
+        {
+          "time": 0.124999985,
+          "sprite_guid": "16113f83714c2da4ab5f5cac5559fe9b",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_0.asset"
+          }
+        }
+      ]
+    },
+    "NagaHit": {
+      "clip": "Assets/AnimationClip/NagaHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9f7a238db891e2e44babfde4c82412df",
+          "sprite": {
+            "name": "Naga_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_45.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9f7a238db891e2e44babfde4c82412df",
+          "sprite": {
+            "name": "Naga_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_45.asset"
+          }
+        }
+      ]
+    },
+    "NagaAttackEnd": {
+      "clip": "Assets/AnimationClip/NagaAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "46762c3d5985fd0489444d6c8bfe316c",
+          "sprite": {
+            "name": "Naga_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_25.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f5c65b36699f4ea4695c908a1a3b56d4",
+          "sprite": {
+            "name": "Naga_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_26.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c18569a005c529d4182ac5397cc2617b",
+          "sprite": {
+            "name": "Naga_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_27.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cadc7ab8a4dd90643b39397acb13e1b1",
+          "sprite": {
+            "name": "Naga_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_28.asset"
+          }
+        },
+        {
+          "time": 0.33333337,
+          "sprite_guid": "f93946d88e68ae845920a924b48c337d",
+          "sprite": {
+            "name": "Naga_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_29.asset"
+          }
+        },
+        {
+          "time": 0.41666672,
+          "sprite_guid": "1e2b5cbfad7e02d4a96cd72652fa8b30",
+          "sprite": {
+            "name": "Naga_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_30.asset"
+          }
+        },
+        {
+          "time": 0.4583334,
+          "sprite_guid": "1e2b5cbfad7e02d4a96cd72652fa8b30",
+          "sprite": {
+            "name": "Naga_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_30.asset"
+          }
+        }
+      ]
+    },
+    "NagaWalkHorizontal": {
+      "clip": "Assets/AnimationClip/NagaWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6298de506a6fa17489489a479d574052",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "be5d8283c78679c4780823aa6492402c",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "e045e48aa709585439409ab0854d79b6",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "7da5996b4a2ee4f4eb332228bfc645ba",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "c3edac80d49f2b94e8cfb265053ea14b",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "252a84b468b73e3409bbd24927465409",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "c3b56ead7392a284d9947774820b26c1",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "cf4aa17c0fc9dfb4ab0a25607c2f7df8",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "afcacddd238fd6240afdbecaf194d2ca",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "43f3fc63165fe1147b80eab735c19495",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "43f3fc63165fe1147b80eab735c19495",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "NagaJumpBack": {
+      "clip": "Assets/AnimationClip/NagaJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e7cdac018ec5d3e44917ee13c3196068",
+          "sprite": {
+            "name": "Naga_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_31.asset"
+          }
+        },
+        {
+          "time": 0.08333333,
+          "sprite_guid": "bb9b3d25f7e99e642989bee02adda185",
+          "sprite": {
+            "name": "Naga_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_32.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8d19d0111ff7cb344b95842cf8c463a5",
+          "sprite": {
+            "name": "Naga_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_33.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6a2e5b256dd58384aacfb6b1313dabc6",
+          "sprite": {
+            "name": "Naga_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_34.asset"
+          }
+        },
+        {
+          "time": 0.3333333,
+          "sprite_guid": "054f7a959fff3ec4c9edebb042d4dc42",
+          "sprite": {
+            "name": "Naga_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_35.asset"
+          }
+        },
+        {
+          "time": 0.37499997,
+          "sprite_guid": "054f7a959fff3ec4c9edebb042d4dc42",
+          "sprite": {
+            "name": "Naga_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_35.asset"
+          }
+        }
+      ]
+    },
+    "Battle_Siriux_OrderStart": {
+      "clip": "Assets/AnimationClip/Battle_Siriux_OrderStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "21d015f6e56f04d419568e707be2ffe8",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_18.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "523ae787caf2d3b4e965af284d335b9f",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_19.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1954b0f71b643174fbf3c550c8183ec3",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_20.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d7c624ae21290574fb877be7dd1f3a3a",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_21.asset"
+          }
+        }
+      ]
+    },
+    "Battle_Siriux_Idle": {
+      "clip": "Assets/AnimationClip/Battle_Siriux_Idle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "27458894946ebaa4dbba6f022970a51d",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ebeb76d82adceaa41a120287134c71d0",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1f8bf2c68f32c4846878841ba4127ad7",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "323bc6b8c1a98d549bbdd531ae8335b2",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "ba6295eea53dc2a46a8197477f183847",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "2690aa1b08b1129469c42dd969d84a73",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "cb4f95f9479cf7c4b803ea6e5dc80f31",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "902d61a6ed2641d4a96530ed610b6fca",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "7dbfdac46ac278142910c04c557008ce",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "b249cee179411c04f96a25fe006d6aee",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "7847db61a87a78a4880800841c3bf6ed",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "adc88aa3ad2a6204798881bbeaa4716b",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "cdf443940f8bb684982298be06c5ca40",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "ee95c5fb10ec81e449314c16aa02be85",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "d5926cb717d876e4086e123a016086c4",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "a1e5a7a4bd4a402448d7aa8a7c17299c",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_15.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "02f4161c7c9c5044bbdcf49b0d86788a",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_16.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "0465d32b8e3cef04a84639e67006da02",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_17.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "f88c128fdbd2a1c41bc857a2fba7a361",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_18.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "951be0eb6a7991c4685e99251cf7e7c2",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_19.asset"
+          }
+        },
+        {
+          "time": 1.6250002,
+          "sprite_guid": "951be0eb6a7991c4685e99251cf7e7c2",
+          "sprite": {
+            "name": "Battle_Siriux_Idle_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Idle.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Idle_19.asset"
+          }
+        }
+      ]
+    },
+    "NagaWalkTop": {
+      "clip": "Assets/AnimationClip/NagaWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a1a76874864d74e4781f6514aa6720e1",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "6530ac683933f3c40b5acd230be03d30",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "569acc6ae6ce5704db8bb60f51efb730",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "997860db69f4ef349a7db48a84ea66f1",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "81f14209e2dcef24da39fc624f1cbe56",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0775e0f0b3400944e98b71dc1f5b7d8b",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "194e22cfdb0113a42bbb89d1649836a2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "b31f702df906bc34abf51f47664a33de",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "7f495319939f7f744ae1e18b999b650e",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "ecd1ead65a749994eb5334a5e6179764",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "ecd1ead65a749994eb5334a5e6179764",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "Battle_Siriux_SelectTransition": {
+      "clip": "Assets/AnimationClip/Battle_Siriux_SelectTransition.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "16113f83714c2da4ab5f5cac5559fe9b",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ab61b8c1b0ee3494ca25382e1bbcaefd",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_1.asset"
+          }
+        },
+        {
+          "time": 0.124999985,
+          "sprite_guid": "ab61b8c1b0ee3494ca25382e1bbcaefd",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_1.asset"
+          }
+        }
+      ]
+    },
+    "Battle_Siriux_Order_Return": {
+      "clip": "Assets/AnimationClip/Battle_Siriux_Order_Return.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cb29332de80e95a4190ea5e8b2170db7",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_26.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e1a8312d1f2fd714ca367ec64a5d1b3d",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_27.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "0563d778b53eed3469de83ca12cd563f",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_28.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b7766860a38cbf14e9333b7a70a7303d",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_29.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "b7766860a38cbf14e9333b7a70a7303d",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_29.asset"
+          }
+        }
+      ]
+    },
+    "Battle_Siriux_Order_Loop": {
+      "clip": "Assets/AnimationClip/Battle_Siriux_Order_Loop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fb99e1c8f6d42eb4a87e66d794dcb51d",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_22.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0a8316cab06b6f74db6ed0c523a210dd",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_23.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b58309c0118874f45b01b6eb8152300a",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_24.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "8ee52b04d7da99e4e926636e5e9f3dad",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_25.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "8ee52b04d7da99e4e926636e5e9f3dad",
+          "sprite": {
+            "name": "Battle_Siriux_Cast_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.33
+            },
+            "sheet": "Database/Aethermancer/sheets/Battle_Siriux_Cast.png",
+            "sprite_asset": "Assets/Sprite/Battle_Siriux_Cast_25.asset"
+          }
+        }
+      ]
+    },
+    "NagaIdleDown": {
+      "clip": "Assets/AnimationClip/NagaIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b77a3b822896dfb488a43af322da3db3",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "70c6e8db62b2cb940bea7298fc886431",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ecb55bbaad19e764abd173495218fac6",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ba9b8ae8976da7245891886f2cfb04ae",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "ccfc1a58b67704c43b5b7fffdd5121a0",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "51b65d039aa02aa42ac369bc21bef2a2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "257be8ae4eee67b44a05d4fb5fac12c7",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "04cc405fdfdc8cb4a86926277e98d3a7",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "28eea6f9b83c34f4195d44a7ed821275",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "1450c09e279f939439261cc776d07402",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "1450c09e279f939439261cc776d07402",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Aethermancer/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    }
+  }
+}

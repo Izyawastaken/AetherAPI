@@ -1,0 +1,2635 @@
+{
+  "name": "Ammit",
+  "prefab": "MonsterAmmit",
+  "prefab_path": "Assets/GameObject/MonsterAmmit.prefab",
+  "data": {
+    "name": "Ammit",
+    "ids": {
+      "ID": 323,
+      "MonID": 27
+    },
+    "stats": {
+      "BaseMaxHealth": 45,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194139795456,
+      "ElementsOverride": 13194139533312
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 2,
+          "Hits": 3
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Tank",
+      "Summon",
+      "Regeneration"
+    ],
+    "types_override": [
+      "Tank",
+      "Critical",
+      "Regeneration"
+    ],
+    "traits": {
+      "signature": "Glutton",
+      "signature_override": "Glutton",
+      "traits": [
+        {
+          "name": "Return To Aether",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Sprout",
+        "Summon Fire Lance"
+      ],
+      "start_override": [
+        "Sprout",
+        "Cleansing Strike"
+      ],
+      "reset_action": [
+        "ResetActionRegeneration"
+      ],
+      "scripted": [
+        "Blossoming Strike",
+        "Crystalize",
+        "Sprout",
+        "Summon Fire Lance",
+        "Cleansing Strike"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Regeneration",
+          "multiplier": 1
+        },
+        {
+          "name": "Health",
+          "multiplier": 5
+        }
+      ],
+      "void": [
+        {
+          "name": "Health",
+          "multiplier": 15
+        },
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Aether",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 25
+        },
+        {
+          "name": "Initial Regeneration",
+          "multiplier": 1
+        },
+        {
+          "name": "Health",
+          "multiplier": 5
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterAmmit",
+      "path": "Assets/GameObject/MonsterAmmit.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "434b8fd7b65f0234e965863eb2e39d54",
+      "file": "Database/Ammit/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Ammit",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ammit/sheets/Portrait_Ammit.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Ammit.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "cbe03ee852bbdd14280031faaef1be33",
+      "file": "Database/Ammit/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_AmmitPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ammit/sheets/Trait_AmmitPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_AmmitPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "e7088179afb82094783e775d0dcb7a7b",
+      "file": "Database/Ammit/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "AmmitSpritesheet_11",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 128,
+          "y": 512,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.29
+        },
+        "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/AmmitSpritesheet_11.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "907db1b059333ed4db71a760d3e90c15",
+      "file": "Database/Ammit/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Ammit_Battle_Spritesheet_Shifted_1",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 128,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.29
+        },
+        "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Ammit_Battle_Spritesheet_Shifted_1.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "fdf29f41b57d1a84384f69253b4a6229",
+      "file": "Database/Ammit/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Ammit_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.1375
+        },
+        "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "3908430e84ab6fb44a4cc7aa034f9db8",
+      "file": "Database/Ammit/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Ammit_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.1375
+        },
+        "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Ammit_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "18abd298bbe81e34aac4b65adc4501d0",
+      "file": "Database/Ammit/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Ammit_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Ammit/sheets/Portrait_Ammit_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Ammit_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "AmmitIdleDown": {
+      "clip": "Assets/AnimationClip/AmmitIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5bcd30783e991b8409da90bffefa4f1e",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c3c7c168ea12f1f49966bcfcf790ce62",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "3a2e026467b877e4a90cac31f757f9dd",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "bd5bd52fc3d4ccc46949c0a5daf56dd9",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "416155d758fa0c348ae7ccde17f0a18c",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "d22b1186d1986c146889ad0ac3cdb376",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ff3ae2afbe44d1c40aaa13ff7890e182",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "23e15458dfb68de4aa71f08316a9607d",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "89e39c46f8d3df7479ac901254b844be",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "c40baab83d29027408f996a649ea1afb",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "c40baab83d29027408f996a649ea1afb",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "AmmitAttackJump": {
+      "clip": "Assets/AnimationClip/AmmitAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6ad5a26c892e6f74e9df72e1fdf6c826",
+          "sprite": {
+            "name": "AmmitSpritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "78337813ede729145a4f4e3ee50c7543",
+          "sprite": {
+            "name": "AmmitSpritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "7f8a717f8d4b63b478ca45ea68051986",
+          "sprite": {
+            "name": "AmmitSpritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "097ce2f0f3a01114ab978ee85bc5a9e6",
+          "sprite": {
+            "name": "AmmitSpritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "59c258e32a41d214ea36c28ae2bd8d0f",
+          "sprite": {
+            "name": "AmmitSpritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "59c258e32a41d214ea36c28ae2bd8d0f",
+          "sprite": {
+            "name": "AmmitSpritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_16.asset"
+          }
+        }
+      ]
+    },
+    "AmmitWalkDown": {
+      "clip": "Assets/AnimationClip/AmmitWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "360f31fbefc5b2140b38da3498f10e7f",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "aa0d62f92dff07748b7581e335497d23",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d9a1619553c9cc3489b35104da2f511e",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7010cb88d36369345a107427a4f0e782",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "13a943e5c1f495043999237454b09c21",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "3a02c12625f6e7e49927dff1d6b3da41",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "16ac88dd5024ec447a52bf849e714ce1",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "74fe53a4605fe634fbb8704a5f4ddfed",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "74fe53a4605fe634fbb8704a5f4ddfed",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_53.asset"
+          }
+        }
+      ]
+    },
+    "AmmitCast": {
+      "clip": "Assets/AnimationClip/AmmitCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3d4cd67591939d1488c99b8793541960",
+          "sprite": {
+            "name": "AmmitSpritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "073774bcfefbeb141b359ec6171899e5",
+          "sprite": {
+            "name": "AmmitSpritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "24adf2cb9327ccb43a342b6f98b4a51b",
+          "sprite": {
+            "name": "AmmitSpritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "19e6986f4f3bcc644822a1c8568b5c64",
+          "sprite": {
+            "name": "AmmitSpritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "a0de4492357acff44a7ee625699da231",
+          "sprite": {
+            "name": "AmmitSpritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "819017dcf5e0f7040aa02fdcdf461fa4",
+          "sprite": {
+            "name": "AmmitSpritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3dc097a504982684bbaae03d2435741b",
+          "sprite": {
+            "name": "AmmitSpritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "a9959aee3a64cd24f91a69011d030a92",
+          "sprite": {
+            "name": "AmmitSpritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "50dac981d9a68054f8372c958223b08e",
+          "sprite": {
+            "name": "AmmitSpritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "10c5aeea2ef918a48892c65e3698a24d",
+          "sprite": {
+            "name": "AmmitSpritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "10c5aeea2ef918a48892c65e3698a24d",
+          "sprite": {
+            "name": "AmmitSpritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_34.asset"
+          }
+        }
+      ]
+    },
+    "AmmitCastEnd": {
+      "clip": "Assets/AnimationClip/AmmitCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "3d4cd67591939d1488c99b8793541960",
+          "sprite": {
+            "name": "AmmitSpritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "073774bcfefbeb141b359ec6171899e5",
+          "sprite": {
+            "name": "AmmitSpritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "24adf2cb9327ccb43a342b6f98b4a51b",
+          "sprite": {
+            "name": "AmmitSpritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "19e6986f4f3bcc644822a1c8568b5c64",
+          "sprite": {
+            "name": "AmmitSpritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "a0de4492357acff44a7ee625699da231",
+          "sprite": {
+            "name": "AmmitSpritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "819017dcf5e0f7040aa02fdcdf461fa4",
+          "sprite": {
+            "name": "AmmitSpritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "3dc097a504982684bbaae03d2435741b",
+          "sprite": {
+            "name": "AmmitSpritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "a9959aee3a64cd24f91a69011d030a92",
+          "sprite": {
+            "name": "AmmitSpritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "50dac981d9a68054f8372c958223b08e",
+          "sprite": {
+            "name": "AmmitSpritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "10c5aeea2ef918a48892c65e3698a24d",
+          "sprite": {
+            "name": "AmmitSpritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "10c5aeea2ef918a48892c65e3698a24d",
+          "sprite": {
+            "name": "AmmitSpritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_34.asset"
+          }
+        }
+      ]
+    },
+    "AmmitJumpBack": {
+      "clip": "Assets/AnimationClip/AmmitJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9db0e498dabb0c0439d9e938b14bcc84",
+          "sprite": {
+            "name": "AmmitSpritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9b72d4deeb459554ab65af6300572049",
+          "sprite": {
+            "name": "AmmitSpritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "9b72d4deeb459554ab65af6300572049",
+          "sprite": {
+            "name": "AmmitSpritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_24.asset"
+          }
+        }
+      ]
+    },
+    "AmmitAttack": {
+      "clip": "Assets/AnimationClip/AmmitAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c9496e6f115e04e43860de340362c91a",
+          "sprite": {
+            "name": "AmmitSpritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "83e885d10d3b0314bbf6c11a4f96ed5c",
+          "sprite": {
+            "name": "AmmitSpritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.16666666,
+          "sprite_guid": "25e577da7a421f94283f5d3c0af30f6b",
+          "sprite": {
+            "name": "AmmitSpritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b2e7fc8eaf339a443b01fb696d97629b",
+          "sprite": {
+            "name": "AmmitSpritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "0e2cb8b6de2b55f4cab852ff96950d42",
+          "sprite": {
+            "name": "AmmitSpritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "86adc7a00e7ea294d97d0a96cf732729",
+          "sprite": {
+            "name": "AmmitSpritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.4583334,
+          "sprite_guid": "86adc7a00e7ea294d97d0a96cf732729",
+          "sprite": {
+            "name": "AmmitSpritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_22.asset"
+          }
+        }
+      ]
+    },
+    "AmmitHit": {
+      "clip": "Assets/AnimationClip/AmmitHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "24cfc23798082ad41843054613e89987",
+          "sprite": {
+            "name": "AmmitSpritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "24cfc23798082ad41843054613e89987",
+          "sprite": {
+            "name": "AmmitSpritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "AmmitIdleHorizontal": {
+      "clip": "Assets/AnimationClip/AmmitIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "071515b0082b4814381c1fce28dd283f",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "803a43132a7988b44ba4a1dc32cc73f3",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "427542f591f0ba14aaf8371e2df3a628",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "119c7668b55fe8d4b839b62c34f2f1f8",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "196e14b139f821a4f9c5fd40ded1407c",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "fb64890b00677244dbdaa37e994e54ee",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e27447637fbe9e040bc69d112ce08ce9",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "3bddede646c57a94e97d86ae388c80d5",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "7254cbdcd25372345959d3d60dcb94f4",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "e028caaebd5999140ba7636e4b36420c",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "e028caaebd5999140ba7636e4b36420c",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_27.asset"
+          }
+        }
+      ]
+    },
+    "AmmitWalkTop": {
+      "clip": "Assets/AnimationClip/AmmitWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ec57b5a0874a2f24f953e4a2d03ad9e8",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8eae8448ea9b40b4eb72f0269df699bd",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d52a658514e2b1444b79431439596014",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "e5badb3e21011a04f83e391eda8a5491",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "84513c223b746bf4080259b53a5c9d7e",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "d65ce6c4afb7e0842b9fb75d7c4b98ad",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6fce3b4447ec88f42b84a651e21f770b",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "ce558ad9e0e53194e8d4893fc546af5d",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "ce558ad9e0e53194e8d4893fc546af5d",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_17.asset"
+          }
+        }
+      ]
+    },
+    "AmmitAttackEnd": {
+      "clip": "Assets/AnimationClip/AmmitAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b2e7fc8eaf339a443b01fb696d97629b",
+          "sprite": {
+            "name": "AmmitSpritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_20.asset"
+          }
+        },
+        {
+          "time": 3.2916665,
+          "sprite_guid": "b2e7fc8eaf339a443b01fb696d97629b",
+          "sprite": {
+            "name": "AmmitSpritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_20.asset"
+          }
+        }
+      ]
+    },
+    "AmmitCombatIdle": {
+      "clip": "Assets/AnimationClip/AmmitCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ea9d3d3e2c445f54681ea9ab8a414211",
+          "sprite": {
+            "name": "AmmitSpritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "c57197dda1677ac4c99f56eeeb53f540",
+          "sprite": {
+            "name": "AmmitSpritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "3c7308a1242f24341b51d19c4c827c68",
+          "sprite": {
+            "name": "AmmitSpritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "634ee032b920ec047a1bb9a8e7977ecd",
+          "sprite": {
+            "name": "AmmitSpritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "22fc503721d919c44b7f37ac2b920cb8",
+          "sprite": {
+            "name": "AmmitSpritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "77fd50cf710d1d444b4efc356ba7e556",
+          "sprite": {
+            "name": "AmmitSpritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "604b2ad225886d248bf5bc488dc7821b",
+          "sprite": {
+            "name": "AmmitSpritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "3dd9fc8f7e3ba5945b9bf6e823a349e4",
+          "sprite": {
+            "name": "AmmitSpritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "b813260953f11fe44b059c6ecbbd8dae",
+          "sprite": {
+            "name": "AmmitSpritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "ef37117bc77cf6a479f58de0bbf16431",
+          "sprite": {
+            "name": "AmmitSpritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_9.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "b90df1132e34b5a4cb1e29efe31700c9",
+          "sprite": {
+            "name": "AmmitSpritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_10.asset"
+          }
+        },
+        {
+          "time": 1.1000001,
+          "sprite_guid": "e7088179afb82094783e775d0dcb7a7b",
+          "sprite": {
+            "name": "AmmitSpritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_11.asset"
+          }
+        },
+        {
+          "time": 1.1833335,
+          "sprite_guid": "e7088179afb82094783e775d0dcb7a7b",
+          "sprite": {
+            "name": "AmmitSpritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.29
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/AmmitSpritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "AmmitIdleTop": {
+      "clip": "Assets/AnimationClip/AmmitIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fdf29f41b57d1a84384f69253b4a6229",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "48d28097e7f35724383e2181c01ec49e",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a9ab69cdea44a85409ba297ee502716e",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9dd78bdcc92e4c449853e432ce8f0a29",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "261fe65948451604483d27ca1256bfb8",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "8956a7a0537d32c43b737d4e36273547",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "524642761b3b12e409a0e2afaa46ad85",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "bcf2cb40a8c420543a4bf613fa692b10",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "2c9af41a3eab4ce49961b610dafe4202",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "896a3936530cd2242966a0fc132f458c",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "896a3936530cd2242966a0fc132f458c",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "AmmitWalkHorizontal": {
+      "clip": "Assets/AnimationClip/AmmitWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2edd3f439a134a14ca2d2ce639012091",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "054f689252412524eb6af67e6f043665",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2f1f17cf4f495334f8da6d4cff2f5658",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "a6a0fc7c80c4d9143b3530f9941bb9c9",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8d069159379d9a841a35b9c2283fab2c",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "34714f4af809ae14e80fbe43e24da28c",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f1075ba47b929964a8f39d836e9e0379",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "95734387a3e207443b139a5e5d3d7483",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "95734387a3e207443b139a5e5d3d7483",
+          "sprite": {
+            "name": "Ammit_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.1375
+            },
+            "sheet": "Database/Ammit/sheets/Ammit_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Ammit_Overworld_Spritesheet_35.asset"
+          }
+        }
+      ]
+    }
+  }
+}

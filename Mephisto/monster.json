@@ -1,0 +1,3076 @@
+{
+  "name": "Mephisto",
+  "prefab": "MonsterMephisto",
+  "prefab_path": "Assets/GameObject/MonsterMephisto.prefab",
+  "data": {
+    "name": "Mephisto",
+    "ids": {
+      "ID": 1316,
+      "MonID": 18
+    },
+    "stats": {
+      "BaseMaxHealth": 35,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398046511104,
+      "ElementsOverride": 4398047297536
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 3,
+          "Hits": 3.75
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Affliction",
+      "Terror",
+      "Burn"
+    ],
+    "types_override": [
+      "Affliction",
+      "Poison",
+      "Burn"
+    ],
+    "traits": {
+      "signature": "Schadenfreude",
+      "signature_override": "Schadenfreude",
+      "traits": [
+        {
+          "name": "Peak Performance",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Sudden Splash",
+        "Ignite"
+      ],
+      "start_override": [
+        "Toxic Slash",
+        "Ignite"
+      ],
+      "reset_action": [
+        "ResetActionTerror"
+      ],
+      "reset_poise_action": [
+        "ResetActionPoison"
+      ],
+      "scripted": [
+        "Burn Wave",
+        "Envenom",
+        "Alchemical Blast",
+        "Ignite",
+        "Sudden Splash",
+        "Toxic Slash"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Debuff Mitigation",
+          "multiplier": 1
+        },
+        {
+          "name": "Terror Application",
+          "multiplier": 1
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        }
+      ],
+      "void_tier2": [
+        {
+          "name": "Fire Generator",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Debuff Mitigation",
+          "multiplier": 1
+        },
+        {
+          "name": "Poison Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterMephisto",
+      "path": "Assets/GameObject/MonsterMephisto.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "d83929866dd73ce4ebcb9bc9d3849759",
+      "file": "Database/Mephisto/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Mephisto",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Mephisto/sheets/Portrait_Mephisto.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Mephisto.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "544976e05cc2ba54f952fdc0848c30db",
+      "file": "Database/Mephisto/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_MephistoPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Mephisto/sheets/Trait_MephistoPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_MephistoPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "e3bed969144f4ef4694ad8fb60fee319",
+      "file": "Database/Mephisto/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Mephisto_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 960,
+          "width": 192,
+          "height": 192
+        },
+        "pivot": {
+          "x": 0.43999997,
+          "y": 0.17
+        },
+        "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "336b0c52b9326054a833166b62ac3ab3",
+      "file": "Database/Mephisto/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Mephisto_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 960,
+          "width": 192,
+          "height": 192
+        },
+        "pivot": {
+          "x": 0.43999997,
+          "y": 0.17
+        },
+        "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Mephisto_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "eb9577ef9f8573b499045aba1458dbc9",
+      "file": "Database/Mephisto/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Mephisto_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 800,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.24
+        },
+        "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "1237e9f105e2ba0488aec997491dd034",
+      "file": "Database/Mephisto/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Mephisto_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 800,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.24
+        },
+        "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Mephisto_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "826c4dbd06a01044f82e15ea409c6533",
+      "file": "Database/Mephisto/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Mephisto_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Mephisto/sheets/Portrait_Mephisto_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Mephisto_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "MephistoCastEnd": {
+      "clip": "Assets/AnimationClip/MephistoCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ba059d801bc9e8f4db0868f732426aec",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7768fddfe1e3c724eb769feffffc33e1",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f4f3bb7b47a91584fae9c6321261b895",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "304eff1c08e091a4da0331d359b46e45",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "187e9219758fee64dafa27537625407d",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "070b7d3ac1914fc40995435aedc677ac",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 960,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "b1795e68c54c6784f9f5d9690075e718",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "cfc74af6045b4e54499774fe44a11671",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "cfc74af6045b4e54499774fe44a11671",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_37.asset"
+          }
+        }
+      ]
+    },
+    "MephistoIdleHorizontal": {
+      "clip": "Assets/AnimationClip/MephistoIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6b0b8d5da04307349a3d48d59b0adb5d",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0757961c4eb16674995712ea00b53c0a",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "2bb7bb6ee23a6b5469682ab2d866c946",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "13a977446bb0b4e439cdedb8bcd1077b",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f1848d6ce3cd7d248b979429e56a1d93",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "fa149aef5bfd8694bae6521818289745",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e8339d03a98c7e94a96efe4c8335c5cd",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "f44e486ab210f784191f4384951f2daf",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "3c57e337b4ccefd43a16e44f207949e2",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "877cc35370f434d4188698f6b8314cb4",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "f88ac4d99b8ca1c4daca5ebfaea40d8c",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "4ec94e201d946a746867603cadd50297",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "bd44c112431d0464ab8354987b1550ee",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "7e58cec8abcc03342aa737c201647395",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "7e58cec8abcc03342aa737c201647395",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "MephistoWalkDown": {
+      "clip": "Assets/AnimationClip/MephistoWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b90be2b3fc1cf0643b468fca10648f5b",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "90769bddde073d64897ec08620cb0fb6",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "f1c3384e44040c2418d05637204d0508",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "0d8bbaf7324d39d4bb669eaacc0706dd",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "240878edcc3930b4ca00c2ee93d76b4b",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_62.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "7a263ce0cff9b63479c91f092fcceb62",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_63.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "060f0b7c37133cc459ed11ff2b1448b8",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_64.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "80440cffbed848f4ba370bb5268a76d4",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 1,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_65.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "80440cffbed848f4ba370bb5268a76d4",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_65",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 1,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_65.asset"
+          }
+        }
+      ]
+    },
+    "MephistoIdleDown": {
+      "clip": "Assets/AnimationClip/MephistoIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b11cb586e4f11c249a31b4c1871f5969",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "4139910e573670e4ea637a2207decca3",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8594f40ae7d32b44bbbe7699c1ca2803",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "49cdb34627555754ab7b30d021129ef3",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "2afecd85b62bc794abe7a3033c239f72",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "f34b991d2d0524a43ba4780f8e74db12",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c034fabf9e405e94c9d89ff69f6c297e",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "021dec33b70ad074794e6aac09bcc438",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "4e626de615adbf24f9a7876a2de61985",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "75d2d4257538081458f6c6cf2bd31c2b",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "c642dd9958d3265488e593ccb9ce98e4",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "5a06c99cf2f75834a97b0954eeb2bf50",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "8b4f3cd3876ea834aad087b9fc9eb033",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "fca4c6e616e9cec40bb938e30bb5b1f8",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "fca4c6e616e9cec40bb938e30bb5b1f8",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_57.asset"
+          }
+        }
+      ]
+    },
+    "MephistoAttack": {
+      "clip": "Assets/AnimationClip/MephistoAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d8623933cdf877742bd0f17fc7feda16",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5f7bc19db97fb9a42902dc796f6210ab",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "4f657069f76aa5f46a1d2a72fd5e3549",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 960,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "aebf8f202d3bdf948a7cc375c9ef3a7a",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "b73333f1a3736f84887adbbb05cb0304",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "b66b4223a5083e54aa141a00a4f00b9b",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "7f200fe2a69802c43a64e3becb72625c",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1728,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "b3e7cab13cb5c4748a7a10d687c14068",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "9a011399bb2d13a41aa30881254b5fcb",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "9a011399bb2d13a41aa30881254b5fcb",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_51.asset"
+          }
+        }
+      ]
+    },
+    "MephistoHit": {
+      "clip": "Assets/AnimationClip/MephistoHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1e209b0414a36ad4b9d543a1f1b66e63",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "1e209b0414a36ad4b9d543a1f1b66e63",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_56.asset"
+          }
+        }
+      ]
+    },
+    "MephistoCastStart": {
+      "clip": "Assets/AnimationClip/MephistoCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "de413a7d30adc83409909066ae1d06e5",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "7dbd8e09ef11e0447aea8fb71f35bfbd",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "95b7e6494c5e3424190745eb5f0ecc26",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "64183a184d4584b4c9f907584eb2f487",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 960,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d039572da35f0944c972064680d9e735",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "2f97c8e805f765c479017ece36b23ec5",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "dd9f51821a31fab498abb00474c77f2c",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "8e156ffbd6a439e479eafbcb29f8018c",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1728,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "8fdeabba60ee254449d9ec32299c0c85",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "d94455d15fb45dd4f979a1b86a883a3e",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "d94455d15fb45dd4f979a1b86a883a3e",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_21.asset"
+          }
+        }
+      ]
+    },
+    "MephistoIdleTop": {
+      "clip": "Assets/AnimationClip/MephistoIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "eb9577ef9f8573b499045aba1458dbc9",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "47e9bf0b7f1df3345a5ba2df208c60c4",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d732a567cc7a80e45a54d4dfc4e24a81",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cf59db82a563f3c4d86b79eb7c0fec34",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "b468c9d679ee72c4aa2e5bb09d314c91",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "22380360312a948409635a5f7497dab5",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "b9e076cd391958541b66b09a2e348a8b",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "06fe5af28d8f53b4fbcca0b2b9f7f816",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "62171093e23b9bf4a9630009f1b6379e",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "bde61ea6e97e1fa49997c48f7b29d1c8",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 800,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "de566e4b888455547b8d4a5ee4f468fe",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 700,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "c386bb0a5a8bfff47a371220a3c2714b",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 700,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "da14a7bce8c19514cb8a8387b6dac1c1",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 700,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "589a223a3478067489fb2de17556b578",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 700,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "589a223a3478067489fb2de17556b578",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 700,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_13.asset"
+          }
+        }
+      ]
+    },
+    "MephistoAttackEnd": {
+      "clip": "Assets/AnimationClip/MephistoAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "dd2da8043d5a06340b78a8f2e836324b",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "dd2da8043d5a06340b78a8f2e836324b",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_52.asset"
+          }
+        }
+      ]
+    },
+    "MephistoWalkTop": {
+      "clip": "Assets/AnimationClip/MephistoWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "4b96f332cc44a1644b4c5476977206f1",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f5a58554b9460df43bee14d7290381d4",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ec4b23f13e968544d8a1008d82cfc4aa",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "00f04afef13a5ad488b0bce03589232d",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "fdd363d64c475464ab2dc120e011380e",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "8dd8e5b5697f3cf4da12a712d25e59a3",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6cd9873e3052d2543aa4fd56f01db8d3",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e3eee3d735dab124f88baddee6012a8f",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "e3eee3d735dab124f88baddee6012a8f",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 600,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_21.asset"
+          }
+        }
+      ]
+    },
+    "MephistoJumpBack": {
+      "clip": "Assets/AnimationClip/MephistoJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d9963a255dd002741b17ec54c052cf48",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "06da172849e4ae34389ced93c074878c",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.29166672,
+          "sprite_guid": "06da172849e4ae34389ced93c074878c",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_54.asset"
+          }
+        }
+      ]
+    },
+    "MephistoWalkHorizontal": {
+      "clip": "Assets/AnimationClip/MephistoWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "5a9b71fd519ca3c4ca4b0947c2569bdf",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "69b5f5046e25eff4aa7025811e9205ba",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9312dca93b21149468c0d7ed61e4129d",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "5b799eb87b8a4a242b86c2f4a3b668c5",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "6a1d739878b2aaf4d9d42a846aa649d9",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 301,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "fd24231067f08684a96c9290eec04647",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f769d1619dac6b3429554175cfab3040",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "d27c8946e13917b46ab026f57f06ef0d",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "d27c8946e13917b46ab026f57f06ef0d",
+          "sprite": {
+            "name": "Mephisto_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Overworld_Spritesheet_43.asset"
+          }
+        }
+      ]
+    },
+    "MephistoCombatIdle": {
+      "clip": "Assets/AnimationClip/MephistoCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e3bed969144f4ef4694ad8fb60fee319",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "642ba0b759737414eb100753b499c681",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "54f822e3270a7b941af3e6eb6e8ea341",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "851666c0d17b7424ebc81b85bc02a3a3",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "4144b5a323c52444db5c872920b73cf3",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "8907fb326250cf1418ac967ed45cf3e4",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 960,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "bedfb02c2f8686d4eba9b9be8dc39c4c",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "c9a8c28079b89194789a4c96662811af",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "72febef8e961c084f8aae35aa8c0239d",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "af8961e4f830f6940b722acb6b86838b",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1728,
+              "y": 960,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "ae0d4d93e2b8952479bab4e0b43c8e5d",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "5bcff15f742061743b0a6255bea45552",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9583332,
+          "sprite_guid": "5bcff15f742061743b0a6255bea45552",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 768,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_11.asset"
+          }
+        }
+      ]
+    },
+    "MephistoCast": {
+      "clip": "Assets/AnimationClip/MephistoCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d51d2653dd76b1144a3d649b6c5f14cf",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "a5225bb88fd01ce4b83da2d3ded9640c",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 576,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "bd94dbfad78ace148a828f08c1b8af88",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "04936efbd3216674e89bc98bcca035f4",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 960,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "572e38d8158c0fb44b2a560d412c6d16",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "19e416aa9df8e43489380d9e38bcc7a1",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e2e0b3ec3ffd3c14d9daca3d768878bf",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "86686e0da90479f46803fb98c69f9b48",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1728,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "86686e0da90479f46803fb98c69f9b48",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1728,
+              "y": 576,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "MephistoAttackJump": {
+      "clip": "Assets/AnimationClip/MephistoAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "17e77d19da4009442a113032e8d46071",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "105bdb4eb0162a849984e3810281a26a",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1728,
+              "y": 384,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c9d7b8f2ae96518469d4343459083356",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b6ef9159a2726d34eb47a9e7034947fc",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 192,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "904e9b39a5310944ebbbd87e7c8a87f4",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "904e9b39a5310944ebbbd87e7c8a87f4",
+          "sprite": {
+            "name": "Mephisto_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 192,
+              "width": 192,
+              "height": 192
+            },
+            "pivot": {
+              "x": 0.43999997,
+              "y": 0.17
+            },
+            "sheet": "Database/Mephisto/sheets/Mephisto_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Mephisto_Battle_Spritesheet_42.asset"
+          }
+        }
+      ]
+    }
+  }
+}

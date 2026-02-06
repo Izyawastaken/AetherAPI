@@ -1,0 +1,3033 @@
+{
+  "name": "Cherufe",
+  "prefab": "MonsterCherufe",
+  "prefab_path": "Assets/GameObject/MonsterCherufe.prefab",
+  "data": {
+    "name": "Cherufe",
+    "ids": {
+      "ID": 718,
+      "MonID": 2
+    },
+    "stats": {
+      "BaseMaxHealth": 40,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194139795456,
+      "ElementsOverride": 4398046511104
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 0,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Critical",
+      "Purge",
+      "Burn"
+    ],
+    "types_override": [
+      "Critical",
+      "Purge",
+      "Terror"
+    ],
+    "traits": {
+      "signature": "Scorched Earth",
+      "signature_override": "Scorched Earth",
+      "traits": [
+        {
+          "name": "Burning Fire",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Critical Aether",
+          "min_difficulty": 2,
+          "shift_restriction": 1
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Grapple",
+        "Ignite"
+      ],
+      "start_override": [
+        "Char",
+        "Explosion"
+      ],
+      "reset_action": [
+        "ResetActionBurn"
+      ],
+      "reset_poise_action": [
+        "ResetActionTerror"
+      ],
+      "scripted": [
+        "Burn Wave",
+        "Fire Storm",
+        "Ignite",
+        "Grapple",
+        "Hail Storm",
+        "Bone Chill",
+        "Explosion",
+        "Char"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 25
+        },
+        {
+          "name": "Health",
+          "multiplier": 5
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Fire Generator",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterCherufe",
+      "path": "Assets/GameObject/MonsterCherufe.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "2c3491a3c3066b24fa5df8c38ae12adb",
+      "file": "Database/Cherufe/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Cherufe",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Cherufe/sheets/Portrait_Cherufe.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Cherufe.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "14df2f5e1e8de4a4b962e544c7bb8cab",
+      "file": "Database/Cherufe/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_CherufePortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Cherufe/sheets/Trait_CherufePortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_CherufePortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "33dd6d4764f3d6f42bee7e6a3fa00dbc",
+      "file": "Database/Cherufe/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Cherufe_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 1346,
+          "width": 256,
+          "height": 166
+        },
+        "pivot": {
+          "x": 0.38,
+          "y": 0.19
+        },
+        "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "518088d15156d0f4fb781064df4049fe",
+      "file": "Database/Cherufe/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Cherufe_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 1346,
+          "width": 256,
+          "height": 166
+        },
+        "pivot": {
+          "x": 0.38,
+          "y": 0.19
+        },
+        "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Cherufe_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "f3ff68ffcbea4d54591b012425fe6a77",
+      "file": "Database/Cherufe/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Cherufe_Overworld_SpriteSheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 450,
+          "width": 90,
+          "height": 90
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+        "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "4286df9143f346b4fa7ad3885eb4e2bb",
+      "file": "Database/Cherufe/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Cherufe_Overworld_SpriteSheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 450,
+          "width": 90,
+          "height": 90
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Cherufe_Overworld_SpriteSheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "98503cbbe1fff99479da95ee102a5812",
+      "file": "Database/Cherufe/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Cherufe_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Cherufe/sheets/Portrait_Cherufe_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Cherufe_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "CherufeWalkUp": {
+      "clip": "Assets/AnimationClip/CherufeWalkUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "8c388ae0e67a4754ba14d4092d20d123",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "75de9ec141358d5478234eeba37d13d2",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_47.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "37c649811cf2f9b4b9aed7428f5542f0",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_48.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7b5f7b1289fa89344af2861c59b86891",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_49.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d3033be598077604ca54050b2a7e79c5",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_50.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "a2b21682731b73a498deae1287a51795",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_51.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c5b3fd1109e2243499eba554af310d82",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_52.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "64710d81565eb0440a38780059a37f2f",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_53.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "64710d81565eb0440a38780059a37f2f",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 0,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_53.asset"
+          }
+        }
+      ]
+    },
+    "CherufeAttackJump": {
+      "clip": "Assets/AnimationClip/CherufeAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "678344dffa4b2a84fa07fcee9276dbe1",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "02cd286e0ac62a24c8229a9b7780b797",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "b6b80b982695e214a911642e5054e9c2",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d7649fb9facecb14aa494b46ded332b9",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8c3cba369169e3a4b87934dfc9d43fa7",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "45fd09528a4af4146b7235924b15c32e",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.4583334,
+          "sprite_guid": "45fd09528a4af4146b7235924b15c32e",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_25.asset"
+          }
+        }
+      ]
+    },
+    "CherufeAttackEnd": {
+      "clip": "Assets/AnimationClip/CherufeAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "98cacba32be0a4d42b7dd17bbd97fd2b",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "750f0f5cf933a324580f37a7bd0bd623",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 682,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.124999955,
+          "sprite_guid": "750f0f5cf933a324580f37a7bd0bd623",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 682,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_40.asset"
+          }
+        }
+      ]
+    },
+    "CherufeIdleDown": {
+      "clip": "Assets/AnimationClip/CherufeIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b99019a8dcd5aa54e8f666cd26054537",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_18.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "05fe12360bfed164eb21c4336eebbae4",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_19.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "e0baec6a12545134284d08f82f19a6f4",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_20.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7368308518b696b44b59c84c5d46c1c0",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_21.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "4ee910b7dbdb831408856e3beb6fe10e",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_22.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "629eac7949569e646ba9740fd961db4e",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_23.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "5de0f679a0a19664a893f2289d02eaca",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "19a73547ed99af44c80c14ee65cf93cc",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "ce91fa09043c55b4c98a210e4f996bf8",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_26.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "17468c1e20917f64b9ab88430a4c1e13",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_27.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "17468c1e20917f64b9ab88430a4c1e13",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 270,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_27.asset"
+          }
+        }
+      ]
+    },
+    "CherufeWalkDown": {
+      "clip": "Assets/AnimationClip/CherufeWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "06ca6427902c25e42b7bf95370c915e8",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_28.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "2ed31a6b7c5c1d544bc079cc76263c32",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_29.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d18197b51a3e4b54dae59cbd4de682c1",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_30.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "e926771be0283254dadc9dfdfc7a2f17",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_31.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "17a2954826d52ca47911fca4f1183d47",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_32.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "4b8a93e23b8c8914094039ed01d900fa",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_33.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ea64c4eed2183964aae41ef9d69d0480",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "e1f6aeb8e5537db418f83a5ac0d668db",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_35.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "e1f6aeb8e5537db418f83a5ac0d668db",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 180,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_35.asset"
+          }
+        }
+      ]
+    },
+    "CherufeCastStart": {
+      "clip": "Assets/AnimationClip/CherufeCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a453783baf10daa4abb043bbed0fb397",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "67f617775aae70648ba1f4e382557923",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5fbaa63ec8692754c93900a32317c673",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c31d4180fe9424b4fbc523d00070590f",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "828ab2f991796724e92f5686ef2250c3",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "a2c7ae653079e5841b0c5379bdcaf09d",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "e510b5c7592cb6c4a88fed20814ba4be",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "9de7a5ae2a963fa41986018ef2ceb1e3",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "83322a6fd6902f44a92d2707d9130d18",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "2442929366a5ad449b3dbca73d10a53e",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 516,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "c4ff30768f83f3b4c84f196cd381961b",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "0256cfc0798ed984d82ac2fa25621c86",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "f335a6408bb0b684e98312a2f09ee36f",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_56.asset"
+          }
+        }
+      ]
+    },
+    "CherufeAttack": {
+      "clip": "Assets/AnimationClip/CherufeAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d95961b26c1427f4ca8bb4b665fb45dd",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "d00a5b342c7eaaf49af42f98d657da02",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "6124c998633a4ab4080a321a69cf4fb1",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7c50347db8940bc479b9c99a671bd6d9",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 1014,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e14e9152bb97a63489e7a0c6147c55ee",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "d6b7b3dea10a68a4fb88bfbfec03d3cf",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "6a82a8abda0f9c744ad52a6cd12f7749",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "706222aab55ac054186d6fddc5cef443",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "de322a07f9abaa2449baeb18467a7f8b",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "e6c0eaea29ea68c42a810571cb281a64",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "9ef64b31fb328594d9267e3e3b6ddf13",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.875,
+          "sprite_guid": "8463b0b65bf5a1d45905b0745b46e596",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.9583333,
+          "sprite_guid": "85a41fd20a396fa45b1c0a4cd7b00344",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 1.0416666,
+          "sprite_guid": "6b942f88a0c9aca429f4469f83436026",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 848,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "750f0f5cf933a324580f37a7bd0bd623",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 682,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "750f0f5cf933a324580f37a7bd0bd623",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 682,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_40.asset"
+          }
+        }
+      ]
+    },
+    "CherufeJumpBack": {
+      "clip": "Assets/AnimationClip/CherufeJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e7f3460c9ec12364398a1cb2745669ea",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 682,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "ec6798a23697ba44c849cc7cd8a747b8",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 682,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "fbd2d39e21102c04da08f66223f3767b",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 682,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "fbd2d39e21102c04da08f66223f3767b",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 682,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_43.asset"
+          }
+        }
+      ]
+    },
+    "CherufeCastEnd": {
+      "clip": "Assets/AnimationClip/CherufeCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "98cacba32be0a4d42b7dd17bbd97fd2b",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_61",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_61.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e43680fd0089ee848aaab7745876ffde",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_62",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_62.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9e4f5c307b0f5b5438bc4cc64c4592aa",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_63.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "9e4f5c307b0f5b5438bc4cc64c4592aa",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_63",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_63.asset"
+          }
+        }
+      ]
+    },
+    "CherufeHit": {
+      "clip": "Assets/AnimationClip/CherufeHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e645f69e3514c8d4794c2bfb93ec0ce6",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 184,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_64.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e645f69e3514c8d4794c2bfb93ec0ce6",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_64",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 184,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_64.asset"
+          }
+        }
+      ]
+    },
+    "CherufeWalkHorizontal": {
+      "clip": "Assets/AnimationClip/CherufeWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c2bd9084c089d2f41b242a2ca339e6e9",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "cdd5e3bd017eb9746b35cde9ba15f7d7",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d1588ca4e2072de429cc162659d60fd0",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "60cb25de5cf793f4cb179b316fb0a944",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "dcd203025f9ad924089d2720e40e6eb2",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "b679a0d1dd8c42b4e83d14e4311e2128",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "37e5b108eb5e4214192639625aa9479a",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "2f02a6dd2f4ce344591d711ad80e558c",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_17.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "2f02a6dd2f4ce344591d711ad80e558c",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 360,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_17.asset"
+          }
+        }
+      ]
+    },
+    "CherufeCastLoop": {
+      "clip": "Assets/AnimationClip/CherufeCastLoop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a8011f00f936dc24a95b3b7b1910670f",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "aed93928b185f1a4d84855cc75ba7f49",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "4141e375afa0cfe45ac4f26205cdee74",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1b878e08f6eb73d4294591a52f35f84a",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_60.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "1b878e08f6eb73d4294591a52f35f84a",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_60",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 350,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_60.asset"
+          }
+        }
+      ]
+    },
+    "CherufeIdleHorizontal": {
+      "clip": "Assets/AnimationClip/CherufeIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f3ff68ffcbea4d54591b012425fe6a77",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8284d8792cef5464baeeede5ee587203",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "90088693acd341e44bcb9e9746c1fb3f",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c5e6272f0bc60454ba84e5b1cd4c6f53",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c2479403765fc3642957e94e297c46b0",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "64a5587a0882f7f4dbe4ff8a2a6c61d6",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "49a343f6123cf0141b9488578c8b7726",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "8ffedaf745f20154a9c57bb86f798b7f",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "27ccc9e60f19178489dfe4716bfb670c",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "a44b0b32f94091a489478a646ae8b37c",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "a44b0b32f94091a489478a646ae8b37c",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 450,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_9.asset"
+          }
+        }
+      ]
+    },
+    "CherufeIdleUp": {
+      "clip": "Assets/AnimationClip/CherufeIdleUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "16c02078aad9810428db690306936844",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "bbf094553552e284a9bda85bc401458c",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 90,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9aefb6eac27743a43931f88987781e25",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 180,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "00c0e179aa5a3de468fa8997d9688a30",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 270,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "5ac74f030ce4f1a49bdaf88642637bc6",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 360,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "c514e1cbfa0e1e3479f213321f119be4",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 450,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2054d3c4b1732b64c9be201b68d71138",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 540,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "7837d0823ccde0e4ab0ff37826e68a9d",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 630,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_43.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "8a0bba83aebbf0449b1e6571e6f06102",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_44.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "0c70f5661a8602f47b56bd99886d1a4d",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_45.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "0c70f5661a8602f47b56bd99886d1a4d",
+          "sprite": {
+            "name": "Cherufe_Overworld_SpriteSheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 810,
+              "y": 90,
+              "width": 90,
+              "height": 90
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Overworld_SpriteSheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Overworld_SpriteSheet_45.asset"
+          }
+        }
+      ]
+    },
+    "CherufeCombatIdle": {
+      "clip": "Assets/AnimationClip/CherufeCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "33dd6d4764f3d6f42bee7e6a3fa00dbc",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "35881348160bca449b4b8b720758e646",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "201131cbca0ad3f428d3c874c892e030",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7fbd4f224c23695448d5b067564f5c3c",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "fb318aa9d4569254f9d45bcfd4f11dae",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "f9e8284c44d98f34383b952a51750043",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "f03ab46e66cbe60429ea89094dbc5e4b",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "d572dbd22bfbb6c41ae52b0f8a90b8ba",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "b70cc36679686e64bb654576eeb57792",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "f4dd78e696ea45e48b2400232385c6a2",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 1346,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "0aad03ad779e2ce478918b87d99572a5",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "a8858ffc620654b43b6ec3ac7b24ba56",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "3f004d9807c5a5b4b9c07fcc253d11cc",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "9eba0786524cf844f91938b4c44c792c",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "399af75ed22cdec44a9126d758687c5a",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "b5bb0bc94b7b45d42b9d0468ef085578",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1280,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "83aa030532649ae429567d257038b974",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1536,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "2c851982602844a4c96c7cf3a026f527",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "c26f8f95c283a564498fd1d590ab5291",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2048,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "9eb921ddf27079a4d9020af1abbf848f",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 1.6250002,
+          "sprite_guid": "9eb921ddf27079a4d9020af1abbf848f",
+          "sprite": {
+            "name": "Cherufe_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2304,
+              "y": 1180,
+              "width": 256,
+              "height": 166
+            },
+            "pivot": {
+              "x": 0.38,
+              "y": 0.19
+            },
+            "sheet": "Database/Cherufe/sheets/Cherufe_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cherufe_Battle_Spritesheet_19.asset"
+          }
+        }
+      ]
+    }
+  }
+}

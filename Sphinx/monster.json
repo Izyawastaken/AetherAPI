@@ -1,0 +1,2928 @@
+{
+  "name": "Sphinx",
+  "prefab": "MonsterSphinx",
+  "prefab_path": "Assets/GameObject/MonsterSphinx.prefab",
+  "data": {
+    "name": "Sphinx",
+    "ids": {
+      "ID": 278,
+      "MonID": 25
+    },
+    "stats": {
+      "BaseMaxHealth": 40,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 13194140057600,
+      "ElementsOverride": 524288
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 3,
+          "Hits": 3.5
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Sidekick",
+      "Heal",
+      "Summon"
+    ],
+    "types_override": [
+      "Sidekick",
+      "Aether",
+      "Summon"
+    ],
+    "traits": {
+      "signature": "Exalted",
+      "traits": [
+        {
+          "name": "Sidekick Generator",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Bolster",
+        "Summon Wind Lance"
+      ],
+      "start_override": [
+        "Summon Water Totem",
+        "Summon Wind Lance"
+      ],
+      "default_attack": [
+        "DefaultBasicHeal"
+      ],
+      "reset_action": [
+        "ResetActionSidekick"
+      ],
+      "scripted": [
+        "Electrical Jolt",
+        "Snow Support",
+        "Summon Water Totem",
+        "Summon Wind Lance",
+        "Natural Cure",
+        "Bolster"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Wild Generator",
+          "multiplier": 1
+        },
+        {
+          "name": "Healing",
+          "multiplier": 1
+        },
+        {
+          "name": "Minion Damage",
+          "multiplier": 2
+        }
+      ],
+      "void": [
+        {
+          "name": "Aether",
+          "multiplier": 2
+        },
+        {
+          "name": "Hit",
+          "multiplier": 1
+        },
+        {
+          "name": "Healing",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Wild Conversion",
+          "multiplier": 1
+        },
+        {
+          "name": "Minion Damage",
+          "multiplier": 2
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterSphinx",
+      "path": "Assets/GameObject/MonsterSphinx.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "730dcaf77468cda4ba85a2893935a77b",
+      "file": "Database/Sphinx/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Sphinx",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Sphinx/sheets/Portrait_Sphinx.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Sphinx.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "a1015af7b2816ca419d043fda4beb1e1",
+      "file": "Database/Sphinx/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_SphynxPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Sphinx/sheets/Trait_SphynxPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_SphynxPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "c3b6a03040152f14b8a73b30b890b6bf",
+      "file": "Database/Sphinx/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Sphinx_Spritesheet_3",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 672,
+          "y": 1344,
+          "width": 224,
+          "height": 224
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.2
+        },
+        "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_3.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "261dc40ff6dbbe3488bef5ac6093bcfb",
+      "file": "Database/Sphinx/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Sphinx_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 1344,
+          "width": 224,
+          "height": 224
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.2
+        },
+        "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Sphinx_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "402bb0199e1af694292707e0f9f6677f",
+      "file": "Database/Sphinx/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Sphinx_Exploration_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15
+        },
+        "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "3b112f8b89b7c034fa609d5624a0e6ff",
+      "file": "Database/Sphinx/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Sphinx_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 400,
+          "width": 80,
+          "height": 80
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15
+        },
+        "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Sphinx_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "ProjectileSpriteSource": {
+      "sprite_guid": "26b242b1947e5fd4da3c64358bd71feb",
+      "file": "Database/Sphinx/icons/ProjectileSpriteSource.png",
+      "sprite": {
+        "name": "Sphinx_Projectile_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 96,
+          "height": 32
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Sphinx/sheets/Sphinx_Projectile.png",
+        "sprite_asset": "Assets/Sprite/Sphinx_Projectile_0.asset"
+      }
+    },
+    "ProjectileSpriteReplace": {
+      "sprite_guid": "b8b9c9aaad2d43046b9c17aa800b169d",
+      "file": "Database/Sphinx/icons/ProjectileSpriteReplace.png",
+      "sprite": {
+        "name": "Sphinx_Projectile_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 96,
+          "height": 32
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Sphinx/sheets/Sphinx_Projectile_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Sphinx_Projectile_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "e915a5dd40b754b41b42ca9e3de84106",
+      "file": "Database/Sphinx/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Sphinx_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Sphinx/sheets/Portrait_Sphinx_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Sphinx_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "SphinxCombatIdle": {
+      "clip": "Assets/AnimationClip/SphinxCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6cb7ae4ff1e6ff74fa4d65b958318e55",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "67c97688280984448a2ebcb95e6d6fce",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "339968f79d063b4449c3f442c6512f35",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "c3b6a03040152f14b8a73b30b890b6bf",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "a0462470787330d4cab0e48a0662267a",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "78b712bf61e357247b931058ffd0e97e",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "9b390e49d8073bb49b692b65f0467011",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "2dba57dcce4522344855680195de6837",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "28af92aa5ca249c4887172e4eb0fe20e",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "b5dddcd1a93ce1a4ea39f708f3458251",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 1344,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.83333325,
+          "sprite_guid": "7cb886aaaf86eae48a198c93846669c4",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.91666657,
+          "sprite_guid": "a96f017fbb0c40b4e8ad25fe38412637",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "a59a5d100fdd4704b9b87d277b562ed6",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "fcffc778912c51f4ab30f7dc9bb5e931",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "3a2eab5d38caec94db81882c358debbf",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "bd3694a8e6647a643816f94384ded2b4",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 1.3333334,
+          "sprite_guid": "bf1c42c053d3dc145b756f3537778df3",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 1.4166667,
+          "sprite_guid": "ea59a779c1702e0408c3cdf5e1db1932",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 1.5000001,
+          "sprite_guid": "896884685e22d944c9fb9815bac473e0",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 1.5833335,
+          "sprite_guid": "3734934a925b6494a8733a649cde9cf0",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 1120,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 1.6666669,
+          "sprite_guid": "6a8c1d8613acf98438ffa2823b5437cd",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 1.7500002,
+          "sprite_guid": "1a3ce50372f4eae4795f4903d213b392",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 1.8333336,
+          "sprite_guid": "229b30115bc236943a3b4c114962eee4",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 1.916667,
+          "sprite_guid": "e802b80230507624a989a5bfd38e4c39",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.9583336,
+          "sprite_guid": "e802b80230507624a989a5bfd38e4c39",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_23.asset"
+          }
+        }
+      ]
+    },
+    "SphinxCast": {
+      "clip": "Assets/AnimationClip/SphinxCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1380618dbef4b6448beea8287c544f70",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e88728421bec355468923c9c3d3e67f3",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "5309c5c0a0ede614a9931f7b2b7e0d30",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b06e4c2044555fc4ca081bf122ca5385",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "b06e4c2044555fc4ca081bf122ca5385",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_53.asset"
+          }
+        }
+      ]
+    },
+    "SphinxHit": {
+      "clip": "Assets/AnimationClip/SphinxHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e7c584d7a3c946c41b0271196be6074f",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e7c584d7a3c946c41b0271196be6074f",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_57.asset"
+          }
+        }
+      ]
+    },
+    "SphinxIdleDown": {
+      "clip": "Assets/AnimationClip/SphinxIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "77ebbf4a3b0a88c41a01578f854ddc4d",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "760e25cc9f850e7488f5d8836b340373",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "8be53b74be56714459249a2e9fe142a7",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "044f2bb8064c505419086d25c03d75d3",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "27335f2ee17369d40b2a6f2bf70c23e6",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "47d1033e8a275584c8b4e57f2b2fb7d6",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "e91d23f17f7f69c4eb4584b4f4a66770",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "6b8186a26503b904c9a86f905da017b3",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "c366cbba30eab934d9a5a38da793555c",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "efba35e1fb6d3f84bbb323d8d9362626",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "efba35e1fb6d3f84bbb323d8d9362626",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 320,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "SphinxWalkDown": {
+      "clip": "Assets/AnimationClip/SphinxWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c87bcf0d7182df8498ef0302cf79040b",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "5f75a8923e38d3442b0528fb2dcc9f60",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "21546419a9eb4684ea90bc7093a3f3bb",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "a31ddd38b29f31c4d8cc520a7e8b6d9c",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "178870481068c434094bacd66eaa1d31",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2132faf40e410984fa8a3e0ef69b9984",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "d1e6450b241a86a499089f19aa690d94",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "fd2a1c204f2e0f64e80e2e572c905d96",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "58ec1e0dd078ade48a4a6f8929429aee",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "72ee0d29fc58848419c4a69080bb4460",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "72ee0d29fc58848419c4a69080bb4460",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 160,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "SphinxIdleRight": {
+      "clip": "Assets/AnimationClip/SphinxIdleRight.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "402bb0199e1af694292707e0f9f6677f",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "1c195c14cb097da40bafa86c884df532",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "8f9ec037905c15146968f64265c31e40",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "ceb32dd80bc46db4eb80ed486faa2bcf",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "7767233aff7338c49a400b95975a04a6",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "7d9269f7b8407a246ae5647d0d061954",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "900d0e5b524e2f74c8efedd810f5ef58",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "2a64c4d10d441fc48bb3286439577f73",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "d4e6a72582e67c649a0d5c2d6777aa71",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "a9e2c93e2cd833d49982f4d3c2eef337",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "a9e2c93e2cd833d49982f4d3c2eef337",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 400,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "SphinxIdleUp": {
+      "clip": "Assets/AnimationClip/SphinxIdleUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fdc1bf402dfc9eb4b95163d7edb15b67",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "4ee2bf0ef3283b446a5bacf28b98fb01",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "0770456dec5f9f640b55368a77f12b90",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "55460129617d12f47b8002e7bab24a04",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "f9ac109eb742698418f2569b3650f771",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "92ea72bfe6b8aca4990a763810ff3751",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "e6430668f947ab341b6b4a481114e9b0",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "77b73c3b6447f1c4c85293e3ebf3edf8",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "eeda016a4ff752c42bed247945d5239f",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "eb1ed112dc2894f42803458383aa19e1",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "eb1ed112dc2894f42803458383aa19e1",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 240,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "SphinxAttack": {
+      "clip": "Assets/AnimationClip/SphinxAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "81a03ef2c9a2cd041bc33062b0b045a0",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "180d561542fbe274a8ca76adf0f9c387",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "d76e0862b72bd80468b9c8f57b5d892b",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1e8ebfdd6898d634d8173013d076f587",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "30c777066d7a9ae4ab4b2175f08dfe61",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "9d8cdbe47688f11409355fcd03f636b3",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "edd003d3216724a4ba67d0ea7a888da1",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "85c39bd93d4a03840b2865e8f2edd65c",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "f04b724fe4b4f6a45950b86073c16b4f",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "85e26812eae4e364ebc15bdfc703f8d9",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.7916667,
+          "sprite_guid": "86e1a0af55f456d47aaa0675a0286ecf",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.87499994,
+          "sprite_guid": "d18e1ebc90386454a8a7b3b68a8c8e98",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.9166666,
+          "sprite_guid": "bd828bf37a9390e44a0013054fbcfe5b",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.9999999,
+          "sprite_guid": "1adb624537c8ce242b62b8794cc55d4d",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "f8be8b4a6ff35d446a60a02a9e5ade65",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 1.1249999,
+          "sprite_guid": "a8a16ea19c6f2914fa8cb55cdfcec4dd",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 1.2083333,
+          "sprite_guid": "1ec087a492445b249a43f79d88b0c8ee",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 1.25,
+          "sprite_guid": "1ec087a492445b249a43f79d88b0c8ee",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_41.asset"
+          }
+        }
+      ]
+    },
+    "SphinxWalkUp": {
+      "clip": "Assets/AnimationClip/SphinxWalkUp.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "afebfda76f048624a8fb2afd5318f042",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "6eb99f9f46cb3284db1c2c75c2eda502",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "3db2aea233394b9428a517652ac9b7d5",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "66c256d30d7839a4fa76c6f930eb7a93",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "27105f0ee24ad294c883fe1871c0b791",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a018fe9d8852edb4b9fb78cf678c67cd",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "bd912d2c5970f15428b0762a4e4f5a9d",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "a4ff2edba0be3fb4baa0dc3ad0d9d088",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "5be82f0951e5eb34d84bcc250e331bb1",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "dcc660ad52f91834b905096630c40e93",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "dcc660ad52f91834b905096630c40e93",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 0,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "SphinxCastEnd": {
+      "clip": "Assets/AnimationClip/SphinxCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "78dba6fc30c6b3946bc9b7cfd1a3fc6b",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1329ad7748c02d047b474578c05d3829",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ffaede378c6a51e42a152bbbbcd68a17",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "ffaede378c6a51e42a152bbbbcd68a17",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_56.asset"
+          }
+        }
+      ]
+    },
+    "SphinxCastStart": {
+      "clip": "Assets/AnimationClip/SphinxCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0cf2a448e35614e4888a1d4d0cbe0163",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "bcc82037280321243ac0d78434f53072",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "99a8b955c290708488f475d50b206833",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "58e81f6548e91634c8db82454d16e8b4",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "02093d3cf951a634fa4f89d51fea2603",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "dd8ad2f675a4ec64d94add59728b332e",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "265458aaf5e659a4fb696e412e8cdd0b",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "4076f0bb928abcb43af97cd69fb94642",
+          "sprite": {
+            "name": "Sphinx_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.2
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "SphinxWalkRight": {
+      "clip": "Assets/AnimationClip/SphinxWalkRight.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c71020d91f8141f488d6c5330165b7e1",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "779e8c8c1f1e4a143986550fa5644c7b",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 80,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "f6f694f55e6e43846a92a349de1075d6",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 160,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "7015895d9cf69d343a4c97a3916f051b",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 240,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "c214e81bfa60cfc45b55bd52b28a9b30",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 320,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "700ca8b1acd656f4a97fb79b79862ec1",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "26857721a8f19c6468f2912840d64203",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 480,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "0c253269c6c175649b386a1f263b300d",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 560,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "5daed50bb143c684f9ffb687a0b1e80e",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "d05a2b7908339584ba9d93d712ac4bb5",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "d05a2b7908339584ba9d93d712ac4bb5",
+          "sprite": {
+            "name": "Sphinx_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 720,
+              "y": 80,
+              "width": 80,
+              "height": 80
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Sphinx/sheets/Sphinx_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Sphinx_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    }
+  }
+}

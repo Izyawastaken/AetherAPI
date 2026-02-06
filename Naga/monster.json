@@ -1,0 +1,2905 @@
+{
+  "name": "Naga",
+  "prefab": "MonsterNaga",
+  "prefab_path": "Assets/GameObject/MonsterNaga.prefab",
+  "data": {
+    "name": "Naga",
+    "ids": {
+      "ID": 417,
+      "MonID": 24
+    },
+    "stats": {
+      "BaseMaxHealth": 40,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 262144,
+      "ElementsOverride": 13194139795456
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 2,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Tank",
+      "Shield",
+      "Force"
+    ],
+    "types_override": [
+      "Tank",
+      "Shield",
+      "Power"
+    ],
+    "traits": {
+      "signature": "Fearless",
+      "signature_override": "Fearless",
+      "traits": [
+        {
+          "name": "Reinforce",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        },
+        {
+          "name": "Momentum",
+          "min_difficulty": 2,
+          "shift_restriction": 1
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Fiery Stabs",
+        "Aquatic Armor"
+      ],
+      "start_override": [
+        "Mineralize",
+        "Molten Stabs"
+      ],
+      "reset_action": [
+        "ResetActionForce"
+      ],
+      "reset_poise_action": [
+        "ResetActionPower"
+      ],
+      "scripted": [
+        "Flame Skewer",
+        "Aquatic Armor",
+        "SpelPetalShield",
+        "Fiery Stabs",
+        "Overheated Smash",
+        "Mineralize",
+        "Molten Stabs"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Crit Damage",
+          "multiplier": 2
+        },
+        {
+          "name": "Shield Generator",
+          "multiplier": 3
+        },
+        {
+          "name": "Initial Force",
+          "multiplier": 1
+        }
+      ],
+      "void": [
+        {
+          "name": "Hit",
+          "multiplier": 1
+        },
+        {
+          "name": "Shield Generator",
+          "multiplier": 2
+        },
+        {
+          "name": "Initial Aether",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Damage",
+          "multiplier": 1
+        },
+        {
+          "name": "Shield Generator",
+          "multiplier": 3
+        },
+        {
+          "name": "Initial Temporary Power",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterNaga",
+      "path": "Assets/GameObject/MonsterNaga.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "183049d33a49b004591d897055c1115f",
+      "file": "Database/Naga/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Naga",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Naga/sheets/Portrait_Naga.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Naga.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "e717c4377a646734aa149d605006a205",
+      "file": "Database/Naga/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_NagaPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Naga/sheets/Trait_NagaPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_NagaPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "72b9333f2e9052e45b445432b73b7ea8",
+      "file": "Database/Naga/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Naga_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 896,
+          "width": 224,
+          "height": 224
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15
+        },
+        "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Naga_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "6b8aae5ac33a3ea4c94b4830c07005b7",
+      "file": "Database/Naga/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Naga_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 896,
+          "width": 224,
+          "height": 224
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15
+        },
+        "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Naga_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "b77a3b822896dfb488a43af322da3db3",
+      "file": "Database/Naga/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Naga_Exploration_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.265625
+        },
+        "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "53399988c681cfe46b93ffe7439d2cc5",
+      "file": "Database/Naga/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Naga_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 640,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.265625
+        },
+        "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Naga_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "a9127ae99febcfe499766c7684a1f2e7",
+      "file": "Database/Naga/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Naga_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Naga/sheets/Portrait_Naga_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Naga_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "NagaWalkDown": {
+      "clip": "Assets/AnimationClip/NagaWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ab671dee059d97046976d3e7601a6edb",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "79b8a875c1936fa40b1282efb1dbc287",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "31a307415efce8c449403217167f0b24",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "9e162cae0c7f1d045915086ea9635d95",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 513,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "de404f6e49b88a341875ddbdbd9b5faa",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "7d9e019127499f940b7974ca7cc0632f",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "ec21c77a0def7894dbb4a97c22b0c230",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "b28413e500cb23441892758846667f56",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "0cba54bc568a8cd43978ee552af910a1",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "9b388dc95aa26a849b47eaf68762b2b0",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "9b388dc95aa26a849b47eaf68762b2b0",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "NagaCastEnd": {
+      "clip": "Assets/AnimationClip/NagaCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "065fd9b7a1fe2d14ca7aaea0551b9f9b",
+          "sprite": {
+            "name": "Naga_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "aa8aadc023f63ba44be38feba5e8644f",
+          "sprite": {
+            "name": "Naga_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "3f469574b21f83d498a56bd50b1d8a3c",
+          "sprite": {
+            "name": "Naga_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "bb309c00e7bb24d4bb520415fe3697f9",
+          "sprite": {
+            "name": "Naga_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "2aac6afaad5af4a428e7b1de3a39c5bc",
+          "sprite": {
+            "name": "Naga_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "bff22f8b37a792f4b8474615d82edd17",
+          "sprite": {
+            "name": "Naga_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a60389ac1452270418b491b232df58f5",
+          "sprite": {
+            "name": "Naga_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "11cfe83a332cfa94bb8bcc50c63d4dd5",
+          "sprite": {
+            "name": "Naga_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_43.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "b42792218188b424296c361332dcf325",
+          "sprite": {
+            "name": "Naga_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_44.asset"
+          }
+        },
+        {
+          "time": 0.70833325,
+          "sprite_guid": "b42792218188b424296c361332dcf325",
+          "sprite": {
+            "name": "Naga_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_44.asset"
+          }
+        }
+      ]
+    },
+    "NagaIdleTop": {
+      "clip": "Assets/AnimationClip/NagaIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c4faf59b4c6aa3d448a8801fe89e08f2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "82ee0e991c2194645b932466954e8c6f",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "26e15663a67977e46a697b9fc9be7985",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "3d5586192f11b5c4689a19c83c747795",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "3b3c4623b672d9b479451f4635ba2eed",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a57b1ba1ed697ef42afbd6016ea61535",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "4d537fa807208c547b542263259ae66e",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "a259ff4a625f84b4d875cb2aa6c97872",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "bf858ef3d03dbe242b2489b83443e6ef",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "55760a1609063584088c69ae0c2c40e2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "55760a1609063584088c69ae0c2c40e2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "NagaAttackJump": {
+      "clip": "Assets/AnimationClip/NagaAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a68ba9944c8e46049b806eb5e6b44a26",
+          "sprite": {
+            "name": "Naga_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5fc26fea9d858774883080f5e9dbe854",
+          "sprite": {
+            "name": "Naga_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c2a92bebaa4a8464ca3cf036cbeb0f43",
+          "sprite": {
+            "name": "Naga_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "d16f675b0bbea794394dec0ed22bc252",
+          "sprite": {
+            "name": "Naga_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "52ca17eb4cb7ce14d80c8c8f6abcd580",
+          "sprite": {
+            "name": "Naga_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "7edb17ef0193d2941a4307c1e0897695",
+          "sprite": {
+            "name": "Naga_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_15.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "7edb17ef0193d2941a4307c1e0897695",
+          "sprite": {
+            "name": "Naga_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_15.asset"
+          }
+        }
+      ]
+    },
+    "NagaCombatIdle": {
+      "clip": "Assets/AnimationClip/NagaCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "72b9333f2e9052e45b445432b73b7ea8",
+          "sprite": {
+            "name": "Naga_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "8efc53ea02332ea40b751d51ae6017d6",
+          "sprite": {
+            "name": "Naga_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8fc7c226659ebfd47a6723ea233345fc",
+          "sprite": {
+            "name": "Naga_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "7d2c234440efffc498267836429fdd91",
+          "sprite": {
+            "name": "Naga_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "0ffb7bb2955263548901577bb69b97b0",
+          "sprite": {
+            "name": "Naga_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "8b26a1141b0c7634c8477cb3d8993c83",
+          "sprite": {
+            "name": "Naga_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "cfb5e2d58e8d9ad49884288dcb2b0e4a",
+          "sprite": {
+            "name": "Naga_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "9bc17b0c36bebe344bbb5ac0e48411f8",
+          "sprite": {
+            "name": "Naga_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "fb9285ac666b283478ccd980269f18a1",
+          "sprite": {
+            "name": "Naga_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "0777d715510a1104b9457b63eae0234f",
+          "sprite": {
+            "name": "Naga_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "0777d715510a1104b9457b63eae0234f",
+          "sprite": {
+            "name": "Naga_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 896,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_9.asset"
+          }
+        }
+      ]
+    },
+    "NagaIdleHorizontal": {
+      "clip": "Assets/AnimationClip/NagaIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "4a12dccc4f876d74ea1bc078f450beba",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "8909323f7cfa5df4a9f1050e7ccc8862",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "1ffb1b5e173b1a4478a9faa90fd1a580",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "920977785fec4ff48a22af2b20f9d6e0",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "213f0a96823c0794bad837a166deb061",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "015d1888d4cdd8c4ab3b632b3585f2db",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "d1379c23689697548a3fd3c17246304b",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "4b1a9335e6f76d04a854e157bed5746b",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "e3ce5754bcd46ee4090a782e158bf57c",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "a9339d67a3277b242aa72f2d7ddddca8",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "a9339d67a3277b242aa72f2d7ddddca8",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "NagaCast": {
+      "clip": "Assets/AnimationClip/NagaCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "065fd9b7a1fe2d14ca7aaea0551b9f9b",
+          "sprite": {
+            "name": "Naga_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "aa8aadc023f63ba44be38feba5e8644f",
+          "sprite": {
+            "name": "Naga_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "3f469574b21f83d498a56bd50b1d8a3c",
+          "sprite": {
+            "name": "Naga_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "bb309c00e7bb24d4bb520415fe3697f9",
+          "sprite": {
+            "name": "Naga_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "2aac6afaad5af4a428e7b1de3a39c5bc",
+          "sprite": {
+            "name": "Naga_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "bff22f8b37a792f4b8474615d82edd17",
+          "sprite": {
+            "name": "Naga_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "a60389ac1452270418b491b232df58f5",
+          "sprite": {
+            "name": "Naga_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "11cfe83a332cfa94bb8bcc50c63d4dd5",
+          "sprite": {
+            "name": "Naga_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_43.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "b42792218188b424296c361332dcf325",
+          "sprite": {
+            "name": "Naga_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_44.asset"
+          }
+        },
+        {
+          "time": 0.70833325,
+          "sprite_guid": "b42792218188b424296c361332dcf325",
+          "sprite": {
+            "name": "Naga_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_44.asset"
+          }
+        }
+      ]
+    },
+    "NagaHit": {
+      "clip": "Assets/AnimationClip/NagaHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "9f7a238db891e2e44babfde4c82412df",
+          "sprite": {
+            "name": "Naga_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_45.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "9f7a238db891e2e44babfde4c82412df",
+          "sprite": {
+            "name": "Naga_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 0,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_45.asset"
+          }
+        }
+      ]
+    },
+    "NagaAttackEnd": {
+      "clip": "Assets/AnimationClip/NagaAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "46762c3d5985fd0489444d6c8bfe316c",
+          "sprite": {
+            "name": "Naga_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_25.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f5c65b36699f4ea4695c908a1a3b56d4",
+          "sprite": {
+            "name": "Naga_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_26.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "c18569a005c529d4182ac5397cc2617b",
+          "sprite": {
+            "name": "Naga_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_27.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cadc7ab8a4dd90643b39397acb13e1b1",
+          "sprite": {
+            "name": "Naga_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_28.asset"
+          }
+        },
+        {
+          "time": 0.33333337,
+          "sprite_guid": "f93946d88e68ae845920a924b48c337d",
+          "sprite": {
+            "name": "Naga_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_29.asset"
+          }
+        },
+        {
+          "time": 0.41666672,
+          "sprite_guid": "1e2b5cbfad7e02d4a96cd72652fa8b30",
+          "sprite": {
+            "name": "Naga_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_30.asset"
+          }
+        },
+        {
+          "time": 0.4583334,
+          "sprite_guid": "1e2b5cbfad7e02d4a96cd72652fa8b30",
+          "sprite": {
+            "name": "Naga_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_30.asset"
+          }
+        }
+      ]
+    },
+    "NagaWalkHorizontal": {
+      "clip": "Assets/AnimationClip/NagaWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6298de506a6fa17489489a479d574052",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "be5d8283c78679c4780823aa6492402c",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "e045e48aa709585439409ab0854d79b6",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "7da5996b4a2ee4f4eb332228bfc645ba",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "c3edac80d49f2b94e8cfb265053ea14b",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "252a84b468b73e3409bbd24927465409",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "c3b56ead7392a284d9947774820b26c1",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "cf4aa17c0fc9dfb4ab0a25607c2f7df8",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "afcacddd238fd6240afdbecaf194d2ca",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "43f3fc63165fe1147b80eab735c19495",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "43f3fc63165fe1147b80eab735c19495",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "NagaJumpBack": {
+      "clip": "Assets/AnimationClip/NagaJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e7cdac018ec5d3e44917ee13c3196068",
+          "sprite": {
+            "name": "Naga_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_31.asset"
+          }
+        },
+        {
+          "time": 0.08333333,
+          "sprite_guid": "bb9b3d25f7e99e642989bee02adda185",
+          "sprite": {
+            "name": "Naga_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_32.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8d19d0111ff7cb344b95842cf8c463a5",
+          "sprite": {
+            "name": "Naga_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_33.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6a2e5b256dd58384aacfb6b1313dabc6",
+          "sprite": {
+            "name": "Naga_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_34.asset"
+          }
+        },
+        {
+          "time": 0.3333333,
+          "sprite_guid": "054f7a959fff3ec4c9edebb042d4dc42",
+          "sprite": {
+            "name": "Naga_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_35.asset"
+          }
+        },
+        {
+          "time": 0.37499997,
+          "sprite_guid": "054f7a959fff3ec4c9edebb042d4dc42",
+          "sprite": {
+            "name": "Naga_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1120,
+              "y": 224,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_35.asset"
+          }
+        }
+      ]
+    },
+    "NagaWalkTop": {
+      "clip": "Assets/AnimationClip/NagaWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "a1a76874864d74e4781f6514aa6720e1",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "6530ac683933f3c40b5acd230be03d30",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "569acc6ae6ce5704db8bb60f51efb730",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "997860db69f4ef349a7db48a84ea66f1",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "81f14209e2dcef24da39fc624f1cbe56",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "0775e0f0b3400944e98b71dc1f5b7d8b",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "194e22cfdb0113a42bbb89d1649836a2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "b31f702df906bc34abf51f47664a33de",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "7f495319939f7f744ae1e18b999b650e",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "ecd1ead65a749994eb5334a5e6179764",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "ecd1ead65a749994eb5334a5e6179764",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "NagaAttack": {
+      "clip": "Assets/AnimationClip/NagaAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d6e5c73baac0c02439977d846be43112",
+          "sprite": {
+            "name": "Naga_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1344,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_16.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "3691f4c13db7ace40b2dcc1042f15f1e",
+          "sprite": {
+            "name": "Naga_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1568,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_17.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "efae6a5a2217dc14bbf5c447d6e1dae6",
+          "sprite": {
+            "name": "Naga_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1792,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_18.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "e3a92e1c95171c948a6593836c347548",
+          "sprite": {
+            "name": "Naga_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 2016,
+              "y": 672,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_19.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "6d3b2ea3d5c93934487637d6b48f3fc7",
+          "sprite": {
+            "name": "Naga_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_20.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "c53d57113703c524f97d38ff8a85b85d",
+          "sprite": {
+            "name": "Naga_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 224,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_21.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "baa393b09662ade4eb65a6661f8872ee",
+          "sprite": {
+            "name": "Naga_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 448,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_22.asset"
+          }
+        },
+        {
+          "time": 0.29166666,
+          "sprite_guid": "59bbb2da945693742a7ad2b4b9c5c560",
+          "sprite": {
+            "name": "Naga_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 672,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_23.asset"
+          }
+        },
+        {
+          "time": 0.3333333,
+          "sprite_guid": "d5314144532ab5a42b3c1e95956819f6",
+          "sprite": {
+            "name": "Naga_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 448,
+              "width": 224,
+              "height": 224
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Naga/sheets/Naga_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_24.asset"
+          }
+        }
+      ]
+    },
+    "NagaIdleDown": {
+      "clip": "Assets/AnimationClip/NagaIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "b77a3b822896dfb488a43af322da3db3",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "70c6e8db62b2cb940bea7298fc886431",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "ecb55bbaad19e764abd173495218fac6",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "ba9b8ae8976da7245891886f2cfb04ae",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "ccfc1a58b67704c43b5b7fffdd5121a0",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "51b65d039aa02aa42ac369bc21bef2a2",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "257be8ae4eee67b44a05d4fb5fac12c7",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "04cc405fdfdc8cb4a86926277e98d3a7",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "28eea6f9b83c34f4195d44a7ed821275",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "1450c09e279f939439261cc776d07402",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "1450c09e279f939439261cc776d07402",
+          "sprite": {
+            "name": "Naga_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 640,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.265625
+            },
+            "sheet": "Database/Naga/sheets/Naga_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Naga_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    }
+  }
+}

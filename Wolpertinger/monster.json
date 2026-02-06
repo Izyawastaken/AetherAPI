@@ -1,0 +1,2657 @@
+{
+  "name": "Wolpertinger",
+  "prefab": "MonsterWolpertinger",
+  "prefab_path": "Assets/GameObject/MonsterWolpertinger.prefab",
+  "data": {
+    "name": "Wolpertinger",
+    "ids": {
+      "ID": 297,
+      "MonID": 7
+    },
+    "stats": {
+      "BaseMaxHealth": 35,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 524288,
+      "ElementsOverride": 4398047035392
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 3,
+          "Hits": 4
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Critical",
+      "Purge",
+      "Sidekick"
+    ],
+    "types_override": [
+      "Critical",
+      "Purge",
+      "Dodge"
+    ],
+    "traits": {
+      "signature": "Eagle Eyes",
+      "traits": [
+        {
+          "name": "Critical Hybridization",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Bubble Trick",
+        "Wind Kick"
+      ],
+      "start_override": [
+        "Smoke",
+        "Flurry"
+      ],
+      "reset_action": [
+        "ResetActionPurge"
+      ],
+      "reset_poise_action": [
+        "ResetActionDodge"
+      ],
+      "scripted": [
+        "Wind Kick",
+        "Bubble Trick",
+        "Flurry",
+        "Smoke"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 30
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 25
+        },
+        {
+          "name": "Damage",
+          "multiplier": 1
+        }
+      ],
+      "void_tier2": [
+        {
+          "name": "Hit",
+          "multiplier": 1
+        },
+        {
+          "name": "Wind Generator",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Crit Chance",
+          "multiplier": 30
+        },
+        {
+          "name": "Evasion",
+          "multiplier": 25
+        },
+        {
+          "name": "Initial Dodge",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterWolpertinger",
+      "path": "Assets/GameObject/MonsterWolpertinger.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "dedc328802d129e4da22879876a18588",
+      "file": "Database/Wolpertinger/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Wolpertinger",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Wolpertinger/sheets/Portrait_Wolpertinger.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Wolpertinger.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "614e811ae17e0904ab61c3cf998e0dd9",
+      "file": "Database/Wolpertinger/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_WolpertingerPortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Wolpertinger/sheets/Trait_WolpertingerPortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_WolpertingerPortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "1c7293a8dbfeed24aa29cffe29ea843e",
+      "file": "Database/Wolpertinger/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Wolpertinger_Battle_Spritesheet_4",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 512,
+          "y": 512,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15
+        },
+        "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_4.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "1c24e7bfef4dcff43850da7aa9a84fb1",
+      "file": "Database/Wolpertinger/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Wolpertinger_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 512,
+          "width": 128,
+          "height": 128
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.15
+        },
+        "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Wolpertinger_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "cefdef39a1328fa43a6f354df50c2cd9",
+      "file": "Database/Wolpertinger/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Wolpertinger_Exploration_Spritesheet_11",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 100,
+          "y": 400,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.24
+        },
+        "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_11.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "a05ca2eac038b66438450164d77ea99c",
+      "file": "Database/Wolpertinger/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Wolpertinger_Exploration_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.24
+        },
+        "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Wolpertinger_Exploration_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "031657e055f65f642a23e0c14b7a5f85",
+      "file": "Database/Wolpertinger/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Wolpertinger_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Wolpertinger/sheets/Portrait_Wolpertinger_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Wolpertinger_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "WolpertingerAttack": {
+      "clip": "Assets/AnimationClip/WolpertingerAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0202dee7a75499146859e97e9e39198b",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "68572af409c9a874fa1bd51fd6701b43",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "449ec78cb291f2f4fa6635ea723815ed",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "35082ed5e342cee4894c074c8b778897",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.25000003,
+          "sprite_guid": "35082ed5e342cee4894c074c8b778897",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "WolprertingerCastEnd": {
+      "clip": "Assets/AnimationClip/WolprertingerCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0259833171cb523459071a16d41ec91d",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ea5008bf055954a4abd9a1fe889a5388",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "ea5008bf055954a4abd9a1fe889a5388",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerAttackJump": {
+      "clip": "Assets/AnimationClip/WolpertingerAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "65fe5ad9eed14ab4ab86ef4725687751",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c4bd40a33667eae48b4d2122afd24bce",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "59b04f24c148627428580617f54d63cc",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "e41b872b333793b46841c80e5b8969e2",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "10a6b8284f94dcf45a5ef3670566d4ee",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "432743df9278eb143ad4a8d72f1760e6",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.45833334,
+          "sprite_guid": "432743df9278eb143ad4a8d72f1760e6",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 384,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_15.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerJumpBack": {
+      "clip": "Assets/AnimationClip/WolpertingerJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "dd0f7a13b130fa4428df00366e7e1a4b",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0e97b8a02a172154fa7ed9415a1efcaa",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9387710d826c9f24788e8ccd966db861",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "38544dd47448ff84a849406e78215824",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "38544dd47448ff84a849406e78215824",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_26.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerWalkTop": {
+      "clip": "Assets/AnimationClip/WolpertingerWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e78ea359e8ed963488a32c1975d861a6",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "cefdef39a1328fa43a6f354df50c2cd9",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "c15a03f3f39f4c44e8ea0399e5ffb5b5",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "b42ffb98055958d40818cee72ff79f85",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "b682833540a64ff43b2a597e683acd2f",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "6903d01ad4ca78c46ad5aa2812cdeab6",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "a2178df344cf5e149b55fc74afc2697a",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "eb570103413388642938fd17fd095ba6",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "dd8a8b03df280e746b3bec8e45a745ac",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "84b360723285e974ebf3f537a5da9d5a",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "84b360723285e974ebf3f537a5da9d5a",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_19.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerWalkDown": {
+      "clip": "Assets/AnimationClip/WolpertingerWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "d1e1a1c8d53daae4db21d154929500e1",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "00f488c3f5db8c94387ad7113dc1c8ec",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "d179816694e439d4b84ff0ed52e7e2cc",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "8584b907b7ed16144b7d8ebda437a23b",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "053007e09c59945438dd625efad1afb1",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_54",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_54.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "c39a063c0d5e4b74ea57d2abe121e7f5",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_55",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_55.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "4d9e24f4888829b44a67170c05732dc4",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_56",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_56.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "12267a11dabc75f4590384a08ff3c6fe",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_57",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_57.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "30d4d33c1dd62be4781c8f165ca54a6f",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_58",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_58.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "4c23a2639976ff44eabbff0022bfe613",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_59.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "4c23a2639976ff44eabbff0022bfe613",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_59",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_59.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerAttackEnd": {
+      "clip": "Assets/AnimationClip/WolpertingerAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "fc8bcbb42392adc478d488bd3ba30e50",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "3241d693f15ec7e4da750a4f348cb6c4",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a724739e864f0a14ea38a58df8fb2429",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "a724739e864f0a14ea38a58df8fb2429",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 256,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_22.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerIdleDown": {
+      "clip": "Assets/AnimationClip/WolpertingerIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e25c4fddda8df1940b1ed565f88c61a3",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "5ac0cb0062bc8fb439120dcfa6e20de1",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "b7f8fd1416e7e694d9b1434fb81a8cea",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "e1ce1056e0f04a64daa45de65eb386fd",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "840c862978976784eaa773d130fa5f0c",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "bef9a93d357248849a64e1fd366b5eb0",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "4421e28e879695a4b97a4a0e6af6a91a",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "32e29f0aca49bb1419401629421d4277",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "f0902e8010fc7aa44821b0e66d388d95",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "21125ac7321bb6d4e91fe20116668185",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "21125ac7321bb6d4e91fe20116668185",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_49.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerCombatIdle": {
+      "clip": "Assets/AnimationClip/WolpertingerCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "cdc6ff61164a54f4a838345be5ef5e09",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "5bc614c5a9e3f3f48a245040bc17bd9e",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "a14708f6881e77c43b0dad9cb615cb29",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "54287b348f73272449779fb6657c5df4",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "1c7293a8dbfeed24aa29cffe29ea843e",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "46ead9e79a867e64d9ec61ee3283d63f",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2f93c0c3455065a43a91c88824b7e5ed",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "8033abf230d5dac42acdb2522ed46880",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "3a6407e5027153140a61244cd9009ee9",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "55c1bde5693b13d439c77655343a8d24",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "55c1bde5693b13d439c77655343a8d24",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 512,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerHit": {
+      "clip": "Assets/AnimationClip/WolpertingerHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6494273acc9421948b70a2cccb0b747b",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "6494273acc9421948b70a2cccb0b747b",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_40.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerCast": {
+      "clip": "Assets/AnimationClip/WolpertingerCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "e62f2c1171faab840bbbce981a1f8440",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 384,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "bedc73a9352a4fe44bcd1906563a1701",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 512,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8caa945a5358bd343a22eb492d0033bf",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 640,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9ebad3b8ba5bd0b45869947a92652f10",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 768,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3679ce85b17bb154b902cf9ae904e251",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 896,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "adf481b190424b74882225c68ac12428",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1024,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "fde757322b8008849bdb8ab6feb0be70",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1152,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "5eec9425631c5224b886398b69e9dbfa",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "5eec9425631c5224b886398b69e9dbfa",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_37.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerIdleTop": {
+      "clip": "Assets/AnimationClip/WolpertingerIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c678cdb74ff4f944b8c268d0a5e6259c",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "fa82c89d11df03642910be12148b8e0e",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "b014c9587e6689f4cb7f1a4aebdac5c0",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "49aa7b0f95833194592b7f3afdd76da0",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "a19856d16987bf044bfacacb854bffd7",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "69b88d12dddb4cb40b2ee69093dcbfde",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "db3b6d6e94ac43549bcea08225beb5b9",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "d046c09371a837c468986973c7b885ac",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "7d1a46b6bb7311142b8345ad40ce0e2a",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "3a2abe3953d1da248aed27dd8bbdcf56",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "3a2abe3953d1da248aed27dd8bbdcf56",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerCastStart": {
+      "clip": "Assets/AnimationClip/WolpertingerCastStart.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "69e40472e3aaadb45ad3633b1a186ed6",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "b6b465a2de09cfc499324b3822e7fd18",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 128,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "235efea0838753246b63bbab7514cd5d",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.20833333,
+          "sprite_guid": "235efea0838753246b63bbab7514cd5d",
+          "sprite": {
+            "name": "Wolpertinger_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 256,
+              "y": 128,
+              "width": 128,
+              "height": 128
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.15
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Battle_Spritesheet_29.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerWalkHorizontal": {
+      "clip": "Assets/AnimationClip/WolpertingerWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "c806b444370608845967945532e157d6",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.06666667,
+          "sprite_guid": "ef9bbdd35ecad514eaac4a742b2dfd76",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.13333334,
+          "sprite_guid": "f8f204fa9a81aff48bf272850eaeba2f",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.20000002,
+          "sprite_guid": "749806fd453e14d44b817815062bb2f8",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.26666668,
+          "sprite_guid": "87b481230b95c744282426bff7445fad",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "f53d8fe154697564784c937cc48018cc",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "3f4fd85a68713794994b3a74526c4778",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.46666667,
+          "sprite_guid": "ad828c6f22c158d4aa5479531168d53e",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.53333336,
+          "sprite_guid": "b6c5dd75b97775f4aa98467101b61bf4",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "9fbde993620af914abdf66d5934735e1",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.65000004,
+          "sprite_guid": "9fbde993620af914abdf66d5934735e1",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_39.asset"
+          }
+        }
+      ]
+    },
+    "WolpertingerIdleHorizontal": {
+      "clip": "Assets/AnimationClip/WolpertingerIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "f475a09daddc8674abfaf94cb5e7db9f",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.1,
+          "sprite_guid": "3132f7a78ee6f354e984154251bb3531",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.2,
+          "sprite_guid": "7be07064cdd4979438b9b299d1b64ac9",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.3,
+          "sprite_guid": "9aeae8da70c5c134ba06886d2440e301",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.4,
+          "sprite_guid": "93349202aed1f2b4aa797d881ff4ebd4",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "2c8e1c18f0e1f5346a1a31b35ccb5c18",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6,
+          "sprite_guid": "cf2fb5f9cd5b19440a4163f868482dc4",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.70000005,
+          "sprite_guid": "1ec79ee598b7eab4091a9ba80fddfbf7",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.8000001,
+          "sprite_guid": "ecd40a29e8b9e0b4d92e60370ec26668",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.9000001,
+          "sprite_guid": "f3a7488995edd4847bee2d670138a228",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.98333347,
+          "sprite_guid": "f3a7488995edd4847bee2d670138a228",
+          "sprite": {
+            "name": "Wolpertinger_Exploration_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "sheet": "Database/Wolpertinger/sheets/Wolpertinger_Exploration_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Wolpertinger_Exploration_Spritesheet_29.asset"
+          }
+        }
+      ]
+    }
+  }
+}

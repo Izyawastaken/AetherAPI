@@ -1,0 +1,3175 @@
+{
+  "name": "Cockatrice",
+  "prefab": "MonsterCockatrice",
+  "prefab_path": "Assets/GameObject/MonsterCockatrice.prefab",
+  "data": {
+    "name": "Cockatrice",
+    "ids": {
+      "ID": 1340,
+      "MonID": 11
+    },
+    "stats": {
+      "BaseMaxHealth": 45,
+      "StartPerkCount": 1
+    },
+    "elements": {
+      "Elements": 4398047035392
+    },
+    "poise": {
+      "can_reset_own": 1,
+      "uses_poise_as_health": 0,
+      "stagger_defines": [
+        {
+          "Element": 1,
+          "Hits": 3.5
+        }
+      ],
+      "impossible_to_stagger": 0,
+      "resets_naturally_after_turn_three": 1
+    },
+    "types": [
+      "Tank",
+      "Burn",
+      "Dodge"
+    ],
+    "types_override": [
+      "Tank",
+      "Burn",
+      "Shield"
+    ],
+    "traits": {
+      "signature": "Hot Temper",
+      "traits": [
+        {
+          "name": "Return To Aether",
+          "min_difficulty": 2,
+          "shift_restriction": 0
+        }
+      ]
+    },
+    "actions": {
+      "start": [
+        "Heat",
+        "Flurry"
+      ],
+      "start_override": [
+        "Roar",
+        "Ignite"
+      ],
+      "reset_action": [
+        "ResetActionBurn"
+      ],
+      "scripted": [
+        "Explosive Rush",
+        "Reflective Strike",
+        "Heat",
+        "Roar",
+        "Bonfire",
+        "Flurry",
+        "Ignite"
+      ]
+    },
+    "perks": {
+      "base": [
+        {
+          "name": "Aether",
+          "multiplier": 1
+        },
+        {
+          "name": "Initial Dodge",
+          "multiplier": 1
+        },
+        {
+          "name": "Hit",
+          "multiplier": 1
+        }
+      ],
+      "void_tier3": [
+        {
+          "name": "Initial Dodge",
+          "multiplier": 1
+        },
+        {
+          "name": "Hit",
+          "multiplier": 1
+        },
+        {
+          "name": "Fire Generator",
+          "multiplier": 1
+        }
+      ],
+      "override": [
+        {
+          "name": "Shield Generator",
+          "multiplier": 2
+        },
+        {
+          "name": "Defense",
+          "multiplier": 1
+        },
+        {
+          "name": "Hit",
+          "multiplier": 1
+        }
+      ]
+    },
+    "source": {
+      "prefab": "MonsterCockatrice",
+      "path": "Assets/GameObject/MonsterCockatrice.prefab"
+    }
+  },
+  "icons": {
+    "PortraitSpriteSmall": {
+      "sprite_guid": "c593eaf8892c9cb45a7ca85146da23f7",
+      "file": "Database/Cockatrice/icons/PortraitSpriteSmall.png",
+      "sprite": {
+        "name": "Portrait_Cockatrice",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Cockatrice/sheets/Portrait_Cockatrice.png",
+        "sprite_asset": "Assets/Sprite/Portrait_Cockatrice.asset"
+      }
+    },
+    "MonsterTriggerIcon": {
+      "sprite_guid": "ae40f671c1e476e4b9188ebf80d6880d",
+      "file": "Database/Cockatrice/icons/MonsterTriggerIcon.png",
+      "sprite": {
+        "name": "Trait_CockatricePortrait",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Cockatrice/sheets/Trait_CockatricePortrait.png",
+        "sprite_asset": "Assets/Sprite/Trait_CockatricePortrait.asset"
+      }
+    },
+    "BattleSpriteSource": {
+      "sprite_guid": "73009009e75a5df4fa5e71b346d58157",
+      "file": "Database/Cockatrice/icons/BattleSpriteSource.png",
+      "sprite": {
+        "name": "Cockatrice_Battle_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 130,
+          "height": 125
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_0.asset"
+      }
+    },
+    "BattleSpriteReplace": {
+      "sprite_guid": "22939d31d3e7e6c4b907742e2411c5db",
+      "file": "Database/Cockatrice/icons/BattleSpriteReplace.png",
+      "sprite": {
+        "name": "Cockatrice_Battle_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 130,
+          "height": 125
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/battlesprites/Cockatrice_Battle_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "OverworldSpriteSource": {
+      "sprite_guid": "738f3c24095c9ed49aa339da275b57d3",
+      "file": "Database/Cockatrice/icons/OverworldSpriteSource.png",
+      "sprite": {
+        "name": "Cockatrice_Overworld_Spritesheet_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+        "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_0.asset"
+      }
+    },
+    "OverworldSpriteReplace": {
+      "sprite_guid": "264cc72f34d48344ba3f52f60933263e",
+      "file": "Database/Cockatrice/icons/OverworldSpriteReplace.png",
+      "sprite": {
+        "name": "Cockatrice_Overworld_Spritesheet_Shifted_0",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 500,
+          "width": 100,
+          "height": 100
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/overworldsprites/Cockatrice_Overworld_Spritesheet_Shifted_0.asset"
+      }
+    },
+    "PortraitSprite": {
+      "sprite_guid": "6fcc44da0165c6c45b6fdb7ddcd28adb",
+      "file": "Database/Cockatrice/icons/PortraitSprite.png",
+      "sprite": {
+        "name": "Portrait_Cockatrice_Shifted",
+        "rect": {
+          "serializedVersion": 2,
+          "x": 0,
+          "y": 0,
+          "width": 44,
+          "height": 39
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "sheet": "Database/Cockatrice/sheets/Portrait_Cockatrice_Shifted.png",
+        "sprite_asset": "Assets/Resources/monsters/portrait/Portrait_Cockatrice_Shifted.asset"
+      }
+    }
+  },
+  "animations": {
+    "CockatriceAttack": {
+      "clip": "Assets/AnimationClip/CockatriceAttack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "71eb8ed729b5dba418e524cec17578e3",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 650,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "7a34ee957f01b7c4d84697a57eb27484",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 780,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.125,
+          "sprite_guid": "611056ee65584ee4db55cee14cbf947a",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 910,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.20833334,
+          "sprite_guid": "43b4e1d46bc46de48823b803e850b2af",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1040,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.2916667,
+          "sprite_guid": "3d544de2c2e9fae46b2393ab4b82e28a",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1170,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "e5fdea48c7eb1f74190d12187c977c1e",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "d5880405814ac1b4c91f6346c38eaadb",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "27b0f7c950c2e6244bb9b7a3afd552b0",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "27b0f7c950c2e6244bb9b7a3afd552b0",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_42.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceIdleDown": {
+      "clip": "Assets/AnimationClip/CockatriceIdleDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "2d17f73501fcc8d48a5e6264e2984afb",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_36",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.22999997
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_36.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "f14c826c4f85ec74b846dd0d6629b6d2",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_37",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_37.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1cc203647894bc942983f5d970281a56",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_38",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_38.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "73c58bd2ce0ac1b42b77309d6dd4adc3",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_39",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_39.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "75beb9293499f1b40bffe31e901701a3",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_40",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_40.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "48ecfe9a7713dfb459f59dbbb5e5726d",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_41",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_41.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "4771fefdfa8521149a5985cde625e0ec",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "c35b96798f5c65941a4088715b05acc5",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "458a58f275ef26e4c8e1ec8a430567ce",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "0eb8716f8e114a145ab85619bd716af8",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "0eb8716f8e114a145ab85619bd716af8",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 100,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_45.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceCombatIdle": {
+      "clip": "Assets/AnimationClip/CockatriceCombatIdle.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "73009009e75a5df4fa5e71b346d58157",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "e20c77f2919d6a7488457b622e97764b",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "8f175f106de5dec4fa0ee5a24e250d19",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "74ccf42c869930a45ae3123ae9faec6f",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "b92ae05104694cd499b4a8ef5da2d8f3",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "e458ccba7e24a0e48a91fa8c5c4e6dad",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 650,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "ca82ca35e490c384ea5ef2db4e2fa749",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 780,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "7042440fbc64f6a478099f6831397571",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 910,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "e033ff35463f69f4c96f23faed094f05",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1040,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "4418f63a38947ac49aae63dc69c49b52",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1170,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "4418f63a38947ac49aae63dc69c49b52",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1170,
+              "y": 500,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceHit": {
+      "clip": "Assets/AnimationClip/CockatriceHit.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "63472f0d80d2f824cb787bc39126c18a",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 780,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "63472f0d80d2f824cb787bc39126c18a",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 780,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_46.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceAttackEnd": {
+      "clip": "Assets/AnimationClip/CockatriceAttackEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "27b0f7c950c2e6244bb9b7a3afd552b0",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_42.asset"
+          }
+        },
+        {
+          "time": 0.041666668,
+          "sprite_guid": "27b0f7c950c2e6244bb9b7a3afd552b0",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_42",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_42.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceCastEnd": {
+      "clip": "Assets/AnimationClip/CockatriceCastEnd.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1153f1f445095ec4b87624c0aa917e58",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0fc516279ab67fb4da46492e00f41bf1",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "08116b90d96a43845a8d069592bc1fbb",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1e24cd7cdc8d59e49b8a70997929228d",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "949baa81ab1d6874f9275c140b54bdf3",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "52c562fa1696d25429f46a874a003fc5",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 650,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6a6ac5b79c1f3b9458ae6c5dea4264a3",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 780,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "2223587e15446544388e55bfff2f56de",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 910,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "2223587e15446544388e55bfff2f56de",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 910,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_17.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceWalkDown": {
+      "clip": "Assets/AnimationClip/CockatriceWalkDown.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "6f33403308894934a92fdd934b6979ba",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_46",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_46.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "29141ed514b081c4184f00d0dacb4592",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_47",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_47.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "724b5941b5e85de41979da242f56c0b2",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_48",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_48.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "cbf9b3b8adc0aff4ca1a2c4f577bbfa7",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_49",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_49.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "3fd23bdf6d73ff340b681a822e43a419",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_50",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_50.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "ed03ea09e4d0af340b327cb952dc2ba9",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_51",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_51.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "c4d6cf2329cd6da46a76fd4d40cf558a",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_52",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 599,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_52.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "244fd00b009b7bb44be4f52f9c401678",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_53.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "244fd00b009b7bb44be4f52f9c401678",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_53",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 0,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.23
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_53.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceIdleHorizontal": {
+      "clip": "Assets/AnimationClip/CockatriceIdleHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "19631191241d78040a8e658e79e9fa62",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "9344b17c2e5d0d6499c1c0040dbb5935",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "987e8e9431968f94899860b72d6bae28",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "8310ddec13ba7b7498b576b5494b4fc5",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "0d2c3b51610c53646921a759a92bfc11",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "b67ca66b202735247890530da9b81aee",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "cfafdd12922149946be5a8d2c8e99e6f",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "237735252c55770449d2874e75a03036",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "73ea4660fdd50684cb29b80e9c8f8232",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_26",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_26.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "7d1f48b808b5f6c40972559b9ca8f685",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "7d1f48b808b5f6c40972559b9ca8f685",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 300,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_27.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceAttackJump": {
+      "clip": "Assets/AnimationClip/CockatriceAttackJump.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ec8aa9d6f38521847baf22a918afb674",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_27",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 910,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_27.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "c9dc2878435b3a6428d422534baf39c7",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1040,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "16aff6be500aa1e44a31e2c11b10d733",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1170,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "326b21032503eff4c8fc05d70f15ca98",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "d8ac8fa6e617a984c90d64eb377ae20f",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.375,
+          "sprite_guid": "30f0ae800d3d90d46b23be37cd4e13cd",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.41666666,
+          "sprite_guid": "92fcd7d6fdb24ed46a3dcd544648acae",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.4583333,
+          "sprite_guid": "d6b3ed0ff19f3e44babe521318778fcc",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.49999997,
+          "sprite_guid": "d8ac8fa6e617a984c90d64eb377ae20f",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.5416666,
+          "sprite_guid": "30f0ae800d3d90d46b23be37cd4e13cd",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "92fcd7d6fdb24ed46a3dcd544648acae",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "d6b3ed0ff19f3e44babe521318778fcc",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.6666667,
+          "sprite_guid": "d8ac8fa6e617a984c90d64eb377ae20f",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.7083334,
+          "sprite_guid": "30f0ae800d3d90d46b23be37cd4e13cd",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.75000006,
+          "sprite_guid": "92fcd7d6fdb24ed46a3dcd544648acae",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.79166675,
+          "sprite_guid": "d6b3ed0ff19f3e44babe521318778fcc",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.83333343,
+          "sprite_guid": "d8ac8fa6e617a984c90d64eb377ae20f",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.8750001,
+          "sprite_guid": "30f0ae800d3d90d46b23be37cd4e13cd",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.9166668,
+          "sprite_guid": "92fcd7d6fdb24ed46a3dcd544648acae",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.9583335,
+          "sprite_guid": "d6b3ed0ff19f3e44babe521318778fcc",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.0000001,
+          "sprite_guid": "d8ac8fa6e617a984c90d64eb377ae20f",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 1.0416667,
+          "sprite_guid": "30f0ae800d3d90d46b23be37cd4e13cd",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 1.0833334,
+          "sprite_guid": "92fcd7d6fdb24ed46a3dcd544648acae",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 1.125,
+          "sprite_guid": "d6b3ed0ff19f3e44babe521318778fcc",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "d8ac8fa6e617a984c90d64eb377ae20f",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 1.2083333,
+          "sprite_guid": "30f0ae800d3d90d46b23be37cd4e13cd",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 1.2499999,
+          "sprite_guid": "92fcd7d6fdb24ed46a3dcd544648acae",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 1.2916665,
+          "sprite_guid": "d6b3ed0ff19f3e44babe521318778fcc",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 125,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_34.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceWalkTop": {
+      "clip": "Assets/AnimationClip/CockatriceWalkTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "ac2fad8a7220acf4c8a6dc0fea47d579",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "bb45c4d6a090ac44b9994d5d72aa8038",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "05729b735d0e8ee4c8ecbf0b594562fb",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "6b6d5f8928b15074d831f1a2382eda7b",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "396063d579d19934299843b346337b16",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "d9aed2efb23545642b7729e22e30ceeb",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "33c78f8bb6a2fdd4f991cf89b67782b2",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "3974b9b00ac7aec488c7f1b51b7d35ea",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "3974b9b00ac7aec488c7f1b51b7d35ea",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 400,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_17.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceCast": {
+      "clip": "Assets/AnimationClip/CockatriceCast.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "1153f1f445095ec4b87624c0aa917e58",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_10",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_10.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "0fc516279ab67fb4da46492e00f41bf1",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_11",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_11.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "08116b90d96a43845a8d069592bc1fbb",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_12",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_12.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "1e24cd7cdc8d59e49b8a70997929228d",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_13",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_13.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "949baa81ab1d6874f9275c140b54bdf3",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_14",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_14.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "52c562fa1696d25429f46a874a003fc5",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_15",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 650,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_15.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "6a6ac5b79c1f3b9458ae6c5dea4264a3",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_16",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 780,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_16.asset"
+          }
+        },
+        {
+          "time": 0.5416667,
+          "sprite_guid": "2223587e15446544388e55bfff2f56de",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_17",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 910,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_17.asset"
+          }
+        },
+        {
+          "time": 0.625,
+          "sprite_guid": "3f951dfcc5e3a0443813c5f034709291",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_18",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1040,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_18.asset"
+          }
+        },
+        {
+          "time": 0.7083333,
+          "sprite_guid": "1648d4f871832634e818b6dce2de28c7",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_19",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 1170,
+              "y": 375,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_19.asset"
+          }
+        },
+        {
+          "time": 0.7916666,
+          "sprite_guid": "f0c4d478e3b68d04984e8a546eb9ee6d",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_20",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_20.asset"
+          }
+        },
+        {
+          "time": 0.87499994,
+          "sprite_guid": "86ca4491e08655a43806310b364fc244",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_21",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 130,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_21.asset"
+          }
+        },
+        {
+          "time": 0.95833325,
+          "sprite_guid": "b173d8ee410e75d4e99f517368d6da5c",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_22",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 260,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_22.asset"
+          }
+        },
+        {
+          "time": 0.99999994,
+          "sprite_guid": "ef95c9750cf500d4c820f91239416597",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_23",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_23.asset"
+          }
+        },
+        {
+          "time": 1.0833333,
+          "sprite_guid": "82fa9c8307987a24caa77d1e11c5034e",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_24",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_24.asset"
+          }
+        },
+        {
+          "time": 1.1666666,
+          "sprite_guid": "3bf8a8f3ae53bb848a5f32a4f29b5ca0",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 650,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_25.asset"
+          }
+        },
+        {
+          "time": 1.2083334,
+          "sprite_guid": "3bf8a8f3ae53bb848a5f32a4f29b5ca0",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_25",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 650,
+              "y": 250,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_25.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceIdleTop": {
+      "clip": "Assets/AnimationClip/CockatriceIdleTop.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "738f3c24095c9ed49aa339da275b57d3",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_0",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_0.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "ae05f70a8f6d98943823205b309930b2",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_1",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_1.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "56cd9257b53776a409de1c855b23186e",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_2",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_2.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "b588f764808212546ad22604a0e7c3ca",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_3",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_3.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "82f43a3b9ab34cb4fa7baa87e724bf09",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_4",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_4.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "8a049fd558f5f9843bcfa10fe7f32d29",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_5",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 500,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_5.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "69fd32b9455b7874aa7d98cadad853db",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_6",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_6.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "b2b4154ef63006241832b9d2002be6b4",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_7",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_7.asset"
+          }
+        },
+        {
+          "time": 0.6666666,
+          "sprite_guid": "86005cc621c0a304bb11efc8cbbbf418",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_8",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 800,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_8.asset"
+          }
+        },
+        {
+          "time": 0.74999994,
+          "sprite_guid": "799c85859cf29904e89c42f596d95fd3",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_9.asset"
+          }
+        },
+        {
+          "time": 0.79166657,
+          "sprite_guid": "799c85859cf29904e89c42f596d95fd3",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_9",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 900,
+              "y": 500,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_9.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceWalkHorizontal": {
+      "clip": "Assets/AnimationClip/CockatriceWalkHorizontal.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "0b8c89cefb1d04b49ace79ea4f771eec",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_28",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 0,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_28.asset"
+          }
+        },
+        {
+          "time": 0.083333336,
+          "sprite_guid": "1d5b09cd49b588c42a6da13e0b534df9",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_29",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 100,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_29.asset"
+          }
+        },
+        {
+          "time": 0.16666667,
+          "sprite_guid": "1f73ce18654b63643b1a0131a817915b",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_30",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 200,
+              "y": 199,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_30.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "9176eb038ad79984e99426fd2383bfec",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_31",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 300,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_31.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "99367ad23b8d6174f9c7e8d92ffc1d96",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_32",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 400,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_32.asset"
+          }
+        },
+        {
+          "time": 0.4166667,
+          "sprite_guid": "62fc19b32ac224a4a9ad9683f400bff7",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_33",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 501,
+              "y": 199,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_33.asset"
+          }
+        },
+        {
+          "time": 0.5,
+          "sprite_guid": "59b9222dd9abc374ea63c782b10b5fcd",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_34",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 600,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_34.asset"
+          }
+        },
+        {
+          "time": 0.5833333,
+          "sprite_guid": "d4977c9fb73d73944af8ea582e35c1af",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_35.asset"
+          }
+        },
+        {
+          "time": 0.62499994,
+          "sprite_guid": "d4977c9fb73d73944af8ea582e35c1af",
+          "sprite": {
+            "name": "Cockatrice_Overworld_Spritesheet_35",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 700,
+              "y": 200,
+              "width": 100,
+              "height": 100
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.19
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Overworld_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Overworld_Spritesheet_35.asset"
+          }
+        }
+      ]
+    },
+    "CockatriceJumpBack": {
+      "clip": "Assets/AnimationClip/CockatriceJumpBack.anim",
+      "frames": [
+        {
+          "time": 0,
+          "sprite_guid": "393c367759e69024b8124f3a2c79ef33",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_43",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 390,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_43.asset"
+          }
+        },
+        {
+          "time": 0.25,
+          "sprite_guid": "63aa6ea2d46ff9b49b5cd10d6f788490",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_44",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 520,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_44.asset"
+          }
+        },
+        {
+          "time": 0.33333334,
+          "sprite_guid": "8dabd6ae772af1b44b5f893a807eb526",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 650,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_45.asset"
+          }
+        },
+        {
+          "time": 0.37500003,
+          "sprite_guid": "8dabd6ae772af1b44b5f893a807eb526",
+          "sprite": {
+            "name": "Cockatrice_Battle_Spritesheet_45",
+            "rect": {
+              "serializedVersion": 2,
+              "x": 650,
+              "y": 0,
+              "width": 130,
+              "height": 125
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.35
+            },
+            "sheet": "Database/Cockatrice/sheets/Cockatrice_Battle_Spritesheet.png",
+            "sprite_asset": "Assets/Sprite/Cockatrice_Battle_Spritesheet_45.asset"
+          }
+        }
+      ]
+    }
+  }
+}
